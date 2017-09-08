@@ -1,0 +1,30 @@
+/* Style Guide =================================================== */
+
+.style_type{
+	display: grid;
+	grid-template-columns:repeat(1, 1fr);
+	grid-gap:$margin-default+px;
+	// padding: 30px;
+	// box-shadow: 0px 0px 5px tint($color-black, 80%);
+	margin-bottom: $margin-default+px;
+}
+@media only screen and (min-width: $mq-medium) {
+	.style_type{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+@media only screen and (min-width: $mq-xlarge) {
+	.style_type{
+		grid-gap:$margin-xlarge+px;
+		margin-bottom: $margin-xlarge+px;
+	}
+}
+.style_body,
+.style_headline,
+.style_headlings,
+.style_paragraphs,
+.style_lists,
+.style_quotes{
+	// padding: 10px;
+	// box-shadow: 0px 0px 5px tint($color-black, 80%);
+}

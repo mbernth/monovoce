@@ -1,0 +1,208 @@
+@media only screen and (max-width: 1024px) {
+	
+/* # Slider
+--------------------------------------------------- */
+
+.slide_content h2{
+	max-width:960px;
+}
+
+.slide_content p{
+	margin:30px auto;
+	width:100%;
+	@include font(1.8, 2.2);
+}
+
+/* # Structure and Layout
+--------------------------------------------- */
+
+.site-inner,
+.wrap {
+	max-width: 900px;
+}
+
+.site-inner {
+    padding-top: 50px;
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	@include structure(720, 900);
+}
+
+.content,
+.site-header .widget-area {
+	@include structure(600, 900);
+}
+
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content,
+.content-sidebar-sidebar .content {
+	@include structure(420, 720);
+}
+
+.sidebar-primary,
+.title-area {
+	@include structure(270, 900);
+}
+	
+.sidebar-sidebar-content .sidebar-primary,
+.sidebar-content-sidebar .sidebar-primary,
+.content-sidebar-sidebar .sidebar-primary {
+	@include structure(270, 720);
+}
+
+.sidebar-content .sidebar-primary {
+	float: left;
+	@include structure(270, 900);
+}
+	
+.sidebar-secondary {
+	@include structure(150, 900);
+}
+	
+.footer-widgets .widget-area {
+	display:block;
+	float:left;
+	@include grid(4, 30, 900);
+}
+
+/* Grid
+--------------------------------------------- */
+
+.full-width-content .content .coll1,
+.coll1 {
+	margin:0 auto 30px;
+	@include structure(900, 900);
+}
+.full-width-content .content .coll2,
+.coll2 {
+	@include grid(2, 30, 900);
+}
+.full-width-content .content .coll2_3,
+.coll2_3 {
+	@include grid_alt(2, 30, 900);
+}
+.full-width-content .content .coll3,
+.coll3 {
+	@include grid(3, 30, 900);
+}
+.full-width-content .content .coll3_4,
+.coll3_4 {
+	@include grid_alt(3, 30, 900);
+}
+.full-width-content .content .coll4,
+.coll4 {
+	@include grid(2, 30, 900);
+}
+.full-width-content .content .coll4_5,
+.coll4_5 {
+	@include grid_alt(2, 30, 900);
+}
+.full-width-content .content .coll5,
+.coll5 {
+	@include grid(3, 30, 900);
+}
+.full-width-content .content .coll6,
+.coll6 {
+	@include grid(3, 30, 900);
+}
+
+.full-width-content .gridcontainer.team .wrap {
+	max-width:768px;
+}
+
+.full-width-content .content .team .coll3 {
+	@include grid(3, 30, 768);
+}
+
+/* # Colour background
+--------------------------------------------- */
+
+.full-width-content .entry,
+.full-width-content .gridcontainer .wrap {
+	max-width: 900px;
+}
+
+.content .gridcontainer.Non .coll2 {
+	@include grid(2, 0, 960);
+}
+.content .gridcontainer.Non .coll2_3 {
+	@include grid_alt(2, 0, 960);
+}
+.content .gridcontainer.Non .coll3 {
+	@include grid(3, 0, 960);
+}
+.content .gridcontainer.Non .coll3_4 {
+	@include grid_alt(3, 0, 960);
+}
+
+.content .gridcontainer.Non .coll4 {
+	@include grid(2, 0, 960);
+}
+.content .gridcontainer.Non .coll4_5 {
+	@include grid_alt(2, 0, 960);
+}
+.content .gridcontainer.Non .coll5 {
+	@include grid(2, 0, 960);
+}
+.content .gridcontainer.Non .coll6 {
+	@include grid(3, 0, 960);
+}
+
+.full-width-content .content .gridcontainer.Non .wysiwyg{
+	padding:30px;
+	min-height:450px;
+}
+
+.full-width-content .content .gridcontainer.Non .backimage{
+	min-height:450px;
+}
+
+/* ## Case grid
+--------------------------------------------- */
+
+.full-width-content .content .coll4.case_preview,
+.coll4.case_preview {
+	@include grid(2, 30, 900);
+}
+
+/* # Pin
+--------------------------------------------------- */
+
+.full-width-content.pin .content {
+    max-width: 960px;
+}
+/*
+.pin-main article {
+	margin-bottom:30px;	
+	@include collwidth(2, 30, 1000);
+}
+
+.full-width-content.pin .content .entry-title{
+	@include collwidth(1, 30, 1000);
+}
+*/
+/* ## Featured image
+--------------------------------------------- */
+
+.featured-image .site-inner {
+    padding-top: 50px;
+}
+
+/* # Footer Widgets
+--------------------------------------------- */
+
+.footer-widgets {
+	padding-top: 80px;
+}
+
+/* ## Search Area
+--------------------------------------------- */
+
+.footer_search {
+	padding-bottom:80px;
+}
+
+}

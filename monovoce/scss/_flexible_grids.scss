@@ -1,0 +1,71 @@
+/* ## Flexible Grid - CSS Grid
+---------------------------------------------------------------------------------------------------- */
+
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+/* ### Site Containers Full-width
+--------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+
+@supports (display: grid) {
+
+.gridcontainer{
+	.wrap{
+		display: -ms-grid;
+		display: grid;
+		grid-gap:30px;
+	}
+}
+.gridcontainer.non{
+	padding: 0;
+	.row_headline{
+		display: none;
+	}
+	.wrap{
+		display: -ms-grid;
+		display: grid;
+		grid-gap:0px;
+	}
+}
+.gridcontainer.coll1{
+	.wrap{
+		grid-template-columns:1fr;
+	}
+}
+.gridcontainer.coll2{
+	.wrap{
+		grid-template-columns:1fr;
+	}
+}
+.gridcontainer.coll3{
+	.wrap{
+		grid-template-columns:1fr;
+	}
+}
+.gridcontainer.coll4{
+	.wrap{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+.gridcontainer.coll5{
+	.wrap{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+.gridcontainer.coll6{
+	.wrap{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+.gridcontainer.non.coll4 section.wysiwyg,
+.gridcontainer.non.coll5 section.wysiwyg,
+.gridcontainer.non.coll6 section.wysiwyg{
+	padding: 30px;
+}
+	
+}

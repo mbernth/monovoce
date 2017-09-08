@@ -1,0 +1,150 @@
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Site Containers
+---------------------------------------------------------------------- */
+
+.site-inner,
+.wrap {
+	margin: 0 auto;
+}
+
+.site-inner{
+	display: block;
+	clear: both;
+	margin: 30 auto;
+	width:100%;
+}
+.content-sidebar .site-inner,
+.sidebar-content .site-inner,
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
+.sidebar-content-sidebar .site-inner{
+	width: 90%;
+	.gridcontainer.white{
+		.wrap,
+		.row_headline{
+			width: 100%;
+		}
+	}
+}
+.sidebar-primary{
+	background-color:transparent;
+}
+.sidebar-secondary{
+	background-color:transparent;
+}
+
+@supports (display: grid) {
+	.site-container{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"before-header"
+			"site-header"
+			"nav-secondary"
+			"breadcrumb"
+			"site-inner"
+			"footer-widgets"
+			"site-footer"
+			;
+		.genesis-skip-link{
+			grid-area:genesis-skip-link;
+		}
+		.before-header{
+			grid-area:before-header;
+		}
+		.site-header{
+			grid-area:site-header;
+		}
+		.nav-secondary{
+			grid-area:nav-secondary;
+		}
+		.breadcrumb{
+			grid-area:breadcrumb;
+		}
+		.site-inner{
+			grid-area:site-inner;
+		}
+		.footer-widgets{
+			grid-area:footer-widgets;
+		}
+		.site-footer{
+			grid-area:site-footer;
+		}
+	}
+}
+
+/* ### Site Containers Full-width
+--------------------------------------------- */
+
+.full-width-content .site-inner{
+	float: left;
+}
+
+.full-width-content .site-inner .content .breadcrumb,
+.full-width-content .site-inner .content .entry{
+	width:90%;
+	margin: 0 auto;
+}
+.full-width-content .site-inner .content .entry{
+	margin-bottom: 30px;
+}
+
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+.gridcontainer{
+	padding: 30px 0;
+	.row_headline{
+		width: 90%;
+    	margin: 0 auto;
+		margin: 0 auto 20px;
+	}
+	.wrap{
+		width: 90%;
+    	margin: 0 auto;
+		section{
+			padding: 30px 0 0;
+		}
+	}
+}
+.gridcontainer.non{
+	padding: 0;
+	.row_headline{
+		display: none;
+	}
+	.wrap{
+		width: 100%;
+		.wysiwyg{
+			margin: 0 auto;
+			padding: 30px 0;
+			width: 90%;
+		}
+	}
+}
+.gridcontainer{
+	.backimage{
+		min-height: 250px;
+		background-size: cover;
+    	background-position: 50% 50%;
+	}
+}
+.gridcontainer{
+	.gridimage{
+		min-height: 100%;
+		object-fit: cover;
+	}
+}
+
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+.gridcontainer.black{
+	background-color: shade($color-black, 40%);
+	color: $color-white;
+	.row_headline{
+		color: $color-white;
+	}
+}
+.gridcontainer.grey{
+	background-color: tint($color-black, 90%);
+}

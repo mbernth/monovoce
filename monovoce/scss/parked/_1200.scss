@@ -1,0 +1,67 @@
+@media only screen and (max-width: 1200px) {
+
+
+/* # Colour background
+--------------------------------------------- */
+
+.content .gridcontainer.Non .coll2 {
+	@include grid(2, 0, 1100);
+}
+.content .gridcontainer.Non .coll2_3 {
+	@include grid_alt(2, 0, 1100);
+}
+.content .gridcontainer.Non .coll3 {
+	@include grid(3, 0, 1100);
+}
+.content .gridcontainer.Non .coll3_4 {
+	@include grid_alt(3, 0, 1100);
+}
+
+.content .gridcontainer.Non .coll4 {
+	@include grid(2, 0, 1100);
+}
+.content .gridcontainer.Non .coll4_5 {
+	@include grid_alt(2, 0, 1100);
+}
+.content .gridcontainer.Non .coll5 {
+	@include grid(3, 0, 1100);
+}
+.content .gridcontainer.Non .coll6 {
+	@include grid(3, 0, 1100);
+}
+
+.full-width-content .content .gridcontainer.Non .wysiwyg{
+	padding:40px;
+	min-height:490px;
+}
+
+.full-width-content .content .gridcontainer.Non .backimage{
+	min-height:490px;
+}
+
+/* ## Case grid
+--------------------------------------------- */
+
+.full-width-content .content .coll4.case_preview,
+.coll4.case_preview {
+	@include grid(2, 40, 1100);
+}
+
+/* # Pin
+--------------------------------------------------- */
+
+.full-width-content.pin .content {
+    max-width: 1100px;
+}
+/*
+.pin-main article {
+	margin-bottom:40px;	
+	@include collwidth(3, 40, 1150);
+}
+
+.full-width-content.pin .content .entry-title{
+	@include collwidth(1, 40, 1150);
+}
+*/
+
+}

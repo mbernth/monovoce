@@ -1,0 +1,120 @@
+/* Scss Document */
+
+.entry-content.entry-content-preview {
+	position:relative;
+}
+.entry-content.entry-content-preview a {
+    border-bottom: 0px solid transparent;
+    box-shadow: inset 0 0px 0 transparent;
+    text-decoration: none;
+    padding: 0;
+}
+
+.gridcontainer .entry-content.entry-content-preview a:hover,
+.gridcontainer.Black .entry-content.entry-content-preview a:hover, 
+.gridcontainer.Red .entry-content.entry-content-preview a:hover {
+    border-bottom: 0px solid transparent;
+    box-shadow: inset 0 0px 0 transparent;
+}
+
+.entry-content.entry-content-preview.hover-preview .entry-preview {
+	position:absolute;
+	z-index: 100;
+    width: 100%;
+    text-align: center;
+    bottom: 15%;
+	opacity:1;
+	
+	-webkit-transition: all .6s ease-in-out .2s;
+	-moz-transition:    all .6s ease-in-out .2s;
+	-ms-transition:     all .6s ease-in-out .2s;
+	-o-transition:      all .6s ease-in-out .2s;
+	transition:         all .6s ease-in-out .2s;
+}
+
+.entry-content.entry-content-preview .entry-preview .entry-title {
+    margin-bottom: 10px;
+}
+
+/* Image area hover */
+.hover {
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0) scale(1, 1);
+}
+.full-width-content .gridcontainer.Black .hover::after,
+.full-width-content .gridcontainer.Non.Black .hover::after {
+	background-color: $color-primary-one;
+}
+.full-width-content .gridcontainer.Red .hover::after,
+.full-width-content .gridcontainer.Non.Red .hover::after {
+	background-color: $color-primary-two;
+}
+.full-width-content .gridcontainer.Non .hover::after,
+.full-width-content .gridcontainer.Non.Grey .hover::after,
+.full-width-content .gridcontainer.Non.White .hover::after,
+.full-width-content .gridcontainer.Grey .hover::after,
+.full-width-content .gridcontainer.White .hover::after {
+	background-color: $color-grey;
+}
+
+.hover::after {
+    content: '';
+    display: block;
+    -webkit-transition: 3s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 3s transform cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: .9;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scale(2) translateX(0%) translateY(50%) translateZ(0px) rotate(0deg);
+    transform: scale(2) translateX(0%) translateY(50%) translateZ(0px) rotate(0deg);
+}
+/*
+.hover::after {
+    content: '';
+    display: block;
+    background-color: #990000;
+    -webkit-transition: 3s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 3s transform cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: .9;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(2) translateX(-100%) translateY(-100%) translateZ(0px) rotate(-45deg);
+    transform: scale(2) translateX(-100%) translateY(-100%) translateZ(0px) rotate(-45deg);
+}
+*/
+@media (min-width: 1025px){
+.hover::after {
+    -webkit-transform: scale(2) translateX(0%) translateY(100%) translateZ(0px) rotate(0deg);
+    transform: scale(2) translateX(0%) translateY(100%) translateZ(0px) rotate(0deg);
+}
+
+.hover:hover::after {
+    -webkit-transform: scale(2) rotate(0deg) translateZ(0px);
+    transform: scale(2) rotate(0deg) translateZ(0px);
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s;
+}
+
+.entry-content.entry-content-preview.hover-preview .entry-preview {
+	position:absolute;
+	z-index: 100;
+    width: 100%;
+    text-align: center;
+    bottom: -45%;
+	opacity:0;
+}
+
+.entry-content.entry-content-preview.hover-preview:hover .entry-preview{
+	bottom: 40%;
+	opacity:1;
+}
+}

@@ -1,0 +1,499 @@
+/* Swatches =================================================== */
+
+
+.swatches{
+	display: grid;
+	grid-template-columns:repeat(1, 1fr);
+	grid-gap:$margin-default+px;
+	// padding: $margin-default+px;
+	// box-shadow: 0px 0px 5px tint($color-black, 80%);
+	margin-bottom: $margin-default+px;
+}
+@media only screen and (min-width: $mq-small) {
+	.swatches{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+@media only screen and (min-width: $mq-medium) {
+	.swatches{
+		grid-template-columns:repeat(4, 1fr);
+	}
+}
+@media only screen and (min-width: $mq-xlarge) {
+	.swatches{
+		grid-gap:$margin-xlarge+px;
+		margin-bottom: $margin-xlarge+px;
+	}
+}
+.entry-content ul[class*="swatch"]{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	margin: 0;
+	padding: 10px;
+	box-shadow: 0px 10px 5px tint($color-black, 80%);
+}
+.entry-content ul > li[class*="swatch-row"]{
+	flex-grow: 1;
+	width: 20%;
+	height: 40px;
+	list-style-type: none;
+}
+
+/*
+.swatch-row-one:nth-child(1){
+	padding: 4px 0;
+	line-height: 1em;
+}
+.swatch-row-one:nth-child(2){
+	margin-top: 10px;
+	padding: 10px;
+	line-height: 1em;
+}
+
+.swatch-black{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.swatch-white{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.swatch-primary{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.swatch-secondary{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.swatch-active{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+.swatch-accent-one{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+.swatch-accent-two{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+.swatch-accent-three{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+*/
+/* # Black Colour */
+/* ## Lighter
+================================================ */
+.swatch-black .swatch-row-one:nth-child(1) {
+  	background-color: transparent;
+	width: 100%;
+	text-align: left;
+	height: auto;
+}
+.swatch-black .swatch-row-one:nth-child(2) {
+  	background-color: $color-black;
+	margin-bottom: 10px;
+	height: 100px;
+	width: 100%;
+	box-shadow: 0px 5px 5px tint($color-black, 90%);
+}
+.swatch-black .swatch-row-one:nth-child(3) {
+  	background-color: $color-black;
+}
+.swatch-black .swatch-row-one:nth-child(4) {
+  background-color: tint($color-black, 20%);
+}
+.swatch-black .swatch-row-one:nth-child(5) {
+  background-color: tint($color-black, 40%);
+}
+.swatch-black .swatch-row-one:nth-child(6) {
+  background-color: tint($color-black, 60%);
+}
+.swatch-black .swatch-row-one:nth-child(7) {
+  background-color: tint($color-black, 80%);
+}
+/* ## Darker
+================================================ */
+.swatch-black .swatch-row-two:nth-child(8) {
+  background-color: $color-black;
+}
+.swatch-black .swatch-row-two:nth-child(9) {
+  background-color: shade($color-black, 20%);
+}
+.swatch-black .swatch-row-two:nth-child(10) {
+  background-color: shade($color-black, 40%);
+}
+.swatch-black .swatch-row-two:nth-child(11) {
+  background-color: shade($color-black, 60%);
+}
+.swatch-black .swatch-row-two:nth-child(12) {
+  background-color: shade($color-black, 80%);
+}
+
+/* # White Colour */
+/* ## Lighter
+================================================ */
+.swatch-white .swatch-row-one:nth-child(1) {
+  	background-color: transparent;
+	width: 100%;
+	text-align: left;
+	height: auto;
+}
+.swatch-white .swatch-row-one:nth-child(2) {
+  	background-color: $color-white;
+	color: $color-black;
+	margin-bottom: 10px;
+	height: 100px;
+	width: 100%;
+	box-shadow: 0px 5px 5px tint($color-black, 90%);
+}
+
+.swatch-white .swatch-row-one:nth-child(3) {
+  	background-color: $color-white;
+}
+.swatch-white .swatch-row-one:nth-child(4) {
+  background-color: tint($color-white, 20%);
+}
+.swatch-white .swatch-row-one:nth-child(5) {
+  background-color: tint($color-white, 40%);
+}
+.swatch-white .swatch-row-one:nth-child(6) {
+  background-color: tint($color-white, 60%);
+}
+.swatch-white .swatch-row-one:nth-child(7) {
+  background-color: tint($color-white, 80%);
+}
+/* ## Darker
+================================================ */
+.swatch-white .swatch-row-two:nth-child(8) {
+  background-color: $color-white;
+}
+.swatch-white .swatch-row-two:nth-child(9) {
+  background-color: shade($color-white, 20%);
+}
+.swatch-white .swatch-row-two:nth-child(10) {
+  background-color: shade($color-white, 40%);
+}
+.swatch-white .swatch-row-two:nth-child(11) {
+  background-color: shade($color-white, 60%);
+}
+.swatch-white .swatch-row-two:nth-child(12) {
+  background-color: shade($color-white, 80%);
+}
+
+/* # Primary Colour */
+/* ## Lighter
+================================================ */
+.swatch-primary .swatch-row-one:nth-child(1) {
+  	background-color: transparent;
+	width: 100%;
+	text-align: left;
+	height: auto;
+}
+.swatch-primary .swatch-row-one:nth-child(2) {
+  	background-color: $color-primary;
+	margin-bottom: 10px;
+	height: 100px;
+	width: 100%;
+	box-shadow: 0px 5px 5px tint($color-black, 90%);
+}
+.swatch-primary .swatch-row-one:nth-child(3) {
+  	background-color: $color-primary;
+}
+.swatch-primary .swatch-row-one:nth-child(4) {
+  background-color: tint($color-primary, 20%);
+}
+.swatch-primary .swatch-row-one:nth-child(5) {
+  background-color: tint($color-primary, 40%);
+}
+.swatch-primary .swatch-row-one:nth-child(6) {
+  background-color: tint($color-primary, 60%);
+}
+.swatch-primary .swatch-row-one:nth-child(7) {
+  background-color: tint($color-primary, 80%);
+}
+/* ## Darker
+================================================ */
+.swatch-primary .swatch-row-two:nth-child(8) {
+  background-color: $color-primary;
+}
+.swatch-primary .swatch-row-two:nth-child(9) {
+  background-color: shade($color-primary, 20%);
+}
+.swatch-primary .swatch-row-two:nth-child(10) {
+  background-color: shade($color-primary, 40%);
+}
+.swatch-primary .swatch-row-two:nth-child(11) {
+  background-color: shade($color-primary, 60%);
+}
+.swatch-primary .swatch-row-two:nth-child(12) {
+  background-color: shade($color-primary, 80%);
+}
+
+/*  Secondary Colour  */
+/* ## Lighter
+================================================ */
+.swatch-secondary .swatch-row-one:nth-child(1) {
+  	background-color: transparent;
+	width: 100%;
+	text-align: left;
+	height: auto;
+}
+.swatch-secondary .swatch-row-one:nth-child(2) {
+  	background-color: $color-secondary;
+	margin-bottom: 10px;
+	height: 100px;
+	width: 100%;
+	box-shadow: 0px 5px 5px tint($color-black, 90%);
+}
+.swatch-secondary .swatch-row-one:nth-child(3) {
+  background-color: $color-secondary;
+}
+.swatch-secondary .swatch-row-one:nth-child(4) {
+  background-color: tint($color-secondary, 20%);
+}
+.swatch-secondary .swatch-row-one:nth-child(5) {
+  background-color: tint($color-secondary, 40%);
+}
+.swatch-secondary .swatch-row-one:nth-child(6) {
+  background-color: tint($color-secondary, 60%);
+}
+.swatch-secondary .swatch-row-one:nth-child(7) {
+  background-color: tint($color-secondary, 80%);
+}
+/* ## Lighter
+================================================ */
+.swatch-secondary .swatch-row-two:nth-child(8) {
+  background-color: $color-secondary;
+}
+.swatch-secondary .swatch-row-two:nth-child(9) {
+  background-color: shade($color-secondary, 20%);
+}
+.swatch-secondary .swatch-row-two:nth-child(10) {
+  background-color: shade($color-secondary, 40%);
+}
+.swatch-secondary .swatch-row-two:nth-child(11) {
+  background-color: shade($color-secondary, 60%);
+}
+.swatch-secondary .swatch-row-two:nth-child(12) {
+  background-color: shade($color-secondary, 80%);
+}
+
+
+/*  Active  */
+/* ## Lighter
+================================================ */
+.swatch-active .swatch-row-one:nth-child(1) {
+  	background-color: transparent;
+	width: 100%;
+	text-align: left;
+	height: auto;
+}
+.swatch-active .swatch-row-one:nth-child(2) {
+  	background-color: $color-active;
+	margin-bottom: 10px;
+	height: 100px;
+	width: 100%;
+	box-shadow: 0px 5px 5px tint($color-black, 90%);
+}
+.swatch-active .swatch-row-one:nth-child(3) {
+  background-color: $color-active;
+}
+.swatch-active .swatch-row-one:nth-child(4) {
+  background-color: tint($color-active, 20%);
+}
+.swatch-active .swatch-row-one:nth-child(5) {
+  background-color: tint($color-active, 40%);
+}
+.swatch-active .swatch-row-one:nth-child(6) {
+  background-color: tint($color-active, 60%);
+}
+.swatch-active .swatch-row-one:nth-child(7) {
+  background-color: tint($color-active, 80%);
+}
+/* ## Darker
+================================================ */
+.swatch-active .swatch-row-two:nth-child(8) {
+  background-color: $color-active;
+}
+.swatch-active .swatch-row-two:nth-child(9) {
+  background-color: shade($color-active, 20%);
+}
+.swatch-active .swatch-row-two:nth-child(10) {
+  background-color: shade($color-active, 40%);
+}
+.swatch-active .swatch-row-two:nth-child(11) {
+  background-color: shade($color-active, 60%);
+}
+.swatch-active .swatch-row-two:nth-child(12) {
+  background-color: shade($color-active, 80%);
+}
+
+
+/*  Accent 1 Colour  */
+/* ## Lighter
+================================================ */
+.swatch-accent-one .swatch-row-one:nth-child(1) {
+  	background-color: transparent;
+	width: 100%;
+	text-align: left;
+	height: auto;
+}
+.swatch-accent-one .swatch-row-one:nth-child(2) {
+  	background-color: $color-accent-one;
+	margin-bottom: 10px;
+	height: 100px;
+	width: 100%;
+	box-shadow: 0px 5px 5px tint($color-black, 90%);
+}
+.swatch-accent-one .swatch-row-one:nth-child(3) {
+  background-color: $color-accent-one;
+}
+.swatch-accent-one .swatch-row-one:nth-child(4) {
+  background-color: tint($color-accent-one, 20%);
+}
+.swatch-accent-one .swatch-row-one:nth-child(5) {
+  background-color: tint($color-accent-one, 40%);
+}
+.swatch-accent-one .swatch-row-one:nth-child(6) {
+  background-color: tint($color-accent-one, 60%);
+}
+.swatch-accent-one .swatch-row-one:nth-child(7) {
+  background-color: tint($color-accent-one, 80%);
+}
+/* ## Darker
+================================================ */
+.swatch-accent-one .swatch-row-two:nth-child(8) {
+  background-color: $color-accent-one;
+}
+.swatch-accent-one .swatch-row-two:nth-child(9) {
+  background-color: shade($color-accent-one, 20%);
+}
+.swatch-accent-one .swatch-row-two:nth-child(10) {
+  background-color: shade($color-accent-one, 40%);
+}
+.swatch-accent-one .swatch-row-two:nth-child(11) {
+  background-color: shade($color-accent-one, 60%);
+}
+.swatch-accent-one .swatch-row-two:nth-child(12) {
+  background-color: shade($color-accent-one, 80%);
+}
+
+/*  Accent 2 Colour  */
+/* ## Lighter
+================================================ */
+.swatch-accent-two .swatch-row-one:nth-child(1) {
+  	background-color: transparent;
+	width: 100%;
+	text-align: left;
+	height: auto;
+}
+.swatch-accent-two .swatch-row-one:nth-child(2) {
+  	background-color: $color-accent-two;
+	margin-bottom: 10px;
+	height: 100px;
+	width: 100%;
+	box-shadow: 0px 5px 5px tint($color-black, 90%);
+}
+.swatch-accent-two .swatch-row-one:nth-child(3) {
+  background-color: $color-accent-two;
+}
+.swatch-accent-two .swatch-row-one:nth-child(4) {
+  background-color: tint($color-accent-two, 20%);
+}
+.swatch-accent-two .swatch-row-one:nth-child(5) {
+  background-color: tint($color-accent-two, 40%);
+}
+.swatch-accent-two .swatch-row-one:nth-child(6) {
+  background-color: tint($color-accent-two, 60%);
+}
+.swatch-accent-two .swatch-row-one:nth-child(7) {
+  background-color: tint($color-accent-two, 80%);
+}
+/* ## Darker
+================================================ */
+.swatch-accent-two .swatch-row-two:nth-child(8) {
+  background-color: $color-accent-two;
+}
+.swatch-accent-two .swatch-row-two:nth-child(9) {
+  background-color: shade($color-accent-two, 20%);
+}
+.swatch-accent-two .swatch-row-two:nth-child(10) {
+  background-color: shade($color-accent-two, 40%);
+}
+.swatch-accent-two .swatch-row-two:nth-child(11) {
+  background-color: shade($color-accent-two, 60%);
+}
+.swatch-accent-two .swatch-row-two:nth-child(12) {
+  background-color: shade($color-accent-two, 80%);
+}
+
+/*  Accent 3 Colour  */
+/* ## Lighter
+================================================ */
+.swatch-accent-three .swatch-row-one:nth-child(1) {
+  	background-color: transparent;
+	width: 100%;
+	text-align: left;
+	height: auto;
+}
+.swatch-accent-three .swatch-row-one:nth-child(2) {
+  	background-color: $color-accent-three;
+	margin-bottom: 10px;
+	height: 100px;
+	width: 100%;
+	box-shadow: 0px 5px 5px tint($color-black, 90%);
+}
+.swatch-accent-three .swatch-row-one:nth-child(3) {
+  background-color: $color-accent-three;
+}
+.swatch-accent-three .swatch-row-one:nth-child(4) {
+  background-color: tint($color-accent-three, 20%);
+}
+.swatch-accent-three .swatch-row-one:nth-child(5) {
+  background-color: tint($color-accent-three, 40%);
+}
+.swatch-accent-three .swatch-row-one:nth-child(6) {
+  background-color: tint($color-accent-three, 60%);
+}
+.swatch-accent-three .swatch-row-one:nth-child(7) {
+  background-color: tint($color-accent-three, 80%);
+}
+/* ## Darker
+================================================ */
+.swatch-accent-three .swatch-row-two:nth-child(8) {
+  background-color: $color-accent-three;
+}
+.swatch-accent-three .swatch-row-two:nth-child(9) {
+  background-color: shade($color-accent-three, 20%);
+}
+.swatch-accent-three .swatch-row-two:nth-child(10) {
+  background-color: shade($color-accent-three, 40%);
+}
+.swatch-accent-three .swatch-row-two:nth-child(11) {
+  background-color: shade($color-accent-three, 60%);
+}
+.swatch-accent-three .swatch-row-two:nth-child(12) {
+  background-color: shade($color-accent-three, 80%);
+}

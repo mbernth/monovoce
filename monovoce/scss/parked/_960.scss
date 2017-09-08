@@ -1,0 +1,315 @@
+@media only screen and (max-width: 960px) {
+
+.site-inner,
+.wrap {
+	max-width: 800px;
+}
+
+.content,
+.content-sidebar-sidebar .content,
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-primary,
+.sidebar-content .sidebar-primary,
+.content-sidebar-sidebar .sidebar-primary,
+.sidebar-sidebar-content .sidebar-primary,
+.sidebar-content-sidebar .sidebar-primary,
+.sidebar-secondary,
+.sidebar-sidebar-content .content,
+.sidebar-sidebar-content .content-sidebar-wrap,
+.site-header .widget-area,
+.title-area {
+	width: 100%;
+}
+	
+.footer-widgets .widget-area {
+	@include grid(4, 30, 800);
+}
+
+.site-header .wrap {
+}
+
+.title-area {
+	padding: 30px 0;
+}
+
+.title-area .site-title > a {
+	width: 250px;
+    height: 16px;
+}
+
+/* # Site Navigation
+--------------------------------------------- */
+
+.genesis-nav-menu li,
+.site-header ul.genesis-nav-menu,
+.site-header .search-form {
+	float: none;
+}
+
+.genesis-nav-menu,
+.site-description,
+.site-header .title-area,
+.site-header .search-form,
+.site-title {
+	text-align: center;
+}
+
+.genesis-nav-menu a {
+	letter-spacing:0px;
+}
+
+.genesis-nav-menu a,
+.genesis-nav-menu > .first > a,
+.genesis-nav-menu > .last > a {
+	padding: 27px 10px;
+}
+
+.site-header .search-form {
+	margin: 16px auto;
+}
+
+.genesis-nav-menu li.right {
+	display: none;
+}
+
+.footer-widgets-1 {
+	margin-right: 0;
+}
+
+/* ## Buttons
+--------------------------------------------- */
+
+.site-inner .gridcontainer .button{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+	
+/* Grid
+--------------------------------------------- */
+
+.coll1,
+.coll2,
+.coll2_3,
+.coll3,
+.coll3_4,
+.coll4,
+.coll4_5,
+.coll5,
+.coll6,
+.coll7,
+.coll8,
+.coll9,
+.coll10,
+.coll11,
+.coll12{
+	margin-bottom:70px;
+}
+
+.team .coll3{
+	margin-bottom:30px;
+}
+/*
+.coll1:last-child,
+.coll2:last-child,
+.coll2_3:last-child,
+.coll3:last-child,
+.coll3_4:last-child,
+.coll4:last-child,
+.coll4_5:last-child,
+.coll5:last-child,
+.coll6:last-child,
+.coll7:last-child,
+.coll8:last-child,
+.coll9:last-child,
+.coll10:last-child,
+.coll11:last-child,
+.coll12:last-child{
+	margin-bottom:0px;
+}
+*/
+.full-width-content .content .coll1,
+.coll1 {
+	margin:0 auto 30px;
+	@include structure(800, 800);
+}
+.full-width-content .content .coll2,
+.coll2 {
+	@include grid(2, 30, 800);
+}
+.full-width-content .content .coll2_3,
+.coll2_3 {
+	@include grid_alt(2, 30, 800);
+}
+.full-width-content .content .coll3,
+.coll3 {
+	@include grid(1, 30, 800);
+}
+.full-width-content .content .coll3_4,
+.coll3_4 {
+	@include grid_alt(1, 30, 800);
+}
+.full-width-content .content .coll4,
+.coll4 {
+	@include grid(2, 30, 800);
+	margin-bottom: 30px;
+}
+.full-width-content .content .coll4_5,
+.coll4_5 {
+	@include grid_alt(2, 30, 800);
+}
+.full-width-content .content .coll5,
+.coll5 {
+	@include grid(2, 30, 800);
+}
+.full-width-content .content .coll6,
+.coll6 {
+	@include grid(2, 30, 800);
+}
+.full-width-content .gridcontainer.team .wrap {
+	max-width:700px;
+}
+.full-width-content .content .team .coll3 {
+	@include grid(2, 30, 700);
+}
+
+/* # Colour background
+--------------------------------------------- */
+
+.full-width-content .entry,
+.full-width-content .gridcontainer .wrap {
+	max-width: 800px;
+}
+
+.content .gridcontainer.Non .coll2 {
+	@include grid(1, 0, 800);
+}
+.content .gridcontainer.Non .coll2_3 {
+	@include grid_alt(1, 0, 800);
+}
+.content .gridcontainer.Non .coll3 {
+	@include grid(1, 0, 800);
+}
+.content .gridcontainer.Non .coll3_4 {
+	@include grid_alt(1, 0, 800);
+}
+
+.content .gridcontainer.Non .coll4 {
+	@include grid(2, 0, 800);
+	margin-bottom: 30px;
+}
+.content .gridcontainer.Non .coll4_5 {
+	@include grid_alt(2, 0, 800);
+}
+.content .gridcontainer.Non .coll5 {
+	@include grid(2, 0, 800);
+	margin-bottom: 30px;
+}
+.content .gridcontainer.Non .coll6 {
+	@include grid(2, 0, 800);
+	margin-bottom: 30px;
+}
+
+.full-width-content .content .gridcontainer.Non .wysiwyg{
+	padding:40px;
+	min-height: auto;
+}
+
+.full-width-content .content .gridcontainer.Non .backimage{
+	min-height:350px;
+}
+
+/* ## Case grid
+--------------------------------------------- */
+
+.full-width-content .content .coll4.case_preview,
+.coll4.case_preview {
+	@include grid(2, 30, 800);
+	margin-bottom: 30px;
+}
+/* # Pin
+--------------------------------------------------- */
+
+.full-width-content.pin .content {
+    max-width: 800px;
+}
+/*
+.pin-main article {
+	margin-bottom:30px;	
+	@include collwidth(2, 30, 900);
+}
+
+.full-width-content.pin .content .entry-title{
+	@include collwidth(1, 40, 900);
+}
+*/
+
+/* Team slider
+------------------------------------------------------------------------------------------ */
+
+.caption .team-info h3 {
+    margin: 0 0 10px 0;
+}
+
+.caption .team-info p {
+	@include font(1.4, 1.8);
+}
+.caption .info .team-info a {
+	@include font(1.4, 1.4);
+	margin-bottom:10px;
+}
+
+.caption .info .team-info a .icon-mail,
+.caption .info .team-info a .icon-mobile,
+.caption .info .team-info a .icon-linkedin {
+    width: 15px;
+    height: 15px;
+	margin-right:10px;
+}
+
+.info {
+	max-height: 335px;
+}
+
+/* # Slider
+--------------------------------------------------- */
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h1 {
+	@include font(4.8, 4.8);
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h2 {
+	@include font(2.0, 2.0);
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h3 {
+	@include font(1.8, 1.8);
+}
+
+.slide_content h2{
+	max-width:800px;
+}
+
+
+/* Countdown
+--------------------------------------------------- */
+
+div#countdown{
+	max-width:600px;
+}
+
+
+div#countdown span{
+	padding:20% 0;
+}
+
+span.numbers{
+	@include font(3.8, 3.8);
+}
+
+div.cd-box{
+	@include grid(4, 5, 600);
+}
+
+}

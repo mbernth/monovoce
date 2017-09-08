@@ -1,0 +1,441 @@
+/* # Large screens
+----------------------------------------------------------------------------------------------------
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+
+
+
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+.content-sidebar .site-inner{
+	.content-sidebar-wrap{
+		float: left;
+		margin-bottom: $margin-xlarge+px;
+		.content{
+			float: left;
+			@include structure($content-cs-xlarge, $target-xlarge);
+			.gridcontainer.coll2 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-cs-xlarge);
+			}
+			.gridcontainer.coll3 section{
+				float: left;
+				@include grid(3, $margin-xlarge, $content-cs-xlarge);
+			}
+			.gridcontainer.coll4 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-cs-xlarge);
+			}
+			.gridcontainer.coll5 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-cs-xlarge);
+			}
+			.gridcontainer.coll6 section{
+				float: left;
+				@include grid(4, $margin-xlarge, $content-cs-xlarge);
+			}
+		}
+		.sidebar-primary{
+			float: right;
+			@include structure($sidebar-p-cs-xlarge, $target-xlarge);
+		}
+	}
+}
+.sidebar-content .site-inner{
+	.content-sidebar-wrap{
+		float: left;
+		margin-bottom: $margin-xlarge+px;
+		.content{
+			float: right;
+			@include structure($content-cs-xlarge, $target-xlarge);
+			.gridcontainer.coll2 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-cs-xlarge);
+			}
+			.gridcontainer.coll3 section{
+				float: left;
+				@include grid(3, $margin-xlarge, $content-cs-xlarge);
+			}
+			.gridcontainer.coll4 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-cs-xlarge);
+			}
+			.gridcontainer.coll5 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-cs-xlarge);
+			}
+			.gridcontainer.coll6 section{
+				float: left;
+				@include grid(4, $margin-xlarge, $content-cs-xlarge);
+			}
+		}
+		.sidebar-primary{
+			float: left;
+			@include structure($sidebar-p-cs-xlarge, $target-xlarge);
+		}
+	}
+}
+
+.content-sidebar-sidebar .site-inner{
+	.content-sidebar-wrap{
+		float: left;
+		margin-bottom: $margin-xlarge+px;
+		@include structure($contentwrap-css-xlarge, $target-xlarge);
+		.content{
+			float: left;
+			@include structure($content-css-xlarge, $contentwrap-css-xlarge);
+			.gridcontainer.coll2 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll3 section{
+				float: left;
+				@include grid(3, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll4 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll5 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll6 section{
+				float: left;
+				@include grid(4, $margin-xlarge, $content-css-xlarge);
+			}
+		}
+		.sidebar-primary{
+			float: right;
+			@include structure($sidebar-p-css-xlarge, $contentwrap-css-xlarge);
+		}
+	}
+	.sidebar-secondary{
+		float: right;
+		margin-top: 0px;
+		@include structure($sidebar-s-css-xlarge, $target-xlarge);
+		margin-bottom: $margin-xlarge+px;
+	}
+}
+.sidebar-sidebar-content .site-inner{
+	.content-sidebar-wrap{
+		float: right;
+		margin-bottom: $margin-xlarge+px;
+		@include structure($contentwrap-css-xlarge, $target-xlarge);
+		.content{
+			float: right;
+			@include structure($content-css-xlarge, $contentwrap-css-xlarge);
+			.gridcontainer.coll2 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll3 section{
+				float: left;
+				@include grid(3, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll4 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll5 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll6 section{
+				float: left;
+				@include grid(4, $margin-xlarge, $content-css-xlarge);
+			}
+		}
+		.sidebar-primary{
+			float: left;
+			@include structure($sidebar-p-css-xlarge, $contentwrap-css-xlarge);
+		}
+	}
+	.sidebar-secondary{
+		float: left;
+		margin-top: 0px;
+		@include structure($sidebar-s-css-xlarge, $target-xlarge);
+		margin-bottom: $margin-xlarge+px;
+	}
+}
+
+.sidebar-content-sidebar .site-inner{
+	.content-sidebar-wrap{
+		float: right;
+		margin-bottom: $margin-xlarge+px;
+		@include structure($contentwrap-css-xlarge, $target-xlarge);
+		.content{
+			float: left;
+			@include structure($content-css-xlarge, $contentwrap-css-xlarge);
+			.gridcontainer.coll2 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll3 section{
+				float: left;
+				@include grid(3, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll4 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll5 section{
+				float: left;
+				@include grid(2, $margin-xlarge, $content-css-xlarge);
+			}
+			.gridcontainer.coll6 section{
+				float: left;
+				@include grid(4, $margin-xlarge, $content-css-xlarge);
+			}
+		}
+		.sidebar-primary{
+			float: right;
+			@include structure($sidebar-p-css-xlarge, $contentwrap-css-xlarge);
+		}
+	}
+	.sidebar-secondary{
+		float: left;
+		margin-top: 0px;
+		@include structure($sidebar-s-css-xlarge, $target-xlarge);
+		margin-bottom: $margin-xlarge+px;
+	}
+}
+
+/* Fallback reset */
+@supports (display: grid) {
+.content-sidebar .site-inner,
+.sidebar-content .site-inner,
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
+.sidebar-content-sidebar .site-inner{
+	width:100%;
+	.entry,
+	.sidebar-primary,
+	.sidebar-secondary{
+		margin: inherit;
+		max-width: inherit;
+		margin-bottom:0;
+	}
+}
+	
+
+.content-sidebar .site-inner,
+.sidebar-content .site-inner{
+	.content-sidebar-wrap{
+		float: inherit;
+		.content{
+			float: inherit;
+			width: auto;
+			.gridcontainer.coll2 section,
+			.gridcontainer.coll3 section,
+			.gridcontainer.coll4 section,
+			.gridcontainer.coll5 section,
+			.gridcontainer.coll6 section{
+				float: inherit;
+				@include grid(1, $margin-zero, $content-cs-xlarge);
+			}
+		}
+		.sidebar-primary{
+			float: inherit;
+			width: auto;
+		}
+	}
+}
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
+.sidebar-content-sidebar .site-inner{
+	.content-sidebar-wrap{
+		float: inherit;
+		width: auto;
+		margin-bottom: 0px;
+		.content{
+			float: inherit;
+			width: auto;
+			.gridcontainer.coll2 section,
+			.gridcontainer.coll3 section,
+			.gridcontainer.coll4 section,
+			.gridcontainer.coll5 section,
+			.gridcontainer.coll6 section{
+				float: inherit;
+				@include grid(1, $margin-zero, $content-css-xlarge);
+			}
+		}
+		.sidebar-primary{
+			float: inherit;
+			width: auto;
+		}
+	}
+	.sidebar-secondary{
+		float: inherit;
+		margin-top: 0;
+		width: auto;
+	}
+}
+	
+}
+/* Fallback reset end */
+/* ### Site Containers Full-width 
+--------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+.full-width-content .content .gridcontainer.coll2 section{
+	float:left;
+	margin-bottom:$margin-xlarge+px;
+	@include grid(2, $margin-xlarge, $target-xlarge);
+}
+.full-width-content .content .gridcontainer.coll3 section{
+	float:left;
+	margin-bottom:$margin-xlarge+px;
+	@include grid(3, $margin-xlarge, $target-xlarge);
+}
+.full-width-content .content .gridcontainer.coll4 section{
+	float:left;
+	margin-bottom:$margin-xlarge+px;
+	@include grid(4, $margin-xlarge, $target-xlarge);
+}
+.full-width-content .content .gridcontainer.coll5 section{
+	float:left;
+	margin-bottom:$margin-xlarge+px;
+	@include grid(5, $margin-xlarge, $target-xlarge);
+}
+.full-width-content .content .gridcontainer.coll6 section{
+	float:left;
+	margin-bottom:$margin-xlarge+px;
+	@include grid(6, $margin-xlarge, $target-xlarge);
+}
+.full-width-content .content .gridcontainer.non.coll1 section,
+.full-width-content .content .gridcontainer.non.coll2 section,
+.full-width-content .content .gridcontainer.non.coll3 section,
+.full-width-content .content .gridcontainer.non.coll4 section,
+.full-width-content .content .gridcontainer.non.coll5 section,
+.full-width-content .content .gridcontainer.non.coll6 section,
+.content .gridcontainer.non.coll1 section,
+.content .gridcontainer.non.coll2 section,
+.content .gridcontainer.non.coll3 section,
+.content .gridcontainer.non.coll4 section,
+.content .gridcontainer.non.coll5 section,
+.content .gridcontainer.non.coll6 section{
+	float:left;
+	margin-bottom:0px;
+}
+
+.content .gridcontainer.non.coll2 section{
+	@include grid(2, $margin-zero, $target-xlarge);
+}
+.content .gridcontainer.non.coll3 section {
+	@include grid(3, $margin-zero, $target-xlarge);
+}
+
+.content .gridcontainer.non.coll4 section {
+	@include grid(4, $margin-zero, $target-xlarge);
+}
+.content .gridcontainer.non.coll5 section {
+	@include grid(5, $margin-zero, $target-xlarge);
+}
+.content .gridcontainer.non.coll6 section {
+	@include grid(6, $margin-zero, $target-xlarge);
+}
+
+.content .gridcontainer.non .wrap section.wysiwyg,
+.full-width-content .content .gridcontainer.non .wrap section.wysiwyg {
+    padding: 30px;
+}
+
+/* Fallback reset */
+@supports (display: grid) {
+.gridcontainer.coll2 section,
+.gridcontainer.coll3 section,
+.gridcontainer.coll4 section,
+.gridcontainer.coll5 section,
+.gridcontainer.coll6 section,
+.full-width-content .content .gridcontainer.coll2 section,
+.full-width-content .content .gridcontainer.coll3 section,
+.full-width-content .content .gridcontainer.coll4 section,
+.full-width-content .content .gridcontainer.coll5 section,
+.full-width-content .content .gridcontainer.coll6 section,
+.full-width-content .content .gridcontainer.non.coll1 section,
+.full-width-content .content .gridcontainer.non.coll2 section,
+.full-width-content .content .gridcontainer.non.coll3 section,
+.full-width-content .content .gridcontainer.non.coll4 section,
+.full-width-content .content .gridcontainer.non.coll5 section,
+.full-width-content .content .gridcontainer.non.coll6 section,
+.content .gridcontainer.non.coll1 section,
+.content .gridcontainer.non.coll2 section,
+.content .gridcontainer.non.coll3 section,
+.content .gridcontainer.non.coll4 section,
+.content .gridcontainer.non.coll5 section,
+.content .gridcontainer.non.coll6 section{
+	float:inherit;
+	margin-bottom:inherit;
+	@include grid(1, $margin-zero, $target-xlarge);
+}
+.content .gridcontainer.non .wrap section.wysiwyg,
+.full-width-content .content .gridcontainer.non .wrap section.wysiwyg {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 90%;
+}
+.gridcontainer.non .wrap .wysiwyg {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 90%;
+}
+.content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll2 section.wysiwyg,
+.content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll3 section.wysiwyg,
+.content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll4 section.wysiwyg,
+.content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll5 section.wysiwyg,
+.content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll6 section.wysiwyg,
+.sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll2 section.wysiwyg,
+.sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll3 section.wysiwyg,
+.sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll4 section.wysiwyg,
+.sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll5 section.wysiwyg,
+.sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll6 section.wysiwyg,
+.content-sidebar-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll2 section.wysiwyg,
+.content-sidebar-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll3 section.wysiwyg,
+.content-sidebar-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll4 section.wysiwyg,
+.content-sidebar-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll5 section.wysiwyg,
+.content-sidebar-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll6 section.wysiwyg,
+.sidebar-sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll2 section.wysiwyg,
+.sidebar-sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll3 section.wysiwyg,
+.sidebar-sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll4 section.wysiwyg,
+.sidebar-sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll5 section.wysiwyg,
+.sidebar-sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll6 section.wysiwyg,
+.sidebar-content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll2 section.wysiwyg,
+.sidebar-content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll3 section.wysiwyg,
+.sidebar-content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll4 section.wysiwyg,
+.sidebar-content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll5 section.wysiwyg,
+.sidebar-content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll6 section.wysiwyg{
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 90%;
+}
+
+}
+/* Fallback reset end */
+
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+/* Grid fallback */
+.footer-widgets .wrap .widget-area{
+	float: left;
+	@include grid(4, $margin-xlarge, $target-xlarge);
+	margin-bottom: $margin-xlarge+px;
+}
+/* Grid fallback end */
+	
+@supports (display: grid) {
+	
+/* Grid fallback reset */
+.footer-widgets .wrap .widget-area{
+	float: none;
+	@include grid(1, $margin-zero, $target-xlarge);
+	margin-bottom: inherit;
+}
+/* Grid fallback reset end */
+
+}
+/* ## Social Icons
+---------------------------------------------------------------------- */

@@ -1,0 +1,462 @@
+@media only screen and (max-width: 1280px) {
+	
+/* # Slider
+--------------------------------------------------- */
+.slide_content{
+    bottom: 25%;
+}
+
+.slide_content h2{
+	max-width:1100px;
+}
+
+.frontpage-icon {
+    bottom: 40px;
+}
+
+
+	
+/* ## Typographical Elements
+--------------------------------------------- */
+/* Chrome fix */
+body > div {
+    @include font(1.6, 2.4);
+}
+
+body {
+	@include font(1.6, 2.4);
+}
+
+.site-header {
+	position: absolute;
+	margin-top:0px;
+}
+.has-push-top .site-header {
+	margin-top:0px;
+}
+
+.has-push-top .site-header,
+.featured-image .has-push-top .site-header,
+.featured-image .has-push-top .site-header.dark,
+.home-section .has-push-top .site-header,
+.home-section .has-push-top .site-header.dark,
+.home-section .site-header,
+.home-section .site-header.dark {
+	margin-top:0px;
+}
+	
+/* ## Title Area
+--------------------------------------------- */
+	
+.title-area .site-title > a {
+}
+
+.header-full-width .title-area {
+	width: 150px;
+}
+
+/* ## Before header
+--------------------------------------------- */
+
+.before-header {
+	position:relative;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition:    all 0.5s ease-in-out;
+	-ms-transition:     all 0.5s ease-in-out;
+	-o-transition:      all 0.5s ease-in-out;
+	transition:         all 0.5s ease-in-out;
+}
+
+.has-push-top .before-header {
+	margin-top:160px;
+}
+
+.before-header .wrap{
+	padding:5px 15px;
+}
+
+.before-header .icon-search {
+    width: 17px;
+    height: 17px;
+}
+
+/* # Slider
+--------------------------------------------------- */
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h1 {
+	@include font(5.8, 5.8);
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h2 {
+	@include font(2.2, 2.2);
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h3 {
+	@include font(2.0, 2.0);
+}
+
+.slide_content h2{
+	max-width:960px;
+}
+
+
+/* Countdown
+--------------------------------------------------- */
+
+div#countdown{
+	max-width:768px;
+}
+
+
+div#countdown span{
+	padding:20% 0;
+}
+
+span.numbers{
+	@include font(4.2, 4.2);
+}
+
+div.cd-box{
+	@include grid(4, 10, 768);
+}
+
+
+
+/* # Structure and Layout
+--------------------------------------------- */
+
+.site-inner,
+.wrap {
+	max-width: 960px;
+}
+
+.site-inner {
+    padding-top: 50px;
+}
+
+.home-section .site-inner {
+    margin-top: 0px;
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	@include structure(740, 960);
+}
+
+.content,
+.site-header .widget-area {
+	@include structure(620, 960);
+}
+
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content,
+.content-sidebar-sidebar .content {
+	@include structure(400, 740);
+}
+
+.sidebar-primary,
+.title-area {
+	@include structure(300, 960);
+}
+	
+.sidebar-sidebar-content .sidebar-primary,
+.sidebar-content-sidebar .sidebar-primary,
+.content-sidebar-sidebar .sidebar-primary {
+	@include structure(300, 740);
+}
+
+.sidebar-content .sidebar-primary {
+	float: left;
+	@include structure(300, 960);
+}
+	
+.sidebar-secondary {
+	@include structure(180, 960);
+}
+
+.sidebar-primary,
+.title-area {
+	@include structure(300, 960);
+}
+	
+.footer-widgets .widget-area {
+	display:block;
+	float:left;
+	@include grid(4, 30, 960);
+}
+
+/* Grid
+--------------------------------------------- */
+
+.coll1,
+.coll2,
+.coll2_3,
+.coll3,
+.coll3_4,
+.coll4,
+.coll4_5,
+.coll5,
+.coll6,
+.coll7,
+.coll8,
+.coll9,
+.coll10,
+.coll11,
+.coll12,{
+	margin-bottom:30px;
+}
+.full-width-content .content .coll1,
+.coll1 {
+	margin:0 auto 30px;
+	@include structure(960, 960);
+}
+.full-width-content .content .coll2,
+.coll2 {
+	@include grid(2, 30, 960);
+}
+.full-width-content .content .coll2_3,
+.coll2_3 {
+	@include grid_alt(2, 30, 960);
+}
+.full-width-content .content .coll3,
+.coll3 {
+	@include grid(3, 30, 960);
+}
+.full-width-content .content .coll3_4,
+.coll3_4 {
+	@include grid_alt(3, 30, 960);
+}
+.full-width-content .content .coll4,
+.coll4 {
+	@include grid(2, 30, 960);
+}
+.full-width-content .content .coll4_5,
+.coll4_5 {
+	@include grid_alt(2, 30, 960);
+}
+.full-width-content .content .coll5,
+.coll5 {
+	@include grid(3, 30, 960);
+}
+.full-width-content .content .coll6,
+.coll6 {
+	@include grid(3, 30, 960);
+}
+
+.full-width-content .gridcontainer.team .wrap {
+	max-width:800px;
+}
+
+.full-width-content .content .team .coll3 {
+	@include grid(3, 30, 800);
+}
+
+/* # Colour background
+--------------------------------------------- */
+
+.full-width-content .entry,
+.full-width-content .gridcontainer .wrap {
+	max-width: 960px;
+}
+
+.full-width-content .entry {
+	margin-bottom:30px;
+}
+
+.full-width-content .gridcontainer.Black,
+.full-width-content .gridcontainer.Red,
+.full-width-content .gridcontainer.Grey,
+.full-width-content .gridcontainer.White {
+	padding:100px 0 70px;
+}
+
+.content .gridcontainer.Non .coll2 {
+	@include grid(2, 0, 1100);
+}
+.content .gridcontainer.Non .coll2_3 {
+	@include grid_alt(2, 0, 1100);
+}
+.content .gridcontainer.Non .coll3 {
+	@include grid(3, 0, 1100);
+}
+.content .gridcontainer.Non .coll3_4 {
+	@include grid_alt(3, 0, 1100);
+}
+
+.content .gridcontainer.Non .coll4 {
+	@include grid(4, 0, 1100);
+}
+.content .gridcontainer.Non .coll4_5 {
+	@include grid_alt(4, 0, 1100);
+}
+.content .gridcontainer.Non .coll5 {
+	@include grid(5, 0, 1100);
+}
+.content .gridcontainer.Non .coll6 {
+	@include grid(6, 0, 1100);
+}
+
+.full-width-content .content .gridcontainer.Non .wysiwyg{
+	padding:60px;
+	min-height:500px;
+}
+
+.full-width-content .content .gridcontainer.Non .backimage{
+	min-height:500px;
+}
+
+/* ## Case grid
+--------------------------------------------- */
+
+.full-width-content .content .coll4.case_preview,
+.coll4.case_preview {
+	@include grid(2, 40, 1100);
+}
+
+/* # Pin
+--------------------------------------------------- */
+
+
+.full-width-content.pin .content {
+    max-width: 1100px;
+}
+
+/*
+.pin-main article {
+	margin-bottom:40px;	
+	@include collwidth(3, 40, 1180);
+}
+.pin-main article {
+	margin-bottom:40px;	
+	@include collwidth(3, 40, 1180);
+}
+
+.full-width-content.pin .content .entry-title{
+	@include collwidth(1, 40, 1180);
+}
+*/
+
+/* # Case Pin
+--------------------------------------------- 
+
+.full-width-content.pin .content {
+    max-width: 1100px;
+}
+
+.pin-main article {	
+	@include collwidth(3, 30, 1100);
+	margin-bottom:30px;
+}
+
+.pin-main .entry-content {
+	padding:15px;
+}
+
+.pin-main .entry-title {
+  @include font(2.2, 2.2);
+  margin-bottom: 10px;
+}
+*/
+
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+.entry-title {
+	margin-bottom:30px;
+}
+
+/* ## Featured image
+--------------------------------------------- */
+
+.featured-image .site-header {
+	margin-top:0px;
+}
+
+.featured-image .site-header.dark {
+	margin-top:0px;
+}
+
+.featured-section {
+	margin-top:0px;
+}
+
+.featured-image .site-inner {
+    padding-top: 40px;
+    margin-top: 0px;
+}
+
+/* # Site Navigation
+--------------------------------------------- */
+
+.genesis-nav-menu {
+	@include font(1.1, 1.1);
+}
+
+.genesis-nav-menu a {
+	padding-top:25px;
+	padding-bottom:28px;
+}
+
+.genesis-nav-menu .sub-menu a {
+	padding: 15px 25px;
+	width: 250px;
+}
+
+/* # Footer Widgets
+--------------------------------------------- */
+
+.footer-widgets,
+.footer-widgets a {
+	@include font(1.2, 1.8);
+}
+
+.footer-widgets .footer-widgets-1 .textwidget h4 {
+    width: 150px;
+    height: 30px;
+}
+
+/* ## Search Area
+--------------------------------------------- */
+
+.footer_search {
+	padding-top:10px;
+}
+
+.footer_search .wrap{
+	max-width:960px;
+}
+
+.footer_search .wrap .widget_search{
+	@include structure(467, 960);
+}
+
+.footer_search  .widget_search .widget-wrap {
+	max-width:350px;
+	margin-top: 40px;
+}
+
+/* Team slider
+------------------------------------------------------------------------------------------ */
+
+.caption .team-info h3 {
+    margin: 0 0 8px 0;
+}
+
+.caption .team-info p {
+	@include font(1.2, 1.6);
+}
+.caption .info .team-info a {
+	@include font(1.2, 1.0);
+	margin-bottom:8px;
+}
+
+.caption .info .team-info a .icon-mail,
+.caption .info .team-info a .icon-mobile,
+.caption .info .team-info a .icon-linkedin {
+    width: 12px;
+    height: 12px;
+	margin-right:8px;
+}
+
+}

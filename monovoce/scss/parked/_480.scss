@@ -1,0 +1,107 @@
+@media only screen and (max-width: 480px) {
+
+.title-area {
+	padding: 27px 0;
+}
+.title-area .site-title > a {
+	width: 250px;
+    height: 12px;
+}
+
+
+/* # Slider
+
+
+.slide_content{
+    width: 90%;
+    left: 5%;
+    bottom: 50%;
+}
+
+.slide_content h2{
+	@include font(2.8, 2.8);
+	max-width:90%;
+}
+
+.frontpage-icon {
+	display:none;
+}
+--------------------------------------------------- */
+
+/* ## Entries
+--------------------------------------------- */
+
+.gridcontainer .row_headline {
+	@include font(2.2, 2.2);
+}
+
+
+/* # Slider
+--------------------------------------------------- */
+
+.slide_content{
+    width: 90%;
+	left: 5%;
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h1 {
+	@include font(2.8, 2.8);
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h2 {
+	@include font(1.6, 1.6);
+	text-transform:inherit;
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h3 {
+	@include font(1.4, 1.4);
+}
+
+
+/* Countdown
+--------------------------------------------------- */
+
+div#countdown{
+	max-width:460px;
+}
+
+
+div#countdown span{
+	padding:20% 0;
+}
+
+span.numbers{
+	@include font(2.4, 2.4);
+}
+
+div.cd-box{
+	@include grid(4, 5, 460);
+}
+
+/* # Pin
+--------------------------------------------------- */
+/*
+.full-width-content.pin .content {
+    max-width: 90%;
+}
+
+.pin-main article {
+	margin-bottom:20px;	
+	@include collwidth(1, 0, 350);
+}
+
+.full-width-content.pin .content .entry-title{
+	@include collwidth(1, 0, 350);
+}
+
+.archive-pagination li a {
+    padding: 8px;
+    width: 40px;
+}
+
+.archive-pagination li.pagination-previous a, .archive-pagination li.pagination-next a {
+    padding: 12px;
+    width: 40px;
+}
+*/
+}

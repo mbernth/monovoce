@@ -1,0 +1,44 @@
+/* # Countdown
+---------------------------------------------------------------------------------------------------- */
+
+div#countdown{
+	margin:0 auto;
+	width:90%;
+	max-width:960px;
+}
+
+div#countdown span{
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	color:$color-white;
+	margin-bottom:0;
+	padding:25% 0;
+}
+
+span.numbers{
+	width: 100%;
+	background-color: rgba(255, 255, 255, .55);
+	text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.15);
+	font-weight: 700;
+	@include font(6.8, 6.8);
+}
+
+div#countdown span.strings{
+	margin-top:4px;
+	width: 100%;
+	height: auto;
+	padding: 10px 30px;
+	color:$color-primary-one;
+	background-color: rgba(255, 255, 255, .45);
+	@include font(1.4, 1.4);
+	font-weight:700;
+	text-transform:uppercase;
+	padding:10px 0;
+}
+
+div.cd-box{
+	@include grid(4, 15, 960);
+	background: transparent;
+	float: left;
+}

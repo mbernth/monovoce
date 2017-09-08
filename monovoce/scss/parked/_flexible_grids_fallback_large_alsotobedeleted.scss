@@ -1,0 +1,287 @@
+/* # Large screens
+---------------------------------------------------------------------------------------------------- */
+/* ## 80em / 1280 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+
+
+
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+.content-sidebar .site-inner{
+	.content-sidebar-wrap{
+		float: left;
+		margin-bottom: 30px;
+		.content{
+			float: left;
+			@include structure(780, 1200);
+		}
+		.sidebar-primary{
+			float: right;
+			@include structure(390, 1200);
+		}
+	}
+}
+.sidebar-content .site-inner{
+	.content-sidebar-wrap{
+		float: left;
+		margin-bottom: 30px;
+		.content{
+			float: right;
+			@include structure(780, 1200);
+		}
+		.sidebar-primary{
+			float: left;
+			@include structure(390, 1200);
+		}
+	}
+}
+
+.content-sidebar-sidebar .site-inner{
+	.content-sidebar-wrap{
+		float: left;
+		margin-bottom: 30px;
+		@include structure(975, 1200);
+		.content{
+			float: left;
+			@include structure(709, 975);
+		}
+		.sidebar-primary{
+			float: right;
+			@include structure(236, 975);
+		}
+	}
+	.sidebar-secondary{
+		float: right;
+		margin-top: 0px;
+		@include structure(195, 1200);
+		margin-bottom: 30px;
+	}
+}
+.sidebar-sidebar-content .site-inner{
+	.content-sidebar-wrap{
+		float: right;
+		margin-bottom: 30px;
+		@include structure(975, 1200);
+		.content{
+			float: right;
+			@include structure(709, 975);
+		}
+		.sidebar-primary{
+			float: left;
+			@include structure(236, 975);
+		}
+	}
+	.sidebar-secondary{
+		float: left;
+		margin-top: 0px;
+		@include structure(195, 1200);
+		margin-bottom: 30px;
+	}
+}
+
+.sidebar-content-sidebar .site-inner{
+	.content-sidebar-wrap{
+		float: right;
+		margin-bottom: 30px;
+		@include structure(975, 1200);
+		.content{
+			float: left;
+			@include structure(709, 975);
+		}
+		.sidebar-primary{
+			float: right;
+			@include structure(236, 975);
+		}
+	}
+	.sidebar-secondary{
+		float: left;
+		margin-top: 0px;
+		@include structure(195, 1200);
+		margin-bottom: 30px;
+	}
+}
+
+/* Fallback reset */
+@supports (display: grid) {
+.content-sidebar .site-inner,
+.sidebar-content .site-inner,
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
+.sidebar-content-sidebar .site-inner{
+	width:100%;
+	.entry,
+	.sidebar-primary,
+	.sidebar-secondary{
+		margin: inherit;
+		max-width: inherit;
+		margin-bottom:0;
+	}
+}
+	
+
+.content-sidebar .site-inner,
+.sidebar-content .site-inner{
+	.content-sidebar-wrap{
+		float: inherit;
+		.content{
+			float: inherit;
+			width: auto;
+		}
+		.sidebar-primary{
+			float: inherit;
+			width: auto;
+		}
+	}
+}
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
+.sidebar-content-sidebar .site-inner{
+	.content-sidebar-wrap{
+		float: inherit;
+		width: auto;
+		.content{
+			float: inherit;
+			width: auto;
+		}
+		.sidebar-primary{
+			float: inherit;
+			width: auto;
+		}
+	}
+	.sidebar-secondary{
+		float: inherit;
+		margin-top: 0;
+		width: auto;
+	}
+}
+	
+}
+/* Fallback reset end */
+/* ### Site Containers Full-width 
+--------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+.full-width-content .content .gridcontainer.coll2 section{
+	float:left;
+	margin-bottom:30px;
+	@include grid(2, 30, 1200);
+}
+.full-width-content .content .gridcontainer.coll3 section{
+	float:left;
+	margin-bottom:30px;
+	@include grid(3, 30, 1200);
+}
+.full-width-content .content .gridcontainer.coll4 section{
+	float:left;
+	margin-bottom:30px;
+	@include grid(4, 30, 1200);
+}
+.full-width-content .content .gridcontainer.coll5 section{
+	float:left;
+	margin-bottom:30px;
+	@include grid(5, 30, 1200);
+}
+.full-width-content .content .gridcontainer.coll6 section{
+	float:left;
+	margin-bottom:30px;
+	@include grid(6, 30, 1200);
+}
+.full-width-content .content .gridcontainer.non.coll1 section,
+.full-width-content .content .gridcontainer.non.coll2 section,
+.full-width-content .content .gridcontainer.non.coll3 section,
+.full-width-content .content .gridcontainer.non.coll4 section,
+.full-width-content .content .gridcontainer.non.coll5 section,
+.full-width-content .content .gridcontainer.non.coll6 section,
+.content .gridcontainer.non.coll1 section,
+.content .gridcontainer.non.coll2 section,
+.content .gridcontainer.non.coll3 section,
+.content .gridcontainer.non.coll4 section,
+.content .gridcontainer.non.coll5 section,
+.content .gridcontainer.non.coll6 section{
+	float:left;
+	margin-bottom:0px;
+}
+
+.content .gridcontainer.non.coll2 section{
+	@include grid(2, 0, 1200);
+}
+.content .gridcontainer.non.coll3 section {
+	@include grid(3, 0, 1200);
+}
+
+.content .gridcontainer.non.coll4 section {
+	@include grid(4, 0, 1200);
+}
+.content .gridcontainer.non.coll5 section {
+	@include grid(5, 0, 1200);
+}
+.content .gridcontainer.non.coll6 section {
+	@include grid(6, 0, 1200);
+}
+
+.content .gridcontainer.non .wrap section.wysiwyg,
+.full-width-content .content .gridcontainer.non .wrap section.wysiwyg {
+    padding: 30px;
+}
+
+/* Fallback reset */
+@supports (display: grid) {
+
+.full-width-content .content .gridcontainer.coll2 section,
+.full-width-content .content .gridcontainer.coll3 section,
+.full-width-content .content .gridcontainer.coll4 section,
+.full-width-content .content .gridcontainer.coll5 section,
+.full-width-content .content .gridcontainer.coll6 section,
+.full-width-content .content .gridcontainer.non.coll1 section,
+.full-width-content .content .gridcontainer.non.coll2 section,
+.full-width-content .content .gridcontainer.non.coll3 section,
+.full-width-content .content .gridcontainer.non.coll4 section,
+.full-width-content .content .gridcontainer.non.coll5 section,
+.full-width-content .content .gridcontainer.non.coll6 section,
+.content .gridcontainer.non.coll1 section,
+.content .gridcontainer.non.coll2 section,
+.content .gridcontainer.non.coll3 section,
+.content .gridcontainer.non.coll4 section,
+.content .gridcontainer.non.coll5 section,
+.content .gridcontainer.non.coll6 section{
+	float:inherit;
+	margin-bottom:inherit;
+	@include grid(1, 0, 1200);
+}
+.content .gridcontainer.non .wrap section.wysiwyg,
+.full-width-content .content .gridcontainer.non .wrap section.wysiwyg {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 90%;
+}
+
+}
+/* Fallback reset end */
+
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+/* Grid fallback */
+.footer-widgets .wrap .widget-area{
+	float: left;
+	@include grid(4, 30, 1200);
+	margin-bottom: 30px;
+}
+/* Grid fallback end */
+	
+@supports (display: grid) {
+	
+/* Grid fallback reset */
+.footer-widgets .wrap .widget-area{
+	float: none;
+	@include grid(1, 0, 1200);
+	margin-bottom: inherit;
+}
+/* Grid fallback reset end */	
+
+}
+/* ## Social Icons
+---------------------------------------------------------------------- */

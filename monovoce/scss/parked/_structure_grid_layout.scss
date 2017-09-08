@@ -1,0 +1,129 @@
+/* # Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Site Containers
+--------------------------------------------- */
+
+.site-container{
+	display: grid;
+	grid-template-columns:auto;
+	grid-template-rows:auto;
+}
+
+.wrap {
+	margin: 0 auto;
+	max-width: 1328px;
+}
+
+
+.site-inner{
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: grid;
+	grid-template-rows:auto;
+}
+
+.full-width-content .site-inner{
+	display: block;
+}
+.content-sidebar .site-inner{
+	width:90%;
+	max-width: 1328px;
+}
+.sidebar-content .site-inner{
+	width:90%;
+	max-width: 1328px;
+}
+.content-sidebar-sidebar .site-inner{
+	width:90%;
+	max-width: 1328px;
+	grid-template-columns:5fr 1fr;
+	grid-column-gap:30px;
+}
+
+.sidebar-sidebar-content .site-inner{
+	width:90%;
+	max-width: 1328px;
+	grid-template-columns:1fr 5fr;
+	grid-column-gap:30px;
+	.content-sidebar-wrap{
+		order: 2;
+	}
+	.sidebar-secondary{
+		order: 1;
+	}
+}
+
+.sidebar-content-sidebar .site-inner{
+	width:90%;
+	max-width: 1328px;
+	grid-template-columns:1fr 5fr;
+	grid-column-gap:30px;
+	.content-sidebar-wrap{
+		order: 2;
+	}
+	.sidebar-secondary{
+		order: 1;
+	}
+}
+
+
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+/* ### Wrapping div for .content and .sidebar-primary */
+.full-width-content .site-inner .content .breadcrumb,
+.full-width-content .site-inner .content .entry{
+	margin: 0 auto;
+	width:90%;
+	max-width: 1328px;
+}
+.content-sidebar .content-sidebar-wrap{
+	display: grid;
+	grid-template-columns:4fr 1fr;
+	grid-column-gap:30px;
+}
+
+.sidebar-content .content-sidebar-wrap{
+	display: grid;
+	grid-template-columns:1fr 4fr;
+	grid-column-gap:30px;
+	.content{
+		order:2;
+	}
+	.sidebar-primary{
+		order: 1;
+	}
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap{
+	display: grid;
+	grid-template-columns:3fr 1fr;
+	grid-column-gap:30px;
+	.content{
+		order:1;
+	}
+	.sidebar-primary{
+		order: 2;
+	}
+}
+
+.sidebar-sidebar-content .content-sidebar-wrap{
+	display: grid;
+	grid-template-columns:1fr 3fr;
+	grid-column-gap:30px;
+	.content{
+		order:2;
+	}
+	.sidebar-primary{
+		order: 1;
+	}
+}
+
+.sidebar-content-sidebar .content-sidebar-wrap{
+	display: grid;
+	grid-template-columns:3fr 1fr;
+	grid-column-gap:30px;
+}

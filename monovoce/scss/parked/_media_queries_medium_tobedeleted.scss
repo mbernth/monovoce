@@ -1,0 +1,411 @@
+/* # Medium screens
+---------------------------------------------------------------------------------------------------- */
+/* ## 64em / 1024 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+
+
+
+
+
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+/* ## Typographical Elements
+---------------------------------------------------------------------- */
+/* ## Headings
+---------------------------------------------------------------------- */
+/* ## Objects
+---------------------------------------------------------------------- */
+/* ## Forms
+---------------------------------------------------------------------- */
+/* ## Tables
+---------------------------------------------------------------------- */
+/* ## Screen Reader Text
+---------------------------------------------------------------------- */
+	
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+/* ## Layout Containers 
+---------------------------------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+/* ## Avatar
+---------------------------------------------------------------------- */
+/* ## Genesis
+---------------------------------------------------------------------- */
+/* ## Titles
+---------------------------------------------------------------------- */
+/* ## WordPress
+---------------------------------------------------------------------- */
+
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+/* ## Featured Content
+---------------------------------------------------------------------- */
+
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+/* ## Genesis eNews Extended
+---------------------------------------------------------------------- */
+/* ## Skip Links
+---------------------------------------------------------------------- */
+
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+/* ## Title Area
+---------------------------------------------------------------------- */
+/* ## Widget Area
+---------------------------------------------------------------------- */
+/* ## Before header
+---------------------------------------------------------------------- */
+
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+/* ## Accessible Menu
+---------------------------------------------------------------------- */
+/* ## Site Header Navigation
+---------------------------------------------------------------------- */
+/* ## Primary Navigation
+---------------------------------------------------------------------- */
+/* ## Secondary Navigation
+---------------------------------------------------------------------- */
+/* ## Responsive Menu
+---------------------------------------------------------------------- */
+/* ## Language Menu
+---------------------------------------------------------------------- */
+
+/* # Content Area
+---------------------------------------------------------------------------------------------------- */
+/* ## Entries
+---------------------------------------------------------------------- */
+/* ## Buttons
+---------------------------------------------------------------------- */
+/* ## Entry Meta
+---------------------------------------------------------------------- */
+/* ## Pagination
+---------------------------------------------------------------------- */
+/* ## Comments
+---------------------------------------------------------------------- */
+/* ## Featured image
+---------------------------------------------------------------------- */
+/* ## Case grid
+---------------------------------------------------------------------- */
+
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+/* ## Social Icons
+---------------------------------------------------------------------- */
+
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+/* # Animations
+---------------------------------------------------------------------------------------------------- */
+/* ## Keyframes
+---------------------------------------------------------------------- */
+/* ### Move X and Roll 360 degrees
+--------------------------------------------- */
+/* ### Move up
+--------------------------------------------- */
+/* ### Move down
+--------------------------------------------- */
+/* ### Fade in
+--------------------------------------------- */
+/* ### Scale down
+--------------------------------------------- */
+/* ### Fade out
+--------------------------------------------- */
+/* ### Slide with opacity
+--------------------------------------------- */
+/* ### Scale up
+--------------------------------------------- */
+
+
+
+
+
+@media only screen and (min-width: 64em) {
+	
+	
+/* # Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Site Containers
+--------------------------------------------- */
+.wrap {
+	margin: 0 auto;
+	max-width: 960px;
+}
+.content-sidebar .site-inner{
+	width:90%;
+	max-width: 960px;
+}
+.sidebar-content .site-inner{
+	width:90%;
+	max-width: 960px;
+}
+.content-sidebar-sidebar .site-inner{
+	width:90%;
+	max-width: 960px;
+}
+.sidebar-sidebar-content .site-inner{
+	width:90%;
+	max-width: 960px;
+}
+.sidebar-content-sidebar .site-inner{
+	width:90%;
+	max-width: 960px;
+}
+
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+/* ### Wrapping div for .content and .sidebar-primary */
+.full-width-content .site-inner .content .breadcrumb,
+.full-width-content .site-inner .content .entry{
+	width:90%;
+	max-width: 960px;
+}
+
+/* # Footer Widgets
+--------------------------------------------- */
+.footer-widgets .widget-area {
+	margin-bottom: 0px;
+}
+
+@supports not (display: grid) {
+	
+	/* # Structure and Layout Fallback
+	----------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------- */
+
+	/* ## Site Containers Fallback
+	--------------------------------------------- */
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		@include structure(676, 960);
+	}
+	.content-sidebar-sidebar .content-sidebar-wrap {
+		float: left;
+	}
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		float: right;
+	}
+
+	/* ### Content */
+	.content-sidebar .content {
+		@include structure(676, 960);
+	}
+	.sidebar-content .content,
+	.sidebar-sidebar-content .content{
+		float: right;
+	}
+	.content-sidebar .content,
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content {
+		float: left;
+	}
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content {
+		@include structure(472, 676);
+	}
+	
+	/* ### Primary Sidebar */
+
+	.sidebar-primary {
+		float: right;
+		@include structure(263, 960);
+	}
+	.content-sidebar-sidebar .sidebar-primary,
+	.sidebar-content-sidebar .sidebar-primary {
+		float:right;
+		@include structure(183, 676);
+	}
+	.sidebar-content .sidebar-primary {
+		float: left;
+		@include structure(263, 960);
+	}
+	.sidebar-sidebar-content .sidebar-primary {
+		float: left;
+		@include structure(183, 676);
+	}
+
+	/* ### Secondary Sidebar */
+
+	.sidebar-secondary {
+		float: left;
+		@include structure(263, 960);
+	}
+	.content-sidebar-sidebar .sidebar-secondary {
+		float: right;
+	}
+
+	/* # Footer Widgets Fallback
+	--------------------------------------------- */
+	.footer-widgets{
+		float: left;
+		width: 100%;
+	}
+	.footer-widgets .widget-area {
+		float: left;
+		@include grid(4, 20, 960);
+	}
+	
+	/* # Site footer Fallback
+	--------------------------------------------- */
+	.site-footer{
+		float: left;
+		width: 100%;
+	}
+
+}
+
+/* ## Site Containers CSS Grids
+----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------- */
+@supports (display: grid) {
+	
+	/* Grid floats reset */
+	
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap,
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap,
+	.content,
+	.content-sidebar .content,
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content,
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content,	
+	.sidebar-primary,
+	.content-sidebar-sidebar .sidebar-primary,
+	.sidebar-content-sidebar .sidebar-primary,
+	.sidebar-content .sidebar-primary,
+	.sidebar-sidebar-content .sidebar-primary,
+	.sidebar-secondary,
+	.content-sidebar-sidebar .sidebar-secondary,
+	.footer-widgets,
+	.footer-widgets .widget-area,
+	.site-footer{
+		float: none;
+		width: auto;
+	}
+
+	/* Grid floats reset end */
+
+	.site-inner{
+		display: grid;
+		grid-template-rows:auto;
+	}
+	.content-sidebar-sidebar .site-inner{
+		grid-template-columns:4.32fr 1.68fr;
+		grid-column-gap:20px;
+	}
+	.sidebar-sidebar-content .site-inner{
+		grid-template-columns:1.68fr 4.32fr;
+		grid-column-gap:20px;
+		.content-sidebar-wrap{
+			order: 2;
+		}
+		.sidebar-secondary{
+			order: 1;
+		}
+	}
+	.sidebar-content-sidebar .site-inner{
+		grid-template-columns:1.68fr 4.32fr;
+		grid-column-gap:20px;
+		.content-sidebar-wrap{
+			order: 2;
+		}
+		.sidebar-secondary{
+			order: 1;
+		}
+	}
+
+	/* ## Column Widths and Positions CSS Grids
+	--------------------------------------------- */
+
+	/* ### Wrapping div for .content and .sidebar-primary */
+	.content-sidebar .content-sidebar-wrap{
+		display: grid;
+		grid-template-columns:4.32fr 1.68fr;
+		grid-column-gap:20px;
+	}
+	.sidebar-content .content-sidebar-wrap{
+		display: grid;
+		grid-template-columns:1.68fr 4.32fr;
+		grid-column-gap:20px;
+		.content{
+			order:2;
+		}
+		.sidebar-primary{
+			order: 1;
+		}
+	}
+	.content-sidebar-sidebar .content-sidebar-wrap{
+		display: grid;
+		grid-template-columns:4.32fr 1.68fr;
+		grid-column-gap:20px;
+		.content{
+			order:1;
+		}
+		.sidebar-primary{
+			order: 2;
+		}
+	}
+	.sidebar-sidebar-content .content-sidebar-wrap{
+		display: grid;
+		grid-template-columns:1.68fr 4.32fr;
+		grid-column-gap:20px;
+		.content{
+			order:2;
+		}
+		.sidebar-primary{
+			order: 1;
+		}
+	}
+	.sidebar-content-sidebar .content-sidebar-wrap{
+		display: grid;
+		grid-template-columns:4.32fr 1.68fr;
+		grid-column-gap:20px;
+	}
+	
+	/* # Flexible Grids import
+	--------------------------------------------- */
+	@import "flexible_grids_medium";
+	
+	/* # Footer Widgets
+	---------------------------------------------------------------------------------------------------- */
+	.footer-widgets .wrap{
+		display: grid;
+		grid-template-columns:repeat(4, 1fr);
+		grid-template-rows:auto;
+		grid-column-gap:20px;
+	}
+	.footer-widgets .widget-area {
+		margin-bottom: 0px;
+	}
+	
+}
+
+	
+}
+/* # Medium screens end
+---------------------------------------------------------------------------------------------------- */

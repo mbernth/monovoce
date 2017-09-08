@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Altitude Pro Theme\n"
+"POT-Creation-Date: 2015-01-11 12:36-0500\n"
+"PO-Revision-Date: 2015-01-11 12:37-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: functions.php:138
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: functions.php:206
+msgid "Front Page 1"
+msgstr ""
+
+#: functions.php:207
+msgid "This is the front page 1 section."
+msgstr ""
+
+#: functions.php:211
+msgid "Front Page 2"
+msgstr ""
+
+#: functions.php:212
+msgid "This is the front page 2 section."
+msgstr ""
+
+#: functions.php:216
+msgid "Front Page 3"
+msgstr ""
+
+#: functions.php:217
+msgid "This is the front page 3 section."
+msgstr ""
+
+#: functions.php:221
+msgid "Front Page 4"
+msgstr ""
+
+#: functions.php:222
+msgid "This is the front page 4 section."
+msgstr ""
+
+#: functions.php:226
+msgid "Front Page 5"
+msgstr ""
+
+#: functions.php:227
+msgid "This is the front page 5 section."
+msgstr ""
+
+#: functions.php:231
+msgid "Front Page 6"
+msgstr ""
+
+#: functions.php:232
+msgid "This is the front page 6 section."
+msgstr ""
+
+#: functions.php:236
+msgid "Front Page 7"
+msgstr ""
+
+#: functions.php:237
+msgid "This is the front page 7 section."
+msgstr ""
+
+#: lib/customize.php:48
+msgid "No Image"
+msgstr ""
+
+#: lib/customize.php:52
+msgid "Upload New"
+msgstr ""
+
+#: lib/customize.php:53
+msgid "Uploaded"
+msgstr ""
+
+#: lib/customize.php:56
+msgid "Default"
+msgstr ""
+
+#: lib/customize.php:77
+msgid ""
+"Use the included default images or personalize your site by uploading your "
+"own images.<br /><br />The default images are <strong>1600 pixels wide and "
+"1050 pixels tall</strong>."
+msgstr ""
+
+#: lib/customize.php:78
+msgid "Front Page Background Images"
+msgstr ""
+
+#: lib/customize.php:90
+#, php-format
+msgid "Featured Section %s Image:"
+msgstr ""
+
+#: lib/customize.php:110
+msgid "Change the default accent color for links, buttons, and more."
+msgstr ""
+
+#: lib/customize.php:111
+msgid "Accent Color"
+msgstr ""

@@ -1,0 +1,169 @@
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Avatar
+---------------------------------------------------------------------- */
+
+.avatar {
+	float: left;
+}
+
+.alignleft .avatar,
+.author-box .avatar {
+	margin-right: 20px;
+}
+
+.alignright .avatar {
+	margin-left: 20px;
+}
+
+.comment .avatar {
+	margin: 0 16px 24px 0;
+}
+
+/* ## Genesis
+---------------------------------------------------------------------- */
+
+.breadcrumb {
+	display: block;
+	float: left;
+	width: 100%;
+	background-color: $color-white;
+	margin-bottom: 20px;
+	@include font($g_font-breadcrumb-size, $g_font-breadcrumb-lineh);
+	font-weight:$g_font-breadcrumb-weight;
+	color:$g_font-breadcrumb-color;
+	[class^="icon-"]{
+		position: relative;
+		top: 5px;
+	}
+}
+.breadcrumb .wrap{
+	width: 90%;
+}
+
+.archive-description,
+.author-box {
+	margin: 0 auto 30px auto;
+	width: 90%;
+	background-color: $color-white;
+	@include font($g_font-bread-size, $g_font-bread-lineh);
+	font-weight: $g_font-bread-weight;
+}
+
+.author-box-title {
+	@include font($g_font-author-box-title-size, $g_font-author-box-title-lineh);
+	font-weight: $g_font-author-box-title-6-weight;
+	margin-bottom: 5px;
+}
+
+.archive-description p:last-child,
+.author-box p:last-child {
+	margin-bottom: 0;
+}
+
+
+/* ## Titles
+---------------------------------------------------------------------- */
+
+.archive-title {
+	@include font($g_font-archive-title-size, $g_font-archive-title-lineh);
+	font-weight: $g_font-archive-title-6-weight;
+	margin-bottom:20px;
+}
+
+.entry-title {
+	@include font($g_font-entry-title-size, $g_font-entry-title-lineh);
+	font-weight: $g_font-entry-title-6-weight;
+	margin-bottom:20px;
+}
+
+.entry-title a,
+.sidebar .widget-title a {
+	color: $color-primary;
+	text-decoration:none;
+}
+
+.entry-title a:hover,
+.entry-title a:focus {
+	color: tint($color-primary, 20%);
+}
+
+.widget-title {
+	color: $color-black;
+	@include font($g_font-widget-title-size, $g_font-widget-title-lineh);
+	font-weight: $g_font-widget-title-6-weight;
+	margin-bottom: 20px;
+    margin-top: 6px;
+}
+
+.footer-widgets .widget-title {
+	color: $color-white;
+}
+
+/* ## WordPress
+---------------------------------------------------------------------- */
+
+a.aligncenter img {
+	display: block;
+	margin: 0 auto;
+}
+
+a.alignnone {
+	display: inline-block;
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+}
+
+a.alignleft,
+a.alignnone,
+a.alignright {
+	max-width: 100%;
+}
+
+img.centered,
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+img.alignnone,
+.alignnone {
+	margin-bottom: 0;
+}
+
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+	margin: 0 24px 0px 0;
+}
+
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+	margin: 0 0 0px 24px;
+}
+
+.wp-caption-text {
+	margin-top:5px;
+	@include font($g_font-caption-size, $g_font-caption-lineh);
+	font-weight: $g_font-caption-weight;
+}
+
+.entry-content p.wp-caption-text {
+	margin-bottom: 0;
+}
+
+.entry-content .wp-audio-shortcode,
+.entry-content .wp-playlist,
+.entry-content .wp-video {
+	margin: 0 0 28px;
+}

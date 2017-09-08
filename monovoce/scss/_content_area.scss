@@ -1,0 +1,367 @@
+/* # Content Area
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Entries
+---------------------------------------------------------------------- */
+
+.entry {
+	margin-bottom: 40px;
+}
+
+.content .entry {
+}
+
+.content .post{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid $color-black;
+	img{
+		margin-bottom: 20px;
+	}
+}
+.content .post:last-child{
+	border-bottom: none;
+	padding-bottom: 0;
+}
+.content .post .entry-footer {
+    clear: both;
+}
+
+.gridcontainer p:last-child,
+.entry-content p:last-child{
+	margin-bottom:0;
+}
+
+.gridcontainer ol,
+.gridcontainer ul,
+.entry-content ol,
+.entry-content ul {
+	margin-bottom: 28px;
+	margin-left: 40px;
+}
+
+.gridcontainer ol > li,
+.entry-content ol > li {
+	list-style-type: decimal;
+}
+
+.gridcontainer ul > li,
+.entry-content ul > li {
+	list-style-type: disc;
+}
+
+.gridcontainer ol ol,
+.gridcontainer ul ul,
+.entry-content ol ol,
+.entry-content ul ul {
+	margin-bottom: 0;
+}
+
+.gridcontainer code,
+.entry-content code {
+	background-color: $color-black;
+	color: $color-white;
+}
+
+.gridcontainer a,
+.entry-content a {
+	
+}
+
+.gridcontainer a:hover,
+.entry-content a:hover {
+	
+}
+
+.gridcontainer.Black a {
+}
+
+.gridcontainer.Black a:hover,
+.gridcontainer.Red a:hover {
+	
+}
+.gridcontainer .row_headline {
+	@include font(3.6, 3.6);
+}
+
+/* ## Buttons
+---------------------------------------------------------------------- */
+
+.site-inner .gridcontainer .button{
+	margin-top:70px;
+}
+
+.gridcontainer a.button,
+.entry-content a.button {
+	display:block;
+	position:relative;
+	clear:both;
+	float:none;
+	margin:0 auto;
+	@include font($g_font-button-size, $g_font-button-lineh);
+	font-weight: $g_font-button-weight;
+	color: $g_font-button-color;
+	text-align:center;
+	text-decoration: none;
+	background-color: $g_font-button-background-color;
+	@include corners($radius);
+	border: 0;
+	padding: 15px 24px;
+	max-width:270px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition:    all .2s ease-in-out;
+	-ms-transition:     all .2s ease-in-out;
+	-o-transition:      all .2s ease-in-out;
+	transition:         all .2s ease-in-out;
+}
+.gridcontainer a.button:hover,
+.entry-content a.button:hover {
+	background-color: $g_font-button-background-color-hover;
+	box-shadow: $g_font-button-box-shadow-hover;
+}
+.gridcontainer section a.button{
+	max-width: 200px;
+}
+
+.gridcontainer.black .button{
+}
+.gridcontainer.black .button:hover{
+}
+.gridcontainer.grey .button{
+}
+.gridcontainer.grey .button:hover{
+}
+
+
+/* ## Entry Meta
+---------------------------------------------------------------------- */
+
+p.entry-meta {
+	@include font($g_font-meta-size, $g_font-meta-lineh);
+	font-weight: $g_font-meta-weight;
+	margin-bottom: 0;
+	a{
+		text-decoration: none;
+	}
+}
+
+.entry-header .entry-meta {
+	margin-bottom: 24px;
+}
+
+.entry-footer .entry-meta {
+	border-top: 2px solid $color-white;
+	padding-top: 24px;
+}
+
+.entry-categories,
+.entry-tags {
+	display: inline-block;
+}
+
+.entry-comments-link::before {
+	content: "\2014";
+	margin: 0 6px 0 2px;
+}
+
+/* ## Pagination
+---------------------------------------------------------------------- */
+
+.pagination {
+	clear: both;
+	margin: 0;
+	padding:60px 0;
+}
+
+.adjacent-entry-pagination {
+	margin-bottom: 0;
+}
+
+.archive-pagination ul{
+	text-align:center;
+}
+
+.archive-pagination li {
+	display: inline;
+}
+
+.archive-pagination li a {
+	cursor: pointer;
+	display: inline-block;
+	@include font($g_font-pagination-size, $g_font-pagination-lineh);
+	font-weight: $g_font-pagination-weight;
+	color: $color-white;
+	background-color: $color-primary;
+	padding: 18px;
+	width:60px;
+	border-radius: 30px;
+	text-decoration: none;
+}
+
+.archive-pagination li a:hover,
+.archive-pagination li a:focus,
+.archive-pagination .active a,
+.archive-pagination li.pagination-previous a:hover,
+.archive-pagination li.pagination-next a:hover,
+.archive-pagination li.pagination-previous a:focus,
+.archive-pagination li.pagination-next a:focus {
+	background-color: shade($color-primary, 20%);
+	text-decoration: none;
+}
+.archive-pagination li a:hover,
+.archive-pagination li.pagination-previous a:hover,
+.archive-pagination li.pagination-next a:hover{
+	box-shadow: 0px 5px 3px 0px rgba(14, 28, 45, 0.25);
+}
+
+.archive-pagination li.pagination-previous a,
+.archive-pagination li.pagination-next a{
+	cursor: pointer;
+	display: inline-block;
+	@include font($g_font-pagination-size, $g_font-pagination-lineh);
+	font-weight: $g_font-pagination-weight;
+	color: $color-white;
+	background-color: $color-primary;
+	padding: 20px;
+	width:60px;
+	text-decoration: none;
+	bottom: -6px;
+    position: relative;
+	[class^="icon-"]{
+		color: $color-white;
+	}
+}
+
+.archive-pagination li.pagination-previous a .icon-arrow-left7,
+.archive-pagination li.pagination-next a .icon-untitled2 {
+    width: 16px;
+    height: 16px;
+    display: inherit;
+}
+
+/* ## Comments
+---------------------------------------------------------------------- */
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	margin: 0 auto;
+	width: 90%;
+	margin-bottom: 40px;
+}
+
+.comment-respond,
+.entry-pings {
+}
+
+.entry-comments {
+}
+.logged-in-as{
+	@include font($g_font-logged-in-size, $g_font-logged-in-lineh);
+	font-weight: $g_font-logged-in-weight;
+}
+.comment-header {
+	@include font($g_font-comment-header-size, $g_font-comment-header-lineh);
+	font-weight: $g_font-comment-header-weight;
+}
+.comment-form{
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.comment-form-comment{
+	textarea{
+		width: 100%;
+	}
+}
+.logged-in-as a:last-child {
+    float: right;
+}
+
+li.comment {
+	
+}
+
+.comment-content {
+	clear: both;
+	word-wrap: break-word;
+}
+
+.comment-list li {
+	margin-top: 24px;
+}
+
+.comment-list li li {
+	margin-right: -32px;
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+	width: 50%;
+}
+
+.comment-respond label {
+	display: block;
+	margin-right: 12px;
+}
+
+.entry-comments .comment-author {
+	margin-bottom: 0;
+}
+
+.entry-pings .reply {
+	display: none;
+}
+
+.bypostauthor {
+}
+
+.form-allowed-tags {
+	background-color: $color-white;
+	padding: 24px;
+}
+
+/* ## Featured image
+---------------------------------------------------------------------- */
+
+.featured-image{
+	.before-header{
+		background-color: transparent;
+	}
+	.site-header {
+		background-color: transparent;
+	}
+	.nav-secondary{
+		background-color: transparent;
+	}
+} 
+
+.featured-image .site-header.dark {
+	
+}
+
+.featured-section {
+	margin-top:0px;
+    background-attachment: scroll;
+    background-color: #000000;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.featured-image .site-inner {
+    padding-top: 40px;
+    margin-top: 0px;
+}
+.featured-section .image-section{
+	height: 50vh;
+}
+.image-section {
+	background: -webkit-linear-gradient(rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
+	background: -o-linear-gradient(rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
+	background: linear-gradient(rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d2029', endColorstr='#00ffffff',GradientType=0 );
+}

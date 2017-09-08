@@ -1,0 +1,73 @@
+/* # Case Single
+---------------------------------------------------------------------------------------------------- */
+
+.flexcontainer{
+    display: -webkit-flex;
+    display: flex;
+	
+    -webkit-flex-direction: row;
+    flex-direction: row;
+	
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+	
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+	
+	-webkit-align-items: stretch; /* Safari */
+  	align-items:         stretch;
+	
+	padding-bottom:10px;
+	margin-bottom:40px;
+	border-bottom:1px solid shade($color-grey, 40%);
+}
+.box{
+	margin-right:10px;
+	-webkit-flex-grow: 0; /* Safari */
+  	flex-grow: 0;
+}
+.box:nth-child(2n){
+	-webkit-flex-grow: 1; /* Safari */
+  	flex-grow: 1;
+}
+.box:last-child{
+	margin-right:0;
+}
+
+.excerpt{
+	@include font(2, 2.8);
+	font-weight: 100;
+}
+
+/* # Next & previous case navigation
+--------------------------------------------- */
+
+.prev-next-navigation a{
+	border-bottom: 0px solid $color-grey;
+	position:relative;
+	bottom:15px;
+}
+
+.prev-next-navigation a:hover{
+	border-bottom: 0px solid $color-grey !important;
+}
+
+.prev-next-navigation .icon-arrow-left7,
+.prev-next-navigation .icon-untitled2 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.prev-next-navigation .icon-arrow-left7 {
+	margin-right:10px;
+}
+.prev-next-navigation .icon-untitled2 {
+	margin-left:10px;
+}
+
+.prev-next-navigation .coll2.next{
+	float:right;
+	text-align:right;
+	margin-right:0;
+}

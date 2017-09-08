@@ -1,0 +1,90 @@
+/* # MIXINS
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Typography
+---------------------------------------------------------------------- */
+
+/* Basic Font Sizes mixin */
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin line-height($lineheight: 1.6) {
+  line-height:($lineheight * 10) + px;
+  line-height:$lineheight + rem;
+}
+
+@mixin font($fontsize: 1.6, $lineheight: 1.6) {
+  font-size: ($fontsize * 10) + px;
+  font-size: $fontsize + rem;
+  line-height:($lineheight * 10) + px;
+  line-height:$lineheight + rem;
+}
+
+p.standard {
+	@include font(1.8, 2.6);
+}
+
+/* ## Border Radius
+---------------------------------------------------------------------- */
+
+@mixin corners($radius){
+	-webkit-border-radius: $radius + px;
+	   -moz-border-radius: $radius + px;
+			border-radius: $radius + px;
+}
+
+/* ## Gradients
+---------------------------------------------------------------------- */
+
+@mixin linear-gradient($from, $to) {
+	/* Fallback for sad browsers */
+	background-color: $to;
+	/* Mozilla Firefox */
+	background-image:-moz-linear-gradient($from, $to);
+	/* Opera */
+	background-image:-o-linear-gradient($from, $to);
+	/* WebKit (Safari 4+, Chrome 1+) */
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to));
+	/* WebKit (Chrome 11+) */
+	background-image: -webkit-linear-gradient($from, $to);
+	/* IE10 */
+	background-image: -ms-linear-gradient($from, $to);
+	/* W3C */
+	background-image: linear-gradient($from, $to);
+}
+
+/* ## Grid
+---------------------------------------------------------------------- */
+
+/* Grid mixin */
+@mixin collwidth($colls, $margin, $target) {
+  width: ((($target - (($colls) * $margin)) / $colls) / $target) * 100%;
+  margin-right: (($margin / $target / 2) * 100%);
+  margin-left: (($margin / $target / 2) * 100%);
+}
+
+@mixin grid($colls, $margin, $target) {
+  width: ((($target - (($colls - 1) * $margin)) / $colls) / $target) * 100%;
+  &:nth-child(n) {
+    margin-right: (($margin / $target) * 100%);
+  }
+  &:nth-child(#{$colls}n) {
+    margin-right: 0;
+  }
+}
+
+@mixin grid_alt($colls, $margin, $target) {
+  width: ((($target - (($colls - 1) * $margin)) / $colls) / $target) * 100%;
+  &:nth-child(n) {
+    margin-right: (($margin / $target) * 100%);
+  }
+  &:nth-child(#{($colls + 1)}n) {
+    margin-right: 0;
+  }
+}
+
+@mixin structure($width, $target) {
+	width: ($width / $target * 100%);
+}

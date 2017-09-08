@@ -1,0 +1,54 @@
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Genesis eNews Extended
+---------------------------------------------------------------------- */
+
+.enews-widget,
+.enews-widget .widget-title {
+	color: $color-white;
+}
+
+.sidebar .widget.enews-widget {
+	background-color: $color-black;
+}
+
+.enews-widget input,
+.enews-widget input:focus {
+	border: 1px solid $color-black;
+}
+
+.enews-widget input {
+	@include font(1.6, 2.6);
+	margin-bottom: 26px;
+}
+
+.enews-widget input[type="submit"] {
+	background-color: $color-black;
+	color: $color-white;
+	margin: 0;
+	width: 100%;
+}
+
+.enews-widget input:hover[type="submit"],
+.enews-widget input:focus[type="submit"]  {
+	background-color: $color-white;
+	color: $color-black;
+}
+
+.enews form + p {
+	margin-top: 24px;
+}
+
+
+/* ## Skip Links
+---------------------------------------------------------------------- */
+.genesis-skip-link {
+	margin: 0;
+}
+
+.genesis-skip-link li {
+	height: 0;
+	width: 0;
+	list-style: none;
+}

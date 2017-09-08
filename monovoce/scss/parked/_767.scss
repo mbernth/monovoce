@@ -1,0 +1,278 @@
+@media only screen and (max-width: 767px) {
+	
+/* ## Typographical Elements
+------------------------------------------------------------------------------------------ */
+
+/* Chrome fix */
+body > div {
+    @include font(1.6, 2.4);
+}
+
+body {
+	@include font(1.6, 2.4);
+}
+
+/* ## Headings
+--------------------------------------------- */
+
+h1 {
+	@include font(2.6, 2.6);
+	word-wrap: break-word;
+}
+
+h2 {
+	@include font(2.4, 2.4);
+	word-wrap: break-word;
+}
+
+h3 {
+	@include font(2.2, 2.2);
+	word-wrap: break-word;
+}
+
+h4 {
+	@include font(2, 2);
+	word-wrap: break-word;
+}
+
+h5 {
+	@include font(1.8, 1.8);
+	word-wrap: break-word;
+}
+
+h6 {
+	@include font(1.6, 2.4);
+	word-wrap: break-word;
+}
+
+/* ## Entries
+--------------------------------------------- */
+
+.gridcontainer .row_headline {
+	@include font(2.6, 2.6);
+	word-wrap: break-word;
+}
+
+/* # Common Classes
+--------------------------------------------- */
+
+.archive-title,
+.entry-title {
+	@include font(2.6, 2.6);
+}
+
+.widget-title {
+	@include font(2, 2);
+}
+
+/* ## Entry Meta
+--------------------------------------------- */
+
+p.entry-meta {
+	@include font(1.4, 2);
+}
+
+/* Grid
+------------------------------------------------------------------------------------------ */
+
+.full-width-content .gridcontainer.Black,
+.full-width-content .gridcontainer.Red,
+.full-width-content .gridcontainer.Grey,
+.full-width-content .gridcontainer.White {
+	padding:70px 0 40px;
+}
+
+.home .content .gridcontainer.White:nth-child(2){
+	padding-top:70px;
+}
+
+.full-width-content .gridcontainer .row_headline{
+	margin-bottom:60px;
+	width:90%;
+}
+
+.site-inner .gridcontainer .button {
+    margin-top: 60px;
+}
+
+.full-width-content .gridcontainer.team .wrap {
+	max-width:600px;
+}
+.full-width-content .content .team .coll3 {
+	@include grid(2, 30, 600);
+}
+
+/* # Pin
+--------------------------------------------------- */
+/*
+.full-width-content.pin .content {
+    max-width: 740px;
+}
+
+.pin-main article {
+	margin-bottom:20px;	
+	@include collwidth(2, 20, 740);
+}
+
+.full-width-content.pin .content .entry-title{
+	@include collwidth(1, 20, 740);
+}
+*/
+
+/* # Case Single
+--------------------------------------------------- */
+.flexcontainer{
+    -webkit-flex-direction: column;
+    flex-direction: column;
+	margin-bottom:20px;
+}
+.box:nth-child(2n){
+	margin-bottom:10px;
+}
+
+.excerpt{
+	@include font(1.8, 2.6);
+}
+	
+/* # Slider
+--------------------------------------------------- */
+
+.slide_content h2{
+	@include font(4, 4);
+	max-width:90%;
+}
+
+/* # Colour background
+--------------------------------------------- */
+
+.full-width-content .content .gridcontainer.Non .wysiwyg{
+	padding:30px;
+}
+
+.full-width-content .content .gridcontainer.Non .backimage{
+	min-height:250px;
+}
+
+/* # Footer Widgets
+----------------------------------------- */
+
+.footer-widgets .wrap {
+    max-width: 400px;
+}
+.footer-widgets .widget-area {
+	margin-left:0;
+}
+.footer-widgets .widget-area:nth-child(1){
+	width:100%;
+	margin-left:0;
+}
+
+.footer-widgets .footer-widgets-1 .textwidget h4{
+	margin:0 auto;
+}
+
+.footer-widgets .widget-area:nth-child(2){
+	width:45%;
+}
+
+.footer-widgets .widget-area:nth-child(3){
+	float:right;
+	text-align:right;
+	width:45%;
+}
+
+.footer-widgets .widget-area:nth-child(4){
+	width:100%;
+	margin-left:0;
+}
+
+.footer-widgets .widget-area:nth-child(4) .alignleft {
+    float: none;
+    text-align: center;
+}
+
+.footer-widgets .widget-area:nth-child(4) ul.alignleft {
+	margin:0 auto;
+	width:144px;
+}
+
+/* # Team slider
+---------------------------------------------------------------------------------------------------- */
+.caption .team-info h3 {
+	@include font(1.6, 1.6);
+    margin: 0 0 8px 0;
+}
+
+.caption .team-info p {
+	@include font(1.2, 1.6);
+}
+.caption .info .team-info a {
+	@include font(1.2, 1.0);
+	margin-bottom:8px;
+}
+
+.caption .info .team-info a .icon-mail,
+.caption .info .team-info a .icon-mobile,
+.caption .info .team-info a .icon-linkedin {
+    width: 12px;
+    height: 12px;
+	margin-right:8px;
+}
+
+/* # Slider
+--------------------------------------------------- */
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h1 {
+	@include font(3.8, 3.8);
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h2 {
+	@include font(2.0, 2.0);
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h3 {
+	@include font(1.8, 1.8);
+}
+
+.slide_content h2{
+	max-width:580px;
+}
+
+
+/* Countdown
+--------------------------------------------------- */
+
+div#countdown{
+	max-width:500px;
+}
+
+
+div#countdown span{
+	padding:20% 0;
+}
+
+span.numbers{
+	@include font(3.4, 3.4);
+}
+
+div#countdown span.strings{
+	margin-top:2px;
+	@include font(1.0, 1.0);
+}
+
+div.cd-box{
+	@include grid(4, 5, 500);
+}
+
+@media only screen and (orientation: landscape){
+	.slide_content p{
+		display:none;
+	}
+	.frontpage-icon {
+		display:none;
+	}
+	.slide_content{
+		bottom:45%;
+	}
+}
+}

@@ -1,0 +1,82 @@
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+	position:relative;
+	display: block;
+	clear: both;
+	float: left;
+	width: 100%;
+	@include font($g_font-footer-widgets-size, $g_font-footer-widgets-lineh);
+	font-weight:$g_font-footer-widgets-weight;
+	color: $color-white;
+	background-color: $color-primary;
+	padding: 60px 0 100px;
+}
+
+.footer-widgets .wrap {
+	margin: 0 auto;
+	width:90%;
+}
+
+.footer-widgets a {
+	color: $color-white;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.footer-widgets input {
+	border: 1px solid $color-black;
+}
+
+.footer-widgets a.button {
+	color: $color-white;
+	text-decoration:none;
+}
+.footer-widgets a:hover,
+.footer-widgets a:focus {
+	color: $color-white;
+	text-decoration:none;
+}
+
+
+.footer-widgets li {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.footer-widgets .widget {
+	margin-bottom: 30px;
+}
+.footer-widgets .widget:last-child {
+	margin-bottom: 0px;
+}
+
+.footer-widgets p:last-child {
+	margin-bottom: 0;
+}
+
+.footer-widgets .widget-area {
+	margin-bottom: 40px;
+}
+
+.footer-widgets .widget-area:last-child {
+	margin-bottom: 0px;
+}
+
+
+/* ## Social Icons
+---------------------------------------------------------------------- */
+
+.simple-social-icons ul li a, 
+.simple-social-icons ul li a:hover {
+    padding: 21px !important;
+}
+.simple-social-icons a {
+    border-bottom: none;
+}
+.simple-social-icons a:hover,
+.simple-social-icons a:focus {
+    border-bottom: none;
+    box-shadow: none;
+}

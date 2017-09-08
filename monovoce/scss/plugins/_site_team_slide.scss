@@ -1,0 +1,173 @@
+/* Team slider
+--------------------------------------------- */
+
+.gridcontainer.partner{
+	padding-top:0px !important;
+}
+
+.caption {
+	display: inline-block;
+	position: relative;
+}
+
+.caption img {
+	display: block;
+	max-width: 100%;
+	
+	-webkit-transition: .75s -webkit-transform cubic-bezier(.23,1,.32,1);
+    transition: .75s transform cubic-bezier(.23,1,.32,1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+	
+}
+
+.caption:hover img {
+    -webkit-transform: scale(1.1) translateZ(0);
+    transform: scale(1.1) translateZ(0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.caption .team-image {
+	position:relative;
+	
+	background: -moz-linear-gradient(bottom,  rgba(209,209,208,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(bottom,  rgba(209,209,208,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to top,  rgba(209,209,208,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d0', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	
+	overflow:hidden;
+}
+
+.caption .team-image img{
+	position:relative;
+	z-index:-1;
+	
+}
+
+.caption .team-info{
+	position:absolute;
+	width:100%;
+	bottom:0;
+	padding:15px;	
+}
+
+.caption .team-info h3 {
+	@include font(1.8, 1.8);
+	font-weight: 400;
+	margin:0 0 10px 0;
+}
+
+.caption .team-info p {
+	@include font(1.4, 1.8);
+	margin-bottom:10px;
+	padding:0px;
+}
+
+.caption .info .team-info{
+	position: absolute;
+	bottom:0;
+	padding:0px;	
+}
+
+.caption .info h3 {
+	@include font(1.6, 1.6);
+	font-weight: 400;
+	margin:0 0 10px 0;
+}
+.caption .info p,
+.caption .info .team-info {
+	@include font(1.4, 1.8);
+	margin-bottom:10px;
+	padding:0;
+}
+.caption .info .team-info {
+	margin-bottom:15px;
+}
+
+.team-info a {
+	border-bottom: none;
+    box-shadow: none;
+    text-decoration: none;
+	padding:1px 2px;
+	color:shade( $color-grey, 80%);
+	
+	-webkit-transition: box-shadow .5s ease-in-out;
+	-moz-transition:    box-shadow .5s ease-in-out;
+	-ms-transition:     box-shadow .5s ease-in-out;
+	-o-transition:      box-shadow .5s ease-in-out;
+	transition:         box-shadow .5s ease-in-out;
+}
+
+.team-info a:hover {
+	color:shade( $color-grey, 60%);
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.caption .info .team-info a {
+	display:block;
+	@include font(1.4, 1.0);
+	text-decoration:none;
+	margin-bottom:10px;
+	padding:0;
+}
+.caption .info .team-info a:last-child{
+	margin-bottom:0;
+}
+.caption .info .team-info a .icon-mail,
+.caption .info .team-info a .icon-mobile,
+.caption .info .team-info a .icon-linkedin {
+    width: 15px;
+    height: 15px;
+	margin-right:10px;
+}
+
+.team .panel a span{
+	margin-right:5px;
+}
+
+/* Side push click (animate transforms) */
+.caption-5 {
+	overflow: hidden;
+	background: $color-grey;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+	z-index:0;
+	cursor:pointer;
+}
+
+.caption-5 .profile {
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	-moz-transition: -moz-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+	cursor:pointer;
+}
+
+.caption-5.flip .profile {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+
+.info {
+	padding:15px;
+	top:0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	max-height: 264px;
+	z-index: -2;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	transform: translateX(0);
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	-moz-transition: -moz-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}

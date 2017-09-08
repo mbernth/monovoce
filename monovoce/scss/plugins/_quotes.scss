@@ -1,0 +1,110 @@
+/* Quotes Rotator
+--------------------------------------------- */
+
+.cbp-qtrotator {
+	position: relative;
+	margin: 0 auto;
+	max-width: 800px;
+	width: 100%;
+	min-height: 200px;
+}
+
+.cbp-qtrotator .cbp-qtcontent {
+	position: absolute;
+	min-height: 0px;
+	border-top: 1px solid tranparent;
+	border-bottom: 1px solid tranparent;
+	padding: 0;
+	top: 0;
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+}
+
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	border-bottom: none;
+}
+
+/* Currently visible */
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	position: relative; 
+	z-index: 100;
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.cbp-qtrotator .cbp-qtcontent:before,
+.cbp-qtrotator .cbp-qtcontent:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-qtrotator .cbp-qtcontent:after {
+	clear: both;
+}
+
+.cbp-qtprogress {
+	position: absolute;
+	background: $color-primary-two;
+	height: 1px;
+	width: 0%;
+	top: 0;
+	left:0;
+	z-index: 1000;
+}
+
+.cbp-qtrotator blockquote::before {
+	display:none;
+}
+.cbp-qtrotator blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+.slide_content .cbp-qtrotator blockquote p {
+	font-family: $font-headlines;
+    margin: 40px 0 0 0;
+    width: 100%;
+	@include font(2.6, 3.8);
+	letter-spacing: 0.08rem;
+    font-weight: 400;
+    color: $color-grey;
+	font-style:normal;
+}
+
+.cbp-qtrotator blockquote footer {
+}
+
+.cbp-qtrotator blockquote footer:before {
+	content: '? ';
+}
+
+.cbp-qtrotator .cbp-qtcontent img {
+}
+
+/* Columns Quote rotator */
+
+.gridcontainer [class*="coll"] .cbp-qtrotator blockquote {
+	@include font(2.2, 3.4);
+    margin: 40px 0px;
+}
+.gridcontainer [class*="coll"] .cbp-qtcontent footer {
+	text-align:right;
+	@include font(1.4, 2.2);
+}
+
+.full-width-content .gridcontainer.Black [class*="coll"] .cbp-qtprogress,
+.full-width-content .gridcontainer.Non.Black [class*="coll"] .cbp-qtprogress,
+.full-width-content .gridcontainer.Red [class*="coll"] .cbp-qtprogress,
+.full-width-content .gridcontainer.Non.Red [class*="coll"] .cbp-qtprogress{
+	background: $color-grey;
+}
+
+.full-width-content .gridcontainer.Non [class*="coll"] .cbp-qtprogress,
+.full-width-content .gridcontainer.Non.Grey [class*="coll"] .cbp-qtprogress,
+.full-width-content .gridcontainer.Grey [class*="coll"] .cbp-qtprogress,
+.full-width-content .gridcontainer.Non.White [class*="coll"] .cbp-qtprogress,
+.full-width-content .gridcontainer.White [class*="coll"] .cbp-qtprogress {
+	background: $color-primary-one;
+}

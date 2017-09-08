@@ -1,0 +1,18 @@
+@supports (display: grid) {
+	
+/* # Flexible Grids
+------------------------------------------------------------------------------------------ */
+
+/* ## Grid Containers
+--------------------------------------------- */
+.gridcontainer{
+	padding: 40px 0;
+	.row_headline{
+		max-width: 1080px;
+	}
+	.wrap{
+		max-width: 1080px;
+		}
+}
+	
+}

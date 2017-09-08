@@ -1,0 +1,287 @@
+/* # Table press
+---------------------------------------------------------------------------------------------------- */
+
+.tablepress-table-description {
+    clear: both;
+    display: block
+}
+
+.tablepress {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 1em;
+    border: none
+}
+
+.tablepress td,
+.tablepress th {
+    padding: 8px;
+    border: none;
+    background: 0 0;
+    text-align: left;
+    float: none!important
+}
+
+.tablepress tbody td {
+    vertical-align: top
+}
+
+.tablepress tbody td,
+.tablepress tfoot th {
+    border-top: 1px solid $color-black;
+}
+
+.tablepress tbody tr:first-child td {
+    border-top: 0
+}
+
+.tablepress thead th {
+    border-bottom: 1px solid $color-black;
+}
+
+.tablepress tfoot th,
+.tablepress thead th {
+    background-color: transparent;
+    font-weight: 600;
+    vertical-align: middle
+}
+
+.tablepress tfoot th{
+	background-color:tint($color-black, 80%);
+	color: $color-black;
+	@include font(1.6, 2.4);
+	font-weight: 400;
+}
+
+.tablepress .odd td {
+    background-color: tint($color-black, 80%);
+}
+
+.tablepress .even td {
+    background-color: transparent;
+}
+
+.tablepress .row-hover tr:hover td {
+    background-color: $color-grey;
+}
+
+
+.Grey .tablepress tbody td,
+.Grey .tablepress tfoot th {
+    border-top: 1px solid $color-black;
+}
+.Grey .tablepress thead th {
+    border-bottom: 1px solid $color-black;
+}
+
+.Grey .tablepress .row-hover tr:hover td {
+    background-color: tint($color-black, 80%);
+}
+
+.Black .tablepress .odd td,
+.Red .tablepress .odd td {
+    color: $color-black;
+}
+
+.Black .tablepress .row-hover tr:hover td,
+.Red .tablepress .row-hover tr:hover td {
+    color: $color-black;
+	background-color: tint($color-black, 80%);
+}
+
+
+.tablepress img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    max-width: none
+}
+
+.dataTables_wrapper {
+    clear: both;
+    margin-bottom: 1em
+}
+
+.dataTables_wrapper .tablepress {
+    clear: both;
+    margin: 0!important
+}
+
+.dataTables_length {
+    float: left;
+    white-space: nowrap
+}
+
+.dataTables_filter {
+    float: right;
+    white-space: nowrap
+}
+
+.dataTables_info {
+    clear: both;
+    float: left;
+    margin: 4px 0 0
+}
+
+.dataTables_paginate {
+    float: right;
+    margin: 4px 0 0
+}
+
+.dataTables_paginate a {
+    color: #111!important;
+    display: inline-block;
+    outline: 0;
+    position: relative;
+    text-decoration: underline;
+    text-decoration: none\0/IE;
+    margin: 0 5px
+}
+
+.dataTables_paginate a:first-child {
+    margin-left: 0
+}
+
+.dataTables_paginate a:last-child {
+    margin-right: 0
+}
+
+.paginate_button:hover {
+    cursor: pointer;
+    text-decoration: none
+}
+
+.paginate_button.disabled {
+    color: #999!important;
+    text-decoration: none;
+    cursor: default
+}
+
+.paginate_button.current {
+    font-weight: 700;
+    text-decoration: none;
+    cursor: default
+}
+
+.dataTables_paginate.paging_simple {
+    padding: 0 15px
+}
+
+.paging_simple .paginate_button.next:after,
+.paging_simple .paginate_button.previous:before {
+    text-align: left;
+    font-family: TablePress;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    content: "\f053";
+    text-shadow: .1em .1em #666;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: -14px;
+    margin: auto;
+    height: 14px;
+    width: 14px;
+    line-height: 1
+}
+
+.paging_simple .paginate_button.next:after {
+    text-align: right;
+    content: "\f054";
+    left: auto
+}
+
+.paginate_button:after,
+.paginate_button:before {
+    color: #d9edf7
+}
+
+.paginate_button:hover:after,
+.paginate_button:hover:before {
+    color: #049cdb
+}
+
+.paginate_button.disabled:after,
+.paginate_button.disabled:before {
+    color: #f9f9f9
+}
+
+.dataTables_processing {
+    display: none
+}
+
+.dataTables_scroll {
+    clear: both
+}
+
+.dataTables_scrollBody {
+    -webkit-overflow-scrolling: touch
+}
+
+.tablepress .sorting,
+.tablepress .sorting_asc,
+.tablepress .sorting_desc {
+    position: relative;
+    padding-right: 20px;
+    cursor: pointer;
+    outline: 0
+}
+
+.tablepress .sorting:after,
+.tablepress .sorting_asc:after,
+.tablepress .sorting_desc:after {
+    font-family: TablePress;
+    font-weight: 400;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 6px;
+    margin: auto;
+    height: 14px;
+    line-height: 1
+}
+
+.tablepress .sorting:after {
+    content: "\f0dc"
+}
+
+.tablepress .sorting_asc:after {
+    content: "\f0d8";
+    padding: 0 0 2px
+}
+
+.tablepress .sorting_desc:after {
+    content: "\f0d7"
+}
+
+.dataTables_scrollBody .tablepress thead th:after,
+.dataTables_wrapper:after {
+    content: ""
+}
+
+.tablepress .sorting:hover,
+.tablepress .sorting_asc,
+.tablepress .sorting_desc {
+    background-color: #049cdb
+}
+
+.dataTables_wrapper:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+.dataTables_wrapper label input,
+.dataTables_wrapper label select {
+    display: inline;
+    margin: 2px;
+    width: auto
+}

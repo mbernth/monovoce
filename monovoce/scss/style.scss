@@ -1,0 +1,217 @@
+/* # Genesis Child Theme 
+Theme Name: mono voce by mono voce
+Theme URI: https://github.com/mbernth/monovoce
+Description: This is a theme based on Brighton by mono voce, created for the Genesis Framework.
+Author: mono voce aps
+Author URI: http://www.monovoce.com/
+Template: genesis
+Version: 1.0.0
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/* Table of Contents
+===================================================================================
+
+# HTML5 Reset
+	## Baseline Normalize
+	## Box Sizing
+*/
+	@import "reset";
+
+/*
+# Mixins
+	## Typography
+	## Border Radius
+	## Gradients
+	## Grid
+*/
+	@import "mixins";
+
+/*
+# Tint and Shade
+*/
+	@import "tint_shade";
+
+/*
+# Variables
+	## Colours
+	## Typography
+	## Media Queries
+	## Site Structure
+*/
+	@import "variables";
+
+/*
+# Swatches
+# Style Guide
+*/
+	@import "swatches";
+	@import "style_guide";
+
+/*
+# SVG Icons
+*/
+	@import "svg_icomoon";
+
+/*
+# Defaults
+	## Typographical Elements
+	## Headings
+	## Objects
+	## Forms
+	### Forms Colored Rows
+	## Tables
+	## Screen Reader Text
+*/
+	@import "defaults";
+
+/*
+ # Structure, Layout and Grid
+	## Site Containers
+	### Site Containers Full-width
+	## Grid Containers
+	### Grid Containers coloured backgrounds
+	### Grid Containers - Site Containers
+*/
+	@import "structure_layout";
+
+/*
+# Flexible Grid
+	## Flexible Grid - Fallback
+	## Flexible Grid - CSS Grid
+*/
+	@import "flexible_grids_fallback";
+	@import "flexible_grids";
+	/* Temperary hidden structure
+	@import "flexible_grids_fallback";
+	@import "flexible_grids";
+	*/
+	
+/*
+# Common Classes
+	## Avatar
+	## Genesis
+	## Titles
+	## WordPress
+*/
+	@import "common_classes";
+
+/*
+# Widgets
+	## Featured Content
+*/
+	@import "widgets";
+
+/*
+# Plugins
+	## Genesis eNews Extended
+	## Skip Links
+*/
+	@import "plugins";
+	@import "gravity_forms";
+/*
+	@import "owl_carousel";
+	@import "owl_theme";
+	@import "owl_transitions";
+	@import "timeline";
+	@import "push";
+	@import "quotes";
+	@import "slider";
+	@import "slider_custom";
+	@import "preview";
+	@import "flickity";
+	
+*/
+/*
+# Site Header
+	## Title Area
+	## Widget Area
+	## Before header
+*/
+	@import "site_header";
+
+/*
+# Site Navigation
+	## Accessible Menu
+	## Site Header Navigation
+	## Primary Navigation
+	## Secondary Navigation
+	## Responsive Menu
+	## Language Menu
+*/
+	@import "site_navigation_original";
+	@import "site_navigation_max800";
+
+/*
+# Content Area
+	## Entries
+	## Buttons
+	## Entry Meta
+	## Pagination
+	## Comments
+	## Featured image
+*/
+	@import "content_area";
+/*
+	## Case Grid
+	## Site Team
+	## Site Team Slide
+	## Pin
+
+	@import "case_grid";
+	@import "site_team";
+	@import "site_team_slide";
+	@import "pin";
+*/
+
+/*
+# Sidebars
+*/
+	@import "sidebars";
+
+/*
+# Footer Widgets
+	## Social Icons
+*/
+	@import "footer_widgets";
+
+/*
+# Site Footer
+*/
+	@import "site_footer";
+
+/*
+# Pages
+	## Frontpage
+
+	@import "page_frontpage";
+*/
+/*
+# Post Types
+	## Cases
+
+	@import "posttype_cases";
+*/
+/*
+# Animations
+*/
+	@import "animation_keyframes";
+
+/*
+# Media Queries
+	# Small
+	# Medium
+	# Large
+	# Xlarge
+*/
+	@import "media_queries_small";
+	@import "media_queries_medium";
+	@import "media_queries_large";
+	@import "media_queries_xlarge";
+
+/*
+- Print Styles
+*/
+	@import "print_styles";

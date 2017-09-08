@@ -1,0 +1,321 @@
+/* # Large screens
+---------------------------------------------------------------------------------------------------- */
+/* ## 80em / 1280 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+
+
+
+
+
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+/* ## Typographical Elements
+---------------------------------------------------------------------- */
+/* ## Headings
+---------------------------------------------------------------------- */
+/* ## Objects
+---------------------------------------------------------------------- */
+/* ## Forms
+---------------------------------------------------------------------- */
+/* ## Tables
+---------------------------------------------------------------------- */
+/* ## Screen Reader Text
+---------------------------------------------------------------------- */
+	
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+/* ## Layout Containers 
+---------------------------------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+/* ## Avatar
+---------------------------------------------------------------------- */
+/* ## Genesis
+---------------------------------------------------------------------- */
+/* ## Titles
+---------------------------------------------------------------------- */
+/* ## WordPress
+---------------------------------------------------------------------- */
+
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+/* ## Featured Content
+---------------------------------------------------------------------- */
+
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+/* ## Genesis eNews Extended
+---------------------------------------------------------------------- */
+/* ## Skip Links
+---------------------------------------------------------------------- */
+
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+/* ## Title Area
+---------------------------------------------------------------------- */
+/* ## Widget Area
+---------------------------------------------------------------------- */
+/* ## Before header
+---------------------------------------------------------------------- */
+
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+/* ## Accessible Menu
+---------------------------------------------------------------------- */
+/* ## Site Header Navigation
+---------------------------------------------------------------------- */
+/* ## Primary Navigation
+---------------------------------------------------------------------- */
+/* ## Secondary Navigation
+---------------------------------------------------------------------- */
+/* ## Responsive Menu
+---------------------------------------------------------------------- */
+/* ## Language Menu
+---------------------------------------------------------------------- */
+
+/* # Content Area
+---------------------------------------------------------------------------------------------------- */
+/* ## Entries
+---------------------------------------------------------------------- */
+/* ## Buttons
+---------------------------------------------------------------------- */
+/* ## Entry Meta
+---------------------------------------------------------------------- */
+/* ## Pagination
+---------------------------------------------------------------------- */
+/* ## Comments
+---------------------------------------------------------------------- */
+/* ## Featured image
+---------------------------------------------------------------------- */
+/* ## Case grid
+---------------------------------------------------------------------- */
+
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+/* ## Social Icons
+---------------------------------------------------------------------- */
+
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+/* # Animations
+---------------------------------------------------------------------------------------------------- */
+/* ## Keyframes
+---------------------------------------------------------------------- */
+/* ### Move X and Roll 360 degrees
+--------------------------------------------- */
+/* ### Move up
+--------------------------------------------- */
+/* ### Move down
+--------------------------------------------- */
+/* ### Fade in
+--------------------------------------------- */
+/* ### Scale down
+--------------------------------------------- */
+/* ### Fade out
+--------------------------------------------- */
+/* ### Slide with opacity
+--------------------------------------------- */
+/* ### Scale up
+--------------------------------------------- */
+
+
+
+
+
+@media only screen and (min-width: 80em) {
+	
+/* # Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Site Containers
+--------------------------------------------- */
+
+.wrap {
+	max-width: 1080px;
+}
+	
+.content-sidebar .site-inner{
+	max-width: 1080px;
+}
+.sidebar-content .site-inner{
+	max-width: 1080px;
+}
+.content-sidebar-sidebar .site-inner{
+	max-width: 1080px;
+}
+
+.sidebar-sidebar-content .site-inner{
+	max-width: 1080px;
+}
+
+.sidebar-content-sidebar .site-inner{
+	max-width: 1080px;
+}
+	
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+/* ### Wrapping div for .content and .sidebar-primary */
+.full-width-content .site-inner .content .breadcrumb,
+.full-width-content .site-inner .content .entry{
+	max-width: 1080px;
+}
+
+@supports not (display: grid) {
+	
+	/* # Structure and Layout Fallback
+	----------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------- */
+
+	/* ## Site Containers Fallback
+	--------------------------------------------- */
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		@include structure(756, 1080);
+	}
+
+	/* ### Content */
+
+	.content-sidebar .content,
+	.sidebar-content .content {
+		@include structure(756, 1080);
+	}
+	
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content {
+		@include structure(522, 756);
+	}
+	
+	/* ### Primary Sidebar */
+
+	.sidebar-primary {
+		@include structure(294, 1080);
+	}
+	.sidebar-content .sidebar-primary {
+		@include structure(294, 1080);
+	}
+	.content-sidebar-sidebar .sidebar-primary,
+	.sidebar-content-sidebar .sidebar-primary {
+		@include structure(203, 756);
+	}
+	.sidebar-sidebar-content .sidebar-primary {
+		@include structure(203, 756);
+	}
+
+	/* ### Secondary Sidebar */
+
+	.sidebar-secondary {
+		@include structure(294, 1080);
+	}
+
+	/* # Footer Widgets Fallback
+	--------------------------------------------- */
+	.footer-widgets .widget-area {
+		@include grid(4, 30, 1080);
+	}
+	
+
+}
+	
+
+
+@supports (display: grid) {
+	/* ## Site Containers CSS Grids
+	----------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------- */
+	
+	/* Grid floats reset */
+	
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap,
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap,
+	.content,
+	.content-sidebar .content,
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content,
+	.content-sidebar-sidebar .content,
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content,	
+	.sidebar-primary,
+	.content-sidebar-sidebar .sidebar-primary,
+	.sidebar-content-sidebar .sidebar-primary,
+	.sidebar-content .sidebar-primary,
+	.sidebar-sidebar-content .sidebar-primary,
+	.sidebar-secondary,
+	.content-sidebar-sidebar .sidebar-secondary,
+	.footer-widgets,
+	.footer-widgets .widget-area,
+	.site-footer{
+		float: none;
+		width: auto;
+	}
+
+	/* Grid floats reset end */
+	
+	/* ## Site Containers
+	--------------------------------------------- */
+
+	.content-sidebar-sidebar .site-inner{
+		grid-column-gap:30px;
+	}
+	.sidebar-sidebar-content .site-inner{
+		grid-column-gap:30px;
+	}
+	.sidebar-content-sidebar .site-inner{
+		grid-column-gap:30px;
+	}
+	
+	/* ## Column Widths and Positions
+	--------------------------------------------- */
+
+	/* ### Wrapping div for .content and .sidebar-primary */
+	.content-sidebar .content-sidebar-wrap{
+		grid-column-gap:30px;
+	}
+	.sidebar-content .content-sidebar-wrap{
+		grid-column-gap:30px;
+	}
+	.content-sidebar-sidebar .content-sidebar-wrap{
+		grid-column-gap:30px;
+	}
+	.sidebar-sidebar-content .content-sidebar-wrap{
+		grid-column-gap:30px;
+	}
+	.sidebar-content-sidebar .content-sidebar-wrap{
+		grid-column-gap:30px;
+	}
+	
+	/* # Flexible Grids import
+	--------------------------------------------- */
+	@import "flexible_grids_large";
+	
+	/* # Footer Widgets
+	--------------------------------------------- */
+	.footer-widgets .wrap{
+		grid-column-gap:30px;
+	}
+
+}
+	
+}
+
+/* # Large screens end
+---------------------------------------------------------------------------------------------------- */

@@ -1,0 +1,59 @@
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.widget {
+	word-wrap: break-word;
+}
+
+.widget ol > li {
+	list-style-position: inside;
+	list-style-type: decimal;
+	padding-left: 20px;
+	text-indent: -20px;
+}
+
+.widget li li {
+	border: 0;
+	margin: 0 0 0 30px;
+	padding: 0;
+}
+
+.widget_calendar table {
+	width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+	text-align: center;
+}
+
+/* ## Featured Content
+---------------------------------------------------------------------- */
+
+.featured-content .entry {
+	border-bottom: 0px solid $color-black;
+	padding: 0 0 120px;
+}
+.featured-content .entry:last-child{
+	border-bottom:none;
+}
+
+.footer-widgets .entry {
+	border-bottom: 1px dotted $color-black;
+}
+
+.featured-content .entry-title {
+	margin-bottom:20px;
+}
+
+.full-width-content .widget-wrap .entry-meta{
+	padding-bottom:10px;
+	border-bottom: 1px solid $color-black;
+}
+.full-width-content .widget-wrap .entry-time{
+	font-weight:600;
+}
+
+.full-width-content .widget-wrap .entry-content{
+	padding-top:20px;
+}

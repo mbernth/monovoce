@@ -1,0 +1,200 @@
+@media only screen and (max-width: 1500px) {
+	
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Typographical Elements
+--------------------------------------------- */
+
+/* Chrome fix */
+body > div {
+    @include font(1.6, 2.4);
+}
+
+body {
+	background-color: $color-white;
+	color: $color-black;
+	font-family: $font-bread;
+	@include font(1.6, 2.4);
+	font-weight: 300;
+	margin: 0;
+}
+
+
+/* # Slider
+--------------------------------------------------- */
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h1 {
+	@include font(6.8, 6.8);
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h2 {
+	@include font(2.4, 2.4);
+}
+
+.full-width-content .gridcontainer.fullscreen.Black .slide_content h3 {
+	@include font(2.2, 2.2);
+	margin: 0 0 20px 0;
+}
+
+.slide_content h2{
+	max-width:1000px;
+}
+
+.slide_content p{
+	margin:40px auto;
+	width:80%;
+	@include font(1.8, 2);
+}
+
+/* Countdown
+--------------------------------------------------- */
+
+div#countdown{
+	max-width:820px;
+}
+
+
+div#countdown span{
+	padding:20% 0;
+}
+
+span.numbers{
+	@include font(4.8, 4.8);
+}
+
+div.cd-box{
+	@include grid(4, 15, 820);
+}
+
+
+/* # Pin
+--------------------------------------------------- */
+
+.full-width-content.pin .content {
+    max-width: 1200px;
+}
+
+/*
+.pin-main article {
+	margin-bottom:40px;	
+	@include collwidth(3, 40, 1000);
+}
+
+.full-width-content.pin .content .entry-title{
+	@include collwidth(1, 40, 1000);
+}
+*/
+
+/* Grid
+--------------------------------------------- */
+.full-width-content .content .coll1,
+.coll1 {
+	margin:0 auto 40px;
+	@include structure(1000, 1000);
+}
+.full-width-content .content .coll2,
+.coll2 {
+	@include grid(2, 40, 1000);
+}
+.full-width-content .content .coll2_3,
+.coll2_3 {
+	@include grid_alt(2, 40, 1000);
+}
+.full-width-content .content .coll3,
+.coll3 {
+	@include grid(3, 40, 1000);
+}
+.full-width-content .content .team .coll3 {
+	@include grid(3, 40, 872);
+}
+.full-width-content .content .team .coll3_4 {
+	@include grid_alt(3, 40, 872);
+}
+.full-width-content .content .coll3_4,
+.coll3_4 {
+	@include grid_alt(3, 40, 1000);
+}
+.full-width-content .content .coll4,
+.coll4 {
+	@include grid(4, 40, 1000);
+}
+.full-width-content .content .coll4_5,
+.coll4_5 {
+	@include grid_alt(4, 40, 1000);
+}
+.full-width-content .content .coll5,
+.coll5 {
+	@include grid(5, 40, 1000);
+}
+.full-width-content .content .coll6,
+.coll6 {
+	@include grid(6, 40, 1000);
+}
+.coll7 {
+	@include grid(7, 40, 1000);
+}
+.coll8 {
+	@include grid(8, 40, 1000);
+}
+.coll9 {
+	@include grid(9, 40, 1000);
+}
+.coll10 {
+	@include grid(10, 40, 1000);
+}
+.coll11 {
+	@include grid(11, 40, 1000);
+}
+.coll12 {
+	@include grid(12, 40, 1000);
+}
+
+/* # Colour background
+--------------------------------------------- */
+
+.full-width-content .entry,
+.full-width-content .gridcontainer .wrap {
+	width:90%;
+	max-width: 1000px;
+}
+
+.content .gridcontainer.Non .coll2 {
+	@include grid(2, 0, 1000);
+}
+.content .gridcontainer.Non .coll2_3 {
+	@include grid_alt(2, 0, 1000);
+}
+.content .gridcontainer.Non .coll3 {
+	@include grid(3, 0, 1000);
+}
+.content .gridcontainer.Non .coll3_4 {
+	@include grid_alt(3, 0, 1000);
+}
+
+.content .gridcontainer.Non .coll4 {
+	@include grid(4, 0, 1000);
+}
+.content .gridcontainer.Non .coll4_5 {
+	@include grid_alt(4, 0, 1000);
+}
+.content .gridcontainer.Non .coll5 {
+	@include grid(5, 0, 1000);
+}
+.content .gridcontainer.Non .coll6 {
+	@include grid(6, 0, 1000);
+}
+
+.full-width-content .content .gridcontainer.Non .backimage{
+	min-height:520px;
+}
+
+/* ## Case grid
+--------------------------------------------- */
+
+.full-width-content .content .coll4.case_preview,
+.coll4.case_preview {
+	@include grid(2, 40, 1000);
+}
+
+}

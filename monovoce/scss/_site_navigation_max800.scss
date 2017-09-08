@@ -1,0 +1,209 @@
+@media only screen and (max-width: $mq-nav) {
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+.site-header ul.genesis-nav-menu {
+	margin:0 auto;
+	width:100%;
+}
+
+.nav-primary {
+	background-color: transparent;
+	float:none;
+	width: auto;
+	margin-top: 0;
+}
+
+.genesis-nav-menu .current-menu-parent > a {
+    border-color: transparent;
+	border-top: none;
+}
+.genesis-nav-menu a,
+.genesis-nav-menu .sub-menu a{
+	padding: 20px 10px 20px 5%;
+}
+.genesis-nav-menu a,
+.genesis-nav-menu a:hover, 
+.genesis-nav-menu a:focus {
+    border-color: transparent;
+	border-top: none;
+}
+
+ul.genesis-nav-menu li{
+	background-color: $color-primary;
+}
+ul.genesis-nav-menu li:last-child{
+}
+ul.genesis-nav-menu li li{
+	background-color: tint($color-black, 60%);
+	li{
+		background-color: tint($color-black, 40%);
+	}
+}
+	
+.genesis-nav-menu .sub-menu li li:first-child{
+	border-top: none;
+}
+.genesis-nav-menu .sub-menu li{
+	background-color: $color-white;
+	border-left: none;
+	border-right: none;
+}
+
+.genesis-nav-menu.responsive-menu > .menu-item > .sub-menu,
+.genesis-nav-menu.responsive-menu,
+.genesis-nav-menu.responsive-menu-two > .menu-item > .sub-menu,
+.genesis-nav-menu.responsive-menu-two{
+	display: none;
+}
+	
+.genesis-nav-menu.responsive-menu .menu-item,
+.genesis-nav-menu.responsive-menu-two .menu-item,
+.responsive-menu-icon {
+	display: block;
+}
+.genesis-nav-menu.responsive-menu .menu-item,
+.genesis-nav-menu.responsive-menu-two .menu-item{
+	margin: 0;
+	border-bottom: 1px solid $color-secondary;
+}
+.genesis-nav-menu.responsive-menu .menu-item:first-child,
+.genesis-nav-menu.responsive-menu-two .menu-item:first-child{
+	border-top: 1px solid $color-secondary;
+}
+
+	
+.genesis-nav-menu.responsive-menu .menu-item:hover,
+.genesis-nav-menu.responsive-menu-two .menu-item:hover{
+	position: static;
+}
+	
+.genesis-nav-menu.responsive-menu .current-menu-item > a,
+.genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu.responsive-menu a,
+.genesis-nav-menu.responsive-menu a:hover,
+.genesis-nav-menu.responsive-menu-two .current-menu-item > a,
+.genesis-nav-menu.responsive-menu-two .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu.responsive-menu-two a,
+.genesis-nav-menu.responsive-menu-two a:hover{
+	background: none;
+	line-height: 1;
+}
+	
+.genesis-nav-menu.responsive-menu .menu-item-has-children,
+.genesis-nav-menu.responsive-menu-two .menu-item-has-children{
+	cursor: pointer;	
+}
+	
+.genesis-nav-menu.responsive-menu .menu-item-has-children > a,
+.genesis-nav-menu.responsive-menu-two .menu-item-has-children > a{
+	margin-right: 60px;
+}
+	
+.genesis-nav-menu.responsive-menu > .menu-item-has-children:before,
+.genesis-nav-menu.responsive-menu-two > .menu-item-has-children:before{
+	content: "\f347";
+	float: right;
+	font: normal 16px/1 'dashicons';
+	height: 16px;
+	padding: 18px 5% 20px 20px;
+	right: 0;
+	text-align: right;
+	z-index: 9999;
+	color: $color-white;
+}
+	
+.genesis-nav-menu.responsive-menu .menu-open.menu-item-has-children:before,
+.genesis-nav-menu.responsive-menu-two .menu-open.menu-item-has-children:before{
+	content: "\f343";
+	color: $color-white;
+}
+
+
+
+/* ## Sub Menu
+--------------------------------------------- */
+
+/* ## Accessible Menu
+--------------------------------------------- */
+	
+/* ## Site Header Navigation
+--------------------------------------------- */
+	
+/* ## Primary Navigation
+--------------------------------------------- */
+	
+/* ## Secondary Navigation
+--------------------------------------------- */
+.nav-secondary{
+	min-height: 40px;
+}
+.nav-secondary .wrap {
+	padding-top: 40px;
+    width: 100%;
+}
+.nav-secondary .genesis-nav-menu .menu-item {
+    display: block;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+/* Responsive Menu
+--------------------------------------------- */
+.responsive-menu-icon{
+	position: absolute;
+	top: 23px;
+	right: 5%;
+}
+.responsive-menu-icon-two{
+	position: absolute;
+	top: 4px;
+	right: 5%;
+}
+.responsive-menu-icon.icon-open .icon-list2,
+.responsive-menu-icon-two.icon-open-two .icon-list2{
+	transform: rotate(90deg);
+}
+.responsive-menu-icon .icon-list2,
+.responsive-menu-icon-two .icon-list2{
+    width: 30px;
+    height: 30px;
+	color: $color-white;
+	-moz-transition:    all .4s ease-in-out;
+	-ms-transition:     all .4s ease-in-out;
+	-o-transition:      all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition:         all .4s ease-in-out;
+}
+	
+.genesis-nav-menu.responsive-menu .sub-menu,
+.genesis-nav-menu.responsive-menu-two .sub-menu{
+	border: none;
+	left: auto;
+	opacity: 1;
+	position: relative;
+	-moz-transition:    opacity .4s ease-in-out;
+	-ms-transition:     opacity .4s ease-in-out;
+	-o-transition:      opacity .4s ease-in-out;
+	-webkit-transition: opacity .4s ease-in-out;
+	transition:         opacity .4s ease-in-out;
+	width: 100%;
+	z-index: 99;
+}
+	
+.genesis-nav-menu.responsive-menu .sub-menu .sub-menu,
+.genesis-nav-menu.responsive-menu-two .sub-menu .sub-menu{
+	margin: 0;
+}
+	
+.genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu.responsive-menu .sub-menu li a,
+.genesis-nav-menu.responsive-menu .sub-menu li a:hover,
+.genesis-nav-menu.responsive-menu-two .sub-menu .current-menu-item > a:hover,
+.genesis-nav-menu.responsive-menu-two .sub-menu li a,
+.genesis-nav-menu.responsive-menu-two .sub-menu li a:hover{
+	border: none;
+	position: relative;
+	width: 100%;
+}
+
+
+}

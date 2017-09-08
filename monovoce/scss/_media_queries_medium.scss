@@ -1,0 +1,331 @@
+/* # Medium screens
+----------------------------------------------------------------------------------------------------
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+
+
+
+@media only screen and (min-width: $mq-medium) {
+
+@import "flexible_grids_fallback_medium";
+	
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+/* ## Typographical Elements
+---------------------------------------------------------------------- */
+/* ## Headings
+---------------------------------------------------------------------- */
+/* ## Objects
+---------------------------------------------------------------------- */
+/* ## Forms
+---------------------------------------------------------------------- */
+/* ## Tables
+---------------------------------------------------------------------- */
+/* ## Screen Reader Text
+---------------------------------------------------------------------- */
+	
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+
+.content-sidebar .site-inner,
+.sidebar-content .site-inner,
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
+.sidebar-content-sidebar .site-inner{
+	max-width: $target-medium+px;
+}
+
+
+@supports (display: grid) {
+	
+	.content-sidebar .site-inner .content-sidebar-wrap,
+	.sidebar-content .site-inner .content-sidebar-wrap{
+		display: grid;
+		grid-template-columns:4fr 2fr;
+		grid-gap:$margin-medium+px;
+	}
+	.sidebar-content .site-inner .content-sidebar-wrap{
+		grid-template-columns:2fr 4fr;
+		.content{
+			order: 2;
+		}
+		.sidebar{
+			order: 1;
+		}
+	}
+	
+	.content-sidebar-sidebar .site-inner,
+	.sidebar-sidebar-content .site-inner,
+	.sidebar-content-sidebar .site-inner{
+		display: grid;
+		grid-template-columns:5fr 1fr;
+		grid-gap:$margin-medium+px;
+		.content-sidebar-wrap{
+			display: grid;
+			grid-template-columns:3fr 1fr;
+			grid-gap:$margin-medium+px;
+		}
+		.sidebar-secondary{
+			margin-top: 0;
+		}
+	}
+	
+	.sidebar-sidebar-content .site-inner{
+		grid-template-columns:1fr 5fr;
+		.content-sidebar-wrap{
+			grid-template-columns:1fr 3fr;
+			order: 2;
+			.content{
+				order: 2;
+			}
+			.sidebar{
+				order: 1;
+			}
+		}
+		.sidebar-secondary{
+			order: 1;
+		}
+	}
+	
+	.sidebar-content-sidebar .site-inner{
+		grid-template-columns:1fr 5fr;
+		.content-sidebar-wrap{
+			order: 2;
+		}
+		.sidebar-secondary{
+			order: 1;
+		}
+	}
+	
+}
+/* ### Site Containers Full-width 
+--------------------------------------------- */
+.full-width-content .site-inner .content .entry{
+	max-width: $target-medium+px;
+}
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+.gridcontainer{
+	.row_headline{
+		max-width: $target-medium+px;
+	}
+	.wrap{
+		max-width: $target-medium+px;
+	}
+}
+.gridcontainer{
+	.backimage{
+		min-height: 400px;
+	}
+}
+@supports (display: grid) {
+.gridcontainer.coll2{
+	.wrap{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+.gridcontainer.coll3{
+	.wrap{
+		grid-template-columns:repeat(3, 1fr);
+	}
+}
+.gridcontainer.coll4{
+	.wrap{
+		grid-template-columns:repeat(4, 1fr);
+	}
+}
+.gridcontainer.coll5{
+	.wrap{
+		grid-template-columns:repeat(5, 1fr);
+	}
+}
+.gridcontainer.coll6{
+	.wrap{
+		grid-template-columns:repeat(6, 1fr);
+	}
+}
+	
+.content-sidebar .site-inner,
+.sidebar-content .site-inner{
+	.gridcontainer.coll3{
+		.wrap{
+			grid-template-columns:repeat(1, 1fr);
+		}
+	}
+	.gridcontainer.coll4{
+		.wrap{
+			grid-template-columns:repeat(2, 1fr);
+		}
+	}
+	.gridcontainer.coll5{
+		.wrap{
+			grid-template-columns:repeat(2, 1fr);
+		}
+	}
+	.gridcontainer.coll6{
+		.wrap{
+			grid-template-columns:repeat(2, 1fr);
+		}
+	}
+}
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
+.sidebar-content-sidebar .site-inner{
+	.gridcontainer.coll3{
+		.wrap{
+			grid-template-columns:repeat(1, 1fr);
+		}
+	}
+	.gridcontainer.coll4{
+		.wrap{
+			grid-template-columns:repeat(1, 1fr);
+		}
+	}
+	.gridcontainer.coll5{
+		.wrap{
+			grid-template-columns:repeat(1, 1fr);
+		}
+	}
+	.gridcontainer.coll6{
+		.wrap{
+			grid-template-columns:repeat(1, 1fr);
+		}
+	}
+}
+	
+}
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+/* ## Avatar
+---------------------------------------------------------------------- */
+/* ## Genesis
+---------------------------------------------------------------------- */
+.archive-description,
+.author-box {
+	max-width: $target-medium+px;
+}
+/* ## Titles
+---------------------------------------------------------------------- */
+/* ## WordPress
+---------------------------------------------------------------------- */
+
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+/* ## Featured Content
+---------------------------------------------------------------------- */
+
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+/* ## Genesis eNews Extended
+---------------------------------------------------------------------- */
+/* ## Skip Links
+---------------------------------------------------------------------- */
+
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+.site-header .wrap {
+	max-width:90%;
+}
+/* ## Title Area
+---------------------------------------------------------------------- */
+.title-area {
+	margin-left: 0;
+}
+/* ## Widget Area
+---------------------------------------------------------------------- */
+/* ## Before header
+---------------------------------------------------------------------- */
+
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+/* ## Accessible Menu
+---------------------------------------------------------------------- */
+/* ## Site Header Navigation
+---------------------------------------------------------------------- */
+/* ## Primary Navigation
+---------------------------------------------------------------------- */
+/* ## Secondary Navigation
+---------------------------------------------------------------------- */
+/* ## Responsive Menu
+---------------------------------------------------------------------- */
+/* ## Language Menu
+---------------------------------------------------------------------- */
+/* @import "site_navigation"; */
+
+/* # Content Area
+---------------------------------------------------------------------------------------------------- */
+/* ## Entries
+---------------------------------------------------------------------- */
+.content .post{
+	img{
+		@include structure(445, $target-medium)
+	}
+}
+/* ## Buttons
+---------------------------------------------------------------------- */
+/* ## Entry Meta
+---------------------------------------------------------------------- */
+/* ## Pagination
+---------------------------------------------------------------------- */
+/* ## Comments
+---------------------------------------------------------------------- */
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	max-width: $target-medium+px;
+}
+/* ## Featured image
+---------------------------------------------------------------------- */
+/* ## Case grid
+---------------------------------------------------------------------- */
+
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+.footer-widgets .wrap {
+	max-width: $target-medium+px;
+}
+@supports (display: grid) {
+.footer-widgets .wrap {
+	grid-template-columns:repeat(4, 1fr);
+}
+}
+/* ## Social Icons
+---------------------------------------------------------------------- */
+
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+/* # Animations
+---------------------------------------------------------------------------------------------------- */
+/* ## Keyframes
+---------------------------------------------------------------------- */
+/* ### Move X and Roll 360 degrees
+--------------------------------------------- */
+/* ### Move up
+--------------------------------------------- */
+/* ### Move down
+--------------------------------------------- */
+/* ### Fade in
+--------------------------------------------- */
+/* ### Scale down
+--------------------------------------------- */
+/* ### Fade out
+--------------------------------------------- */
+/* ### Slide with opacity
+--------------------------------------------- */
+/* ### Scale up
+--------------------------------------------- */
+
+	
+}
+/* # Medium screens end
+---------------------------------------------------------------------------------------------------- */

@@ -1,0 +1,224 @@
+/* Grid fallback
+--------------------------------------------- */
+.gridcontainer {
+	position:relative;
+	display:block;
+	float:left;
+	width:100%;
+	margin-bottom:0px;
+}
+
+.full-width-content .gridcontainer .row_headline{
+	margin:0 auto;
+	margin-bottom:30px;
+	width:90%;
+	max-width: 1080px;
+}
+
+.content .gridcontainer.White:nth-child(2){
+	padding-top:0;
+}
+
+.site-inner .gridcontainer:last-child {
+	margin-bottom:0;
+}
+.content .gridcontainer::nth-child(2n){
+	padding-top:0;
+}
+
+.site-inner .gridcontainer[class*="coll"] section p:last-child {
+	margin-bottom:0;
+}
+
+.full-width-content .content .gridcontainer.coll1 section,
+.gridcontainer.coll1 section{
+	margin:0 auto 30px;
+	@include structure(1080, 1080);
+}
+.full-width-content .content .gridcontainer.coll2 section,
+.gridcontainer.coll2 section{
+	float:left;
+	margin-bottom:30px;
+	@include grid(2, 30, 1080);
+}
+.full-width-content .content .gridcontainer.coll3 section,
+.gridcontainer.coll3 section{
+	float:left;
+	margin-bottom:30px;
+	@include grid(3, 30, 1080);
+}
+.full-width-content .content .gridcontainer.coll4 section,
+.gridcontainer.coll4 section{
+	float:left;
+	margin-bottom:30px;
+	@include grid(4, 30, 1080);
+}
+.full-width-content .content .gridcontainer.coll5 section,
+.gridcontainer.coll5 section{
+	float:left;
+	margin-bottom:30px;
+	@include grid(5, 30, 1080);
+}
+.full-width-content .content .gridcontainer.coll6 section,
+.gridcontainer.coll6 section{
+	float:left;
+	margin-bottom:30px;
+	@include grid(6, 30, 1080);
+}
+
+/* # Structure and Layout grid
+--------------------------------------------- */
+.full-width-content .content {
+}
+
+.content .gridcontainer.coll2 section {
+	@include grid(2, 30, 872);
+}
+.content .gridcontainer.coll3 section {
+	@include grid(3, 30, 872);
+}
+.content .gridcontainer.coll4 section {
+	@include grid(4, 30, 872);
+}
+.content .gridcontainer.coll5 section {
+	@include grid(5, 30, 872);
+}
+.content .gridcontainer.coll6 section {
+	@include grid(6, 30, 872);
+}
+
+.content-sidebar-sidebar .content .gridcontainer.coll2, 
+.sidebar-content-sidebar .content .gridcontainer.coll2, 
+.sidebar-sidebar-content .content .gridcontainer.coll2 {
+	@include grid(2, 40, 644);
+}
+
+.content-sidebar-sidebar .content .gridcontainer.coll3, 
+.sidebar-content-sidebar .content .gridcontainer.coll3, 
+.sidebar-sidebar-content .content .gridcontainer.coll3 {
+	@include grid(3, 40, 644);
+}
+.content-sidebar-sidebar .content .gridcontainer.coll4, 
+.sidebar-content-sidebar .content .gridcontainer.coll4, 
+.sidebar-sidebar-content .content .gridcontainer.coll4 {
+	@include grid(4, 40, 644);
+}
+.content-sidebar-sidebar .content .gridcontainer.coll5, 
+.sidebar-content-sidebar .content .gridcontainer.coll5, 
+.sidebar-sidebar-content .content .gridcontainer.coll5 {
+	@include grid(5, 40, 644);
+}
+.content-sidebar-sidebar .content .gridcontainer.coll6, 
+.sidebar-content-sidebar .content .gridcontainer.coll6, 
+.sidebar-sidebar-content .content .gridcontainer.coll6 {
+	@include grid(6, 40, 644);
+}
+
+/* # Colour background
+--------------------------------------------- */
+
+.full-width-content .site-inner {
+	width:100%;
+	max-width:100%;
+}
+
+.full-width-content .entry,
+.full-width-content .gridcontainer .wrap {
+	margin:0 auto;
+	width:90%;
+	max-width: 1080px;
+}
+
+.full-width-content .widget-wrap .entry{
+	width:100%;
+}
+
+.full-width-content .entry {
+	margin-bottom:40px;
+}
+
+.full-width-content .gridcontainer.non.black .row_headline,
+.full-width-content .gridcontainer.non.grey .row_headline,
+.full-width-content .gridcontainer.non .row_headline{
+	display:none;
+}
+
+.full-width-content .gridcontainer.black,
+.full-width-content .gridcontainer.grey,
+.full-width-content .gridcontainer.white {
+	margin-bottom:0;
+}
+
+.full-width-content .gridcontainer.white {
+	background-color:$color-white;
+}
+
+.full-width-content .gridcontainer.black {
+	background-color:$color-black;
+	color:$color-white;
+}
+.full-width-content .gridcontainer.grey {
+	background-color: tint($color-black, 60%);
+}
+
+.full-width-content .gridcontainer.black h1,
+.full-width-content .gridcontainer.black h2,
+.full-width-content .gridcontainer.black h3,
+.full-width-content .gridcontainer.black h4,
+.full-width-content .gridcontainer.black h5,
+.full-width-content .gridcontainer.black h6{
+	color:$color-white;
+}
+
+.full-width-content .gridcontainer.non .wrap {
+	margin:0 auto;
+	width:100%;
+	max-width: 100%;
+}
+
+.full-width-content .gridcontainer.non.black,
+.full-width-content .gridcontainer.non.grey,
+.full-width-content .gridcontainer.non {
+	margin:0px;
+	padding:0px;
+}
+.full-width-content .gridcontainer.non:nth-child(2) {
+	margin-top:0px;
+	padding-top:0px;
+}
+.full-width-content .content .gridcontainer.non.coll1 section,
+.full-width-content .content .gridcontainer.non.coll2 section,
+.full-width-content .content .gridcontainer.non.coll3 section,
+.full-width-content .content .gridcontainer.non.coll4 section,
+.full-width-content .content .gridcontainer.non.coll5 section,
+.full-width-content .content .gridcontainer.non.coll6 section{
+	float:left;
+	margin-bottom:0px;
+}
+
+.content .gridcontainer.non.coll2 section{
+	@include grid(2, 0, 1328);
+}
+.content .gridcontainer.non.coll3 section {
+	@include grid(3, 0, 1328);
+}
+
+.content .gridcontainer.non.coll4 section {
+	@include grid(4, 0, 1328);
+}
+.content .gridcontainer.non.coll5 section {
+	@include grid(5, 0, 1328);
+}
+.content .gridcontainer.non.coll6 section {
+	@include grid(6, 0, 1328);
+}
+
+.full-width-content .content .gridcontainer.non .wysiwyg{
+	padding:30px;
+}
+
+.full-width-content .content .gridcontainer.non .backimage{
+	min-height:450px;
+	background-size:cover;
+	background-position:50% 50%;
+}

@@ -1,0 +1,27 @@
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+	display: block;
+	float: left;
+	width: 100%;
+	position:relative;
+	background-color: shade($color-primary, 60%);
+	@include font($g_font-site-footer-size, $g_font-site-footer-lineh);
+	font-weight: $g_font-site-footer-weight;
+	color:$color-white;
+	line-height: 1;
+	padding: 15px 0;
+	text-align: center;
+	a{
+		color: $color-white;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+.site-footer p {
+	margin-bottom: 0;
+}

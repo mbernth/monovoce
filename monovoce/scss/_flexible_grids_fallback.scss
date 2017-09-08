@@ -1,0 +1,73 @@
+/* ## Flexible Grid - Fallback
+---------------------------------------------------------------------------------------------------- */
+
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+/* ### Site Containers Full-width
+--------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+.gridcontainer {
+	position:relative;
+	display:block;
+	float:left;
+	width:100%;
+}
+/* Columns */
+.gridcontainer.coll4 section,
+.gridcontainer.coll5 section,
+.gridcontainer.coll6 section{
+	float: left;
+	@include grid(2, $margin-default, $target-default);
+}
+/* Columns full-width */
+.gridcontainer.non.coll4 section.wysiwyg,
+.gridcontainer.non.coll5 section.wysiwyg,
+.gridcontainer.non.coll6 section.wysiwyg{
+	float: left;
+	@include grid(2, $margin-zero, $target-default);
+	padding: 30px;
+}
+/* Columns full-width Back image */
+.gridcontainer.non.coll4 section.backimage,
+.gridcontainer.non.coll5 section.backimage,
+.gridcontainer.non.coll6 section.backimage{
+	float: left;
+	@include grid(2, $margin-zero, $target-default);
+}
+
+@supports (display: grid) {
+	/* Flexible Grids fallback reset */
+	.gridcontainer .wrap section {
+		padding: 0;
+	}
+	/* Columns */
+	.gridcontainer.coll4 section,
+	.gridcontainer.coll5 section,
+	.gridcontainer.coll6 section{
+		float:none;
+		@include grid(1, $margin-zero, $target-default);
+		margin-bottom:inherit;
+	}
+	/* Columns full-width */
+	.gridcontainer.non.coll4 section.wysiwyg,
+	.gridcontainer.non.coll5 section.wysiwyg,
+	.gridcontainer.non.coll6 section.wysiwyg{
+		float:none;
+		@include grid(1, $margin-zero, $target-default);
+		margin-bottom:inherit;
+	}
+	/* Columns full-width Back image */
+	.gridcontainer.non.coll4 section.backimage,
+	.gridcontainer.non.coll5 section.backimage,
+	.gridcontainer.non.coll6 section.backimage{
+		float:none;
+		@include grid(1, $margin-zero, $target-default);
+	}
+}
+/* Flexible Grids fallback reset end */
+
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */

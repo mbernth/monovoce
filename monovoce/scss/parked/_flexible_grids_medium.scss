@@ -1,0 +1,53 @@
+@supports (display: grid) {
+	
+/* # Flexible Grids
+------------------------------------------------------------------------------------------ */
+
+/* ## Grid Containers
+--------------------------------------------- */
+.gridcontainer{
+	padding: 40px 0;
+	.row_headline{
+		max-width: 960px;
+		margin: 0 auto 30px;
+	}
+	.wrap{
+		display: grid;
+		grid-column-gap:30px;
+		grid-row-gap:30px;
+		max-width: 960px;
+		}
+}
+
+.gridcontainer.coll1{
+	.wrap{
+		grid-template-columns:1fr;
+	}
+}
+.gridcontainer.coll2{
+	.wrap{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+.gridcontainer.coll3{
+	.wrap{
+		grid-template-columns:repeat(3, 1fr);
+	}
+}
+.gridcontainer.coll4{
+	.wrap{
+		grid-template-columns:repeat(4, 1fr);
+	}
+}
+.gridcontainer.coll5{
+	.wrap{
+		grid-template-columns:repeat(5, 1fr);
+	}
+}
+.gridcontainer.coll6{
+	.wrap{
+		grid-template-columns:repeat(6, 1fr);
+	}
+}
+	
+}
