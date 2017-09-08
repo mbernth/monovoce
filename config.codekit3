@@ -27,204 +27,11 @@
 		"oAP": "\/monovoce\/functions.php",
 		"oF": 0
 		},
-	"\/monovoce\/images\/android-chrome-192x192.png": {
-		"ft": 32768,
-		"iS": 8118,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/android-chrome-192x192.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/apple-touch-icon-114x114.png": {
-		"ft": 32768,
-		"iS": 3914,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/apple-touch-icon-114x114.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/apple-touch-icon-120x120.png": {
-		"ft": 32768,
-		"iS": 2577,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/apple-touch-icon-120x120.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/apple-touch-icon-144x144.png": {
-		"ft": 32768,
-		"iS": 4882,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/apple-touch-icon-144x144.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/apple-touch-icon-152x152.png": {
-		"ft": 32768,
-		"iS": 6076,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/apple-touch-icon-152x152.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/apple-touch-icon-180x180.png": {
-		"ft": 32768,
-		"iS": 4435,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/apple-touch-icon-180x180.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/apple-touch-icon-57x57.png": {
-		"ft": 32768,
-		"iS": 1332,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/apple-touch-icon-57x57.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/apple-touch-icon-60x60.png": {
-		"ft": 32768,
-		"iS": 1007,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/apple-touch-icon-60x60.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/apple-touch-icon-72x72.png": {
-		"ft": 32768,
-		"iS": 1481,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/apple-touch-icon-72x72.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/apple-touch-icon-76x76.png": {
-		"ft": 32768,
-		"iS": 1829,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/apple-touch-icon-76x76.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/monovoce\/images\/cross.png": {
 		"ft": 32768,
 		"iS": 1163,
 		"oA": 0,
 		"oAP": "\/monovoce\/images\/cross.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/favicon-16x16.png": {
-		"ft": 32768,
-		"iS": 326,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/favicon-16x16.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/favicon-32x32.png": {
-		"ft": 32768,
-		"iS": 467,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/favicon-32x32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/favicon-96x96.png": {
-		"ft": 32768,
-		"iS": 2111,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/favicon-96x96.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/favicon.ico": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/monovoce\/images\/favicon.ico",
-		"oF": 0
-		},
-	"\/monovoce\/images\/largetile.png": {
-		"ft": 32768,
-		"iS": 18907,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/largetile.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/mediumtile.png": {
-		"ft": 32768,
-		"iS": 2599,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/mediumtile.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/smalltile.png": {
-		"ft": 32768,
-		"iS": 1405,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/smalltile.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/monovoce\/images\/widetile.png": {
-		"ft": 32768,
-		"iS": 5954,
-		"oA": 0,
-		"oAP": "\/monovoce\/images\/widetile.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -677,8 +484,8 @@
 		"oA": 0,
 		"oAP": "\/monovoce\/screenshot.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -3403,16 +3210,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/monovoce\/scss\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/monovoce\/scss\/style-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"\/monovoce\/scss\/style.scss": {
 		"aP": 0,

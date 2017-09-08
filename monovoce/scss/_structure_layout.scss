@@ -139,12 +139,16 @@
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
 .gridcontainer.black{
-	background-color: shade($color-black, 40%);
-	color: $color-white;
+	background-color: $g_gridcontainer-black;
+	color: $g_gridcontainer-black-font-color;
 	.row_headline{
-		color: $color-white;
+		color: $g_gridcontainer-black-font-color;
 	}
 }
 .gridcontainer.grey{
-	background-color: tint($color-black, 90%);
+	background-color: $g_gridcontainer-grey;
+	color:$g_gridcontainer-grey-font-color;
+	.row_headline{
+		color: $g_gridcontainer-grey-font-color;
+	}
 }

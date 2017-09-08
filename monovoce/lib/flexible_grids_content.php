@@ -56,21 +56,28 @@ function mono_flexible_grids() {
 							
 							// Column fields
 							if (get_sub_field('content')){
-							$colbtn = get_sub_field('column_content_button');
-							
-							echo '<section class="wysiwyg">';
-								the_sub_field('content');
-								// Column botton
-								if ($colbtn['button_text']){
-									if ($colbtn['page_link']){
-									echo '<a class="button" href="' . $colbtn['page_link']. '"><span>';
-									}else{
-									echo '<a class="button" href="' . $colbtn['url_link']. '" target="_blank""><span>';
+								$colbtn = get_sub_field('column_content_button');
+								
+								echo '<section class="wysiwyg">';
+									
+									if( ($selected == 'non black' || $selected == 'non grey' || $selected == 'non')){
+										if($headline){
+										echo '<h1>' . $headline . '</h1>';
+										}
 									}
-									echo '' . $colbtn['button_text']. '';
-									echo '</span></a>';
-								}
-							echo '</section>';
+									
+									the_sub_field('content');
+									// Column botton
+									if ($colbtn['button_text']){
+										if ($colbtn['page_link']){
+										echo '<a class="button" href="' . $colbtn['page_link']. '"><span>';
+										}else{
+										echo '<a class="button" href="' . $colbtn['url_link']. '""><span>';
+										}
+										echo '' . $colbtn['button_text']. '';
+										echo '</span></a>';
+									}
+								echo '</section>';
 							}
 							
 							
@@ -106,9 +113,16 @@ function mono_flexible_grids() {
 							
 							// Video fields
 							if (get_sub_field('video_embeding_code')){
-							echo '<section class="coll' . $coll. '">';
+							echo '<section>';
 								the_sub_field('video_embeding_code');
 							echo '</section>';
+							}
+
+							// Widget fields
+							if (get_sub_field('widget_area')){
+								echo '<section class="featured_widget">';
+									the_sub_field('widget_area');
+								echo '</section>';
 							}
 							
 							

@@ -4,57 +4,61 @@
 /* ## Colours
 ---------------------------------------------------------------------- */
 
+/* Black */
+$color-black: #000B12; /* Black */
+$color-black_rgb: rgba(0, 11, 18, 1); /* Black */
+
 /* White */
 $color-white: #ffffff;
 $color-black_rgb: rgba(255, 255, 255, 1) ; /* White */
 
-/* Black */
-$color-black: #0E1C2D; /* Black */
-$color-black_rgb: rgba(14, 28, 45, 1); /* Black */
-
 /* Primary */
-$color-primary: #4A90E2; /* Colour */
-$color-primary_rgb: rgba(74, 144, 226, 1) ; /* Colour */
+$color-primary: #00395D; /* Colour */
+$color-primary_rgb: rgba(0, 57, 93, 1) ; /* Colour */
 
 /* Secondary */
-$color-secondary: #00D3A7; /* Colour */
-$color-secondary_rgb: rgba(0, 211, 167, 1) ; /* Colour */
+$color-secondary: #EF405C; /* Colour */
+$color-secondary_rgb: rgba(239, 64, 92, 1) ; /* Colour */
 
 /* Active - Active/Focuced*/
-$color-active: #4A90E2; /* Colour */
-$color-active_rgb: rgba(74, 144, 226, 1) ; /* Colour */
+$color-active: #52B9E9; /* Colour */
+$color-active_rgb: rgba(82, 185, 233, 1) ; /* Colour */
 
 /* Accent 1 - Succes */
 $color-accent-one: #00D3A7; /* Colour */
 $color-accent-one_rgb: rgba(0, 211, 167, 1) ; /* Colour */
 
 /* Accent 2 - Warning */
-$color-accent-two: #FF4000; /* Colour */
-$color-accent-two_rgb: rgba(255, 64, 0, 1) ; /* Colour */
+$color-accent-two: #FFE46B; /* Colour */
+$color-accent-two_rgb: rgba(255, 228, 107, 1) ; /* Colour */
 
 /* Accent 3 - Error/Alert */
-$color-accent-three: #D0021B; /* Colour */
-$color-accent-three_rgb: rgba(208, 2, 27, 1) ; /* Colour */
+$color-accent-three: #EF405C; /* Colour */
+$color-accent-three_rgb: rgba(239, 64, 92, 1) ; /* Colour */
 
+/* ## Defaults Globals
+---------------------------------------------------------------------- */
+/* Global body values */
+$g_body-background-color:$color-black;
 
 /* ## Typography
 ---------------------------------------------------------------------- */
 
 /* Global Font Faminly */
-$font-bread: 'Montserrat', Helvetica, Arial, sans-serif;
-$font-headlines: 'Montserrat', Helvetica, Arial, sans-serif;
-$font-navigation: 'Montserrat', Helvetica, Arial, sans-serif;
+$font-bread: 'Oxygen', Helvetica, Arial, sans-serif;
+$font-headlines: 'Oxygen', Helvetica, Arial, sans-serif;
+$font-navigation: 'Oxygen', Helvetica, Arial, sans-serif;
 
 /* Global Default values */
 $g_font-bread-size: 1.6;
 $g_font-bread-lineh: 2.6;
-$g_font-bread-weight: 400;
-$g_font-bread-color:$color-black;
-$g_font-bread-a-color:$color-primary;
-$g_font-bread-a-hover-color:tint($color-primary, 40%);
+$g_font-bread-weight: 300;
+$g_font-bread-color:$color-white;
+$g_font-bread-a-color:$color-secondary;
+$g_font-bread-a-hover-color:tint($color-secondary, 40%);
 
 $g_font-mark-color:$color-white;
-$g_font-mark-background-color:$color-black;
+$g_font-mark-background-color:$color-secondary;
 
 $g_font-h1-size: 3.2;
 $g_font-h1-lineh: 3.2;
@@ -68,28 +72,28 @@ $g_font-h5-size: 2.2;
 $g_font-h5-lineh: 2.2;
 $g_font-h6-size: 1.8;
 $g_font-h6-lineh: 1.8;
-$g_font-h1-6-weight: 600;
-$g_font-h1-6-color: $color-black;
+$g_font-h1-6-weight: 300;
+$g_font-h1-6-color: $color-white;
 
 $g_font-blockquote-size: 6;
 $g_font-blockquote-lineh: 1;
-$g_font-blockquote-weight: 600;
-$g_font-blockquote-color:$color-black;
+$g_font-blockquote-weight: 300;
+$g_font-blockquote-color:$color-white;
 
 $g_font-input-size: 1.6;
 $g_font-input-lineh: 2.6;
-$g_font-input-weight: 400;
-$g_font-input-color: $color-black;
+$g_font-input-weight: 300;
+$g_font-input-color: $color-white;
 
 $g_font-placeholder-size: 1.6;
 $g_font-placeholder-lineh: 2.6;
-$g_font-placeholder-weight: 400;
+$g_font-placeholder-weight: 300;
 $g_font-placeholder-color: tint($color-black, 60%);
 
 $g_font-label-size: 1.4;
 $g_font-label-lineh: 2.4;
-$g_font-label-weight: 600;
-$g_font-label-color: $color-black;
+$g_font-label-weight: 400;
+$g_font-label-color: $color-white;
 
 $g_font-button-size: 1.8;
 $g_font-button-lineh: 1.8;
@@ -103,74 +107,80 @@ $g_font-button-box-shadow-hover:0px 5px 3px 0px rgba(14, 28, 45, 0.25);
 /* Global Common Classes values */
 $g_font-breadcrumb-size: 1.4;
 $g_font-breadcrumb-lineh: 2.4;
-$g_font-breadcrumb-weight: 400;
-$g_font-breadcrumb-color: $color-black;
+$g_font-breadcrumb-weight: 300;
+$g_font-breadcrumb-color: $color-white;
 
 $g_font-author-box-title-size: 1.6;
 $g_font-author-box-title-lineh: 2.6;
-$g_font-author-box-title-6-weight: 400;
+$g_font-author-box-title-6-weight: 300;
 $g_font-archive-title-size: 3.2;
 $g_font-archive-title-lineh: 3.2;
-$g_font-archive-title-6-weight: 600;
+$g_font-archive-title-6-weight: 400;
 $g_font-entry-title-size: 3.2;
 $g_font-entry-title-lineh: 3.2;
-$g_font-entry-title-6-weight: 600;
+$g_font-entry-title-6-weight: 300;
 $g_font-widget-title-size: 2.6;
 $g_font-widget-title-lineh: 2.6;
-$g_font-widget-title-6-weight: 600;
+$g_font-widget-title-6-weight: 300;
 
 $g_font-caption-size: 1.4;
 $g_font-caption-lineh: 2.6;
-$g_font-caption-weight: 400;
+$g_font-caption-weight: 300;
 
 /* Global Title Area values */
 $g_font-site-title-size: 3.2;
 $g_font-site-title-lineh: 3.2;
-$g_font-site-title-6-weight: 600;
+$g_font-site-title-6-weight: 300;
 
 /* Global Before Header Font values */
 $g_font-before-header-size: 1;
 $g_font-before-header-lineh: 1;
-$g_font-before-header-6-weight: 400;
+$g_font-before-header-6-weight: 300;
 
 /* Global Site Navigation values */
 $g_font-nav-size: 1.2;
 $g_font-nav-lineh: 1.2;
-$g_font-nav-weight: 600;
+$g_font-nav-weight: 700;
 
 /* Global Entry Meta values */
 $g_font-meta-size:1.4;
 $g_font-meta-lineh:2.2;
-$g_font-meta-weight:600;
+$g_font-meta-weight:300;
 
 /* Global Pagination values */
 $g_font-pagination-size:1.6;
 $g_font-pagination-lineh:2.4;
-$g_font-pagination-weight:400;
+$g_font-pagination-weight:300;
 
 /* Global Comments values */
 $g_font-logged-in-size:1.4;
 $g_font-logged-in-lineh:2.2;
-$g_font-logged-in-weight:400;
+$g_font-logged-in-weight:300;
 $g_font-comment-header-size:1.6;
 $g_font-comment-header-lineh:2.4;
-$g_font-comment-header-weight:600;
+$g_font-comment-header-weight:300;
 
 /* Global Footer Widgets values */
 $g_font-footer-widgets-size:1.4;
 $g_font-footer-widgets-lineh:2;
-$g_font-footer-widgets-weight:400;
+$g_font-footer-widgets-weight:300;
 
 /* Global Site Footer values */
 $g_font-site-footer-size:1.0;
 $g_font-site-footer-lineh:1.2;
-$g_font-site-footer-weight:400;
+$g_font-site-footer-weight:300;
 
 /* ## Border Radius
 ---------------------------------------------------------------------- */
 /* Globals */
 $radius: 5;
 
+/* ## Colored Gridcontainer
+---------------------------------------------------------------------- */
+$g_gridcontainer-black: tint($color-black, 10%);
+$g_gridcontainer-black-font-color: tint($color-black, 80%);
+$g_gridcontainer-grey:$color-secondary;
+$g_gridcontainer-grey-font-color: $color-white;
 
 /* ## Media Queries
 ---------------------------------------------------------------------- */

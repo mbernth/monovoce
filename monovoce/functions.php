@@ -26,7 +26,7 @@ define( 'CHILD_THEME_VERSION', '1.0.0' );
 add_action( 'wp_enqueue_scripts', 'genesis_sample_google_fonts' );
 function genesis_sample_google_fonts() {
 	// Google fonts
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,400i,600,900&subset=latin-ext', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Oxygen:300,400,700&amp;subset=latin-ext', array(), CHILD_THEME_VERSION );
 	// Responsive menu
 	wp_enqueue_script( 'mono-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
 	// Dashicons
@@ -153,6 +153,11 @@ genesis_register_sidebar( array(
 	'id'          => 'before-header',
 	'name'        => __( 'Before Header', 'mono' ),
 	'description' => __( 'This is the before header widget area.', 'mono' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'featured_works',
+	'name'        => __( 'Featured Works', 'mono' ),
+	'description' => __( 'This is the featured works widget area.', 'mono' ),
 ) );
 
 

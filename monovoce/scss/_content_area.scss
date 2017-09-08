@@ -330,6 +330,7 @@ li.comment {
 		background-color: transparent;
 	}
 	.site-header {
+		position: absolute;
 		background-color: transparent;
 	}
 	.nav-secondary{
@@ -357,11 +358,8 @@ li.comment {
     margin-top: 0px;
 }
 .featured-section .image-section{
-	height: 50vh;
+	height: 80vh;
 }
 .image-section {
-	background: -webkit-linear-gradient(rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
-	background: -o-linear-gradient(rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
-	background: linear-gradient(rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d2029', endColorstr='#00ffffff',GradientType=0 );
+	background: linear-gradient(145deg, rgba(82, 185, 233,.75) 0%,rgba(0, 11, 18,0) 75%);
 }

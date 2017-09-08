@@ -6,7 +6,7 @@
 	float: left;
 	width: 100%;
 	position:relative;
-	background-color: shade($color-primary, 60%);
+	background-color: $color-black;
 	@include font($g_font-site-footer-size, $g_font-site-footer-lineh);
 	font-weight: $g_font-site-footer-weight;
 	color:$color-white;

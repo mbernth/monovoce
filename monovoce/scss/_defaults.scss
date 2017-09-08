@@ -14,7 +14,7 @@ body > div {
 }
 
 body {
-	background-color: $color-white;
+	background-color: $g_body-background-color;
 	color: $g_font-bread-color;
 	font-family: $font-bread;
 	@include font($g_font-bread-size, $g_font-bread-lineh);
@@ -185,7 +185,7 @@ img {
 input,
 textarea,
 select {
-	background-color:transparent;
+	background-color:tint($color-black, 10%);
 	@include font($g_font-input-size, $g_font-input-lineh);
 	font-weight: $g_font-input-weight;
 	color: $g_font-input-color;
@@ -199,7 +199,7 @@ input[type="tel"] {
 	border-top:0;
 	border-left:0;
 	border-right:0;
-	border: 1px solid $color-black;
+	border: 1px solid tint($color-black, 10%);
     text-decoration: none;
 }
 
@@ -224,13 +224,13 @@ label {
 
 textarea,
 select[multiple] {
-	border: 1px solid $color-black;
+	border: 1px solid tint($color-black, 10%);
 }
 
 
 select{
 	padding:8px 15px;
-	border: 1px solid $color-black;
+	border: 1px solid tint($color-black, 10%)
 }
 select[multiple] {
 	height:auto;
@@ -350,7 +350,7 @@ input[type="search"]::-webkit-search-results-button {
 	input,
 	textarea,
 	select{
-		background-color: tint($color-black, 90%);
+		background-color: tint($color-black, 5%);
 	}
 }
 .black {
@@ -379,7 +379,7 @@ input[type="search"]::-webkit-search-results-button {
 		border: 1px solid $color-active;
 	}
 	select[multiple] option:checked {
-		background-color: tint($color-active, 80%);
+		background-color: $color-active;
 	}
 }
 .black{
@@ -421,7 +421,8 @@ input[type="search"]::-webkit-search-results-button {
 	input,
 	textarea,
 	select{
-		background-color: tint($color-black, 80%);
+		background-color: tint($color-secondary, 20%);
+		border: 1px solid tint($color-secondary, 10%);
 	}
 }
 .grey {
@@ -429,6 +430,7 @@ input[type="search"]::-webkit-search-results-button {
 	input[type="email"],
 	input[type="number"],
 	input[type="tel"] {
+		border: 1px solid tint($color-secondary, 10%);
 	}
 	
 }
@@ -456,7 +458,7 @@ input[type="search"]::-webkit-search-results-button {
 }
 .grey{
 	label {
-		color:$g_font-label-color;
+		color:$color-white;
 	}
 }
 .grey{
@@ -472,6 +474,7 @@ input[type="search"]::-webkit-search-results-button {
 	input[type="submit"],
 	.button {
 		background-color: $g_font-button-background-color;
+		border: none;
 	}
 	button:hover,
 	input:hover[type="button"],

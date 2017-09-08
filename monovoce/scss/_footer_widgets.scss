@@ -10,7 +10,7 @@
 	@include font($g_font-footer-widgets-size, $g_font-footer-widgets-lineh);
 	font-weight:$g_font-footer-widgets-weight;
 	color: $color-white;
-	background-color: $color-primary;
+	background-color: tint($color-black, 10%);
 	padding: 60px 0 100px;
 }
 
