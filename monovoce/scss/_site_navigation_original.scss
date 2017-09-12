@@ -20,14 +20,14 @@
 	color: $color-white;
 	text-decoration: none;
 	display: block;
-	padding: 34px 20px;
+	padding: 45px 20px;
 	font-weight:$g_font-nav-weight;
 	letter-spacing:0.2em;
 }
 
 .genesis-nav-menu a:hover,
 .genesis-nav-menu a:focus{
-	color: $color-secondary;
+	color: $color-active;
 	text-decoration: none;
 }
 
