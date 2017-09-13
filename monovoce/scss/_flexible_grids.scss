@@ -62,6 +62,10 @@
 }
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
+.gridcontainer.non section.wysiwyg{
+	max-width: 760px;
+	align-self: center;
+}
 .gridcontainer.non.coll4 section.wysiwyg,
 .gridcontainer.non.coll5 section.wysiwyg,
 .gridcontainer.non.coll6 section.wysiwyg{

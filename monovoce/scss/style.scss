@@ -111,17 +111,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 	@import "plugins";
 	@import "gravity_forms";
+	@import "plugins/owl_carousel";
+	@import "plugins/owl_theme";
+	@import "plugins/owl_transitions";
 /*
-	@import "owl_carousel";
-	@import "owl_theme";
-	@import "owl_transitions";
-	@import "timeline";
-	@import "push";
-	@import "quotes";
-	@import "slider";
-	@import "slider_custom";
-	@import "preview";
-	@import "flickity";
+	
+	@import "plugins/timeline";
+	@import "plugins/push";
+	@import "plugins/quotes";
+	@import "plugins/slider";
+	@import "plugins/slider_custom";
+	@import "plugins/preview";
+	@import "plugins/flickity";
 	
 */
 /*
@@ -185,9 +186,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /*
 # Pages
 	## Frontpage
-
-	@import "page_frontpage";
 */
+	@import "page_frontpage";
+
 /*
 # Post Types
 	## Cases

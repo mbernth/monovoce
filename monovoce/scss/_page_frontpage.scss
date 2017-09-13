@@ -24,7 +24,7 @@
 }
 
 /* # Slider
---------------------------------------------------- */
+
 
 .slide_content{
     padding: 0;
@@ -102,12 +102,6 @@
 	position:absolute;
 	bottom:100px;
 	left:48%;
-	/*
-	padding:10px;
-	background-color:$color-grey;
-	@include corners(40);
-	opacity:0.5;
-	*/
 	animation-delay: 0.7s;
 }
 
@@ -116,6 +110,7 @@
     height: 40px;
 	color:$color-black;
 }
+--------------------------------------------------- */
 
 /* # Grids
 --------------------------------------------------- */

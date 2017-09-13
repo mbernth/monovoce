@@ -37,9 +37,7 @@ add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_c
 
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts_frontpage_image' );
 function enqueue_scripts_frontpage_image() {
-	
-	wp_enqueue_script( 'frontpage-home', get_stylesheet_directory_uri() . '/js/home.js', array( 'jquery' ), '1.0.0' );
-	wp_enqueue_script( 'frontpage-image-height', get_stylesheet_directory_uri() . '/js/frontpage_image.height.js', array( 'jquery' ), '1.0.0', true );
+
 	wp_enqueue_script( 'frontpage-owl-min', get_stylesheet_directory_uri() . '/js/owl.carousel.min.js', array( 'jquery' ), '1.0.0', true );
 	wp_enqueue_script( 'frontpage-owl', get_stylesheet_directory_uri() . '/js/owl.frontslider.js', array( 'jquery' ), '1.0.0', true );
 	
@@ -61,18 +59,15 @@ function mono_frontpage_slider() {
         	if( get_row_layout() == 'slide' ):
 				
 				echo '<div class="item">';
-				echo '<div class="featured-section" style="background-image:url( ';
+				echo '<div class="picture-section" style="background-image:url( ';
 						the_sub_field('image');
-				echo ');"><div class="image-section">';
+				echo ');"><div class="height-section">';
 				
-				echo '<div class="slide_content"><h2>';
+				echo '<div class="slide_content">';
 						the_sub_field('text');
-				echo '</h2><p>';
 						the_sub_field('content_text');
-				echo '</p></div>';
-				
-				echo '<a href="#' . $arrowlink .'"><span class="frontpage-icon animation-scaleUp"><svg class="icon-arrow-down5"><use xlink:href="#icon-arrow-down5"></use></svg></span></a>';
-				
+				echo '</div>';
+								
 				echo '</div></div>';
 				echo '</div>';
 				$loopCount ++;
