@@ -2,28 +2,17 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	position:relative;
+	position:fixed;
 	margin-top:0px;
 	width:100%;
 	float:left;
-	background-color: $color-black;
-	border-bottom:5px solid $color-primary;
-	box-shadow: inset 0 -5px 0 $color-white;
+	background-color: transparent;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition:    all 0.5s ease-in-out;
 	-ms-transition:     all 0.5s ease-in-out;
 	-o-transition:      all 0.5s ease-in-out;
 	transition:         all 0.5s ease-in-out;
 	z-index:1000;
-	&::after{
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: -10px;
-		width: 100%;
-		height: 5px;
-		background-color: $color-secondary;
-	}
 }
 .has-push-top .site-header,
 .featured-image .has-push-top .site-header,

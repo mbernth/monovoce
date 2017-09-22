@@ -49,7 +49,9 @@ $font-bread: 'Oxygen', Helvetica, Arial, sans-serif;
 $font-headlines: 'Oxygen', Helvetica, Arial, sans-serif;
 $font-navigation: 'Oxygen', Helvetica, Arial, sans-serif;
 
-/* Global Default values */
+/*** Global Default values ***/
+
+/* Deafault body text */
 $g_font-bread-size: 1.6;
 $g_font-bread-lineh: 2.6;
 $g_font-bread-weight: 300;
@@ -57,9 +59,11 @@ $g_font-bread-color:$color-white;
 $g_font-bread-a-color:$color-secondary;
 $g_font-bread-a-hover-color:tint($color-secondary, 40%);
 
+/* Mark */
 $g_font-mark-color:$color-white;
 $g_font-mark-background-color:$color-secondary;
 
+/* Headlines */
 $g_font-h1-size: 3.2;
 $g_font-h1-lineh: 3.2;
 $g_font-h2-size: 2.8;
@@ -75,26 +79,33 @@ $g_font-h6-lineh: 1.8;
 $g_font-h1-6-weight: 300;
 $g_font-h1-6-color: $color-white;
 
+/* Blockqoute */
 $g_font-blockquote-size: 6;
 $g_font-blockquote-lineh: 1;
 $g_font-blockquote-weight: 300;
 $g_font-blockquote-color:$color-white;
 
+/** Forms **/
+
+/* Input */
 $g_font-input-size: 1.6;
 $g_font-input-lineh: 2.6;
 $g_font-input-weight: 300;
 $g_font-input-color: $color-white;
 
+/* Placeholder */
 $g_font-placeholder-size: 1.6;
 $g_font-placeholder-lineh: 2.6;
 $g_font-placeholder-weight: 300;
 $g_font-placeholder-color: tint($color-black, 60%);
 
+/* Label */
 $g_font-label-size: 1.4;
 $g_font-label-lineh: 2.4;
 $g_font-label-weight: 400;
 $g_font-label-color: $color-white;
 
+/* Button */
 $g_font-button-size: 1.8;
 $g_font-button-lineh: 1.8;
 $g_font-button-weight: 400;
@@ -104,28 +115,37 @@ $g_font-button-color-hover: $color-white;
 $g_font-button-background-color-hover: tint($color-primary, 20%);
 $g_font-button-box-shadow-hover:0px 5px 3px 0px rgba(14, 28, 45, 0.25);
 
-/* Global Common Classes values */
+/** Global Common Classes values **/
+
+/* Breadcrumbs */
 $g_font-breadcrumb-size: 1.4;
 $g_font-breadcrumb-lineh: 2.4;
 $g_font-breadcrumb-weight: 300;
 $g_font-breadcrumb-color: $color-white;
 
+/* Author */
 $g_font-author-box-title-size: 1.6;
 $g_font-author-box-title-lineh: 2.6;
 $g_font-author-box-title-6-weight: 300;
 
+/** Titles **/
+
+/* Archive title */
 $g_font-archive-title-size: 3.8;
 $g_font-archive-title-lineh: 3.8;
 $g_font-archive-title-6-weight: 400;
 
-$g_font-entry-title-size: 3.8;
-$g_font-entry-title-lineh: 3.8;
+/* Entry title */
+$g_font-entry-title-size: 5.2;
+$g_font-entry-title-lineh: 5.2;
 $g_font-entry-title-6-weight: 300;
 
+/* Widget title */
 $g_font-widget-title-size: 2.6;
 $g_font-widget-title-lineh: 2.6;
 $g_font-widget-title-6-weight: 300;
 
+/* Captions */
 $g_font-caption-size: 1.4;
 $g_font-caption-lineh: 2.6;
 $g_font-caption-weight: 300;

@@ -251,8 +251,24 @@ p.standard {
 /* ## Typography
 ---------------------------------------------------------------------- */
 /* Global Font Faminly */
-/* Global Default values */
-/* Global Common Classes values */
+/*** Global Default values ***/
+/* Deafault body text */
+/* Mark */
+/* Headlines */
+/* Blockqoute */
+/** Forms **/
+/* Input */
+/* Placeholder */
+/* Label */
+/* Button */
+/** Global Common Classes values **/
+/* Breadcrumbs */
+/* Author */
+/** Titles **/
+/* Archive title */
+/* Entry title */
+/* Widget title */
+/* Captions */
 /* Global Title Area values */
 /* Global Before Header Font values */
 /* Global Site Navigation values */
@@ -2539,9 +2555,11 @@ th {
       margin: 0 auto;
       padding: 30px 0;
       width: 90%; }
+      .gridcontainer.non .wrap .wysiwyg .entry-title {
+        margin-bottom: 60px; }
 
 .gridcontainer .backimage {
-  min-height: 250px;
+  min-height: 50vh;
   background-size: cover;
   background-position: 50% 50%; }
 
@@ -2810,10 +2828,10 @@ th {
   margin-bottom: 20px; }
 
 .entry-title {
-  font-size: 38px;
-  font-size: 3.8rem;
-  line-height: 38px;
-  line-height: 3.8rem;
+  font-size: 52px;
+  font-size: 5.2rem;
+  line-height: 52px;
+  line-height: 5.2rem;
   font-weight: 300;
   margin-bottom: 20px; }
 
@@ -5132,7 +5150,7 @@ body div#ui-datepicker-div[style] {
   position: relative;
   width: 100%;
   float: left;
-  height: 60vh;
+  height: 100vh;
   -ms-touch-action: pan-y; }
 
 .owl-carousel .owl-wrapper {
@@ -5198,7 +5216,7 @@ body div#ui-datepicker-div[style] {
   background-size: cover; }
   .owl-carousel .picture-section .height-section {
     background: linear-gradient(145deg, rgba(82, 185, 233, 0.75) 0%, rgba(0, 11, 18, 0) 75%);
-    height: 60vh; }
+    height: 100vh; }
 
 .slide_content h1 {
   padding: 20px;
@@ -5540,27 +5558,17 @@ body div#ui-datepicker-div[style] {
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  position: relative;
+  position: fixed;
   margin-top: 0px;
   width: 100%;
   float: left;
-  background-color: #000B12;
-  border-bottom: 5px solid #00395D;
-  box-shadow: inset 0 -5px 0 #ffffff;
+  background-color: transparent;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   z-index: 1000; }
-  .site-header::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 100%;
-    height: 5px;
-    background-color: #EF405C; }
 
 .has-push-top .site-header,
 .featured-image .has-push-top .site-header,
@@ -6546,7 +6554,8 @@ p.entry-meta {
   margin-top: 0px;
   padding-top: 0; }
 
-.home-section.full-width-content .entry {
+.home-section.full-width-content .entry.content,
+.home-section .site-inner .content .entry {
   margin-bottom: 0; }
 
 /* # Site Header
@@ -6557,7 +6566,7 @@ p.entry-meta {
 
 .home-section .site-header.dark {
   margin-top: 0px;
-  background-color: #00395D; }
+  background-color: transparent; }
 
 /* # Slider
 
@@ -8704,7 +8713,7 @@ p.entry-meta {
   .gridcontainer .wrap {
     max-width: 1200px; }
   .gridcontainer .backimage {
-    min-height: 550px; }
+    min-height: 50vh; }
   @supports (display: grid) {
     .content-sidebar .site-inner .gridcontainer.coll3 .wrap,
     .sidebar-content .site-inner .gridcontainer.coll3 .wrap,
@@ -9503,7 +9512,7 @@ p.entry-meta {
   .gridcontainer .wrap {
     max-width: 1400px; }
   .gridcontainer .backimage {
-    min-height: 550px; }
+    min-height: 50vh; }
   @supports (display: grid) {
     .content-sidebar .site-inner .gridcontainer.coll3 .wrap,
     .sidebar-content .site-inner .gridcontainer.coll3 .wrap,

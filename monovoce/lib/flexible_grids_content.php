@@ -62,7 +62,7 @@ function mono_flexible_grids() {
 									
 									if( ($selected == 'non black' || $selected == 'non grey' || $selected == 'non')){
 										if($headline){
-										echo '<h1>' . $headline . '</h1>';
+										echo '<h1 class="entry-title">' . $headline . '</h1>';
 										}
 									}
 									

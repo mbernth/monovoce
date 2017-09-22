@@ -80,12 +80,15 @@
 			margin: 0 auto;
 			padding: 30px 0;
 			width: 90%;
+			.entry-title{
+				margin-bottom: 60px;
+			}
 		}
 	}
 }
 .gridcontainer{
 	.backimage{
-		min-height: 250px;
+		min-height: 50vh;
 		background-size: cover;
     	background-position: 50% 50%;
 	}

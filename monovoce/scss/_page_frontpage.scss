@@ -6,9 +6,12 @@
 	padding-top:0;
 }
 
-.home-section.full-width-content .entry {
+.home-section.full-width-content .entry.content,
+.home-section .site-inner .content .entry {
 	margin-bottom:0;
 }
+
+
 
 /* # Site Header
 --------------------------------------------------- */
@@ -20,7 +23,7 @@
 
 .home-section .site-header.dark {
 	margin-top:0px;
-	background-color: $color-primary;
+	background-color: transparent;
 }
 
 /* # Slider
