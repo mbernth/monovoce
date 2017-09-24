@@ -22,8 +22,42 @@
   line-height:$lineheight + rem;
 }
 
-p.standard {
-	@include font(1.8, 2.6);
+/* ## Responsive Typography
+---------------------------------------------------------------------- */
+
+@mixin make-font($fs-g_font) {
+  @if type-of($fs-g_font) == "list" {
+    font-size: (nth($fs-g_font, 1) * 10) + px;
+    font-size: nth($fs-g_font, 1) + rem;
+    @if (length($fs-g_font) > 1) {
+      line-height: (nth($fs-g_font, 2) * 10) + px;
+      line-height: nth($fs-g_font, 2) + rem;
+    }
+    @if (length($fs-g_font) > 2) {
+      font-weight: nth($fs-g_font, 3);
+    }
+    @if (length($fs-g_font) > 3) {
+      color: nth($fs-g_font, 4);
+    }
+  }
+  @else {
+    font-size: $fs-font-size + rem;
+  }
+}
+@mixin font-values($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-g_font in $fs-map {
+    @if $fs-breakpoint == null {
+      @include make-font($fs-g_font);
+    }
+    @else {
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-font($fs-g_font);
+      }
+    }
+  }
 }
 
 /* ## Border Radius

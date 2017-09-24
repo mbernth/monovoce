@@ -30,9 +30,7 @@
 	width: 100%;
 	background-color: $color-white;
 	margin-bottom: 20px;
-	@include font($g_font-breadcrumb-size, $g_font-breadcrumb-lineh);
-	font-weight:$g_font-breadcrumb-weight;
-	color:$g_font-breadcrumb-color;
+	@include font-values($g_font-breadcrumb);
 	[class^="icon-"]{
 		position: relative;
 		top: 5px;
@@ -47,13 +45,11 @@
 	margin: 0 auto 30px auto;
 	width: 90%;
 	background-color: $color-white;
-	@include font($g_font-bread-size, $g_font-bread-lineh);
-	font-weight: $g_font-bread-weight;
+	@include font-values($g_font-bread);
 }
 
 .author-box-title {
-	@include font($g_font-author-box-title-size, $g_font-author-box-title-lineh);
-	font-weight: $g_font-author-box-title-6-weight;
+	@include font-values($g_font-author);
 	margin-bottom: 5px;
 }
 
@@ -67,14 +63,12 @@
 ---------------------------------------------------------------------- */
 
 .archive-title {
-	@include font($g_font-archive-title-size, $g_font-archive-title-lineh);
-	font-weight: $g_font-archive-title-6-weight;
+	@include font-values($g_font-archive-title);
 	margin-bottom:20px;
 }
 
 .entry-title {
-	@include font($g_font-entry-title-size, $g_font-entry-title-lineh);
-	font-weight: $g_font-entry-title-6-weight;
+	@include font-values($g_font-entry-title);
 	margin-bottom:20px;
 }
 
@@ -91,8 +85,7 @@
 
 .widget-title {
 	color: $color-black;
-	@include font($g_font-widget-title-size, $g_font-widget-title-lineh);
-	font-weight: $g_font-widget-title-6-weight;
+	@include font-values($g_font-widget-title);
 	margin-bottom: 20px;
     margin-top: 6px;
 }
@@ -154,8 +147,7 @@ img.alignright,
 
 .wp-caption-text {
 	margin-top:5px;
-	@include font($g_font-caption-size, $g_font-caption-lineh);
-	font-weight: $g_font-caption-weight;
+	@include font-values($g_font-caption);
 }
 
 .entry-content p.wp-caption-text {

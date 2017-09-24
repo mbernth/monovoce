@@ -10,15 +10,13 @@ html {
 
 /* Chrome fix */
 body > div {
-    @include font($g_font-bread-size, $g_font-bread-lineh);
+	@include font-values($g_font-bread);
 }
 
 body {
 	background-color: $g_body-background-color;
-	color: $g_font-bread-color;
 	font-family: $font-bread;
-	@include font($g_font-bread-size, $g_font-bread-lineh);
-	font-weight: $g_font-bread-weight;
+	@include font-values($g_font-bread);
 	margin: 0;
 }
 
@@ -102,9 +100,7 @@ blockquote {
 blockquote::before {
 	content: "\201C";
 	display: block;
-	@include font($g_font-blockquote-size, $g_font-blockquote-lineh);
-	font-weight:$g_font-blockquote-weight;
-	color:$g_font-blockquote-color;
+	@include font-values($g_font-blockquote);
 	left: -50px;
 	position: relative;
 	top: 30px;
@@ -121,33 +117,31 @@ h4,
 h5,
 h6 {
 	font-family: $font-headlines;
-	font-weight: $g_font-h1-6-weight;
-	color: $g_font-h1-6-color;
 	margin: 0 0 20px 0;
 }
 
 h1 {
-	@include font($g_font-h1-size, $g_font-h1-lineh);
+	@include font-values($g_font-h1);
 }
 
 h2 {
-	@include font($g_font-h2-size, $g_font-h2-lineh);
+	@include font-values($g_font-h2);
 }
 
 h3 {
-	@include font($g_font-h3-size, $g_font-h3-lineh);
+	@include font-values($g_font-h3);
 }
 
 h4 {
-	@include font($g_font-h4-size, $g_font-h4-lineh);
+	@include font-values($g_font-h4);
 }
 
 h5 {
-	@include font($g_font-h5-size, $g_font-h5-lineh);
+	@include font-values($g_font-h5);
 }
 
 h6 {
-	@include font($g_font-h5-size, $g_font-h6-lineh);
+	@include font-values($g_font-h6);
 }
 
 h1 a,
@@ -186,9 +180,7 @@ input,
 textarea,
 select {
 	background-color:tint($color-black, 10%);
-	@include font($g_font-input-size, $g_font-input-lineh);
-	font-weight: $g_font-input-weight;
-	color: $g_font-input-color;
+	@include font-values($g_font-input);
 	@include corners($radius);
 }
 
@@ -216,9 +208,7 @@ input[type="tel"]:active{
 
 
 label {
-	@include font($g_font-label-size, $g_font-label-lineh);
-	font-weight:$g_font-label-weight;
-	color:$g_font-label-color;
+	@include font-values($g_font-label);
 	text-transform:uppercase;
 }
 
@@ -258,15 +248,11 @@ input[type="radio"] {
 }
 
 ::-moz-placeholder {
-	@include font($g_font-placeholder-size, $g_font-placeholder-lineh);
-	font-weight: $g_font-placeholder-weight;
-	color: $g_font-placeholder-color;
+	@include font-values($g_font-placeholder);
 }
 
 ::-webkit-input-placeholder {
-	@include font($g_font-placeholder-size, $g_font-placeholder-lineh);
-	font-weight: $g_font-placeholder-weight;
-	color: $g_font-placeholder-color;
+	@include font-values($g_font-placeholder);
 }
 
 button,
@@ -276,9 +262,7 @@ input[type="submit"],
 .button {
 	border: 0;
 	cursor: pointer;
-	@include font($g_font-button-size, $g_font-button-lineh);
-	font-weight: $g_font-button-weight;
-	color: $g_font-button-color;
+	@include font-values($g_font-button);
 	background-color: $g_font-button-background-color;
 	@include corners($radius);
 	padding: 15px 24px;

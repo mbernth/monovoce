@@ -7,9 +7,7 @@
 	width: 100%;
 	position:relative;
 	background-color: $color-black;
-	@include font($g_font-site-footer-size, $g_font-site-footer-lineh);
-	font-weight: $g_font-site-footer-weight;
-	color:$color-white;
+	@include font-values($g_font-site-footer);
 	line-height: 1;
 	padding: 15px 0;
 	text-align: center;

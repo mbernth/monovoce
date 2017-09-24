@@ -195,12 +195,8 @@ input[type="search"] {
 /* ## Typography
 ---------------------------------------------------------------------- */
 /* Basic Font Sizes mixin */
-p.standard {
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 26px;
-  line-height: 2.6rem; }
-
+/* ## Responsive Typography
+---------------------------------------------------------------------- */
 /* ## Border Radius
 ---------------------------------------------------------------------- */
 /* ## Gradients
@@ -252,31 +248,9 @@ p.standard {
 ---------------------------------------------------------------------- */
 /* Global Font Faminly */
 /*** Global Default values ***/
-/* Deafault body text */
+/* Default body text */
 /* Mark */
-/* Headlines */
-/* Blockqoute */
-/** Forms **/
-/* Input */
-/* Placeholder */
-/* Label */
 /* Button */
-/** Global Common Classes values **/
-/* Breadcrumbs */
-/* Author */
-/** Titles **/
-/* Archive title */
-/* Entry title */
-/* Widget title */
-/* Captions */
-/* Global Title Area values */
-/* Global Before Header Font values */
-/* Global Site Navigation values */
-/* Global Entry Meta values */
-/* Global Pagination values */
-/* Global Comments values */
-/* Global Footer Widgets values */
-/* Global Site Footer values */
 /* ## Border Radius
 ---------------------------------------------------------------------- */
 /* Globals */
@@ -284,10 +258,10 @@ p.standard {
 ---------------------------------------------------------------------- */
 /* ## Media Queries
 ---------------------------------------------------------------------- */
+/* 600 pixel */
 /* 890 pixel */
 /* 1023 pixel */
 /* 1024 pixel */
-/* 1280 pixel */
 /* 1280 pixel */
 /* 1500 pixel */
 /* ## Site Structure
@@ -307,6 +281,44 @@ p.standard {
 /* Content */
 /* Primary Sidebar */
 /* Secondary Sidebar */
+/*
+# Arrays
+	## Breakpoints
+	## Responsive Typography
+*/
+/* # Arrays
+---------------------------------------------------------------------------------------------------- */
+/* ## Breakpoints
+---------------------------------------------------------------------- */
+/* ## Responsive typography
+---------------------------------------------------------------------- */
+/* Default body text */
+/* Headlines */
+/* Blockqoute */
+/* Forms
+---------------------------------------------------------------------- */
+/* Input */
+/* Placeholder */
+/* Label */
+/* Button */
+/* Global Common Classes values
+---------------------------------------------------------------------- */
+/* Breadcrumbs */
+/* Author */
+/* Titles
+---------------------------------------------------------------------- */
+/* Archive title */
+/* Entry title */
+/* Widget title */
+/* Captions */
+/* Global Title Area values */
+/* Global Before Header Font values */
+/* Global Site Navigation values */
+/* Global Entry Meta values */
+/* Global Pagination values */
+/* Global Comments values */
+/* Global Footer Widgets values */
+/* Global Site Footer values */
 /*
 # Swatches
 # Style Guide
@@ -1990,17 +2002,19 @@ body > div {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 26px;
-  line-height: 2.6rem; }
+  line-height: 2.6rem;
+  font-weight: 300;
+  color: #ffffff; }
 
 body {
   background-color: #000B12;
-  color: #ffffff;
   font-family: "Oxygen", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 26px;
   line-height: 2.6rem;
   font-weight: 300;
+  color: #ffffff;
   margin: 0; }
 
 a,
@@ -2076,7 +2090,7 @@ blockquote::before {
   font-size: 6rem;
   line-height: 10px;
   line-height: 1rem;
-  font-weight: 300;
+  font-weight: 600;
   color: #ffffff;
   left: -50px;
   position: relative;
@@ -2091,45 +2105,55 @@ h4,
 h5,
 h6 {
   font-family: "Oxygen", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  color: #ffffff;
   margin: 0 0 20px 0; }
 
 h1 {
   font-size: 32px;
   font-size: 3.2rem;
   line-height: 32px;
-  line-height: 3.2rem; }
+  line-height: 3.2rem;
+  font-weight: 300;
+  color: #ffffff; }
 
 h2 {
   font-size: 28px;
   font-size: 2.8rem;
   line-height: 28px;
-  line-height: 2.8rem; }
+  line-height: 2.8rem;
+  font-weight: 300;
+  color: #ffffff; }
 
 h3 {
   font-size: 26px;
   font-size: 2.6rem;
   line-height: 26px;
-  line-height: 2.6rem; }
+  line-height: 2.6rem;
+  font-weight: 300;
+  color: #ffffff; }
 
 h4 {
   font-size: 24px;
   font-size: 2.4rem;
   line-height: 24px;
-  line-height: 2.4rem; }
+  line-height: 2.4rem;
+  font-weight: 300;
+  color: #ffffff; }
 
 h5 {
   font-size: 22px;
   font-size: 2.2rem;
   line-height: 22px;
-  line-height: 2.2rem; }
+  line-height: 2.2rem;
+  font-weight: 300;
+  color: #ffffff; }
 
 h6 {
-  font-size: 22px;
-  font-size: 2.2rem;
-  line-height: 18px;
-  line-height: 1.8rem; }
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 20px;
+  line-height: 2rem;
+  font-weight: 300;
+  color: #ffffff; }
 
 h1 a,
 h2 a,
@@ -2195,8 +2219,8 @@ input[type="tel"]:active {
 label {
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 24px;
-  line-height: 2.4rem;
+  line-height: 23px;
+  line-height: 2.3rem;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase; }
@@ -2251,11 +2275,11 @@ input[type="submit"],
 .button {
   border: 0;
   cursor: pointer;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 18px;
-  line-height: 1.8rem;
-  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 16px;
+  line-height: 1.6rem;
+  font-weight: 300;
   color: #ffffff;
   background-color: #00395D;
   -webkit-border-radius: 5px;
@@ -2783,8 +2807,8 @@ th {
   margin-bottom: 20px;
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 24px;
-  line-height: 2.4rem;
+  line-height: 23px;
+  line-height: 2.3rem;
   font-weight: 300;
   color: #ffffff; }
   .breadcrumb [class^="icon-"] {
@@ -2803,7 +2827,8 @@ th {
   font-size: 1.6rem;
   line-height: 26px;
   line-height: 2.6rem;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #ffffff; }
 
 .author-box-title {
   font-size: 16px;
@@ -2811,6 +2836,7 @@ th {
   line-height: 26px;
   line-height: 2.6rem;
   font-weight: 300;
+  color: #ffffff;
   margin-bottom: 5px; }
 
 .archive-description p:last-child,
@@ -2820,20 +2846,82 @@ th {
 /* ## Titles
 ---------------------------------------------------------------------- */
 .archive-title {
-  font-size: 38px;
-  font-size: 3.8rem;
-  line-height: 38px;
-  line-height: 3.8rem;
-  font-weight: 400;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 32px;
+  line-height: 3.2rem;
+  font-weight: 300;
+  color: #ffffff;
   margin-bottom: 20px; }
+  @media screen and (min-width: 37.5em) {
+    .archive-title {
+      font-size: 32px;
+      font-size: 3.2rem;
+      line-height: 32px;
+      line-height: 3.2rem; } }
+  @media screen and (min-width: 55.625em) {
+    .archive-title {
+      font-size: 32px;
+      font-size: 3.2rem;
+      line-height: 32px;
+      line-height: 3.2rem; } }
+  @media screen and (min-width: 64em) {
+    .archive-title {
+      font-size: 34px;
+      font-size: 3.4rem;
+      line-height: 34px;
+      line-height: 3.4rem; } }
+  @media screen and (min-width: 80em) {
+    .archive-title {
+      font-size: 38px;
+      font-size: 3.8rem;
+      line-height: 38px;
+      line-height: 3.8rem; } }
+  @media screen and (min-width: 93.75em) {
+    .archive-title {
+      font-size: 52px;
+      font-size: 5.2rem;
+      line-height: 52px;
+      line-height: 5.2rem; } }
 
 .entry-title {
-  font-size: 52px;
-  font-size: 5.2rem;
-  line-height: 52px;
-  line-height: 5.2rem;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 32px;
+  line-height: 3.2rem;
   font-weight: 300;
+  color: #ffffff;
   margin-bottom: 20px; }
+  @media screen and (min-width: 37.5em) {
+    .entry-title {
+      font-size: 32px;
+      font-size: 3.2rem;
+      line-height: 32px;
+      line-height: 3.2rem; } }
+  @media screen and (min-width: 55.625em) {
+    .entry-title {
+      font-size: 32px;
+      font-size: 3.2rem;
+      line-height: 32px;
+      line-height: 3.2rem; } }
+  @media screen and (min-width: 64em) {
+    .entry-title {
+      font-size: 34px;
+      font-size: 3.4rem;
+      line-height: 34px;
+      line-height: 3.4rem; } }
+  @media screen and (min-width: 80em) {
+    .entry-title {
+      font-size: 38px;
+      font-size: 3.8rem;
+      line-height: 38px;
+      line-height: 3.8rem; } }
+  @media screen and (min-width: 93.75em) {
+    .entry-title {
+      font-size: 52px;
+      font-size: 5.2rem;
+      line-height: 52px;
+      line-height: 5.2rem; } }
 
 .entry-title a,
 .sidebar .widget-title a {
@@ -2851,6 +2939,7 @@ th {
   line-height: 26px;
   line-height: 2.6rem;
   font-weight: 300;
+  color: #ffffff;
   margin-bottom: 20px;
   margin-top: 6px; }
 
@@ -2902,8 +2991,8 @@ img.alignright,
   margin-top: 5px;
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 26px;
-  line-height: 2.6rem;
+  line-height: 23px;
+  line-height: 2.3rem;
   font-weight: 300; }
 
 .entry-content p.wp-caption-text {
@@ -5604,6 +5693,7 @@ body div#ui-datepicker-div[style] {
   line-height: 38px;
   line-height: 3.8rem;
   font-weight: 300;
+  color: #ffffff;
   line-height: 0; }
 
 .site-title a,
@@ -5708,8 +5798,7 @@ body div#ui-datepicker-div[style] {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-align: right;
-  color: #ffffff; }
+  text-align: right; }
 
 /*
 # Site Navigation
@@ -5728,7 +5817,6 @@ body div#ui-datepicker-div[style] {
   font-size: 1.2rem;
   line-height: 12px;
   line-height: 1.2rem;
-  font-family: "Oxygen", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -5739,12 +5827,15 @@ body div#ui-datepicker-div[style] {
   text-align: left; }
 
 .genesis-nav-menu a {
-  color: #ffffff;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 12px;
+  line-height: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
   text-decoration: none;
   display: block;
-  padding: 45px 20px;
-  font-weight: 700;
-  letter-spacing: 0.2em; }
+  padding: 45px 20px; }
 
 .genesis-nav-menu a:hover,
 .genesis-nav-menu a:focus {
@@ -6160,10 +6251,42 @@ body div#ui-datepicker-div[style] {
   color: #ffffff; }
 
 .gridcontainer .row_headline {
-  font-size: 36px;
-  font-size: 3.6rem;
-  line-height: 36px;
-  line-height: 3.6rem; }
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 32px;
+  line-height: 3.2rem;
+  font-weight: 300;
+  color: #ffffff; }
+  @media screen and (min-width: 37.5em) {
+    .gridcontainer .row_headline {
+      font-size: 32px;
+      font-size: 3.2rem;
+      line-height: 32px;
+      line-height: 3.2rem; } }
+  @media screen and (min-width: 55.625em) {
+    .gridcontainer .row_headline {
+      font-size: 32px;
+      font-size: 3.2rem;
+      line-height: 32px;
+      line-height: 3.2rem; } }
+  @media screen and (min-width: 64em) {
+    .gridcontainer .row_headline {
+      font-size: 34px;
+      font-size: 3.4rem;
+      line-height: 34px;
+      line-height: 3.4rem; } }
+  @media screen and (min-width: 80em) {
+    .gridcontainer .row_headline {
+      font-size: 38px;
+      font-size: 3.8rem;
+      line-height: 38px;
+      line-height: 3.8rem; } }
+  @media screen and (min-width: 93.75em) {
+    .gridcontainer .row_headline {
+      font-size: 52px;
+      font-size: 5.2rem;
+      line-height: 52px;
+      line-height: 5.2rem; } }
 
 /* ## Buttons
 ---------------------------------------------------------------------- */
@@ -6177,11 +6300,11 @@ body div#ui-datepicker-div[style] {
   clear: both;
   float: none;
   margin: 0 auto;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 18px;
-  line-height: 1.8rem;
-  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 16px;
+  line-height: 1.6rem;
+  font-weight: 300;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -6211,8 +6334,8 @@ body div#ui-datepicker-div[style] {
 p.entry-meta {
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 22px;
-  line-height: 2.2rem;
+  line-height: 23px;
+  line-height: 2.3rem;
   font-weight: 300;
   margin-bottom: 0; }
   p.entry-meta a {
@@ -6254,10 +6377,9 @@ p.entry-meta {
   display: inline-block;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 24px;
-  line-height: 2.4rem;
+  line-height: 26px;
+  line-height: 2.6rem;
   font-weight: 300;
-  color: #ffffff;
   background-color: #00395D;
   padding: 18px;
   width: 60px;
@@ -6285,10 +6407,9 @@ p.entry-meta {
   display: inline-block;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 24px;
-  line-height: 2.4rem;
+  line-height: 26px;
+  line-height: 2.6rem;
   font-weight: 300;
-  color: #ffffff;
   background-color: #00395D;
   padding: 20px;
   width: 60px;
@@ -6317,15 +6438,15 @@ p.entry-meta {
 .logged-in-as {
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 22px;
-  line-height: 2.2rem;
+  line-height: 23px;
+  line-height: 2.3rem;
   font-weight: 300; }
 
 .comment-header {
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 24px;
-  line-height: 2.4rem;
+  line-height: 26px;
+  line-height: 2.6rem;
   font-weight: 300; }
 
 .comment-form {
@@ -6454,10 +6575,9 @@ p.entry-meta {
   width: 100%;
   font-size: 14px;
   font-size: 1.4rem;
-  line-height: 20px;
-  line-height: 2rem;
+  line-height: 23px;
+  line-height: 2.3rem;
   font-weight: 300;
-  color: #ffffff;
   background-color: #1a232a;
   padding: 60px 0 100px; }
 
@@ -6530,8 +6650,7 @@ p.entry-meta {
   font-size: 1rem;
   line-height: 12px;
   line-height: 1.2rem;
-  font-weight: 300;
-  color: #ffffff;
+  font-weight: 600;
   line-height: 1;
   padding: 15px 0;
   text-align: center; }

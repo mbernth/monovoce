@@ -81,7 +81,7 @@
 	
 }
 .gridcontainer .row_headline {
-	@include font(3.6, 3.6);
+	@include font-values($g_font-entry-title);
 }
 
 /* ## Buttons
@@ -98,9 +98,7 @@
 	clear:both;
 	float:none;
 	margin:0 auto;
-	@include font($g_font-button-size, $g_font-button-lineh);
-	font-weight: $g_font-button-weight;
-	color: $g_font-button-color;
+	@include font-values($g_font-button);
 	text-align:center;
 	text-decoration: none;
 	background-color: $g_font-button-background-color;
@@ -137,8 +135,7 @@
 ---------------------------------------------------------------------- */
 
 p.entry-meta {
-	@include font($g_font-meta-size, $g_font-meta-lineh);
-	font-weight: $g_font-meta-weight;
+	@include font-values($g_font-meta);
 	margin-bottom: 0;
 	a{
 		text-decoration: none;
@@ -188,9 +185,7 @@ p.entry-meta {
 .archive-pagination li a {
 	cursor: pointer;
 	display: inline-block;
-	@include font($g_font-pagination-size, $g_font-pagination-lineh);
-	font-weight: $g_font-pagination-weight;
-	color: $color-white;
+	@include font-values($g_font-pagination);
 	background-color: $color-primary;
 	padding: 18px;
 	width:60px;
@@ -218,9 +213,7 @@ p.entry-meta {
 .archive-pagination li.pagination-next a{
 	cursor: pointer;
 	display: inline-block;
-	@include font($g_font-pagination-size, $g_font-pagination-lineh);
-	font-weight: $g_font-pagination-weight;
-	color: $color-white;
+	@include font-values($g_font-pagination);
 	background-color: $color-primary;
 	padding: 20px;
 	width:60px;
@@ -257,12 +250,10 @@ p.entry-meta {
 .entry-comments {
 }
 .logged-in-as{
-	@include font($g_font-logged-in-size, $g_font-logged-in-lineh);
-	font-weight: $g_font-logged-in-weight;
+	@include font-values($g_font-logged-in);
 }
 .comment-header {
-	@include font($g_font-comment-header-size, $g_font-comment-header-lineh);
-	font-weight: $g_font-comment-header-weight;
+	@include font-values($g_font-comment-header);
 }
 .comment-form{
 	float: left;

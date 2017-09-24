@@ -49,8 +49,7 @@
 }
 
 .site-title {
-	@include font($g_font-site-title-size, $g_font-site-title-lineh);
-	font-weight: $g_font-site-title-6-weight;
+	@include font-values($g_font-site-title);
 	line-height: 0;
 }
 
@@ -61,8 +60,8 @@
 }
 
 .title-area .site-title > a {
-    display: block;
-    margin-bottom: 0px;
+  display: block;
+  margin-bottom: 0px;
 	text-indent: -9999px;
 }
 
@@ -151,10 +150,8 @@
 	max-width:100%;
 }
 .before-header .widget{
-	@include font($g_font-before-header-size, $g_font-before-header-lineh);
-	font-weight:$g_font-before-header-6-weight;
+	@include font-values($g_font-before-header);
 	text-transform:uppercase;
 	letter-spacing:1px;
 	text-align:right;
-	color:$color-white;
 }

@@ -1,0 +1,283 @@
+/* # Arrays
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Breakpoints
+---------------------------------------------------------------------- */
+$breakpoints: (
+    xsmall: 37.5em,     // 600 pixel
+    small : 55.625em,   // 890 pixel 
+    medium: 64em,       // 1024 pixel
+    large : 80em,       // 1280 pixel
+    xlarge: 93.75em     // 1500 pixel
+);
+
+/* ## Responsive typography
+---------------------------------------------------------------------- */
+// Array : font-size, line-height, font-weight, color 
+
+/* Default body text */
+$g_font-bread: (
+    null   : (1.6, 2.6, 300, $color-white),
+    // xsmall : (1.6, 2.6),
+    // small  : (1.6, 2.6),
+    // medium : (1.6, 2.6),
+    // large  : (1.6, 2.6),
+    // xlarge : (1.8, 2.9)
+);
+
+/* Headlines */
+$g_font-h1: (
+    null   : (3.2, 3.2, 300, $color-white),
+    // xsmall : (3.2, 3.2),
+    // small  : (3.2, 2.2),
+    // medium : (3.2, 3.2),
+    // large  : (3.2, 3.2),
+    // xlarge : (3.2, 3.2)
+);
+$g_font-h2: (
+    null   : (2.8, 2.8, 300, $color-white),
+    // xsmall : (2.8, 2.8),
+    // small  : (2.8, 2.8),
+    // medium : (2.8, 2.8),
+    // large  : (2.8, 2.8),
+    // xlarge : (2.8, 2.8)
+);
+$g_font-h3: (
+    null   : (2.6, 2.6, 300, $color-white),
+    // xsmall : (2.6, 2.6),
+    // small  : (2.6, 2.6),
+    // medium : (2.6, 2.6),
+    // large  : (2.6, 2.6),
+    // xlarge : (2.6, 2.6)
+);
+$g_font-h4: (
+    null   : (2.4, 2.4, 300, $color-white),
+    // xsmall : (2.4, 2.4),
+    // small  : (2.4, 2.4),
+    // medium : (2.4, 2.4),
+    // large  : (2.4, 2.4),
+    // xlarge : (2.4, 2.4)
+);
+$g_font-h5: (
+    null   : (2.2, 2.2, 300, $color-white),
+    // xsmall : (2.2, 2.2),
+    // small  : (2.2, 2.2),
+    // medium : (2.2, 2.2),
+    // large  : (2.2, 2.2),
+    // xlarge : (2.2, 2.2)
+);
+$g_font-h6: (
+    null   : (2, 2, 300, $color-white),
+    // xsmall : (2, 2),
+    // small  : (2, 2),
+    // medium : (2, 2),
+    // large  : (2, 2),
+    // xlarge : (2, 2)
+);
+
+/* Blockqoute */
+$g_font-blockquote: (
+    null   : (6, 1, 600, $color-white),
+    // xsmall : (6, 1),
+    // small  : (6, 1),
+    // medium : (6, 1),
+    // large  : (6, 1),
+    // xlarge : (6, 1)
+);
+
+/* Forms
+---------------------------------------------------------------------- */
+
+/* Input */
+$g_font-input: (
+    null   : (1.6, 2.6, 300, $color-white),
+    // xsmall : (1.6, 2.6),
+    // small  : (1.6, 2.6),
+    // medium : (1.6, 2.6),
+    // large  : (1.6, 2.6),
+    // xlarge : (1.8, 2.9)
+);
+
+/* Placeholder */
+$g_font-placeholder: (
+    null   : (1.6, 2.6, 300, tint($color-black, 60%)),
+    // xsmall : (1.6, 2.6),
+    // small  : (1.6, 2.6),
+    // medium : (1.6, 2.6),
+    // large  : (1.6, 2.6),
+    // xlarge : (1.8, 2.9)
+);
+
+/* Label */
+$g_font-label: (
+    null   : (1.4, 2.3, 400, $color-white),
+    // xsmall : (1.4, 2.3),
+    // small  : (1.4, 2.3),
+    // medium : (1.4, 2.3),
+    // large  : (1.4, 2.3),
+    // xlarge : (1.4, 2.3)
+);
+
+/* Button */
+$g_font-button: (
+    null   : (1.6, 1.6, 300, $color-white),
+    // xsmall : (1.6, 1.6),
+    // small  : (1.6, 1.6),
+    // medium : (1.6, 1.6),
+    // large  : (1.6, 1.6),
+    // xlarge : (1.8, 1.8)
+);
+
+/* Global Common Classes values
+---------------------------------------------------------------------- */
+
+/* Breadcrumbs */
+$g_font-breadcrumb: (
+    null   : (1.4, 2.3, 300, $color-white),
+    // xsmall : (1.4, 2.3),
+    // small  : (1.4, 2.3),
+    // medium : (1.4, 2.3),
+    // large  : (1.4, 2.3),
+    // xlarge : (1.4, 2.3)
+);
+
+/* Author */
+$g_font-author: (
+    null   : (1.6, 2.6, 300, $color-white),
+    // xsmall : (1.6, 2.6),
+    // small  : (1.6, 2.6),
+    // medium : (1.6, 2.6),
+    // large  : (1.6, 2.6),
+    // xlarge : (1.8, 2.9)
+);
+
+/* Titles
+---------------------------------------------------------------------- */
+
+/* Archive title */
+$g_font-archive-title: (
+    null   : (3.2, 3.2, 300, $color-white),
+    xsmall : (3.2, 3.2),
+    small  : (3.2, 3.2),
+    medium : (3.4, 3.4),
+    large  : (3.8, 3.8),
+    xlarge : (5.2, 5.2)
+);
+
+/* Entry title */
+$g_font-entry-title: (
+    null   : (3.2, 3.2, 300, $color-white),
+    xsmall : (3.2, 3.2),
+    small  : (3.2, 3.2),
+    medium : (3.4, 3.4),
+    large  : (3.8, 3.8),
+    xlarge : (5.2, 5.2)
+);
+
+/* Widget title */
+$g_font-widget-title: (
+    null   : (2.6, 2.6, 300, $color-white),
+    // xsmall : (2.6, 2.6),
+    // small  : (2.6, 2.6),
+    // medium : (2.6, 2.6),
+    // large  : (2.6, 2.6),
+    // xlarge : (2.6, 2.6)
+);
+
+/* Captions */
+$g_font-caption: (
+    null   : (1.4, 2.3, 300),
+    // xsmall : (1.4, 2.3),
+    // small  : (1.4, 2.3),
+    // medium : (1.4, 2.3),
+    // large  : (1.4, 2.3),
+    // xlarge : (1.4, 2.3)
+);
+
+/* Global Title Area values */
+$g_font-site-title: (
+    null   : (3.8, 3.8, 300, $color-white),
+    // xsmall : (3.8, 3.8),
+    // small  : (3.8, 3.8),
+    // medium : (3.8, 3.8),
+    // large  : (3.8, 3.8),
+    // xlarge : (3.8, 3.8)
+);
+
+/* Global Before Header Font values */
+$g_font-before-header: (
+    null   : (1, 1, 300),
+    // xsmall : (1, 1),
+    // small  : (1, 1),
+    // medium : (1, 1),
+    // large  : (1, 1),
+    // xlarge : (1, 1)
+);
+
+/* Global Site Navigation values */
+$g_font-nav: (
+    null   : (1.2, 1.2, 700),
+    // xsmall : (1.2, 1.2),
+    // small  : (1.2, 1.2),
+    // medium : (1.2, 1.2),
+    // large  : (1.2, 1.2),
+    // xlarge : (1.2, 1.2)
+);
+
+/* Global Entry Meta values */
+$g_font-meta: (
+    null   : (1.4, 2.3, 300),
+    // xsmall : (1.4, 2.3),
+    // small  : (1.4, 2.3),
+    // medium : (1.4, 2.3),
+    // large  : (1.4, 2.3),
+    // xlarge : (1.4, 2.3)
+);
+
+/* Global Pagination values */
+$g_font-pagination: (
+    null   : (1.6, 2.6, 300),
+    // xsmall : (1.6, 2.6),
+    // small  : (1.6, 2.6),
+    // medium : (1.6, 2.6),
+    // large  : (1.6, 2.6),
+    // xlarge : (1.8, 2.9)
+);
+
+/* Global Comments values */
+$g_font-logged-in: (
+    null   : (1.4, 2.3, 300),
+    // xsmall : (1.4, 2.3),
+    // small  : (1.4, 2.3),
+    // medium : (1.4, 2.3),
+    // large  : (1.4, 2.3),
+    // xlarge : (1.4, 2.3)
+);
+$g_font-comment-header: (
+    null   : (1.6, 2.6, 300),
+    // xsmall : (1.6, 2.6),
+    // small  : (1.6, 2.6),
+    // medium : (1.6, 2.6),
+    // large  : (1.6, 2.6),
+    // xlarge : (1.8, 2.9)
+);
+
+/* Global Footer Widgets values */
+$g_font-footer-widgets: (
+    null   : (1.4, 2.3, 300),
+    // xsmall : (1.4, 2.3),
+    // small  : (1.4, 2.3),
+    // medium : (1.4, 2.3),
+    // large  : (1.4, 2.3),
+    // xlarge : (1.4, 2.3)
+);
+
+/* Global Site Footer values */
+$g_font-site-footer: (
+    null   : (1, 1.2, 600),
+    // xsmall : (1, 1.2),
+    // small  : (1, 1.2),
+    // medium : (1, 1.2),
+    // large  : (1, 1.2),
+    // xlarge : (1, 1.2)
+);

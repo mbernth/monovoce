@@ -3,9 +3,7 @@
 
 .genesis-nav-menu {
 	clear: both;
-	@include font($g_font-nav-size, $g_font-nav-lineh);
-	font-family: $font-navigation;
-	font-weight: $g_font-nav-weight;
+	@include font-values($g_font-nav);
 	text-transform:uppercase;
 	width: 100%;
 	text-align: right;
@@ -17,12 +15,11 @@
 }
 
 .genesis-nav-menu a {
-	color: $color-white;
+	@include font-values($g_font-nav);
+	letter-spacing:0.2em;
 	text-decoration: none;
 	display: block;
 	padding: 45px 20px;
-	font-weight:$g_font-nav-weight;
-	letter-spacing:0.2em;
 }
 
 .genesis-nav-menu a:hover,
