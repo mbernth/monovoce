@@ -38,6 +38,10 @@ function genesis_sample_google_fonts() {
 	// Responsive movie scripts
 	wp_enqueue_script( 'mono-fitvids-script', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '1.0.0', true );
 	wp_enqueue_script( 'mono-fitvids', get_stylesheet_directory_uri() . '/js/fitvids.js', array( 'jquery' ), '1.0.0', true );
+	// Hide and show header
+	wp_enqueue_script( 'jquery-headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/jQuery.headroom.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'headroom-action', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom_action.js', array( 'jquery' ), '1.0.0', true );
 }
 
 //* Add HTML5 markup structure
@@ -180,10 +184,12 @@ function mono_before_header() {
 add_action ( 'genesis_after_header', 'single_post_featured_image', 15 );
 function single_post_featured_image() {
 	if ( (is_single() || is_page()) && has_post_thumbnail() ) :
-	
-		$img = genesis_get_image( array( 'format' => 'src' ) );
-		printf( '<div class="featured-section" style="background-image:url(%s);"><div class="image-section"></div></div>', $img );
 		
+		remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+		$img = genesis_get_image( array( 'format' => 'src' ) );
+		printf( '<div class="featured-section" style="background-image:url(%s);"><div class="image-section">', $img );
+		the_title( '<h1 class="entry-title" itemprop="headline">', '</h1>' );
+		printf('</div></div>');
 		elseif( (! is_front_page()) ):
 		printf( '<div class="image-section" style="background-color:#231f20;"></div>', $img );
 		
@@ -230,6 +236,7 @@ add_filter( 'gform_confirmation_anchor', '__return_true' );
 
 //* Post archive page
 // =====================================================================================================================
+
 
 //* Customize the next page link
 add_filter ( 'genesis_next_link_text' , 'sp_next_page_link' );

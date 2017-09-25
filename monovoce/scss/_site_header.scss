@@ -4,6 +4,7 @@
 .site-header {
 	position:fixed;
 	margin-top:0px;
+	padding: 40px 0;
 	width:100%;
 	float:left;
 	background-color: transparent;
@@ -13,6 +14,10 @@
 	-o-transition:      all 0.5s ease-in-out;
 	transition:         all 0.5s ease-in-out;
 	z-index:1000;
+}
+.site-header.dark {
+	background-color: $color-black;
+	padding: 20px 0;
 }
 .has-push-top .site-header,
 .featured-image .has-push-top .site-header,
@@ -26,14 +31,21 @@
 	margin:0 auto;
 	max-width:100%;
 }
+.site-header.headroom,
+.site-header.headroom--unpinned:hover{
+	opacity: 1;
+}
 
+.site-header.headroom--unpinned{
+	opacity: 0;
+	margin-top: -60px;
+}
 
 /* ## Title Area
 ---------------------------------------------------------------------- */
 
 .title-area {
 	float: left;
-	padding: 40px 0;
 	margin-left: 5%;
 }
 .title-area p {
@@ -45,7 +57,7 @@
 
 .header-full-width .title-area {
 	float:left;
-	width: 240px;
+	width: 170px;
 }
 
 .site-title {
@@ -85,8 +97,8 @@
     display: block;
 }
 #site-logo{
-	width: 240px;
-	height: 28px;
+	width: 170px;
+	height: 20px;
 }
 #site-logo {
 	#letter-m-1 {

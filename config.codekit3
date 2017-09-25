@@ -21,6 +21,12 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/monovoce\/archive.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/monovoce\/archive.php",
+		"oF": 0
+		},
 	"\/monovoce\/functions.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -301,6 +307,26 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/monovoce\/js\/headroom.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/headroom-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/monovoce\/js\/headroom_action.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/headroom_action-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/monovoce\/js\/home.js": {
 		"ft": 64,
 		"ma": 0,
@@ -367,6 +393,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/monovoce\/js\/min\/jquery.fitvids-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/monovoce\/js\/jQuery.headroom.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/jQuery.headroom-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -2425,6 +2461,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/monovoce\/_animation_keyframes.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/monovoce\/scss\/_archive.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/monovoce\/_archive.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
