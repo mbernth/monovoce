@@ -30,20 +30,11 @@
 /* ## Featured Content
 ---------------------------------------------------------------------- */
 
-.featured-content .entry {
-	border-bottom: 0px solid $color-black;
-	padding: 0 0 120px;
-}
-.featured-content .entry:last-child{
-	border-bottom:none;
-}
+// .featured-content .entry {}
+// .featured-content .entry-title {}
 
 .footer-widgets .entry {
 	border-bottom: 1px dotted $color-black;
-}
-
-.featured-content .entry-title {
-	margin-bottom:20px;
 }
 
 .full-width-content .widget-wrap .entry-meta{

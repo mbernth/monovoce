@@ -6,7 +6,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         .entry{
-            
+            position: relative;
+            .entry-header{
+                position: absolute;
+            }
+            .entry-footer{
+                position: absolute;
+            }
         }
     }
 }

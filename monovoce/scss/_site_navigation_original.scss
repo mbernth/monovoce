@@ -18,6 +18,7 @@
 	@include font-values($g_font-nav);
 	letter-spacing:0.2em;
 	text-decoration: none;
+	color:$color-white;
 	display: block;
 	padding: 0 0 0 40px;
 }
@@ -29,7 +30,7 @@
 }
 
 .genesis-nav-menu .current-menu-item > a{
-	color: $color-secondary;
+	color: $color-active;
 }
 .nav-primary .genesis-nav-menu .current-menu-parent > a{
 	color: $color-secondary;

@@ -77,6 +77,20 @@ function mono_frontpage_slider() {
     	endwhile;
 		
 		echo '</div>';
+
+		if ( have_rows( 'text_animation' ) ) :
+			echo '<div class="statements"><h1>We make future<br>friendly ';
+			echo '<div class="flip">';
+			while ( have_rows( 'text_animation' ) ) : the_row();
+				echo '<div><div>';
+					the_sub_field( 'word' );
+				echo '</div></div>';
+			endwhile;
+			echo '</h1></div></div>';
+
+			else :
+			// no rows found
+		endif;
 	
 	else :
 

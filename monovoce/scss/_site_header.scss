@@ -128,8 +128,9 @@
   }
   @keyframes fader {
 	0% {transform: translateX(100%); opacity: 0; fill: #00395D;}
-	75% {fill:#52B9E9;}
-	100% {transform: translateX(0%); opacity: 1; fill: #ef405c;}
+	25% {fill:#52B9E9;}
+	50% {fill:#ef405c;}
+	100% {transform: translateX(0%); opacity: 1; fill: #ffffff;}
   }
 
 /* ## Widget Area
