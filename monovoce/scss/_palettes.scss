@@ -1,0 +1,288 @@
+.primary_swatches{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, 188px);
+    grid-gap: 40px;
+    margin-bottom: 40px;
+}
+.secondary_swatches{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, 74px);
+    grid-gap: 40px;
+}
+.entry-content ul[class*="swatch"]{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+    margin: 0;
+    padding: 0;
+}
+.entry-content ul > li[class*="swatch-row"]{
+	flex-grow: 1;
+	width: 20%;
+	height: 47px;
+    list-style-type: none;
+    p{
+        font-family: $font-bread;
+        font-size: 14px;
+        color: #999;
+        margin: 10px 0;
+        text-transform: uppercase;
+    }
+}
+
+/* # Primary Colour */
+.swatch-primary .swatch-row-one:nth-child(1) {
+    background-color: $color-primary;
+    border-radius: 8px;
+    height: 74px;
+    width: 100%;
+}
+.swatch-primary .swatch-row-one:nth-child(2) {
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+/* ## Lighter
+================================================ */
+.swatch-primary .swatch-row-one:nth-child(3) {
+    background-color: $color-primary;
+    border-radius: 8px 0 0 8px;
+    margin-bottom: 20px;
+}
+.swatch-primary .swatch-row-one:nth-child(4) {
+    background-color: shade($color-primary, 20%);
+    margin-bottom: 20px;
+}
+.swatch-primary .swatch-row-one:nth-child(5) {
+    background-color: shade($color-primary, 40%);
+    margin-bottom: 20px;
+}
+.swatch-primary .swatch-row-one:nth-child(6) {
+    background-color: shade($color-primary, 60%);
+    margin-bottom: 20px;
+}
+.swatch-primary .swatch-row-one:nth-child(7) {
+    background-color: shade($color-primary, 80%);
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+}
+/* ## Darker
+================================================ */
+.swatch-primary .swatch-row-two:nth-child(8) {
+    background-color: $color-primary;
+    border-radius: 8px 0 0 8px;
+}
+.swatch-primary .swatch-row-two:nth-child(9) {
+    background-color: tint($color-primary, 20%);
+}
+.swatch-primary .swatch-row-two:nth-child(10) {
+    background-color: tint($color-primary, 40%);
+}
+.swatch-primary .swatch-row-two:nth-child(11) {
+    background-color: tint($color-primary, 60%);
+}
+.swatch-primary .swatch-row-two:nth-child(12) {
+    background-color: tint($color-primary, 80%);
+    border-radius: 0 8px 8px 0;
+}
+
+/* # Secondary Colour */
+.swatch-secondary .swatch-row-one:nth-child(1) {
+    background-color: $color-secondary;
+    border-radius: 8px;
+    height: 74px;
+    width: 100%;
+}
+.swatch-secondary .swatch-row-one:nth-child(2) {
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+/* ## Lighter
+================================================ */
+.swatch-secondary .swatch-row-one:nth-child(3) {
+    background-color: $color-secondary;
+    border-radius: 8px 0 0 8px;
+    margin-bottom: 20px;
+}
+.swatch-secondary .swatch-row-one:nth-child(4) {
+    background-color: shade($color-secondary, 20%);
+    margin-bottom: 20px;
+}
+.swatch-secondary .swatch-row-one:nth-child(5) {
+    background-color: shade($color-secondary, 40%);
+    margin-bottom: 20px;
+}
+.swatch-secondary .swatch-row-one:nth-child(6) {
+    background-color: shade($color-secondary, 60%);
+    margin-bottom: 20px;
+}
+.swatch-secondary .swatch-row-one:nth-child(7) {
+    background-color: shade($color-secondary, 80%);
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+}
+/* ## Darker
+================================================ */
+.swatch-secondary .swatch-row-two:nth-child(8) {
+    background-color: $color-secondary;
+    border-radius: 8px 0 0 8px;
+}
+.swatch-secondary .swatch-row-two:nth-child(9) {
+    background-color: tint($color-secondary, 20%);
+}
+.swatch-secondary .swatch-row-two:nth-child(10) {
+    background-color: tint($color-secondary, 40%);
+}
+.swatch-secondary .swatch-row-two:nth-child(11) {
+    background-color: tint($color-secondary, 60%);
+}
+.swatch-secondary .swatch-row-two:nth-child(12) {
+    background-color: tint($color-secondary, 80%);
+    border-radius: 0 8px 8px 0;
+}
+
+/* # Active Colour */
+.swatch-active .swatch-row-one:nth-child(1) {
+    background-color: $color-active;
+    border-radius: 8px;
+    height: 74px;
+    width: 100%;
+}
+.swatch-active .swatch-row-one:nth-child(2) {
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+/* ## Lighter
+================================================ */
+.swatch-active .swatch-row-one:nth-child(3) {
+    background-color: $color-active;
+    border-radius: 8px 0 0 8px;
+    margin-bottom: 20px;
+}
+.swatch-active .swatch-row-one:nth-child(4) {
+    background-color: shade($color-active, 20%);
+    margin-bottom: 20px;
+}
+.swatch-active .swatch-row-one:nth-child(5) {
+    background-color: shade($color-active, 40%);
+    margin-bottom: 20px;
+}
+.swatch-active .swatch-row-one:nth-child(6) {
+    background-color: shade($color-active, 60%);
+    margin-bottom: 20px;
+}
+.swatch-active .swatch-row-one:nth-child(7) {
+    background-color: shade($color-active, 80%);
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+}
+/* ## Darker
+================================================ */
+.swatch-active .swatch-row-two:nth-child(8) {
+    background-color: $color-active;
+    border-radius: 8px 0 0 8px;
+}
+.swatch-active .swatch-row-two:nth-child(9) {
+    background-color: tint($color-active, 20%);
+}
+.swatch-active .swatch-row-two:nth-child(10) {
+    background-color: tint($color-active, 40%);
+}
+.swatch-active .swatch-row-two:nth-child(11) {
+    background-color: tint($color-active, 60%);
+}
+.swatch-active .swatch-row-two:nth-child(12) {
+    background-color: tint($color-active, 80%);
+    border-radius: 0 8px 8px 0;
+}
+
+/* # Black Colour */
+.swatch-black .swatch-row-one:nth-child(1) {
+    background-color: $color-black;
+    border-radius: 8px;
+    height: 74px;
+    width: 100%;
+}
+.swatch-black .swatch-row-one:nth-child(2) {
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+/* ## Lighter
+================================================ */
+.swatch-black .swatch-row-one:nth-child(3) {
+    background-color: $color-black;
+    border-radius: 8px 0 0 8px;
+    margin-bottom: 20px;
+}
+.swatch-black .swatch-row-one:nth-child(4) {
+    background-color: shade($color-black, 20%);
+    margin-bottom: 20px;
+}
+.swatch-black .swatch-row-one:nth-child(5) {
+    background-color: shade($color-black, 40%);
+    margin-bottom: 20px;
+}
+.swatch-black .swatch-row-one:nth-child(6) {
+    background-color: shade($color-black, 60%);
+    margin-bottom: 20px;
+}
+.swatch-black .swatch-row-one:nth-child(7) {
+    background-color: shade($color-black, 80%);
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+}
+/* ## Darker
+================================================ */
+.swatch-black .swatch-row-two:nth-child(8) {
+    background-color: $color-black;
+    border-radius: 8px 0 0 8px;
+}
+.swatch-black .swatch-row-two:nth-child(9) {
+    background-color: tint($color-black, 20%);
+}
+.swatch-black .swatch-row-two:nth-child(10) {
+    background-color: tint($color-black, 40%);
+}
+.swatch-black .swatch-row-two:nth-child(11) {
+    background-color: tint($color-black, 60%);
+}
+.swatch-black .swatch-row-two:nth-child(12) {
+    background-color: tint($color-black, 80%);
+    border-radius: 0 8px 8px 0;
+}
+
+
+.secondary_swatches span:nth-child(1) {
+    background-color: $color-accent-one;
+    border-radius: 8px;
+    height: 74px;
+}
+.secondary_swatches span:nth-child(2) {
+    background-color: $color-accent-two;
+    border-radius: 8px;
+    height: 74px;
+}
+.secondary_swatches span:nth-child(3) {
+    background-color: $color-accent-three;
+    border-radius: 8px;
+    height: 74px;
+}
+.secondary_swatches span:nth-child(4) {
+    background-color: $color-black;
+    border-radius: 8px;
+    height: 74px;
+}
+.secondary_swatches span:nth-child(5) {
+    background-color: $color-white;
+    border-radius: 8px;
+    height: 74px;
+}
