@@ -182,35 +182,35 @@
 		"oAP": "\/monovoce\/fonts\/cerabasic-regularitalic-webfont.woff2",
 		"oF": 0
 		},
-	"\/monovoce\/Fonts\/Novecentosanswide-Bold-webfont.eot": {
+	"\/monovoce\/fonts\/Novecentosanswide-Bold-webfont.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/monovoce\/Fonts\/Novecentosanswide-Bold-webfont.eot",
+		"oAP": "\/monovoce\/fonts\/Novecentosanswide-Bold-webfont.eot",
 		"oF": 0
 		},
-	"\/monovoce\/Fonts\/Novecentosanswide-Bold-webfont.svg": {
+	"\/monovoce\/fonts\/Novecentosanswide-Bold-webfont.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/monovoce\/Fonts\/Novecentosanswide-Bold-webfont.svg",
+		"oAP": "\/monovoce\/fonts\/Novecentosanswide-Bold-webfont.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/monovoce\/Fonts\/Novecentosanswide-Bold-webfont.ttf": {
+	"\/monovoce\/fonts\/Novecentosanswide-Bold-webfont.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/monovoce\/Fonts\/Novecentosanswide-Bold-webfont.ttf",
+		"oAP": "\/monovoce\/fonts\/Novecentosanswide-Bold-webfont.ttf",
 		"oF": 0
 		},
-	"\/monovoce\/Fonts\/Novecentosanswide-Bold-webfont.woff": {
+	"\/monovoce\/fonts\/Novecentosanswide-Bold-webfont.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/monovoce\/Fonts\/Novecentosanswide-Bold-webfont.woff",
+		"oAP": "\/monovoce\/fonts\/Novecentosanswide-Bold-webfont.woff",
 		"oF": 0
 		},
 	"\/monovoce\/functions.php": {
@@ -845,6 +845,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/monovoce\/lib\/flexible_grids_content.php",
+		"oF": 0
+		},
+	"\/monovoce\/lib\/palettes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/monovoce\/lib\/palettes.php",
 		"oF": 0
 		},
 	"\/monovoce\/lib\/push_content.php": {

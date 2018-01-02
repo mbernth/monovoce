@@ -9,8 +9,8 @@ $color-black: #000B12; /* Black */
 $color-black_rgb: rgba(0, 11, 18, 1); /* Black */
 
 /* White */
-$color-white: #ffffff;
-$color-black_rgb: rgba(255, 255, 255, 1) ; /* White */
+$color-white: #fdfeff;
+$color-black_rgb: rgba(253, 254, 255, 1) ; /* White */
 
 /* Primary */
 $color-primary: #00395D; /* Colour */
@@ -21,25 +21,25 @@ $color-secondary: #EF405C; /* Colour */
 $color-secondary_rgb: rgba(239, 64, 92, 1) ; /* Colour */
 
 /* Active - Active/Focuced*/
-$color-active: #52B9E9; /* Colour */
+$color-active: #52b9e9; /* Colour */
 $color-active_rgb: rgba(82, 185, 233, 1) ; /* Colour */
 
 /* Accent 1 - Succes */
-$color-accent-one: #00D3A7; /* Colour */
-$color-accent-one_rgb: rgba(0, 211, 167, 1) ; /* Colour */
+$color-accent-one: #75c7ed; /* Colour */
+$color-accent-one_rgb: rgba(117, 199, 237, 1) ; /* Colour */
 
 /* Accent 2 - Warning */
-$color-accent-two: #FFE46B; /* Colour */
-$color-accent-two_rgb: rgba(255, 228, 107, 1) ; /* Colour */
+$color-accent-two: #f2e95b; /* Colour */
+$color-accent-two_rgb: rgba(242, 233, 91, 1) ; /* Colour */
 
 /* Accent 3 - Error/Alert */
-$color-accent-three: #EF405C; /* Colour */
-$color-accent-three_rgb: rgba(239, 64, 92, 1) ; /* Colour */
+$color-accent-three: #bf334a; /* Colour */
+$color-accent-three_rgb: rgba(191, 51, 74, 1) ; /* Colour */
 
 /* ## Defaults Globals
 ---------------------------------------------------------------------- */
 /* Global body values */
-$g_body-background-color:$color-black;
+$g_body-background-color:$color-white;
 
 /* ## Typography
 ---------------------------------------------------------------------- */

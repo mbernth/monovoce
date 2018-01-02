@@ -35,10 +35,14 @@ add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 // remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
 
 // Setup Swatches
-include_once( get_stylesheet_directory() . '/lib/swatches.php' );
+// include_once( get_stylesheet_directory() . '/lib/swatches.php' );
+include_once( get_stylesheet_directory() . '/lib/palettes.php' );
 
 // Setup Swatches
 include_once( get_stylesheet_directory() . '/lib/typography.php' );
+
+// Setup Flexible page content
+include_once( get_stylesheet_directory() . '/lib/flexible_page_content.php' );
 
 //* Run the Genesis loop
 genesis();

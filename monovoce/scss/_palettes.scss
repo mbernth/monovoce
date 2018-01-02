@@ -283,6 +283,7 @@
 }
 .secondary_swatches span:nth-child(5) {
     background-color: $color-white;
+    border: 1px solid tint($color-black, 90%);
     border-radius: 8px;
     height: 74px;
 }

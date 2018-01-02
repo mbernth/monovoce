@@ -17,7 +17,7 @@ $breakpoints: (
 
 /* Default body text */
 $g_font-bread: (
-    null   : (1.6, 2.6, 300, $color-white),
+    null   : (1.6, 2.4, 300, $color-black),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
@@ -27,7 +27,7 @@ $g_font-bread: (
 
 /* Headlines */
 $g_font-h1: (
-    null   : (3.2, 3.2, 300, $color-white),
+    null   : (3.2, 3.2, 300, $color-black),
     // xsmall : (3.2, 3.2),
     // small  : (3.2, 2.2),
     // medium : (3.2, 3.2),
@@ -35,7 +35,7 @@ $g_font-h1: (
     // xlarge : (3.2, 3.2)
 );
 $g_font-h2: (
-    null   : (2.8, 2.8, 300, $color-white),
+    null   : (2.8, 2.8, 300, $color-black),
     // xsmall : (2.8, 2.8),
     // small  : (2.8, 2.8),
     // medium : (2.8, 2.8),
@@ -43,7 +43,7 @@ $g_font-h2: (
     // xlarge : (2.8, 2.8)
 );
 $g_font-h3: (
-    null   : (2.6, 2.6, 300, $color-white),
+    null   : (2.6, 2.6, 300, $color-black),
     // xsmall : (2.6, 2.6),
     // small  : (2.6, 2.6),
     // medium : (2.6, 2.6),
@@ -51,7 +51,7 @@ $g_font-h3: (
     // xlarge : (2.6, 2.6)
 );
 $g_font-h4: (
-    null   : (2.4, 2.4, 300, $color-white),
+    null   : (2.4, 2.4, 300, $color-black),
     // xsmall : (2.4, 2.4),
     // small  : (2.4, 2.4),
     // medium : (2.4, 2.4),
@@ -59,7 +59,7 @@ $g_font-h4: (
     // xlarge : (2.4, 2.4)
 );
 $g_font-h5: (
-    null   : (2.2, 2.2, 300, $color-white),
+    null   : (2.2, 2.2, 300, $color-black),
     // xsmall : (2.2, 2.2),
     // small  : (2.2, 2.2),
     // medium : (2.2, 2.2),
@@ -67,7 +67,7 @@ $g_font-h5: (
     // xlarge : (2.2, 2.2)
 );
 $g_font-h6: (
-    null   : (2, 2, 300, $color-white),
+    null   : (2, 2, 300, $color-black),
     // xsmall : (2, 2),
     // small  : (2, 2),
     // medium : (2, 2),
@@ -77,7 +77,7 @@ $g_font-h6: (
 
 /* Blockqoute */
 $g_font-blockquote: (
-    null   : (6, 1, 600, $color-white),
+    null   : (6, 1, 600, $color-black),
     // xsmall : (6, 1),
     // small  : (6, 1),
     // medium : (6, 1),
@@ -90,7 +90,7 @@ $g_font-blockquote: (
 
 /* Input */
 $g_font-input: (
-    null   : (1.6, 2.6, 300, $color-white),
+    null   : (1.6, 2.4, 300, $color-black),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
@@ -100,7 +100,7 @@ $g_font-input: (
 
 /* Placeholder */
 $g_font-placeholder: (
-    null   : (1.6, 2.6, 300, tint($color-black, 60%)),
+    null   : (1.6, 2.4, 300, tint($color-black, 60%)),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
@@ -110,7 +110,7 @@ $g_font-placeholder: (
 
 /* Label */
 $g_font-label: (
-    null   : (1.4, 2.3, 400, $color-white),
+    null   : (1.4, 2.2, 400, $color-black),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
@@ -120,7 +120,7 @@ $g_font-label: (
 
 /* Button */
 $g_font-button: (
-    null   : (1.6, 1.6, 300, $color-white),
+    null   : (1.6, 1.6, 300, $color-black),
     // xsmall : (1.6, 1.6),
     // small  : (1.6, 1.6),
     // medium : (1.6, 1.6),
@@ -133,7 +133,7 @@ $g_font-button: (
 
 /* Breadcrumbs */
 $g_font-breadcrumb: (
-    null   : (1.4, 2.3, 300, $color-white),
+    null   : (1.4, 2.2, 300, $color-black),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
@@ -143,7 +143,7 @@ $g_font-breadcrumb: (
 
 /* Author */
 $g_font-author: (
-    null   : (1.6, 2.6, 300, $color-white),
+    null   : (1.6, 2.4, 300, $color-black),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
@@ -156,7 +156,7 @@ $g_font-author: (
 
 /* Archive title */
 $g_font-archive-title: (
-    null   : (3.2, 3.2, 300, $color-white),
+    null   : (3.2, 3.2, 300, $color-black),
     xsmall : (3.2, 3.2),
     small  : (3.2, 3.2),
     medium : (3.4, 3.4),
@@ -166,7 +166,7 @@ $g_font-archive-title: (
 
 /* Entry title */
 $g_font-entry-title: (
-    null   : (3.2, 3.2, 300, $color-white),
+    null   : (3.2, 3.2, 300, $color-black),
     xsmall : (3.2, 3.2),
     small  : (3.2, 3.2),
     medium : (3.4, 3.4),
@@ -176,7 +176,7 @@ $g_font-entry-title: (
 
 /* Widget title */
 $g_font-widget-title: (
-    null   : (2.6, 2.6, 300, $color-white),
+    null   : (2.6, 2.6, 300, $color-black),
     // xsmall : (2.6, 2.6),
     // small  : (2.6, 2.6),
     // medium : (2.6, 2.6),
@@ -186,7 +186,7 @@ $g_font-widget-title: (
 
 /* Captions */
 $g_font-caption: (
-    null   : (1.4, 2.3, 300),
+    null   : (1.4, 2.2, 300),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
@@ -196,7 +196,7 @@ $g_font-caption: (
 
 /* Global Title Area values */
 $g_font-site-title: (
-    null   : (3.8, 3.8, 300, $color-white),
+    null   : (3.8, 3.8, 300, $color-black),
     // xsmall : (3.8, 3.8),
     // small  : (3.8, 3.8),
     // medium : (3.8, 3.8),
@@ -226,7 +226,7 @@ $g_font-nav: (
 
 /* Global Entry Meta values */
 $g_font-meta: (
-    null   : (1.4, 2.3, 300),
+    null   : (1.4, 2.2, 300),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
@@ -236,7 +236,7 @@ $g_font-meta: (
 
 /* Global Pagination values */
 $g_font-pagination: (
-    null   : (1.6, 2.6, 300),
+    null   : (1.6, 2.4, 300),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
@@ -246,7 +246,7 @@ $g_font-pagination: (
 
 /* Global Comments values */
 $g_font-logged-in: (
-    null   : (1.4, 2.3, 300),
+    null   : (1.4, 2.2, 300),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
@@ -254,7 +254,7 @@ $g_font-logged-in: (
     // xlarge : (1.4, 2.3)
 );
 $g_font-comment-header: (
-    null   : (1.6, 2.6, 300),
+    null   : (1.6, 2.4, 300),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
@@ -264,7 +264,7 @@ $g_font-comment-header: (
 
 /* Global Footer Widgets values */
 $g_font-footer-widgets: (
-    null   : (1.4, 2.3, 300),
+    null   : (1.4, 2.4, 300),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),

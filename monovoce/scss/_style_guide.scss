@@ -1,5 +1,59 @@
 /* Style Guide =================================================== */
+.category{
+	display: block;
+	width: 100%;
+	float: left;
+    margin-bottom: 60px;
+}
+.category_headline{
+    font-family: $font-bread;
+    font-size: 14px;
+    line-height: 1;
+    color: tint($color-black, 60%);
+    padding-bottom: 3px;
+    margin-bottom: 40px;
+	border-bottom:1px solid tint($color-black, 60%);
+}
+.description{
+    clear: both;
+    font-family: $font-bread;
+    font-size: 14px;
+    line-height: 16px;
+    color:tint($color-black, 60%);
+}
+.headlines{
+	span{
+		font-family: $font-headlines;
+	}
+}
+.two_col{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+}
+@media only screen and (min-width: $mq-medium) {
+	.two_col{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+/* ## UI elements
+---------------------------------------------------------------------- */
 
+.entry-content .category button,
+.entry-content .category input[type="button"],
+.entry-content .category input[type="reset"],
+.entry-content .category input[type="submit"],
+.entry-content .category .button {
+	clear: none;
+	float: left;
+	margin-bottom: 40px;
+}
+.ui-elements-buttons{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*
 .style_type{
 	display: grid;
 	grid-template-columns:repeat(1, 1fr);
@@ -8,6 +62,7 @@
 	// box-shadow: 0px 0px 5px tint($color-black, 80%);
 	margin-bottom: $margin-default+px;
 }
+
 @media only screen and (min-width: $mq-medium) {
 	.style_type{
 		grid-template-columns:repeat(2, 1fr);
@@ -28,3 +83,4 @@
 	// padding: 10px;
 	// box-shadow: 0px 0px 5px tint($color-black, 80%);
 }
+*/
