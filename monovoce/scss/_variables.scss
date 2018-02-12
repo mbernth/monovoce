@@ -93,11 +93,21 @@ $g_body-background-color:$color-white;
          font-weight: normal;
          font-style: normal;
 }
+@font-face {
+    font-family: 'cerabasic-black-webfont';
+    src: url('fonts/cerabasic-black-webfont.eot'); /* IE9 Compat Modes */
+    src: url('fonts/cerabasic-black-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/cerabasic-black-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/cerabasic-black-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/cerabasic-black-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-weight: normal;
+         font-style: normal;
+}
 
 /* Global Font Faminly */
 $font-bread: 'cerabasic-regular-webfont', Helvetica, Arial, sans-serif;
-$font-headlines: 'novecento_sans_wide_bookbold', Helvetica, Arial, sans-serif;
-$font-navigation: 'novecento_sans_wide_bookbold', Helvetica, Arial, sans-serif;
+$font-headlines: 'cerabasic-black-webfont', Helvetica, Arial, sans-serif;
+$font-navigation: 'cerabasic-bold-webfont', Helvetica, Arial, sans-serif;
 
 /*** Global Default values ***/
 
@@ -110,10 +120,37 @@ $g_font-mark-color:$color-white;
 $g_font-mark-background-color:$color-secondary;
 
 /* Button */
-$g_font-button-background-color: $color-primary;
+$g_font-button_radius: 5;
+
+$g_font-button-background-color: $color-active;
+$g_font-button-color: $color-white;
 $g_font-button-color-hover: $color-white;
-$g_font-button-background-color-hover: tint($color-primary, 20%);
+$g_font-button-background-color-hover: tint($color-active, 20%);
 $g_font-button-box-shadow-hover:0px 5px 3px 0px rgba(14, 28, 45, 0.25);
+
+$g_font-button-disabled-background-color: tint($color-black, 80%);
+$g_font-button-disabled-color: $color-white;
+$g_font-button-disabled-color-hover: $color-white;
+$g_font-button-disabled-background-color-hover: tint($color-black, 80%);
+$g_font-button-disabled-box-shadow-hover:0px 0px 0px 0px rgba(14, 28, 45, 0);
+
+$g_font-button-primary-background-color: $color-primary;
+$g_font-button-primary-color: $color-white;
+$g_font-button-primary-color-hover: $color-white;
+$g_font-button-primary-background-color-hover: tint($color-primary, 20%);
+$g_font-button-primary-box-shadow-hover:0px 5px 3px 0px rgba(14, 28, 45, 0.25);
+
+$g_font-button-info-background-color: $color-black;
+$g_font-button-info-color: $color-white;
+$g_font-button-info-color-hover: $color-white;
+$g_font-button-info-background-color-hover: tint($color-black, 20%);
+$g_font-button-info-box-shadow-hover:0px 5px 3px 0px rgba(14, 28, 45, 0.25);
+
+$g_font-button-alert-background-color: $color-accent-three;
+$g_font-button-alert-color: $color-white;
+$g_font-button-alert-color-hover: $color-white;
+$g_font-button-alert-background-color-hover: tint($color-accent-three, 20%);
+$g_font-button-alert-box-shadow-hover:0px 5px 3px 0px rgba(14, 28, 45, 0.25);
 
 /* ## Border Radius
 ---------------------------------------------------------------------- */

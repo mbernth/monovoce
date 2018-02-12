@@ -17,22 +17,22 @@ $breakpoints: (
 
 /* Default body text */
 $g_font-bread: (
-    null   : (1.6, 2.4, 300, $color-black),
+    null   : (1.6, 2.4, normal, $color-black),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
     // large  : (1.6, 2.6),
-    // xlarge : (1.8, 2.9)
+    xlarge : (1.8, 2.9)
 );
 
 /* Headlines */
 $g_font-h1: (
-    null   : (3.2, 3.2, 300, $color-black),
+    null   : (3.2, 3.2, normal, $color-black),
     // xsmall : (3.2, 3.2),
     // small  : (3.2, 2.2),
     // medium : (3.2, 3.2),
     // large  : (3.2, 3.2),
-    // xlarge : (3.2, 3.2)
+    xlarge : (4.2, 4.2)
 );
 $g_font-h2: (
     null   : (2.8, 2.8, 300, $color-black),
@@ -40,7 +40,7 @@ $g_font-h2: (
     // small  : (2.8, 2.8),
     // medium : (2.8, 2.8),
     // large  : (2.8, 2.8),
-    // xlarge : (2.8, 2.8)
+    xlarge : (3.6, 3.6)
 );
 $g_font-h3: (
     null   : (2.6, 2.6, 300, $color-black),
@@ -48,7 +48,7 @@ $g_font-h3: (
     // small  : (2.6, 2.6),
     // medium : (2.6, 2.6),
     // large  : (2.6, 2.6),
-    // xlarge : (2.6, 2.6)
+    xlarge : (3.0, 3.0)
 );
 $g_font-h4: (
     null   : (2.4, 2.4, 300, $color-black),
@@ -56,7 +56,7 @@ $g_font-h4: (
     // small  : (2.4, 2.4),
     // medium : (2.4, 2.4),
     // large  : (2.4, 2.4),
-    // xlarge : (2.4, 2.4)
+    xlarge : (2.6, 2.6)
 );
 $g_font-h5: (
     null   : (2.2, 2.2, 300, $color-black),
@@ -120,7 +120,7 @@ $g_font-label: (
 
 /* Button */
 $g_font-button: (
-    null   : (1.6, 1.6, 300, $color-black),
+    null   : (1.6, 1.6, 300, $color-white),
     // xsmall : (1.6, 1.6),
     // small  : (1.6, 1.6),
     // medium : (1.6, 1.6),

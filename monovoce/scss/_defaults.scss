@@ -285,19 +285,69 @@ input[type="submit"],
 	border: 0;
 	cursor: pointer;
 	@include font-values($g_font-button);
+	color: $g_font-button-color;
+	text-align: center;
+	text-decoration: none;
 	background-color: $g_font-button-background-color;
-	@include corners($radius);
-	padding: 15px 24px;
+	@include corners($g_font-button_radius);
+	padding: 20px 24px;
 	width: 100%;
-	max-width:270px;
-	float:right;
+	max-width:200px;
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition:    all .2s ease-in-out;
 	-ms-transition:     all .2s ease-in-out;
 	-o-transition:      all .2s ease-in-out;
 	transition:         all .2s ease-in-out;
+	&:hover,
+	&:focus{
+		color: $g_font-button-color-hover;
+		background-color: $g_font-button-background-color-hover;
+		box-shadow: $g_font-button-box-shadow-hover;
+	}
+	&.disabled{
+		color:$g_font-button-disabled-color;
+		background-color: $g_font-button-disabled-background-color;
+		cursor: default;
+		&:hover,
+		&:focus{
+			color:$g_font-button-disabled-color-hover;
+			background-color: $g_font-button-disabled-background-color-hover;
+			box-shadow: $g_font-button-disabled-box-shadow-hover;
+		}
+	}
+	&.button-primary{
+		color:$g_font-button-primary-color;
+		background-color: $g_font-button-primary-background-color;
+		&:hover,
+		&:focus{
+			color:$g_font-button-primary-color-hover;
+			background-color: $g_font-button-primary-background-color-hover;
+			box-shadow: $g_font-button-primary-box-shadow-hover;
+		}
+	}
+	&.button-info{
+		color:$g_font-button-info-color;
+		background-color: $g_font-button-info-background-color;
+		&:hover,
+		&:focus{
+			color:$g_font-button-info-color-hover;
+			background-color: $g_font-button-info-background-color-hover;
+			box-shadow: $g_font-button-info-box-shadow-hover;
+		}
+	}
+	&.button-alert{
+		color:$g_font-button-alert-color;
+		background-color: $g_font-button-alert-background-color;
+		&:hover,
+		&:focus{
+			color:$g_font-button-alert-color-hover;
+			background-color: $g_font-button-alert-background-color-hover;
+			box-shadow: $g_font-button-alert-box-shadow-hover;
+		}
+	}
 }
 
+/*
 button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
@@ -308,11 +358,14 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus  {
-	color: $g_font-button-color-hover;
-	background-color: $g_font-button-background-color-hover;
-	box-shadow: $g_font-button-box-shadow-hover;
+	&:hover,
+	&:focus{
+		color: $g_font-button-color-hover;
+		background-color: $g_font-button-background-color-hover;
+		box-shadow: $g_font-button-box-shadow-hover;
+	}
 }
-
+*/
 .entry-content .button:hover,
 .entry-content .button:focus {
 	color: $g_font-button-color-hover;
