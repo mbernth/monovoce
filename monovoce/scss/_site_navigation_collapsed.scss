@@ -1,5 +1,3 @@
-// @media only screen and (max-width: $mq-nav) {
-
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header > .wrap {
@@ -9,7 +7,7 @@
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
 /* ## Primary Navigation
---------------------------------------------- */
+---------------------------------------------------------------------- */
 .nav-primary {
     position: relative;
 	width: auto;
@@ -17,7 +15,7 @@
 }
 
 /* ## Genesis Navigation Menu
---------------------------------------------- */
+---------------------------------------------------------------------- */
 .genesis-nav-menu {
 	display: flex;
 	justify-content: flex-end;
@@ -63,18 +61,21 @@
 			width: 300px;
 			z-index: 99;
 			a {
-                border-bottom: 1px solid $color-black;
+                border-top: 1px solid $color-black;
                 padding: 10px 0;
 				position: relative;
 				width: 300px;
+				font-size: 90%;
 				word-wrap: break-word;
 				text-transform: none;
-				&:hover {
-					background-color: tint($color-black, 80%);
-				}
 			}
 			.sub-menu {
 				margin: -55px 0 0 300px;
+				a{
+					font-size: 80%;
+					margin-left: 10px;
+					border-top: none;
+				}
 			}
 		}
 	}
@@ -93,8 +94,37 @@
 		}
     }
     &.responsive-menu{
+		display: none;
+		> .menu-item{
+			> .sub-menu{
+			display: none;
+			}
+		}
+		.menu-item-has-children{
+			cursor: pointer;
+			&:before{
+				content: "\f347";
+				float: right;
+				font: normal 16px/1 'dashicons';
+				height: 16px;
+				padding: 10px 0 20px 20px;
+				right: 0;
+				text-align: right;
+				z-index: 9999;
+				color: $color-black;
+			}	
+		}
+		.menu-open.menu-item-has-children:before{
+			content: "\f343";
+			color: $color-black;
+		}
+		.menu-item{
+			display: block;
+			&:hover{
+				position: static;
+			}
+		}
         .sub-menu{
-            // border: none;
 	        left: auto;
 	        opacity: 1;
 	        position: relative;
@@ -108,7 +138,6 @@
             .current-menu-item > a:hover,
             li a,
             li a:hover{
-                // border: none;
 	            position: relative;
 	            width: 100%;
             }
@@ -121,196 +150,64 @@
 
 /* Responsive Menu Icon
 --------------------------------------------- */
+$bar-width: 30px;
+$bar-height: 3px;
+$bar-spacing: 6px;
+
 .responsive-menu-icon{
 	position: absolute;
-	top: -36px;
-    right: 5%;
-    .icon-list2{
-        width: 30px;
-        height: 30px;
-	    color: $color-black;
-	    -moz-transition:    all .4s ease-in-out;
-	    -ms-transition:     all .4s ease-in-out;
-	    -o-transition:      all .4s ease-in-out;
-	    -webkit-transition: all .4s ease-in-out;
-	    transition:         all .4s ease-in-out;
-    }
-    &.icon-open{
-        .icon-list2{
-            transform: rotate(90deg);
-        }
-    }
-}
-
-/*
-ul.genesis-nav-menu li{
-	background-color: $color-primary;
-}
-ul.genesis-nav-menu li:last-child{
-}
-ul.genesis-nav-menu li li{
-	background-color: tint($color-black, 60%);
-	li{
-		background-color: tint($color-black, 40%);
-	}
-}
-*/
-
-.genesis-nav-menu .sub-menu li li:first-child{
-	border-top: none;
-}
-.genesis-nav-menu .sub-menu li{
-	background-color: $color-white;
-	border-left: none;
-	border-right: none;
-}
-
-.genesis-nav-menu.responsive-menu > .menu-item > .sub-menu,
-.genesis-nav-menu.responsive-menu,
-.genesis-nav-menu.responsive-menu-two > .menu-item > .sub-menu,
-.genesis-nav-menu.responsive-menu-two{
-	display: none;
-}
-	
-.genesis-nav-menu.responsive-menu .menu-item,
-.genesis-nav-menu.responsive-menu-two .menu-item,
-.responsive-menu-icon {
 	display: block;
-}
-.genesis-nav-menu.responsive-menu .menu-item,
-.genesis-nav-menu.responsive-menu-two .menu-item{
-	margin: 0;
-	// border-bottom: 1px solid $color-secondary;
-}
-.genesis-nav-menu.responsive-menu .menu-item:first-child,
-.genesis-nav-menu.responsive-menu-two .menu-item:first-child{
-	// border-top: 1px solid $color-secondary;
+  	top: -27px;
+  	right: 5%;
+  	margin: auto;
+  	width: $bar-width;
+	height: $bar-height + $bar-spacing*2;
+	cursor: pointer;
 }
 
-	
-.genesis-nav-menu.responsive-menu .menu-item:hover,
-.genesis-nav-menu.responsive-menu-two .menu-item:hover{
-	position: static;
-}
-	
-.genesis-nav-menu.responsive-menu .current-menu-item > a,
-.genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
-.genesis-nav-menu.responsive-menu a,
-.genesis-nav-menu.responsive-menu a:hover,
-.genesis-nav-menu.responsive-menu-two .current-menu-item > a,
-.genesis-nav-menu.responsive-menu-two .sub-menu .current-menu-item > a:hover,
-.genesis-nav-menu.responsive-menu-two a,
-.genesis-nav-menu.responsive-menu-two a:hover{
-	background: none;
-	line-height: 1;
-}
-	
-.genesis-nav-menu.responsive-menu .menu-item-has-children,
-.genesis-nav-menu.responsive-menu-two .menu-item-has-children{
-	cursor: pointer;	
-}
-	
-.genesis-nav-menu.responsive-menu .menu-item-has-children > a,
-.genesis-nav-menu.responsive-menu-two .menu-item-has-children > a{
-	// margin-right: 60px;
-}
-	
-.genesis-nav-menu.responsive-menu .menu-item-has-children:before{
-	content: "\f347";
-	float: right;
-	font: normal 16px/1 'dashicons';
-	height: 16px;
-	padding: 10px 0 20px 20px;
-	right: 0;
-	text-align: right;
-	z-index: 9999;
-	color: $color-black;
-}
-	
-.genesis-nav-menu.responsive-menu .menu-open.menu-item-has-children:before{
-	content: "\f343";
-	color: $color-black;
+.bar,
+.bar:after,
+.bar:before {
+  	width: $bar-width;
+	height: $bar-height;
 }
 
-
-/*
-.genesis-nav-menu.responsive-menu .sub-menu,
-.genesis-nav-menu.responsive-menu-two .sub-menu{
-	border: none;
-	left: auto;
-	opacity: 1;
+.bar {
 	position: relative;
-	-moz-transition:    opacity .4s ease-in-out;
-	-ms-transition:     opacity .4s ease-in-out;
-	-o-transition:      opacity .4s ease-in-out;
-	-webkit-transition: opacity .4s ease-in-out;
-	transition:         opacity .4s ease-in-out;
-	width: 100%;
-	z-index: 99;
-}
-	
-.genesis-nav-menu.responsive-menu .sub-menu .sub-menu,
-.genesis-nav-menu.responsive-menu-two .sub-menu .sub-menu{
-	margin: 0;
+	transform: translateY($bar-spacing);
+	background: rgba(0, 11, 18, 1);
+	transition: all 0ms 300ms;
+  	&.animate {
+    	background: rgba(0, 11, 18, 0); 
+  	}
 }
 
-.genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
-.genesis-nav-menu.responsive-menu .sub-menu li a,
-.genesis-nav-menu.responsive-menu .sub-menu li a:hover,
-.genesis-nav-menu.responsive-menu-two .sub-menu .current-menu-item > a:hover,
-.genesis-nav-menu.responsive-menu-two .sub-menu li a,
-.genesis-nav-menu.responsive-menu-two .sub-menu li a:hover{
-	border: none;
-	position: relative;
-	width: 100%;
-}
-*/
-
-/*
-.site-header{
-	ul.genesis-nav-menu {
-		margin:0 auto;
-		width:100%;
-	}
+.bar:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: $bar-spacing;
+	background: rgba(0, 11, 18, 1);
+	transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-
-.genesis-nav-menu .current-menu-parent > a {
-    border-color: transparent;
-	border-top: none;
+.bar:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: $bar-spacing;
+	background: rgba(0, 11, 18, 1);
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-.genesis-nav-menu a,
-.genesis-nav-menu .sub-menu a{
-	padding: 20px 10px 20px 5%;
+
+.bar.animate:after {
+	top: 0;
+	transform: rotate(45deg);
+	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
 }
-.genesis-nav-menu a,
-.genesis-nav-menu a:hover, 
-.genesis-nav-menu a:focus {
-    border-color: transparent;
-	border-top: none;
+
+.bar.animate:before {
+	bottom: 0;
+	transform: rotate(-45deg);
+	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
 }
-*/
-
-
-
-
-
-
-/* ## Sub Menu
---------------------------------------------- */
-
-/* ## Accessible Menu
---------------------------------------------- */
-	
-/* ## Site Header Navigation
---------------------------------------------- */
-	
-/* ## Primary Navigation
---------------------------------------------- */
-	
-/* ## Secondary Navigation
---------------------------------------------- */
-
-
-
-// }

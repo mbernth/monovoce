@@ -89,8 +89,11 @@
 
 /* ## Primary Navigation
 --------------------------------------------- */
-
+.genesis-nav-menu.responsive-menu{
+	display: block;
+}
 .nav-primary {
+	display: block;
 	background-color:transparent;
 	width: 100%;
 	.wrap {
