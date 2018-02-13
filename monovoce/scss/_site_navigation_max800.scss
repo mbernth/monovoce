@@ -1,17 +1,26 @@
-@media only screen and (max-width: $mq-nav) {
+// @media only screen and (max-width: $mq-nav) {
+
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
-.site-header ul.genesis-nav-menu {
-	margin:0 auto;
-	width:100%;
-}
 
+/* ## Genesis Navigation Menu
+--------------------------------------------- */
+
+/* ## Primary Navigation
+--------------------------------------------- */
 .nav-primary {
-	background-color: transparent;
-	float:none;
 	width: auto;
 	margin-top: 0;
 }
+
+/*
+.site-header{
+	ul.genesis-nav-menu {
+		margin:0 auto;
+		width:100%;
+	}
+}
+*/
 
 .genesis-nav-menu .current-menu-parent > a {
     border-color: transparent;
@@ -166,7 +175,7 @@ ul.genesis-nav-menu li li{
 .responsive-menu-icon-two .icon-list2{
     width: 30px;
     height: 30px;
-	color: $color-white;
+	color: $color-black;
 	-moz-transition:    all .4s ease-in-out;
 	-ms-transition:     all .4s ease-in-out;
 	-o-transition:      all .4s ease-in-out;
@@ -206,4 +215,4 @@ ul.genesis-nav-menu li li{
 }
 
 
-}
+// }

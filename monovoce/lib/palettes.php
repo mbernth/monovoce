@@ -34,9 +34,7 @@ function mono_palettes() {
            <li class="swatch-row-one"></li>
            <li class="swatch-row-one"></li>
            <li class="swatch-row-one"></li>
-           <li class="swatch-row-one"></li>
 
-           <li class="swatch-row-two"></li>
            <li class="swatch-row-two"></li>
            <li class="swatch-row-two"></li>
            <li class="swatch-row-two"></li>
@@ -50,9 +48,7 @@ function mono_palettes() {
 	   		<li class="swatch-row-one"></li>
 	   		<li class="swatch-row-one"></li>
 	   		<li class="swatch-row-one"></li>
-	   		<li class="swatch-row-one"></li>
 
-	   		<li class="swatch-row-two"></li>
 	   		<li class="swatch-row-two"></li>
 	   		<li class="swatch-row-two"></li>
 	   		<li class="swatch-row-two"></li>
@@ -66,9 +62,7 @@ function mono_palettes() {
 	   		<li class="swatch-row-one"></li>
 	   		<li class="swatch-row-one"></li>
 	   		<li class="swatch-row-one"></li>
-	   		<li class="swatch-row-one"></li>
 
-	   		<li class="swatch-row-two"></li>
 	   		<li class="swatch-row-two"></li>
 	   		<li class="swatch-row-two"></li>
 	   		<li class="swatch-row-two"></li>
@@ -78,13 +72,11 @@ function mono_palettes() {
 	   		<li class="swatch-row-one"></li>
 	   		<li class="swatch-row-one"><p>#'.$black.'</p></li>
 	   
-	  		<li class="swatch-row-one"></li>
 	   		<li class="swatch-row-one"></li>
 	   		<li class="swatch-row-one"></li>
 	   		<li class="swatch-row-one"></li>
 	   		<li class="swatch-row-one"></li>
 
-	   		<li class="swatch-row-two"></li>
 	   		<li class="swatch-row-two"></li>
 	   		<li class="swatch-row-two"></li>
 	   		<li class="swatch-row-two"></li>

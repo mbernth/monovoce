@@ -190,8 +190,8 @@ function single_post_featured_image() {
 		printf( '<div class="featured-section" style="background-image:url(%s);"><div class="image-section">', $img );
 		the_title( '<h1 class="entry-title" itemprop="headline">', '</h1>' );
 		printf('</div></div>');
-		elseif( (! is_front_page()) ):
-		printf( '<div class="image-section" style="background-color:#231f20;"></div>', $img );
+		// elseif( (! is_front_page()) ):
+		// printf( '<div class="image-section" style="background-color:#231f20;"></div>', $img );
 		
 		
 	endif;

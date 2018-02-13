@@ -847,6 +847,13 @@
 		"oAP": "\/monovoce\/lib\/flexible_grids_content.php",
 		"oF": 0
 		},
+	"\/monovoce\/lib\/palettes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/monovoce\/lib\/palettes.php",
+		"oF": 0
+		},
 	"\/monovoce\/lib\/push_content.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -3291,6 +3298,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/monovoce\/_site_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/monovoce\/scss\/_site_navigation_collapsed.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/monovoce\/_site_navigation_collapsed.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

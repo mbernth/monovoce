@@ -20,7 +20,7 @@
 }
 .entry-content ul > li[class*="swatch-row"]{
 	flex-grow: 1;
-	width: 20%;
+	width: 25%;
 	height: 47px;
     list-style-type: none;
     p{
@@ -47,44 +47,39 @@
 }
 /* ## Lighter
 ================================================ */
+
 .swatch-primary .swatch-row-one:nth-child(3) {
-    background-color: $color-primary;
     border-radius: 8px 0 0 8px;
-    margin-bottom: 20px;
-}
-.swatch-primary .swatch-row-one:nth-child(4) {
     background-color: shade($color-primary, 20%);
     margin-bottom: 20px;
 }
-.swatch-primary .swatch-row-one:nth-child(5) {
+.swatch-primary .swatch-row-one:nth-child(4) {
     background-color: shade($color-primary, 40%);
     margin-bottom: 20px;
 }
-.swatch-primary .swatch-row-one:nth-child(6) {
+.swatch-primary .swatch-row-one:nth-child(5) {
     background-color: shade($color-primary, 60%);
     margin-bottom: 20px;
 }
-.swatch-primary .swatch-row-one:nth-child(7) {
+.swatch-primary .swatch-row-one:nth-child(6) {
     background-color: shade($color-primary, 80%);
     border-radius: 0 8px 8px 0;
     margin-bottom: 20px;
 }
 /* ## Darker
 ================================================ */
-.swatch-primary .swatch-row-two:nth-child(8) {
-    background-color: $color-primary;
+
+.swatch-primary .swatch-row-two:nth-child(7) {
     border-radius: 8px 0 0 8px;
-}
-.swatch-primary .swatch-row-two:nth-child(9) {
     background-color: tint($color-primary, 20%);
 }
-.swatch-primary .swatch-row-two:nth-child(10) {
+.swatch-primary .swatch-row-two:nth-child(8) {
     background-color: tint($color-primary, 40%);
 }
-.swatch-primary .swatch-row-two:nth-child(11) {
+.swatch-primary .swatch-row-two:nth-child(9) {
     background-color: tint($color-primary, 60%);
 }
-.swatch-primary .swatch-row-two:nth-child(12) {
+.swatch-primary .swatch-row-two:nth-child(10) {
     background-color: tint($color-primary, 80%);
     border-radius: 0 8px 8px 0;
 }
@@ -104,44 +99,39 @@
 }
 /* ## Lighter
 ================================================ */
+
 .swatch-secondary .swatch-row-one:nth-child(3) {
-    background-color: $color-secondary;
     border-radius: 8px 0 0 8px;
-    margin-bottom: 20px;
-}
-.swatch-secondary .swatch-row-one:nth-child(4) {
     background-color: shade($color-secondary, 20%);
     margin-bottom: 20px;
 }
-.swatch-secondary .swatch-row-one:nth-child(5) {
+.swatch-secondary .swatch-row-one:nth-child(4) {
     background-color: shade($color-secondary, 40%);
     margin-bottom: 20px;
 }
-.swatch-secondary .swatch-row-one:nth-child(6) {
+.swatch-secondary .swatch-row-one:nth-child(5) {
     background-color: shade($color-secondary, 60%);
     margin-bottom: 20px;
 }
-.swatch-secondary .swatch-row-one:nth-child(7) {
+.swatch-secondary .swatch-row-one:nth-child(6) {
     background-color: shade($color-secondary, 80%);
     border-radius: 0 8px 8px 0;
     margin-bottom: 20px;
 }
 /* ## Darker
 ================================================ */
-.swatch-secondary .swatch-row-two:nth-child(8) {
-    background-color: $color-secondary;
+
+.swatch-secondary .swatch-row-two:nth-child(7) {
     border-radius: 8px 0 0 8px;
-}
-.swatch-secondary .swatch-row-two:nth-child(9) {
     background-color: tint($color-secondary, 20%);
 }
-.swatch-secondary .swatch-row-two:nth-child(10) {
+.swatch-secondary .swatch-row-two:nth-child(8) {
     background-color: tint($color-secondary, 40%);
 }
-.swatch-secondary .swatch-row-two:nth-child(11) {
+.swatch-secondary .swatch-row-two:nth-child(9) {
     background-color: tint($color-secondary, 60%);
 }
-.swatch-secondary .swatch-row-two:nth-child(12) {
+.swatch-secondary .swatch-row-two:nth-child(10) {
     background-color: tint($color-secondary, 80%);
     border-radius: 0 8px 8px 0;
 }
@@ -161,44 +151,39 @@
 }
 /* ## Lighter
 ================================================ */
+
 .swatch-active .swatch-row-one:nth-child(3) {
-    background-color: $color-active;
     border-radius: 8px 0 0 8px;
-    margin-bottom: 20px;
-}
-.swatch-active .swatch-row-one:nth-child(4) {
     background-color: shade($color-active, 20%);
     margin-bottom: 20px;
 }
-.swatch-active .swatch-row-one:nth-child(5) {
+.swatch-active .swatch-row-one:nth-child(4) {
     background-color: shade($color-active, 40%);
     margin-bottom: 20px;
 }
-.swatch-active .swatch-row-one:nth-child(6) {
+.swatch-active .swatch-row-one:nth-child(5) {
     background-color: shade($color-active, 60%);
     margin-bottom: 20px;
 }
-.swatch-active .swatch-row-one:nth-child(7) {
+.swatch-active .swatch-row-one:nth-child(6) {
     background-color: shade($color-active, 80%);
     border-radius: 0 8px 8px 0;
     margin-bottom: 20px;
 }
 /* ## Darker
 ================================================ */
-.swatch-active .swatch-row-two:nth-child(8) {
-    background-color: $color-active;
+
+.swatch-active .swatch-row-two:nth-child(7) {
     border-radius: 8px 0 0 8px;
-}
-.swatch-active .swatch-row-two:nth-child(9) {
     background-color: tint($color-active, 20%);
 }
-.swatch-active .swatch-row-two:nth-child(10) {
+.swatch-active .swatch-row-two:nth-child(8) {
     background-color: tint($color-active, 40%);
 }
-.swatch-active .swatch-row-two:nth-child(11) {
+.swatch-active .swatch-row-two:nth-child(9) {
     background-color: tint($color-active, 60%);
 }
-.swatch-active .swatch-row-two:nth-child(12) {
+.swatch-active .swatch-row-two:nth-child(10) {
     background-color: tint($color-active, 80%);
     border-radius: 0 8px 8px 0;
 }
@@ -218,44 +203,39 @@
 }
 /* ## Lighter
 ================================================ */
+
 .swatch-black .swatch-row-one:nth-child(3) {
-    background-color: $color-black;
     border-radius: 8px 0 0 8px;
-    margin-bottom: 20px;
-}
-.swatch-black .swatch-row-one:nth-child(4) {
     background-color: shade($color-black, 20%);
     margin-bottom: 20px;
 }
-.swatch-black .swatch-row-one:nth-child(5) {
+.swatch-black .swatch-row-one:nth-child(4) {
     background-color: shade($color-black, 40%);
     margin-bottom: 20px;
 }
-.swatch-black .swatch-row-one:nth-child(6) {
+.swatch-black .swatch-row-one:nth-child(5) {
     background-color: shade($color-black, 60%);
     margin-bottom: 20px;
 }
-.swatch-black .swatch-row-one:nth-child(7) {
+.swatch-black .swatch-row-one:nth-child(6) {
     background-color: shade($color-black, 80%);
     border-radius: 0 8px 8px 0;
     margin-bottom: 20px;
 }
 /* ## Darker
 ================================================ */
-.swatch-black .swatch-row-two:nth-child(8) {
-    background-color: $color-black;
+
+.swatch-black .swatch-row-two:nth-child(7) {
     border-radius: 8px 0 0 8px;
-}
-.swatch-black .swatch-row-two:nth-child(9) {
     background-color: tint($color-black, 20%);
 }
-.swatch-black .swatch-row-two:nth-child(10) {
+.swatch-black .swatch-row-two:nth-child(8) {
     background-color: tint($color-black, 40%);
 }
-.swatch-black .swatch-row-two:nth-child(11) {
+.swatch-black .swatch-row-two:nth-child(9) {
     background-color: tint($color-black, 60%);
 }
-.swatch-black .swatch-row-two:nth-child(12) {
+.swatch-black .swatch-row-two:nth-child(10) {
     background-color: tint($color-black, 80%);
     border-radius: 0 8px 8px 0;
 }
