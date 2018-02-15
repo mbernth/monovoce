@@ -2384,100 +2384,100 @@ input[type="search"]::-webkit-search-results-button {
 
 /* ### Forms Colored Rows
 --------------------------------------------- */
-.black input,
-.black textarea,
-.black select {
+.dark input,
+.dark textarea,
+.dark select {
   background-color: #0d171e; }
 
-.black input[type="text"]:focus,
-.black input[type="text"]:active,
-.black input[type="email"]:focus,
-.black input[type="email"]:active,
-.black input[type="number"]:focus,
-.black input[type="number"]:active,
-.black input[type="tel"]:focus,
-.black input[type="tel"]:active {
+.dark input[type="text"]:focus,
+.dark input[type="text"]:active,
+.dark input[type="email"]:focus,
+.dark input[type="email"]:active,
+.dark input[type="number"]:focus,
+.dark input[type="number"]:active,
+.dark input[type="tel"]:focus,
+.dark input[type="tel"]:active {
   border: 1px solid #52b9e9; }
 
-.black textarea:focus,
-.black select[multiple]:focus {
+.dark textarea:focus,
+.dark select[multiple]:focus {
   border: 1px solid #52b9e9; }
 
-.black select[multiple] option:checked {
+.dark select[multiple] option:checked {
   background-color: #52b9e9; }
 
-.black label {
+.dark label {
   color: #ccced0; }
 
-.black button,
-.black input[type="button"],
-.black input[type="reset"],
-.black input[type="submit"],
-.black .button {
+.dark button,
+.dark input[type="button"],
+.dark input[type="reset"],
+.dark input[type="submit"],
+.dark .button {
   background-color: #52b9e9; }
 
-.black button:hover,
-.black input:hover[type="button"],
-.black input:hover[type="reset"],
-.black input:hover[type="submit"],
-.black .button:hover,
-.black button:focus,
-.black input:focus[type="button"],
-.black input:focus[type="reset"],
-.black input:focus[type="submit"],
-.black .button:focus {
+.dark button:hover,
+.dark input:hover[type="button"],
+.dark input:hover[type="reset"],
+.dark input:hover[type="submit"],
+.dark .button:hover,
+.dark button:focus,
+.dark input:focus[type="button"],
+.dark input:focus[type="reset"],
+.dark input:focus[type="submit"],
+.dark .button:focus {
   background-color: #75c7ed; }
 
-.grey input,
-.grey textarea,
-.grey select {
+.medium input,
+.medium textarea,
+.medium select {
   background-color: #f2667d;
   border: 1px solid #f1536c; }
 
-.grey input[type="text"],
-.grey input[type="email"],
-.grey input[type="number"],
-.grey input[type="tel"] {
+.medium input[type="text"],
+.medium input[type="email"],
+.medium input[type="number"],
+.medium input[type="tel"] {
   border: 1px solid #f1536c; }
 
-.grey input[type="text"]:focus,
-.grey input[type="text"]:active,
-.grey input[type="email"]:focus,
-.grey input[type="email"]:active,
-.grey input[type="number"]:focus,
-.grey input[type="number"]:active,
-.grey input[type="tel"]:focus,
-.grey input[type="tel"]:active {
+.medium input[type="text"]:focus,
+.medium input[type="text"]:active,
+.medium input[type="email"]:focus,
+.medium input[type="email"]:active,
+.medium input[type="number"]:focus,
+.medium input[type="number"]:active,
+.medium input[type="tel"]:focus,
+.medium input[type="tel"]:active {
   border: 1px solid #52b9e9; }
 
-.grey textarea:focus,
-.grey select[multiple]:focus {
+.medium textarea:focus,
+.medium select[multiple]:focus {
   border: 1px solid #52b9e9; }
 
-.grey select[multiple] option:checked {
+.medium select[multiple] option:checked {
   background-color: #dcf1fb; }
 
-.grey label {
+.medium label {
   color: #fdfeff; }
 
-.grey button,
-.grey input[type="button"],
-.grey input[type="reset"],
-.grey input[type="submit"],
-.grey .button {
+.medium button,
+.medium input[type="button"],
+.medium input[type="reset"],
+.medium input[type="submit"],
+.medium .button {
   background-color: #52b9e9;
   border: none; }
 
-.grey button:hover,
-.grey input:hover[type="button"],
-.grey input:hover[type="reset"],
-.grey input:hover[type="submit"],
-.grey .button:hover,
-.grey button:focus,
-.grey input:focus[type="button"],
-.grey input:focus[type="reset"],
-.grey input:focus[type="submit"],
-.grey .button:focus {
+.medium button:hover,
+.medium input:hover[type="button"],
+.medium input:hover[type="reset"],
+.medium input:hover[type="submit"],
+.medium .button:hover,
+.medium button:focus,
+.medium input:focus[type="button"],
+.medium input:focus[type="reset"],
+.medium input:focus[type="submit"],
+.medium .button:focus {
   background-color: #75c7ed; }
 
 /* ## Tables
@@ -2559,6 +2559,7 @@ th {
   display: block;
   clear: both;
   margin: 30px auto;
+  padding-top: 100px;
   width: 100%;
   overflow: auto; }
 
@@ -2638,17 +2639,26 @@ th {
 
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
-.gridcontainer.black {
+.gridcontainer.dark {
   background-color: #1a232a;
   color: #ccced0; }
-  .gridcontainer.black .row_headline {
+  .gridcontainer.dark .row_headline {
     color: #ccced0; }
 
-.gridcontainer.grey {
+.gridcontainer.medium {
   background-color: #EF405C;
   color: #fdfeff; }
-  .gridcontainer.grey .row_headline {
+  .gridcontainer.medium .row_headline {
     color: #fdfeff; }
+  .gridcontainer.medium .wrap section {
+    padding: 30px;
+    background-color: #bf334a; }
+
+.gridcontainer.light {
+  background-color: #fdfeff;
+  color: #000B12; }
+  .gridcontainer.light .row_headline {
+    color: #000B12; }
 
 /*
 # Flexible Grid

@@ -15,6 +15,7 @@
 	display: block;
 	clear: both;
 	margin: 30px auto;
+	padding-top: 100px;
 	width:100%;
 	overflow: auto;
 }
@@ -105,17 +106,30 @@
 
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
-.gridcontainer.black{
-	background-color: $g_gridcontainer-black;
-	color: $g_gridcontainer-black-font-color;
+.gridcontainer.dark{
+	background-color: $g_gridcontainer-dark;
+	color: $g_gridcontainer-dark-font-color;
 	.row_headline{
-		color: $g_gridcontainer-black-font-color;
+		color: $g_gridcontainer-dark-font-color;
 	}
 }
-.gridcontainer.grey{
-	background-color: $g_gridcontainer-grey;
-	color:$g_gridcontainer-grey-font-color;
+.gridcontainer.medium{
+	background-color: $g_gridcontainer-medium;
+	color:$g_gridcontainer-medium-font-color;
 	.row_headline{
-		color: $g_gridcontainer-grey-font-color;
+		color: $g_gridcontainer-medium-font-color;
+	}
+	.wrap{
+		section{
+			padding: $margin-default+px;
+			background-color: shade($g_gridcontainer-medium, 20%);
+		}
+	}
+}
+.gridcontainer.light{
+	background-color: $g_gridcontainer-light;
+	color:$g_gridcontainer-light-font-color;
+	.row_headline{
+		color: $g_gridcontainer-light-font-color;
 	}
 }

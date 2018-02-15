@@ -7,7 +7,7 @@
 		"uuidString": "FAD479FB-4AE5-4415-AD98-D166D33789C1"
 		}
 	],
-"creatorBuild": "26261",
+"creatorBuild": "26268",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -651,16 +651,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/monovoce\/js\/min\/menu_push-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/monovoce\/js\/min\/responsive-menu-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/monovoce\/js\/min\/min\/responsive-menu-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -4059,6 +4049,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,

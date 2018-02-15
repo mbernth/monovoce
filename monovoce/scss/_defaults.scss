@@ -405,21 +405,21 @@ input[type="search"]::-webkit-search-results-button {
 
 /* ### Forms Colored Rows
 --------------------------------------------- */
-.black {
+.dark {
 	input,
 	textarea,
 	select{
 		background-color: tint($color-black, 5%);
 	}
 }
-.black {
+.dark {
 	input[type="text"],
 	input[type="email"],
 	input[type="number"],
 	input[type="tel"] {
 	}
 }
-.black{
+.dark{
 	input[type="text"]:focus,
 	input[type="text"]:active,
 	input[type="email"]:focus,
@@ -432,7 +432,7 @@ input[type="search"]::-webkit-search-results-button {
 	}
 	
 }
-.black{
+.dark{
 	textarea:focus,
 	select[multiple]:focus {
 		border: 1px solid $color-active;
@@ -441,18 +441,18 @@ input[type="search"]::-webkit-search-results-button {
 		background-color: $color-active;
 	}
 }
-.black{
+.dark{
 	label {
 		color:tint($color-black, 80%);
 	}
 }
-.black{
+.dark{
 	::-moz-placeholder {
 	}
 	::-webkit-input-placeholder {
 	}
 }
-.black{
+.dark{
 	button,
 	input[type="button"],
 	input[type="reset"],
@@ -476,7 +476,7 @@ input[type="search"]::-webkit-search-results-button {
 }
 
 
-.grey {
+.medium {
 	input,
 	textarea,
 	select{
@@ -484,7 +484,7 @@ input[type="search"]::-webkit-search-results-button {
 		border: 1px solid tint($color-secondary, 10%);
 	}
 }
-.grey {
+.medium {
 	input[type="text"],
 	input[type="email"],
 	input[type="number"],
@@ -493,7 +493,7 @@ input[type="search"]::-webkit-search-results-button {
 	}
 	
 }
-.grey{
+.medium{
 	input[type="text"]:focus,
 	input[type="text"]:active,
 	input[type="email"]:focus,
@@ -506,7 +506,7 @@ input[type="search"]::-webkit-search-results-button {
 	}
 	
 }
-.grey{
+.medium{
 	textarea:focus,
 	select[multiple]:focus {
 		border: 1px solid $color-active;
@@ -515,18 +515,18 @@ input[type="search"]::-webkit-search-results-button {
 		background-color: tint($color-active, 80%);
 	}
 }
-.grey{
+.medium{
 	label {
 		color:$color-white;
 	}
 }
-.grey{
+.medium{
 	::-moz-placeholder {
 	}
 	::-webkit-input-placeholder {
 	}
 }
-.grey{
+.medium{
 	button,
 	input[type="button"],
 	input[type="reset"],

@@ -60,7 +60,7 @@ function mono_flexible_grids() {
 								
 								echo '<section class="wysiwyg">';
 									
-									if( ($selected == 'non black' || $selected == 'non grey' || $selected == 'non')){
+									if( ($selected == 'non dark' || $selected == 'non medium' || $selected == 'non')){
 										if($headline){
 										echo '<h1 class="entry-title">' . $headline . '</h1>';
 										}

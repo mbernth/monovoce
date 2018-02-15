@@ -160,10 +160,12 @@ $radius: 5;
 
 /* ## Colored Gridcontainer
 ---------------------------------------------------------------------- */
-$g_gridcontainer-black: tint($color-black, 10%);
-$g_gridcontainer-black-font-color: tint($color-black, 80%);
-$g_gridcontainer-grey:$color-secondary;
-$g_gridcontainer-grey-font-color: $color-white;
+$g_gridcontainer-light:$color-white;
+$g_gridcontainer-light-font-color: $color-black;
+$g_gridcontainer-medium:$color-secondary;
+$g_gridcontainer-medium-font-color: $color-white;
+$g_gridcontainer-dark: tint($color-black, 10%);
+$g_gridcontainer-dark-font-color: tint($color-black, 80%);
 
 /* ## Media Queries
 ---------------------------------------------------------------------- */
