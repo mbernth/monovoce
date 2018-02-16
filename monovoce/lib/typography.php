@@ -119,10 +119,10 @@ function mono_typography() {
 					<strong>Default buttons</strong>
 				</p>
 				<p class="ui-elements-buttons">
-					<button class="button">Button</button>
+					<button>Button</button>
 					<a class="button" href="http://www.dba.dk/">Anchor</a>
-					<input class="button" value="Submit" type="submit">
-					<a class="button disabled" href="#">Default disabled</a>
+					<input value="Submit" type="submit">
+					<button class="disabled" href="#">Default disabled</button>
 				</p>
 				</div>
 				<div>
@@ -130,10 +130,10 @@ function mono_typography() {
 					<strong>Primary buttons</strong>
 				</p>
 				<p class="ui-elements-buttons">
-					<button class="button button-primary">Button</button>
+					<button class="button-primary">Button</button>
 					<a class="button button-primary" href="http://www.dba.dk/">Anchor</a>
-					<input class="button button-primary" value="Submit" type="submit">
-					<a class="button disabled" href="#">Default disabled</a>
+					<input class="button-primary" value="Submit" type="submit">
+					<button class="disabled" href="#">Default disabled</button>
 				</p>
 				</div>
 				<div>
@@ -141,10 +141,10 @@ function mono_typography() {
 					<strong>Info buttons</strong>
 				</p>
 				<p class="ui-elements-buttons">
-					<button class="button button-info">Button</button>
+					<button class="button-info">Button</button>
 					<a class="button button-info" href="http://www.dba.dk/">Anchor</a>
-					<input class="button button-info" value="Submit" type="submit">
-					<a class="button disabled" href="#">Default disabled</a>
+					<input class="button-info" value="Submit" type="submit">
+					<button class="disabled" href="#">Default disabled</button>
 				</p>
 				</div>
 				<div>
@@ -152,10 +152,10 @@ function mono_typography() {
 					<strong>Alert buttons</strong>
 				</p>
 				<p class="ui-elements-buttons">
-					<button class="button button-alert">Button</button> 
+					<button class="button-alert">Button</button> 
 					<a class="button button-alert" href="http://www.dba.dk/">Anchor</a> 
-					<input class="button button-alert" value="Submit" type="submit"> 
-					<a class="button disabled" href="#">Default disabled</a>
+					<input class="button-alert" value="Submit" type="submit"> 
+					<button class="disabled" href="#">Default disabled</button>
 				</p>
 				</div>
 				<div>

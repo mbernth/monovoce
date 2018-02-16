@@ -12,10 +12,10 @@
         margin: 0 0 15px 0;
         overflow: visible;
         .small{
-            width: 25%;
+            width: 100%;
         }
         .medium{
-            width: 50%;
+            width: 100%;
         }
         .large{
             width: 100%;
@@ -30,10 +30,9 @@
 
 .ginput_complex {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 100%;
-    > :last-child{
-        margin-left: $margin-default+px;
-    }
     span{
         label{
             @include font-values($g_font-label-sub);
@@ -45,19 +44,14 @@
     .ginput_right{
         display: flex;
         flex-direction: column;
-        flex-grow: 1;
         flex-basis: 100%;
     }
     .ginput_left,
     .ginput_right{
-        flex-basis: 50%;
-    }
-    .ginput_right{
-        margin-left: $margin-default+px;
+        flex-basis: 100%;
     }
     &.ginput_container_address{
         flex-wrap: wrap;
-        justify-content: space-between;
         span{
             margin-bottom: 15px;
         }
@@ -68,4 +62,37 @@
             flex-basis: 100%;
         }
     }
+}
+
+@media only screen and (min-width: $mq-xsmall) {
+.gform_wrapper,
+.gridcontainer .gform_wrapper{
+    li{
+        .small{
+            width: calc(25% - 15px);
+        }
+        .medium{
+            width: calc(50% - 15px);
+        }
+    }
+}
+
+.ginput_complex {
+    flex-direction: row;
+    .name_first,
+    .name_last,
+    .ginput_left,
+    .ginput_right{
+        flex-basis: calc(50% - 15px);
+    }
+    .ginput_left,
+    .ginput_right{
+        flex-basis: calc(50% - 15px);
+    }
+    .ginput_right{
+        margin-left: $margin-default+px;
+    }
+    
+}
+
 }
