@@ -116,7 +116,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	## Skip Links
 */
 	@import "plugins";
-	@import "gravity_forms";
+	// @import "gravity_forms";
+	@import "plugins/gravity_forms_reset";
 	@import "plugins/owl_carousel";
 	@import "plugins/owl_theme";
 	@import "plugins/owl_transitions";

@@ -1,0 +1,71 @@
+/* # Gravity Forms Reset
+---------------------------------------------------------------------------------------------------- */
+.gform_wrapper,
+.gridcontainer .gform_wrapper{
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none
+    }
+    li{
+        list-style: none;
+        margin: 0 0 15px 0;
+        overflow: visible;
+        .small{
+            width: 25%;
+        }
+        .medium{
+            width: 50%;
+        }
+        .large{
+            width: 100%;
+        }
+        .datepicker{
+            width: 140px;
+            text-align: center;
+            margin-right: 15px;
+        }
+    }
+}
+
+.ginput_complex {
+    display: flex;
+    max-width: 100%;
+    > :last-child{
+        margin-left: $margin-default+px;
+    }
+    span{
+        label{
+            @include font-values($g_font-label-sub);
+        }
+    }
+    .name_first,
+    .name_last,
+    .ginput_left,
+    .ginput_right{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+    .ginput_left,
+    .ginput_right{
+        flex-basis: 50%;
+    }
+    .ginput_right{
+        margin-left: $margin-default+px;
+    }
+    &.ginput_container_address{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        span{
+            margin-bottom: 15px;
+        }
+        [class*="address_line"]{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            flex-basis: 100%;
+        }
+    }
+}
