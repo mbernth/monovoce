@@ -106,13 +106,53 @@
 
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
+.gridcontainer.light{
+	background-color: $g_gridcontainer-light;
+	color: $g_gridcontainer-light-font-color;
+	.row_headline{
+		color: $g_gridcontainer-light-font-color;
+	}
+	.wrap{
+		section.wysiwyg{
+			padding: $margin-default+px;
+			background-color: shade($g_gridcontainer-light, 20%);
+		}
+	}
+	&.non{
+		.wrap{
+			section.wysiwyg{
+				padding: 0;
+				background-color: transparent;;
+			}
+		}
+	}
+}
+
 .gridcontainer.dark{
-	background-color: $g_gridcontainer-dark;
+	background-color: shade($g_gridcontainer-dark, 40%);
 	color: $g_gridcontainer-dark-font-color;
 	.row_headline{
 		color: $g_gridcontainer-dark-font-color;
 	}
+	.wrap{
+		section.wysiwyg{
+			padding: $margin-default+px;
+			background-color: $g_gridcontainer-dark;
+		}
+	}
+	&.non{
+		.entry-title{
+			color: tint($g_gridcontainer-dark-font-color, 100%);
+		}
+		.wrap{
+			section.wysiwyg{
+				padding: 0;
+				background-color: transparent;;
+			}
+		}
+	}
 }
+
 .gridcontainer.medium{
 	background-color: $g_gridcontainer-medium;
 	color:$g_gridcontainer-medium-font-color;
@@ -120,16 +160,20 @@
 		color: $g_gridcontainer-medium-font-color;
 	}
 	.wrap{
-		section{
+		section.wysiwyg{
 			padding: $margin-default+px;
 			background-color: shade($g_gridcontainer-medium, 20%);
 		}
 	}
-}
-.gridcontainer.light{
-	background-color: $g_gridcontainer-light;
-	color:$g_gridcontainer-light-font-color;
-	.row_headline{
-		color: $g_gridcontainer-light-font-color;
+	&.non{
+		.entry-title{
+			color: tint($g_gridcontainer-medium-font-color, 100%);
+		}
+		.wrap{
+			section.wysiwyg{
+				padding: 0;
+				background-color: transparent;;
+			}
+		}
 	}
 }

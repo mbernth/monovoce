@@ -469,9 +469,83 @@ input[type="submit"]
 
 /* ### Forms Colored Rows
 --------------------------------------------- */
+.light {
+	input,
+	textarea,
+	select,
+	select[multiple],
+	input[type="text"],
+	input[type="email"],
+	input[type="number"],
+	input[type="tel"] {
+		color: shade($g_gridcontainer-light, 60%);
+		border-color:tint($g_gridcontainer-light, 20%);
+		&:focus,
+		&:hover{
+			border-color: tint($color-active, 40%);
+		}
+	}
+	select[multiple] option:checked {
+		background-color: shade($g_gridcontainer-light, 80%);
+	}
+	label {
+		color:$color-white;
+	}
+	.ginput_complex {
+		span{
+			label{
+				color:tint($g_gridcontainer-light, 20%);
+			}
+		}
+	}
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"]{
+		background-color: $color-white;
+		color: $color-black;
+		&:hover,
+		&:focus{
+			background-color: shade($color-white, 20%);
+		}
+	}
+	[type="radio"]:checked + label:before,
+	[type="radio"]:not(:checked) + label:before,
+	[type="checkbox"]:checked + label:before,
+	[type="checkbox"]:not(:checked) + label:before {
+   		border-color: tint($g_gridcontainer-light, 20%);
+	}
+	[type="radio"]:checked + label:after,
+	[type="radio"]:not(:checked) + label:after,
+	[type="checkbox"]:checked + label:after,
+	[type="checkbox"]:not(:checked) + label:after {
+   		background:tint($g_gridcontainer-light, 20%);
+	}
+	a.button{
+		color: $g_font-button-info-background-color;
+		border-left: 5px solid $g_font-button-info-background-color;
+		box-shadow: inset 0 0 0 $g_font-button-info-background-color;
+		&:hover{
+			color: tint($g_font-button-info-background-color, 100%);
+			box-shadow: inset 200px 0 0 $g_font-button-info-background-color;
+		}
+	}
+}
+
 .dark{
 	label {
 		color:tint($color-black, 80%);
+	}
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"]{
+		background-color: tint($color-black, 80%);
+		color: $color-black;
+		&:hover,
+		&:focus{
+			background-color: tint($color-black, 60%);
+		}
 	}
 }
 
@@ -509,10 +583,11 @@ input[type="submit"]
 	input[type="button"],
 	input[type="reset"],
 	input[type="submit"]{
-		background-color: $color-black;
+		background-color: $color-white;
+		color: $color-black;
 		&:hover,
 		&:focus{
-			background-color: tint($color-black, 20%);
+			background-color: shade($color-white, 20%);
 		}
 	}
 	[type="radio"]:checked + label:before,
@@ -526,6 +601,15 @@ input[type="submit"]
 	[type="checkbox"]:checked + label:after,
 	[type="checkbox"]:not(:checked) + label:after {
    		background:tint($color-secondary, 20%);
+	}
+	a.button{
+		color: $color-white;
+		border-left: 5px solid $color-white;
+		box-shadow: inset 0 0 0 $color-white;
+		&:hover{
+			color: $color-black;
+			box-shadow: inset 200px 0 0 $color-white;
+		}
 	}
 }
 

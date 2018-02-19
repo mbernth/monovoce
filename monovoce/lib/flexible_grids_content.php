@@ -60,7 +60,7 @@ function mono_flexible_grids() {
 								
 								echo '<section class="wysiwyg">';
 									
-									if( ($selected == 'non dark' || $selected == 'non medium' || $selected == 'non')){
+									if( ($selected == 'non dark' || $selected == 'non medium' || $selected == 'non light' || $selected == 'non')){
 										if($headline){
 										echo '<h1 class="entry-title">' . $headline . '</h1>';
 										}
@@ -94,16 +94,12 @@ function mono_flexible_grids() {
 									}else{
 										
 									echo '<section>';
-										echo '<img src="'.$image['url'].'" alt="'.$image['alt'].'"  class="gridimage" />';
-										// Image button
-										if ($btn['button_text']){
-											if ($btn['page_link']){
-												echo '<a class="button" href="' . $btn['page_link']. '"><span>';
-											}else{
-												echo '<a class="button" href="' . $btn['url_link']. '" target="_blank""><span>';
-											}
-											echo '' . $btn['button_text']. '';
-											echo '</span></a>';
+										if ($btn['page_link']){
+											echo '<a href="' . $btn['page_link']. '"><img src="'.$image['url'].'" alt="'.$image['alt'].'"  class="gridimage" /></a>';
+										}elseif($btn['url_link']){
+											echo '<a href="' . $btn['url_link']. '" target="_blank""><img src="'.$image['url'].'" alt="'.$image['alt'].'"  class="gridimage" /></a>';
+										}else{
+											echo '<img src="'.$image['url'].'" alt="'.$image['alt'].'"  class="gridimage" />';
 										}
 									echo '</section>';
 										

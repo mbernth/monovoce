@@ -108,6 +108,7 @@ add_filter ( 'genesis_edit_post_link' , '__return_false' );
 
 //* Add Accessibility support
 add_theme_support( 'genesis-accessibility', array( 'headings', 'drop-down-menu',  'search-form', 'skip-links', 'rems' ) );
+// add_theme_support( 'genesis-accessibility', array( 'headings', 'search-form', 'skip-links', 'rems' ) );
 
 //* Position elemente
 // =====================================================================================================================

@@ -2437,8 +2437,94 @@ input[type="submit"] {
 
 /* ### Forms Colored Rows
 --------------------------------------------- */
+.light input,
+.light textarea,
+.light select,
+.light select[multiple],
+.light input[type="text"],
+.light input[type="email"],
+.light input[type="number"],
+.light input[type="tel"] {
+  color: #5b5c5c;
+  border-color: #e9eaeb; }
+  .light input:focus, .light input:hover,
+  .light textarea:focus,
+  .light textarea:hover,
+  .light select:focus,
+  .light select:hover,
+  .light select[multiple]:focus,
+  .light select[multiple]:hover,
+  .light input[type="text"]:focus,
+  .light input[type="text"]:hover,
+  .light input[type="email"]:focus,
+  .light input[type="email"]:hover,
+  .light input[type="number"]:focus,
+  .light input[type="number"]:hover,
+  .light input[type="tel"]:focus,
+  .light input[type="tel"]:hover {
+    border-color: #97d5f2; }
+
+.light select[multiple] option:checked {
+  background-color: #2e2e2e; }
+
+.light label {
+  color: #fdfeff; }
+
+.light .ginput_complex span label {
+  color: #e9eaeb; }
+
+.light button,
+.light input[type="button"],
+.light input[type="reset"],
+.light input[type="submit"] {
+  background-color: #fdfeff;
+  color: #000B12; }
+  .light button:hover, .light button:focus,
+  .light input[type="button"]:hover,
+  .light input[type="button"]:focus,
+  .light input[type="reset"]:hover,
+  .light input[type="reset"]:focus,
+  .light input[type="submit"]:hover,
+  .light input[type="submit"]:focus {
+    background-color: #cacbcc; }
+
+.light [type="radio"]:checked + label:before,
+.light [type="radio"]:not(:checked) + label:before,
+.light [type="checkbox"]:checked + label:before,
+.light [type="checkbox"]:not(:checked) + label:before {
+  border-color: #e9eaeb; }
+
+.light [type="radio"]:checked + label:after,
+.light [type="radio"]:not(:checked) + label:after,
+.light [type="checkbox"]:checked + label:after,
+.light [type="checkbox"]:not(:checked) + label:after {
+  background: #e9eaeb; }
+
+.light a.button {
+  color: #000B12;
+  border-left: 5px solid #000B12;
+  box-shadow: inset 0 0 0 #000B12; }
+  .light a.button:hover {
+    color: white;
+    box-shadow: inset 200px 0 0 #000B12; }
+
 .dark label {
   color: #ccced0; }
+
+.dark button,
+.dark input[type="button"],
+.dark input[type="reset"],
+.dark input[type="submit"] {
+  background-color: #ccced0;
+  color: #000B12; }
+  .dark button:hover, .dark button:focus,
+  .dark input[type="button"]:hover,
+  .dark input[type="button"]:focus,
+  .dark input[type="reset"]:hover,
+  .dark input[type="reset"]:focus,
+  .dark input[type="submit"]:hover,
+  .dark input[type="submit"]:focus {
+    background-color: #999da0; }
 
 .medium input,
 .medium textarea,
@@ -2480,7 +2566,8 @@ input[type="submit"] {
 .medium input[type="button"],
 .medium input[type="reset"],
 .medium input[type="submit"] {
-  background-color: #000B12; }
+  background-color: #fdfeff;
+  color: #000B12; }
   .medium button:hover, .medium button:focus,
   .medium input[type="button"]:hover,
   .medium input[type="button"]:focus,
@@ -2488,7 +2575,7 @@ input[type="submit"] {
   .medium input[type="reset"]:focus,
   .medium input[type="submit"]:hover,
   .medium input[type="submit"]:focus {
-    background-color: #333c41; }
+    background-color: #cacbcc; }
 
 .medium [type="radio"]:checked + label:before,
 .medium [type="radio"]:not(:checked) + label:before,
@@ -2501,6 +2588,14 @@ input[type="submit"] {
 .medium [type="checkbox"]:checked + label:after,
 .medium [type="checkbox"]:not(:checked) + label:after {
   background: #f2667d; }
+
+.medium a.button {
+  color: #fdfeff;
+  border-left: 5px solid #fdfeff;
+  box-shadow: inset 0 0 0 #fdfeff; }
+  .medium a.button:hover {
+    color: #000B12;
+    box-shadow: inset 200px 0 0 #fdfeff; }
 
 /* ## Tables
 ---------------------------------------------------------------------- */
@@ -2661,26 +2756,45 @@ th {
 
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
+.gridcontainer.light {
+  background-color: #e4e5e6;
+  color: #000B12; }
+  .gridcontainer.light .row_headline {
+    color: #000B12; }
+  .gridcontainer.light .wrap section.wysiwyg {
+    padding: 30px;
+    background-color: #b6b7b8; }
+  .gridcontainer.light.non .wrap section.wysiwyg {
+    padding: 0;
+    background-color: transparent; }
+
 .gridcontainer.dark {
-  background-color: #1a232a;
+  background-color: #101519;
   color: #ccced0; }
   .gridcontainer.dark .row_headline {
     color: #ccced0; }
+  .gridcontainer.dark .wrap section.wysiwyg {
+    padding: 30px;
+    background-color: #1a232a; }
+  .gridcontainer.dark.non .entry-title {
+    color: white; }
+  .gridcontainer.dark.non .wrap section.wysiwyg {
+    padding: 0;
+    background-color: transparent; }
 
 .gridcontainer.medium {
   background-color: #EF405C;
   color: #fdfeff; }
   .gridcontainer.medium .row_headline {
     color: #fdfeff; }
-  .gridcontainer.medium .wrap section {
+  .gridcontainer.medium .wrap section.wysiwyg {
     padding: 30px;
     background-color: #bf334a; }
-
-.gridcontainer.light {
-  background-color: #fdfeff;
-  color: #000B12; }
-  .gridcontainer.light .row_headline {
-    color: #000B12; }
+  .gridcontainer.medium.non .entry-title {
+    color: white; }
+  .gridcontainer.medium.non .wrap section.wysiwyg {
+    padding: 0;
+    background-color: transparent; }
 
 /*
 # Flexible Grid

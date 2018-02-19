@@ -160,7 +160,7 @@ $radius: 5;
 
 /* ## Colored Gridcontainer
 ---------------------------------------------------------------------- */
-$g_gridcontainer-light:$color-white;
+$g_gridcontainer-light:shade($color-white, 10%);
 $g_gridcontainer-light-font-color: $color-black;
 $g_gridcontainer-medium:$color-secondary;
 $g_gridcontainer-medium-font-color: $color-white;

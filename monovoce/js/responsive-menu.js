@@ -20,6 +20,7 @@ jQuery(function( $ ){
 	
 	$('.responsive-menu-icon').on('click', function() {
 		$(this).next("header .genesis-nav-menu, .nav-primary .genesis-nav-menu").slideToggle();
+		// $( '.genesis-nav-menu' ).toggleClass("genesis-nav-menu-open");
 		$( '.responsive-menu-icon' ).toggleClass("icon-open");
 		$('.bar').toggleClass('animate');
 		$('.site-header').toggleClass('main-menu-open');
