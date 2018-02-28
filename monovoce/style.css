@@ -3849,12 +3849,11 @@ img.alignright,
 .title-area {
   float: left;
   margin-left: 5%; }
-
-.title-area p {
-  margin: 0;
-  font-size: 0;
-  line-height: 0;
-  height: 0; }
+  .title-area p {
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    height: 0; }
 
 .header-full-width .title-area {
   float: left;
@@ -3868,11 +3867,10 @@ img.alignright,
   font-weight: 300;
   color: #000B12;
   line-height: 0; }
-
-.site-title a,
-.site-title a:hover,
-.site-title a:focus {
-  color: #000B12; }
+  .site-title a,
+  .site-title a:hover,
+  .site-title a:focus {
+    color: #000B12; }
 
 .title-area .site-title > a {
   display: block;
@@ -3902,44 +3900,6 @@ img.alignright,
   width: 170px;
   height: 20px; }
 
-#site-logo #letter-m-1 {
-  animation: fader 1.2s .8s ease-out both; }
-
-#site-logo #letter-o-1 {
-  animation: fader 1.2s .7s ease-out both; }
-
-#site-logo #letter-n-1 {
-  animation: fader 1.2s .6s ease-out both; }
-
-#site-logo #letter-o-2 {
-  animation: fader 1.2s .5s ease-out both; }
-
-#site-logo #letter-v-1 {
-  animation: fader 1.2s .4s ease-out both; }
-
-#site-logo #letter-o-3 {
-  animation: fader 1.2s .3s ease-out both; }
-
-#site-logo #letter-c-1 {
-  animation: fader 1.2s .2s ease-out both; }
-
-#site-logo #letter-e-1 {
-  animation: fader 1.2s .1s ease-out both; }
-
-@keyframes fader {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-    fill: #00395D; }
-  25% {
-    fill: #52B9E9; }
-  50% {
-    fill: #ef405c; }
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-    fill: #ffffff; } }
-
 /* ## Widget Area
 ---------------------------------------------------------------------- */
 .site-header .widget-area {
@@ -3960,20 +3920,18 @@ img.alignright,
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   z-index: 1000; }
-
-.before-header .wrap {
-  margin: 0 auto;
-  max-width: 100%; }
-
-.before-header .widget {
-  font-size: 10px;
-  font-size: 1rem;
-  line-height: 10px;
-  line-height: 1rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: right; }
+  .before-header .wrap {
+    margin: 0 auto;
+    max-width: 100%; }
+  .before-header .widget {
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 10px;
+    line-height: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: right; }
 
 /*
 # Site Navigation
