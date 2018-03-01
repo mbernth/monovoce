@@ -6941,6 +6941,10 @@ p.entry-meta {
         transition: opacity .4s ease-in-out;
         width: 250px;
         z-index: 99; }
+        .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
+        .genesis-nav-menu.responsive-menu .sub-menu li a,
+        .genesis-nav-menu.responsive-menu .sub-menu li a:hover {
+          padding-top: 10px; }
   /*
 .genesis-nav-menu{
     &.responsive-menu{
