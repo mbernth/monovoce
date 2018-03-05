@@ -31,7 +31,7 @@
 		}
 		.menu-item{
 			a{
-				padding-top: 0;
+				padding-top: 2px;
 			}
 			&:hover{
 			}
@@ -53,7 +53,17 @@
 				padding-top:10px;
             }
             .sub-menu{
-            }
+			}
+			&:before{
+				content: '';
+				display: inline-block;
+				border-left: 7px solid transparent;
+				border-right: 7px solid transparent;
+				border-bottom: 7px solid $color-black;
+				position: absolute;
+				top: -9px;
+				left: 20px;
+			}
         }
     }
 }
