@@ -27,6 +27,7 @@
     padding: 0 5%;
 	.menu-item {
 		margin: 0;
+		list-style: none;
 		&:hover {
 			position: static;
 			> .sub-menu {
@@ -49,17 +50,7 @@
 			}
 		}
 		.sub-menu {
-			left: -9999px;
-			opacity: 0;
-			position: absolute;
-			margin: 0;
-			-webkit-transition: opacity .4s ease-in-out;
-			-moz-transition:    opacity .4s ease-in-out;
-			-ms-transition:     opacity .4s ease-in-out;
-			-o-transition:      opacity .4s ease-in-out;
-			transition:         opacity .4s ease-in-out;
-			width: 300px;
-			z-index: 99;
+			display: none;
 			a {
                 border-top: 1px solid $color-black;
                 padding: 10px 0;
@@ -126,13 +117,8 @@
 		}
         .sub-menu{
 	        left: auto;
-	        opacity: 1;
+	        opacity: 0;
 	        position: relative;
-	        -moz-transition:    opacity .4s ease-in-out;
-	        -ms-transition:     opacity .4s ease-in-out;
-	        -o-transition:      opacity .4s ease-in-out;
-	        -webkit-transition: opacity .4s ease-in-out;
-	        transition:         opacity .4s ease-in-out;
 	        width: 100%;
             z-index: 99;
             .current-menu-item > a:hover,
