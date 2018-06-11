@@ -7,7 +7,7 @@
 		"uuidString": "FAD479FB-4AE5-4415-AD98-D166D33789C1"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -425,6 +425,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/monovoce\/js\/basic-menu.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/basic-menu-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/monovoce\/js\/casefilter.js": {
 		"ft": 64,
 		"ma": 0,
@@ -655,6 +665,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/monovoce\/js\/min\/basic-menu-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/min\/basic-menu-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/monovoce\/js\/min\/responsive-menu-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -701,6 +721,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/monovoce\/js\/min\/mono_flip-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/monovoce\/js\/multi-level-menu.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/multi-level-menu-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -3247,6 +3277,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/monovoce\/scss\/_primary-navigation.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/monovoce\/_primary-navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/monovoce\/scss\/_print_styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -4077,7 +4120,8 @@
 	"creationDate": 526567839,
 	"displayValue": "monovoce",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-yesBaby"
+	"iconImageName": "\/monovoce\/images\/apple-touch-icon-120x120.png",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -5880,6 +5924,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

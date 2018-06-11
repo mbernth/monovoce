@@ -3,6 +3,46 @@
 .site-container{
 	overflow: auto;
 }
+@supports (display: grid) {
+	.site-container{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"before-header"
+			"site-header"
+			"featured-section"
+			"nav-secondary"
+			"breadcrumb"
+			"site-inner"
+			"footer-widgets"
+			"site-footer"
+			;
+		.before-header{
+			grid-area:before-header;
+		}
+		.site-header{
+			grid-area:site-header;
+		}
+		.featured-section{
+			grid-area: featured-section;
+		}
+		.nav-secondary{
+			grid-area:nav-secondary;
+		}
+		.breadcrumb{
+			grid-area:breadcrumb;
+		}
+		.site-inner{
+			grid-area:site-inner;
+		}
+		.footer-widgets{
+			grid-area:footer-widgets;
+		}
+		.site-footer{
+			grid-area:site-footer;
+		}
+	}
+}
 /* ## Site Containers
 ---------------------------------------------------------------------- */
 

@@ -1,0 +1,80 @@
+/* # Primary Navigation
+---------------------------------------------------------------------------------------------------- */
+.nav-primary{
+    width: auto;
+    a{
+        text-decoration: none;
+    }
+    .sub-menu{
+        position: absolute;
+        left: -9999px;
+    }
+}
+.menu-primary{
+    display: flex;
+}
+.menu-item{
+    display: inline-block;
+    padding: 0 10px 10px;
+    a{
+        text-decoration: none;
+        color: $color-black;
+        &:hover{
+            color: tint($color-black, 40%);
+        }
+    }
+    &.menu-item-has-children{
+        a:after{
+            display: inline-block;
+            margin-left: 5px;
+            content: '';
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 8px solid tint($color-black, 10%);
+        }
+    }
+    &.current_page_item{
+        a{
+            color: tint($color-black, 50%);
+        }
+    }
+}
+
+.responsive-menu-icon {
+    display: block;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+	color:$color-black;
+}
+
+.responsive-menu-icon .line{
+    width: 30px;
+    height: 3px;
+    background-color: $color-black;
+    display: block;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .responsive-menu-icon.icon-open .line:nth-child(2){
+    opacity: 0;
+  }
+  
+  .responsive-menu-icon.icon-open .line:nth-child(1){
+    -webkit-transform: translateY(8px) rotate(45deg);
+    -ms-transform: translateY(8px) rotate(45deg);
+    -o-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+    background-color: $color-black;
+  }
+  
+  .responsive-menu-icon.icon-open .line:nth-child(3){
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -o-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: $color-black;
+  }

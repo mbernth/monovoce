@@ -18,8 +18,8 @@ include_once( get_stylesheet_directory() . '/lib/custom-header.php' );
 load_child_theme_textdomain( 'mono', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'mono' ) );
 
 //* Child theme (do not remove)
-define( 'CHILD_THEME_NAME', 'mono brighton' );
-define( 'CHILD_THEME_URL', 'https://github.com/mbernth/mono-pro' );
+define( 'CHILD_THEME_NAME', 'mono voce' );
+define( 'CHILD_THEME_URL', 'https://github.com/mbernth/monovoce' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 //* Enqueue Scripts
@@ -27,6 +27,7 @@ add_action( 'wp_enqueue_scripts', 'mono_enqueue_scripts' );
 function mono_enqueue_scripts() {
 	// Responsive menu
 	// wp_enqueue_script( 'mono-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'mono-multi-level-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/multi-level-menu.js', array( 'jquery' ), '1.0.0' );
 	// Jquery 1.9.1
 	wp_enqueue_script( 'mono-jquery', get_stylesheet_directory_uri() . '/js/jquery-1.9.1.min.js', array( 'jquery' ), '1.0.0' );
 	// Responsive text for selected headlines
@@ -49,6 +50,7 @@ function mono_enqueue_fonts() {
 */
 
 //* Disable the superfish script
+//* This is the Genesis Default Menu
 add_action( 'wp_enqueue_scripts', 'sp_disable_superfish' );
 function sp_disable_superfish() {
 	wp_deregister_script( 'superfish' );
