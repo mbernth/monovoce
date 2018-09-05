@@ -33,9 +33,11 @@
 }
 
 .site-header > .wrap {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 	margin:0 auto;
 	max-width:100%;
 }
@@ -54,7 +56,6 @@
 
 .title-area {
 	float: left;
-	margin-left: 5%;
 	p {
     margin: 0;
     font-size: 0;
@@ -66,6 +67,8 @@
 .header-full-width .title-area {
 	float:left;
 	width: 170px;
+	height: 20px;
+	margin-left: 5%;
 }
 
 .site-title {
@@ -106,6 +109,10 @@
 #site-logo{
 	width: 170px;
 	height: 20px;
+}
+
+svg#logo{
+	fill: $color-white;
 }
 
 

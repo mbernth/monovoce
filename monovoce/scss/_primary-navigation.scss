@@ -1,7 +1,9 @@
 /* # Primary Navigation
 ---------------------------------------------------------------------------------------------------- */
 .nav-primary{
-    width: auto;
+    position: absolute;
+    width: 100%;
+    top: -5px;
     a{
         text-decoration: none;
     }
@@ -12,13 +14,21 @@
 }
 .menu-primary{
     display: flex;
+    flex-direction: column;
+    margin-top: 66px;
+    background-color: tint($color-primary, 0%);
+    padding: 10px 0;
 }
 .menu-item{
     display: inline-block;
-    padding: 0 10px 10px;
+    padding: 10px 5%;
+    margin-bottom: 0;
     a{
+        font-family: $font-navigation;
+        @include font-values($g_font-nav);
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
         text-decoration: none;
-        color: $color-black;
         &:hover{
             color: tint($color-black, 40%);
         }
@@ -39,42 +49,42 @@
         }
     }
 }
-
 .responsive-menu-icon {
+    position: absolute;
+    top: 0;
+    right: 5%;
     display: block;
     height: auto;
     width: auto;
+    float: right;
     background-color: transparent;
-	color:$color-black;
+    color:$color-white;
+    cursor: pointer;
 }
-
 .responsive-menu-icon .line{
     width: 30px;
     height: 3px;
-    background-color: $color-black;
+    background-color: $color-white;
     display: block;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .responsive-menu-icon.icon-open .line:nth-child(2){
+}
+.responsive-menu-icon.icon-open .line:nth-child(2){
     opacity: 0;
-  }
-  
-  .responsive-menu-icon.icon-open .line:nth-child(1){
+}
+.responsive-menu-icon.icon-open .line:nth-child(1){
     -webkit-transform: translateY(8px) rotate(45deg);
     -ms-transform: translateY(8px) rotate(45deg);
     -o-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
-    background-color: $color-black;
-  }
-  
-  .responsive-menu-icon.icon-open .line:nth-child(3){
+    background-color: $color-white;
+}
+.responsive-menu-icon.icon-open .line:nth-child(3){
     -webkit-transform: translateY(-8px) rotate(-45deg);
     -ms-transform: translateY(-8px) rotate(-45deg);
     -o-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
-    background-color: $color-black;
-  }
+    background-color: $color-white;
+}

@@ -43,72 +43,75 @@ $g_body-background-color:$color-white;
 
 /* ## Typography
 ---------------------------------------------------------------------- */
+
 @font-face {
-    font-family: 'novecento_sans_wide_bookbold';
-    src: url('fonts/Novecentosanswide-Bold-webfont.eot');
-    src: url('fonts/Novecentosanswide-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Novecentosanswide-Bold-webfont.woff') format('woff'),
-         url('fonts/Novecentosanswide-Bold-webfont.ttf') format('truetype'),
-         url('fonts/Novecentosanswide-Bold-webfont.svg#novecento_sans_wide_bookbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Branding-Thin';
+    src: url('fonts/Branding-Thin.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Branding-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Branding-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Branding-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Branding-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-weight: 100;
+         font-style: normal;
 }
+
 @font-face {
-    font-family: 'cerabasic-regular-webfont';
-    src: url('fonts/cerabasic-regular-webfont.eot'); /* IE9 Compat Modes */
-    src: url('fonts/cerabasic-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/cerabasic-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/cerabasic-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('fonts/cerabasic-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-         font-weight: normal;
+    font-family: 'Branding-Semilight';
+    src: url('fonts/Branding-Semilight.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Branding-Semilight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Branding-Semilight.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Branding-Semilight.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Branding-Semilight.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-weight: 300;
          font-style: normal;
 }
 @font-face {
-    font-family: 'cerabasic-regularitalic-webfont';
-    src: url('fonts/cerabasic-regularitalic-webfont.eot'); /* IE9 Compat Modes */
-    src: url('fonts/cerabasic-regularitalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/cerabasic-regularitalic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/cerabasic-regularitalic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('fonts/cerabasic-regularitalic-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-         font-weight: normal;
+    font-family: 'Branding-SemilightItalic';
+    src: url('fonts/Branding-SemilightItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Branding-SemilightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Branding-SemilightItalic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Branding-SemilightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Branding-SemilightItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-weight: 300;
+         font-style: italic;
+}
+@font-face {
+    font-family: 'Branding-Semibold';
+    src: url('fonts/Branding-Semibold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Branding-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Branding-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Branding-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Branding-Semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-weight: 500;
          font-style: normal;
 }
 @font-face {
-    font-family: 'cerabasic-bold-webfont';
-    src: url('fonts/cerabasic-bold-webfont.eot'); /* IE9 Compat Modes */
-    src: url('fonts/cerabasic-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/cerabasic-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/cerabasic-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('fonts/cerabasic-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-         font-weight: normal;
-         font-style: normal;
+    font-family: 'Branding-SemiboldItalic';
+    src: url('fonts/Branding-SemiboldItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Branding-SemiboldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Branding-SemiboldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Branding-SemiboldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Branding-SemiboldItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-weight: 500;
+         font-style: italic;
 }
 @font-face {
-    font-family: 'cerabasic-bolditalic-webfont';
-    src: url('fonts/cerabasic-bolditalic-webfont.eot'); /* IE9 Compat Modes */
-    src: url('fonts/cerabasic-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/cerabasic-bolditalic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/cerabasic-bolditalic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('fonts/cerabasic-bolditalic-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-         font-weight: normal;
-         font-style: normal;
-}
-@font-face {
-    font-family: 'cerabasic-black-webfont';
-    src: url('fonts/cerabasic-black-webfont.eot'); /* IE9 Compat Modes */
-    src: url('fonts/cerabasic-black-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/cerabasic-black-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/cerabasic-black-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('fonts/cerabasic-black-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-         font-weight: normal;
+    font-family: 'Branding-Black';
+    src: url('fonts/Branding-Black.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Branding-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Branding-Black.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Branding-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Branding-Black.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-weight: 900;
          font-style: normal;
 }
 
 /* Global Font Faminly */
-$font-bread: 'cerabasic-regular-webfont', Helvetica, Arial, sans-serif;
-$font-bold: 'cerabasic-bold-webfont', Helvetica, Arial, sans-serif;
-$font-headlines: 'cerabasic-black-webfont', Helvetica, Arial, sans-serif;
-$font-navigation: 'cerabasic-black-webfont', Helvetica, Arial, sans-serif;
+$font-bread: 'Branding-Semilight', Helvetica, Arial, sans-serif;
+$font-bold: 'Branding-Semibold', Helvetica, Arial, sans-serif;
+$font-headlines: 'Branding-Semilight', Helvetica, Arial, sans-serif;
+$font-hero: 'Branding-Thin', Helvetica, Arial, sans-serif;
+$font-navigation: 'Branding-Semibold', Helvetica, Arial, sans-serif;
 
 /*** Global Default values ***/
 
@@ -170,7 +173,7 @@ $g_gridcontainer-dark-font-color: tint($color-black, 80%);
 /* ## Media Queries
 ---------------------------------------------------------------------- */
 $mq-xsmall: 37.5em; /* 600 pixel */
-$mq-small: 55.625em; /* 890 pixel */
+$mq-small: 48em; /* 768 pixel */
 $mq-nav:63.938em; /* 1023 pixel */
 $mq-medium: 64em; /* 1024 pixel */
 $mq-large: 80em; /* 1280 pixel */
