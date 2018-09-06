@@ -11,9 +11,6 @@ include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
 //* Setup custom header
 include_once( get_stylesheet_directory() . '/lib/custom-header.php' );
 
-//* Setup extended search to include ACF content
-// include_once( get_stylesheet_directory() . '/lib/custom-search-acf-wordpress.php' );
-
 //* Set Localization (do not remove)
 load_child_theme_textdomain( 'mono', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'mono' ) );
 
@@ -27,7 +24,7 @@ add_action( 'wp_enqueue_scripts', 'mono_enqueue_scripts' );
 function mono_enqueue_scripts() {
 	// Responsive menu
 	// wp_enqueue_script( 'mono-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
-	wp_enqueue_script( 'mono-multi-level-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/multi-level-menu.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'mono-multi-level-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/mono-multi-level-menu.js', array( 'jquery' ), '1.0.0' );
 	// Jquery 1.9.1
 	wp_enqueue_script( 'mono-jquery', get_stylesheet_directory_uri() . '/js/jquery-1.9.1.min.js', array( 'jquery' ), '1.0.0' );
 	// Responsive text for selected headlines
@@ -190,6 +187,16 @@ function mono_before_header() {
 
 }
 
+//* Reposition Entry Title
+// =====================================================================================================================
+
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+add_action ( 'genesis_after_header', 'mono_title_reposition' );
+function mono_title_reposition(){
+	if ( (! has_post_thumbnail()) ) :
+		the_title( '<div class="gridcontainer title-element"><div class="wrap"><h1 class="entry-title" itemprop="headline">', '</h1></div></div>' );
+	endif;
+}
 
 //* Featured Image
 // =====================================================================================================================
@@ -199,7 +206,9 @@ add_action ( 'genesis_after_header', 'single_post_featured_image', 15 );
 function single_post_featured_image() {
 	if ( (is_single() || is_page()) && has_post_thumbnail() ) :
 		
-		remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+		remove_action( 'genesis_after_header', 'mono_title_reposition' );
+		remove_action( 'genesis_after_header', 'mono_title_reposition' );
+
 		$img = genesis_get_image( array( 'format' => 'src' ) );
 		printf( '<div class="featured-section" style="background-image:url(%s);"><div class="image-section">', $img );
 		the_title( '<h1 class="entry-title" itemprop="headline">', '</h1>' );
@@ -212,16 +221,6 @@ function single_post_featured_image() {
 	
 }
 
-//* Enqueue scripts and styles
-add_action( 'wp_enqueue_scripts', 'enqueue_scripts_featured_image' );
-function enqueue_scripts_featured_image() {
-	
-	if ( (is_single() || is_page()) && has_post_thumbnail() ) :
-		wp_enqueue_script( 'parallax-script', get_bloginfo( 'stylesheet_directory' ) . '/js/parallax.js', array( 'jquery' ), '1.0.0' );
-	endif;
-	
-}
-
 add_filter( 'body_class', 'featured_body_class' );
 function featured_body_class( $classes ) {
 	
@@ -230,7 +229,6 @@ function featured_body_class( $classes ) {
 		return $classes;
 		
 }
-
 // =====================================================================================================================
 
 //* Advanced Custom Fields includes
@@ -262,3 +260,7 @@ add_filter ( 'genesis_prev_link_text' , 'sp_previous_page_link' );
 function sp_previous_page_link ( $text ) {
     return '<svg class="icon-arrow-left5"><use xlink:href="#icon-arrow-left5"></use></svg>';
 }
+
+//* Custom post types
+// =====================================================================================================================
+include_once( get_stylesheet_directory() . '/lib/works_post_type.php' );

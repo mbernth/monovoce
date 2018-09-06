@@ -71,6 +71,42 @@
 	@include font-values($g_font-entry-title);
 }
 
+.gridcontainer{
+	&.title-element{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		height: 50vh;
+		background-color: $color-secondary;
+		.wrap{
+			max-width: 90%;
+			.entry-title{
+				position: relative;
+				color: $color-white;
+				padding: 15px 0 0 20px;
+				margin-bottom: 0;
+				&::before,
+				&::after{
+					position: absolute;
+					content: '';
+					transform: scale3d(1, 1, 1);
+					top: 0;
+					left: 0;
+					background-color: $color-white;
+				}
+				&::before{
+					width: 6px;
+					height: 18px;
+				}
+				&::after{
+					width: 18px;
+					height: 6px;
+				}
+			}
+		}
+	}
+} 
+
 /* ## Buttons
 ---------------------------------------------------------------------- */
 /*
@@ -318,7 +354,7 @@ p.entry-meta {
 }
 .featured-section .image-section{
 	position: relative;
-	height: 100vh;
+	height: 60vh;
 	.entry-title{
 		position: absolute;
 		left: 5%;

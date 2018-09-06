@@ -118,9 +118,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	@import "plugins";
 	// @import "gravity_forms";
 	@import "plugins/gravity_forms_reset";
-	@import "plugins/owl_carousel";
-	@import "plugins/owl_theme";
-	@import "plugins/owl_transitions";
+	// @import "plugins/owl_carousel";
+	// @import "plugins/owl_theme";
+	// @import "plugins/owl_transitions";
 /*
 	
 	@import "plugins/timeline";
@@ -150,6 +150,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	## Language Menu
 */
 	@import "primary-navigation";
+
 	// @import "site_navigation_original";
 	// @import "site_navigation_max800";
 	// @import "site_navigation_collapsed";
@@ -217,6 +218,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	# Large
 	# Xlarge
 */
+	@import "media_queries_xsmall";
 	@import "media_queries_small";
 	@import "media_queries_medium";
 	@import "media_queries_large";

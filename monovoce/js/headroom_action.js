@@ -1,5 +1,5 @@
 $("header").headroom({
-  "offset": 205,
+  "offset": 100,
   "tolerance": 5,
   "classes": {
      // when element is initialised

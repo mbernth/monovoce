@@ -1,4 +1,5 @@
-<?php // <- Don't add me in
+<?php 
+
 // Gist updated to use code from Genesis Framework 2.4.2
 //remove initial header functions
 remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );

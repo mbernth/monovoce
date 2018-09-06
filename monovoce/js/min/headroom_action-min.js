@@ -1,0 +1,1 @@
+$("header").headroom({offset:100,tolerance:5,classes:{initial:"headroom",pinned:"headroom--pinned",unpinned:"headroom--unpinned",top:"headroom--top",notTop:"headroom--not-top",bottom:"headroom--bottom",notBottom:"headroom--not-bottom"}}),$("#header").headroom("destroy");

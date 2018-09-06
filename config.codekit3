@@ -23,6 +23,13 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/monovoce\/archive-work.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/monovoce\/archive-work.php",
+		"oF": 0
+		},
 	"\/monovoce\/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -678,6 +685,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/monovoce\/js\/min\/mono-multi-level-menu-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/min\/mono-multi-level-menu-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/monovoce\/js\/min\/multi-level-menu-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -724,6 +741,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/monovoce\/js\/min\/modernizr.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/monovoce\/js\/mono-multi-level-menu.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/mono-multi-level-menu-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -954,6 +981,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/monovoce\/lib\/typography.php",
+		"oF": 0
+		},
+	"\/monovoce\/lib\/works_post_type.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/monovoce\/lib\/works_post_type.php",
 		"oF": 0
 		},
 	"\/monovoce\/page_home.php": {
@@ -3238,6 +3272,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/monovoce\/scss\/_media_queries_xsmall.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/monovoce\/_media_queries_xsmall.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/monovoce\/scss\/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -4096,6 +4143,13 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/monovoce\/single-work.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/monovoce\/single-work.php",
+		"oF": 0
+		},
 	"\/monovoce\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -4105,6 +4159,13 @@
 		"oAP": "\/monovoce\/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/monovoce\/taxonomy-work_category.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/monovoce\/taxonomy-work_category.php",
+		"oF": 0
 		},
 	"\/README.md": {
 		"cB": 0,

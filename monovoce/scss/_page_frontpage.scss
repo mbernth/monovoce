@@ -36,6 +36,7 @@
 		justify-content: center;
 		background-color: $color-secondary;
 		height: 100vh;
+		overflow: hidden;
 		.wrap{
 			position: relative;
 			width: 90%;
@@ -45,7 +46,7 @@
 				display: block;
 				width: 100%;
 				color: $color-white;
-				font-size: 9.3vw;
+				font-size: 10.5vw;
 				line-height: 1;
 				margin-bottom: 0;
 				font-family: $font-hero;
@@ -101,7 +102,7 @@
 /* ### Slide with opacity
 --------------------------------------------- */
 @keyframes slide_hero_one{
-	0% {transform: translateX(50vw); opacity: 0;}
+	0% {transform: translateX(50%); opacity: 0;}
 	16% {transform: translateX(0vw); opacity: 1;}
 	32% {transform: translateX(0vw); opacity: 0;}
 	48% {transform: translateX(0vw); opacity: 0;}
@@ -112,7 +113,7 @@
 @keyframes slide_hero_two{
 	0% {transform: translateX(0vw); opacity: 0;}
 	16% {transform: translateX(0vw); opacity: 0;}
-	32% {transform: translateX(50vw); opacity: 0;}
+	32% {transform: translateX(50%); opacity: 0;}
 	48% {transform: translateX(0vw); opacity: 1;}
 	64% {transform: translateX(0vw); opacity: 0;}
 	80% {transform: translateX(0vw); opacity: 0;}
@@ -123,7 +124,7 @@
 	16% {transform: translateX(0vw); opacity: 0;}
 	32% {transform: translateX(0vw); opacity: 0;}
 	48% {transform: translateX(0vw); opacity: 0;}
-	64% {transform: translateX(50vw); opacity: 0;}
+	64% {transform: translateX(50%); opacity: 0;}
 	80% {transform: translateX(0vw); opacity: 1;}
 	100% {transform: translateX(0vw); opacity: 0;}
 }

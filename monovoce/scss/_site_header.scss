@@ -7,7 +7,7 @@
 	padding: 40px 0;
 	width:100%;
 	float:left;
-	background-color: rgba(253, 254, 255, 0);
+	// background-color: $color-secondary;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition:    all 0.5s ease-in-out;
 	-ms-transition:     all 0.5s ease-in-out;
@@ -33,7 +33,6 @@
 }
 
 .site-header > .wrap {
-	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -41,6 +40,7 @@
 	margin:0 auto;
 	max-width:100%;
 }
+
 .site-header.headroom,
 .site-header.headroom--unpinned:hover{
 	opacity: 1;
@@ -50,12 +50,12 @@
 	opacity: 0;
 	margin-top: -60px;
 }
-
 /* ## Title Area
 ---------------------------------------------------------------------- */
 
 .title-area {
 	float: left;
+	z-index: 100;
 	p {
     margin: 0;
     font-size: 0;

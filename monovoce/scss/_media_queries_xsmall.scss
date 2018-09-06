@@ -1,4 +1,4 @@
-/* # Small screens
+/* # X-Small screens
 ----------------------------------------------------------------------------------------------------
 ---------------------------------------------
 ---------------------------------------------
@@ -6,10 +6,8 @@
 
 
 
-@media only screen and (min-width: $mq-small) {
-	
-@import "flexible_grids_fallback_small";
-	
+@media only screen and (min-width: $mq-xsmall) {
+		
 /* # Defaults
 ---------------------------------------------------------------------------------------------------- */
 /* ## Typographical Elements
@@ -30,37 +28,10 @@
 ---------------------------------------------------------------------------------------------------- */
 /* ## Site Containers
 ---------------------------------------------------------------------- */
-.site-inner{
-	width: 100%;
-}
-.content-sidebar .site-inner,
-.sidebar-content .site-inner,
-.content-sidebar-sidebar .site-inner,
-.sidebar-sidebar-content .site-inner,
-.sidebar-content-sidebar .site-inner{
-	width: 90%;
-	max-width: $target-small+px;
-}
 /* ### Site Containers Full-width
 ---------------------------------------------------------------------- */
-.full-width-content .site-inner .content .entry{
-	max-width: $target-small+px;
-}
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
-.gridcontainer{
-	.row_headline{
-		max-width: $target-small+px;
-	}
-	.wrap{
-		max-width: $target-small+px;
-	}
-}
-.gridcontainer.non{
-	.wrap{
-		max-width: 100%;
-	}
-}
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
 /* @import "flexible_grids_small"; */
@@ -71,10 +42,6 @@
 ---------------------------------------------------------------------- */
 /* ## Genesis
 ---------------------------------------------------------------------- */
-.archive-description,
-.author-box {
-	max-width: $target-small+px;
-}
 /* ## Titles
 ---------------------------------------------------------------------- */
 /* ## WordPress
@@ -94,16 +61,8 @@
 
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
-.site-header > .wrap {
-    max-width: 90%;
-}
 /* ## Title Area
 ---------------------------------------------------------------------- */
-.header-full-width .title-area,
-.title-area {
-    margin-left: 0;
-    margin-top: 4px;
-}
 /* ## Widget Area
 ---------------------------------------------------------------------- */
 /* ## Before header
@@ -117,61 +76,6 @@
 ---------------------------------------------------------------------- */
 /* ## Primary Navigation
 ---------------------------------------------------------------------- */
-.body-fixed{
-	position: relative;
-}
-.nav-primary{
-	position: relative;
-	width: auto;
-}
-.menu-primary{
-	flex-direction: row;
-	padding-top: 0;
-    height: auto;
-    opacity: 1;
-    overflow: unset;
-	transform: translateY(0);
-	background-color: transparent;
-}
-.menu-item{
-    position: relative;
-    display: inline-block;
-	padding: 0 10px;
-	a{
-		&:hover{
-            color: $color-primary;
-        }
-	}
-	&.current_page_item{
-        a{
-            color: $color-primary;
-        }
-    }
-	&:last-child{
-        &::after{
-            position: absolute;
-            content: '';
-            transform: scale3d(1, 1, 1);
-			top:-10px;
-			bottom: unset;
-			left: unset;
-			right: -10px;
-            width: 6px;
-            height: 18px;
-            background-color: $color-white;
-		}
-		&::before{
-			position: absolute;
-            content: '';
-            transform: scale3d(1, 1, 1);
-			width: 18px;
-			height: 6px;
-			top: -10px;
-			right: -10px;
-			background-color: $color-white;
-		}
-    }
-}
 /* ## Secondary Navigation
 ---------------------------------------------------------------------- */
 /* ## Responsive Menu
@@ -183,20 +87,6 @@
 ---------------------------------------------------------------------------------------------------- */
 /* ## Entries
 ---------------------------------------------------------------------- */
-.archive .site-inner{
-	float: left;
-	margin-bottom: 40px;
-}
-/*
-.content .post{
-	img{
-		float: left;
-		margin-right: $margin-small+px;
-		@include structure(385, $target-small);
-		margin-bottom: inherit;
-	}
-}
-*/
 /* ## Buttons
 ---------------------------------------------------------------------- */
 /* ## Entry Meta
@@ -205,11 +95,6 @@
 ---------------------------------------------------------------------- */
 /* ## Comments
 ---------------------------------------------------------------------- */
-.comment-respond,
-.entry-comments,
-.entry-pings {
-	max-width: $target-small+px;
-}
 /* ## Featured image
 ---------------------------------------------------------------------- */
 /* ## Case grid
@@ -220,17 +105,6 @@
 
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-.footer-widgets .wrap {
-	max-width: $target-small+px;
-}
-	
-@supports (display: grid) {
-	.footer-widgets .wrap {
-		display: grid;
-		grid-template-columns:repeat(2, 1fr);
-		grid-gap:$margin-small+px;
-	}
-}
 /* ## Social Icons
 ---------------------------------------------------------------------- */
 
@@ -245,17 +119,8 @@
 	&.hero{
 		.wrap{
 			.hero-text{
-				font-size: 6.3vw;
-				padding: 15px 20px;
-				padding-bottom: 20vh;
-			}
-			&::before{
-				width: 6px;
-				height: 18px;
-			}
-			&::after{
-				width: 18px;
-				height: 6px;
+				font-size: 8.5vw;
+                margin-bottom: 0vh;
 			}
 		}
 	}
@@ -284,5 +149,5 @@
 
 	
 }
-/* # Small screens end
+/* # X-Small screens end
 ---------------------------------------------------------------------------------------------------- */

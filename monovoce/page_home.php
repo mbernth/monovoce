@@ -24,7 +24,7 @@ function home_add_body_class( $classes ) {
 remove_theme_support( 'custom-background');
 
 //* Remove the entry title
-remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+remove_action( 'genesis_after_header', 'mono_title_reposition' );
 
 //* Remove breadcrumbs
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );

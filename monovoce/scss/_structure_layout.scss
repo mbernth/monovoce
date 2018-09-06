@@ -55,7 +55,6 @@
 	display: block;
 	clear: both;
 	margin: 30px auto;
-	padding-top: 100px;
 	width:100%;
 	overflow: auto;
 }
@@ -83,7 +82,7 @@
 --------------------------------------------- */
 
 .full-width-content .site-inner{
-	margin: 112px 0 0 0;
+	margin: 0;
 	float: left;
 }
 
@@ -93,7 +92,7 @@
 	margin: 0px auto;
 }
 .full-width-content .site-inner .content .entry{
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
 
 /* ## Grid Containers

@@ -655,7 +655,7 @@ input[type="search"] {
   color: #999da0; }
 
 .headlines span {
-  font-family: "Branding-Semilight", Helvetica, Arial, sans-serif; }
+  font-family: "Branding-Thin", Helvetica, Arial, sans-serif; }
 
 .two_col {
   display: grid;
@@ -1975,7 +1975,7 @@ ol li {
   counter-increment: li; }
 
 ol li::before {
-  font-family: "Branding-Semilight", Helvetica, Arial, sans-serif;
+  font-family: "Branding-Thin", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   content: "." counter(li);
@@ -2027,7 +2027,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Branding-Semilight", Helvetica, Arial, sans-serif;
+  font-family: "Branding-Thin", Helvetica, Arial, sans-serif;
   margin: 0 0 20px 0;
   text-transform: uppercase; }
 
@@ -2700,7 +2700,6 @@ th {
   display: block;
   clear: both;
   margin: 30px auto;
-  padding-top: 100px;
   width: 100%;
   overflow: auto; }
 
@@ -2731,7 +2730,7 @@ th {
 /* ### Site Containers Full-width
 --------------------------------------------- */
 .full-width-content .site-inner {
-  margin: 112px 0 0 0;
+  margin: 0;
   float: left; }
 
 .full-width-content .site-inner .content .breadcrumb,
@@ -2740,7 +2739,7 @@ th {
   margin: 0px auto; }
 
 .full-width-content .site-inner .content .entry {
-  margin-bottom: 30px; }
+  margin-bottom: 0px; }
 
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
@@ -3134,16 +3133,16 @@ th {
       line-height: 3.4rem; } }
   @media screen and (min-width: 80em) {
     .entry-title {
-      font-size: 38px;
-      font-size: 3.8rem;
-      line-height: 38px;
-      line-height: 3.8rem; } }
+      font-size: 56px;
+      font-size: 5.6rem;
+      line-height: 56px;
+      line-height: 5.6rem; } }
   @media screen and (min-width: 93.75em) {
     .entry-title {
-      font-size: 52px;
-      font-size: 5.2rem;
-      line-height: 52px;
-      line-height: 5.2rem; } }
+      font-size: 58px;
+      font-size: 5.8rem;
+      line-height: 58px;
+      line-height: 5.8rem; } }
 
 .entry-title a,
 .sidebar .widget-title a {
@@ -3400,413 +3399,6 @@ img.alignright,
     .ginput_complex .ginput_right {
       margin-left: 30px; } }
 
-/* 
- * 	Core Owl Carousel CSS File
- *	v1.3.3
- */
-/* clearfix */
-.owl-carousel .owl-wrapper:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
-
-/* display none until init */
-.owl-carousel {
-  display: none;
-  position: relative;
-  width: 100%;
-  float: left;
-  height: 100vh;
-  -ms-touch-action: pan-y; }
-
-.owl-carousel .owl-wrapper {
-  display: none;
-  position: relative;
-  -webkit-transform: translate3d(0px, 0px, 0px); }
-
-.owl-carousel .owl-wrapper-outer {
-  overflow: hidden;
-  position: absolute;
-  width: 100%; }
-
-.owl-carousel .owl-wrapper-outer.autoHeight {
-  -webkit-transition: height 500ms ease-in-out;
-  -moz-transition: height 500ms ease-in-out;
-  -ms-transition: height 500ms ease-in-out;
-  -o-transition: height 500ms ease-in-out;
-  transition: height 500ms ease-in-out; }
-
-.owl-carousel .owl-item {
-  float: left; }
-
-.owl-controls .owl-page,
-.owl-controls .owl-buttons div {
-  cursor: pointer; }
-
-.owl-controls {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent; }
-
-/* mouse grab icon */
-.grabbing {
-  cursor: url(grabbing.png) 8 8, move; }
-
-/* fix */
-.owl-carousel .owl-wrapper,
-.owl-carousel .owl-item {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0); }
-
-/* # Slider
---------------------------------------------------- */
-.has-owl-slider .site-inner {
-  padding-top: 0; }
-
-.owl-carousel .picture-section {
-  display: block;
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  background-attachment: scroll;
-  background-color: #000B12;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .owl-carousel .picture-section .height-section {
-    background: linear-gradient(145deg, rgba(82, 185, 233, 0.75) 0%, rgba(0, 11, 18, 0) 75%);
-    height: 100vh; }
-
-.slide_content h1 {
-  padding: 20px;
-  position: absolute;
-  overflow: hidden;
-  color: #000B12;
-  background-color: #fdfeff;
-  text-transform: uppercase; }
-
-.slide_content h1 {
-  color: #000B12;
-  word-wrap: break-word;
-  margin-bottom: 0px; }
-
-/*
-* 	Owl Carousel Owl Demo Theme 
-*	v1.3.3
-*/
-.owl-theme .owl-controls {
-  margin-top: 10px;
-  text-align: center; }
-
-/* Styling Next and Prev buttons */
-.owl-theme .owl-controls .owl-buttons div {
-  color: #FFF;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  /*IE7 life-saver */
-  margin: 5px;
-  padding: 3px 10px;
-  font-size: 12px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  background: #869791;
-  filter: Alpha(Opacity=50);
-  /*IE7 fix*/
-  opacity: 0.5; }
-
-/* Clickable class fix problem with hover on touch devices */
-/* Use it for non-touch hover action */
-.owl-theme .owl-controls.clickable .owl-buttons div:hover {
-  filter: Alpha(Opacity=100);
-  /*IE7 fix*/
-  opacity: 1;
-  text-decoration: none; }
-
-/* Styling Pagination*/
-.owl-theme .owl-controls .owl-page {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  /*IE7 life-saver */ }
-
-.owl-theme .owl-controls .owl-page span {
-  display: block;
-  width: 12px;
-  height: 12px;
-  margin: 5px 7px;
-  filter: Alpha(Opacity=50);
-  /*IE7 fix*/
-  opacity: 0.5;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  background: #869791; }
-
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span {
-  filter: Alpha(Opacity=100);
-  /*IE7 fix*/
-  opacity: 1; }
-
-/* If PaginationNumbers is true */
-.owl-theme .owl-controls .owl-page span.owl-numbers {
-  height: auto;
-  width: auto;
-  color: #FFF;
-  padding: 2px 10px;
-  font-size: 12px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px; }
-
-/* preloading images */
-.owl-item.loading {
-  min-height: 150px;
-  background: url(AjaxLoader.gif) no-repeat center center; }
-
-/* 
- *  Owl Carousel CSS3 Transitions 
- *  v1.3.2
- */
-.owl-origin {
-  -webkit-perspective: 1200px;
-  -webkit-perspective-origin-x: 50%;
-  -webkit-perspective-origin-y: 50%;
-  -moz-perspective: 1200px;
-  -moz-perspective-origin-x: 50%;
-  -moz-perspective-origin-y: 50%;
-  perspective: 1200px; }
-
-/* fade */
-.owl-fade-out {
-  z-index: 10;
-  -webkit-animation: fadeOut 2s both ease;
-  -moz-animation: fadeOut 2s both ease;
-  animation: fadeOut 2s both ease; }
-
-.owl-fade-in {
-  -webkit-animation: fadeIn 2s both ease;
-  -moz-animation: fadeIn 2s both ease;
-  animation: fadeIn 2s both ease; }
-
-/* backSlide */
-.owl-backSlide-out {
-  -webkit-animation: backSlideOut 1s both ease;
-  -moz-animation: backSlideOut 1s both ease;
-  animation: backSlideOut 1s both ease; }
-
-.owl-backSlide-in {
-  -webkit-animation: backSlideIn 1s both ease;
-  -moz-animation: backSlideIn 1s both ease;
-  animation: backSlideIn 1s both ease; }
-
-/* goDown */
-.owl-goDown-out {
-  -webkit-animation: scaleToFade .7s ease both;
-  -moz-animation: scaleToFade .7s ease both;
-  animation: scaleToFade .7s ease both; }
-
-.owl-goDown-in {
-  -webkit-animation: goDown .6s ease both;
-  -moz-animation: goDown .6s ease both;
-  animation: goDown .6s ease both; }
-
-/* scaleUp */
-.owl-fadeUp-in {
-  -webkit-animation: scaleUpFrom .5s ease both;
-  -moz-animation: scaleUpFrom .5s ease both;
-  animation: scaleUpFrom .5s ease both; }
-
-.owl-fadeUp-out {
-  -webkit-animation: scaleUpTo .5s ease both;
-  -moz-animation: scaleUpTo .5s ease both;
-  animation: scaleUpTo .5s ease both; }
-
-/* Keyframes */
-/*empty*/
-@-webkit-keyframes empty {
-  0% {
-    opacity: 1; } }
-
-@-moz-keyframes empty {
-  0% {
-    opacity: 1; } }
-
-@keyframes empty {
-  0% {
-    opacity: 1; } }
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@-moz-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@-webkit-keyframes backSlideOut {
-  25% {
-    opacity: .5;
-    -webkit-transform: translateZ(-500px); }
-  75% {
-    opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(-200%); }
-  100% {
-    opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(-200%); } }
-
-@-moz-keyframes backSlideOut {
-  25% {
-    opacity: .5;
-    -moz-transform: translateZ(-500px); }
-  75% {
-    opacity: .5;
-    -moz-transform: translateZ(-500px) translateX(-200%); }
-  100% {
-    opacity: .5;
-    -moz-transform: translateZ(-500px) translateX(-200%); } }
-
-@keyframes backSlideOut {
-  25% {
-    opacity: .5;
-    transform: translateZ(-500px); }
-  75% {
-    opacity: .5;
-    transform: translateZ(-500px) translateX(-200%); }
-  100% {
-    opacity: .5;
-    transform: translateZ(-500px) translateX(-200%); } }
-
-@-webkit-keyframes backSlideIn {
-  0%, 25% {
-    opacity: .5;
-    -webkit-transform: translateZ(-500px) translateX(200%); }
-  75% {
-    opacity: .5;
-    -webkit-transform: translateZ(-500px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateZ(0) translateX(0); } }
-
-@-moz-keyframes backSlideIn {
-  0%, 25% {
-    opacity: .5;
-    -moz-transform: translateZ(-500px) translateX(200%); }
-  75% {
-    opacity: .5;
-    -moz-transform: translateZ(-500px); }
-  100% {
-    opacity: 1;
-    -moz-transform: translateZ(0) translateX(0); } }
-
-@keyframes backSlideIn {
-  0%, 25% {
-    opacity: .5;
-    transform: translateZ(-500px) translateX(200%); }
-  75% {
-    opacity: .5;
-    transform: translateZ(-500px); }
-  100% {
-    opacity: 1;
-    transform: translateZ(0) translateX(0); } }
-
-@-webkit-keyframes scaleToFade {
-  to {
-    opacity: 0;
-    -webkit-transform: scale(0.8); } }
-
-@-moz-keyframes scaleToFade {
-  to {
-    opacity: 0;
-    -moz-transform: scale(0.8); } }
-
-@keyframes scaleToFade {
-  to {
-    opacity: 0;
-    transform: scale(0.8); } }
-
-@-webkit-keyframes goDown {
-  from {
-    -webkit-transform: translateY(-100%); } }
-
-@-moz-keyframes goDown {
-  from {
-    -moz-transform: translateY(-100%); } }
-
-@keyframes goDown {
-  from {
-    transform: translateY(-100%); } }
-
-@-webkit-keyframes scaleUpFrom {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(1.5); } }
-
-@-moz-keyframes scaleUpFrom {
-  from {
-    opacity: 0;
-    -moz-transform: scale(1.5); } }
-
-@keyframes scaleUpFrom {
-  from {
-    opacity: 0;
-    transform: scale(1.5); } }
-
-@-webkit-keyframes scaleUpTo {
-  to {
-    opacity: 0;
-    -webkit-transform: scale(1.5); } }
-
-@-moz-keyframes scaleUpTo {
-  to {
-    opacity: 0;
-    -moz-transform: scale(1.5); } }
-
-@keyframes scaleUpTo {
-  to {
-    opacity: 0;
-    transform: scale(1.5); } }
-
 /*
 	
 	@import "plugins/timeline";
@@ -3832,7 +3424,6 @@ img.alignright,
   padding: 40px 0;
   width: 100%;
   float: left;
-  background-color: rgba(253, 254, 255, 0);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
@@ -3854,7 +3445,6 @@ img.alignright,
   margin-top: 200px; }
 
 .site-header > .wrap {
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3873,7 +3463,8 @@ img.alignright,
 /* ## Title Area
 ---------------------------------------------------------------------- */
 .title-area {
-  float: left; }
+  float: left;
+  z-index: 100; }
   .title-area p {
     margin: 0;
     font-size: 0;
@@ -3974,10 +3565,14 @@ svg#logo {
 */
 /* # Primary Navigation
 ---------------------------------------------------------------------------------------------------- */
+.body-fixed {
+  position: fixed;
+  width: 100%; }
+
 .nav-primary {
   position: absolute;
   width: 100%;
-  top: -5px; }
+  top: 0; }
   .nav-primary a {
     text-decoration: none; }
   .nav-primary .sub-menu {
@@ -3985,15 +3580,38 @@ svg#logo {
     left: -9999px; }
 
 .menu-primary {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-100vh);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+.menu-primary {
   display: flex;
   flex-direction: column;
-  margin-top: 66px;
-  background-color: #00395d;
-  padding: 10px 0; }
+  padding-top: 100px;
+  background-color: #001725;
+  z-index: 0; }
+
+.open-primary {
+  height: auto;
+  opacity: 1;
+  height: 100vh;
+  width: 100%;
+  transform: translateY(0);
+  z-index: 50; }
 
 .menu-item {
+  position: relative;
   display: inline-block;
-  padding: 10px 5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: calc(5% + 30px);
+  padding-right: calc(5% + 30px);
   margin-bottom: 0; }
   .menu-item a {
     font-family: "Branding-Semibold", Helvetica, Arial, sans-serif;
@@ -4013,20 +3631,26 @@ svg#logo {
         line-height: 14px;
         line-height: 1.4rem; } }
     .menu-item a:hover {
-      color: #666d71; }
+      color: #66889e; }
   .menu-item.menu-item-has-children a:after {
     display: inline-block;
     margin-left: 5px;
-    content: '';
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 8px solid #1a232a; }
+    content: ''; }
   .menu-item.current_page_item a {
-    color: #808589; }
+    color: #66889e; }
+  .menu-item:last-child::after {
+    position: absolute;
+    content: '';
+    transform: scale3d(1, 1, 1);
+    bottom: 10px;
+    left: 5%;
+    width: 6px;
+    height: 60px;
+    background-color: #fdfeff; }
 
 .responsive-menu-icon {
   position: absolute;
-  top: 0;
+  top: 35px;
   right: 5%;
   display: block;
   height: auto;
@@ -4034,7 +3658,8 @@ svg#logo {
   float: right;
   background-color: transparent;
   color: #fdfeff;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 100; }
 
 .responsive-menu-icon .line {
   width: 30px;
@@ -4145,16 +3770,43 @@ svg#logo {
       line-height: 3.4rem; } }
   @media screen and (min-width: 80em) {
     .gridcontainer .row_headline {
-      font-size: 38px;
-      font-size: 3.8rem;
-      line-height: 38px;
-      line-height: 3.8rem; } }
+      font-size: 56px;
+      font-size: 5.6rem;
+      line-height: 56px;
+      line-height: 5.6rem; } }
   @media screen and (min-width: 93.75em) {
     .gridcontainer .row_headline {
-      font-size: 52px;
-      font-size: 5.2rem;
-      line-height: 52px;
-      line-height: 5.2rem; } }
+      font-size: 58px;
+      font-size: 5.8rem;
+      line-height: 58px;
+      line-height: 5.8rem; } }
+
+.gridcontainer.title-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
+  background-color: #EF405C; }
+  .gridcontainer.title-element .wrap {
+    max-width: 90%; }
+    .gridcontainer.title-element .wrap .entry-title {
+      position: relative;
+      color: #fdfeff;
+      padding: 15px 0 0 20px;
+      margin-bottom: 0; }
+      .gridcontainer.title-element .wrap .entry-title::before, .gridcontainer.title-element .wrap .entry-title::after {
+        position: absolute;
+        content: '';
+        transform: scale3d(1, 1, 1);
+        top: 0;
+        left: 0;
+        background-color: #fdfeff; }
+      .gridcontainer.title-element .wrap .entry-title::before {
+        width: 6px;
+        height: 18px; }
+      .gridcontainer.title-element .wrap .entry-title::after {
+        width: 18px;
+        height: 6px; }
 
 /* ## Buttons
 ---------------------------------------------------------------------- */
@@ -4374,7 +4026,7 @@ p.entry-meta {
 
 .featured-section .image-section {
   position: relative;
-  height: 100vh; }
+  height: 60vh; }
   .featured-section .image-section .entry-title {
     position: absolute;
     left: 5%;
@@ -4548,7 +4200,8 @@ p.entry-meta {
   flex-direction: column;
   justify-content: center;
   background-color: #EF405C;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
   .gridcontainer.hero .wrap {
     position: relative;
     width: 90%;
@@ -4558,7 +4211,7 @@ p.entry-meta {
       display: block;
       width: 100%;
       color: #fdfeff;
-      font-size: 9.3vw;
+      font-size: 10.5vw;
       line-height: 1;
       margin-bottom: 0;
       font-family: "Branding-Thin", Helvetica, Arial, sans-serif;
@@ -4603,7 +4256,7 @@ p.entry-meta {
 --------------------------------------------- */
 @keyframes slide_hero_one {
   0% {
-    transform: translateX(50vw);
+    transform: translateX(50%);
     opacity: 0; }
   16% {
     transform: translateX(0vw);
@@ -4632,7 +4285,7 @@ p.entry-meta {
     transform: translateX(0vw);
     opacity: 0; }
   32% {
-    transform: translateX(50vw);
+    transform: translateX(50%);
     opacity: 0; }
   48% {
     transform: translateX(0vw);
@@ -4661,7 +4314,7 @@ p.entry-meta {
     transform: translateX(0vw);
     opacity: 0; }
   64% {
-    transform: translateX(50vw);
+    transform: translateX(50%);
     opacity: 0; }
   80% {
     transform: translateX(0vw);
@@ -5052,6 +4705,133 @@ p.entry-meta {
 	# Large
 	# Xlarge
 */
+/* # X-Small screens
+----------------------------------------------------------------------------------------------------
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+@media only screen and (min-width: 37.5em) {
+  /* # Defaults
+---------------------------------------------------------------------------------------------------- */
+  /* ## Typographical Elements
+---------------------------------------------------------------------- */
+  /* ## Headings
+---------------------------------------------------------------------- */
+  /* ## Objects
+---------------------------------------------------------------------- */
+  /* ## Forms
+---------------------------------------------------------------------- */
+  /* ## Tables
+---------------------------------------------------------------------- */
+  /* ## Screen Reader Text
+---------------------------------------------------------------------- */
+  /* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+  /* ## Site Containers
+---------------------------------------------------------------------- */
+  /* ### Site Containers Full-width
+---------------------------------------------------------------------- */
+  /* ## Grid Containers
+---------------------------------------------------------------------- */
+  /* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+  /* @import "flexible_grids_small"; */
+  /* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+  /* ## Avatar
+---------------------------------------------------------------------- */
+  /* ## Genesis
+---------------------------------------------------------------------- */
+  /* ## Titles
+---------------------------------------------------------------------- */
+  /* ## WordPress
+---------------------------------------------------------------------- */
+  /* # Widgets
+---------------------------------------------------------------------------------------------------- */
+  /* ## Featured Content
+---------------------------------------------------------------------- */
+  /* # Plugins
+---------------------------------------------------------------------------------------------------- */
+  /* ## Genesis eNews Extended
+---------------------------------------------------------------------- */
+  /* ## Skip Links
+---------------------------------------------------------------------- */
+  /* # Site Header
+---------------------------------------------------------------------------------------------------- */
+  /* ## Title Area
+---------------------------------------------------------------------- */
+  /* ## Widget Area
+---------------------------------------------------------------------- */
+  /* ## Before header
+---------------------------------------------------------------------- */
+  /* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+  /* ## Accessible Menu
+---------------------------------------------------------------------- */
+  /* ## Site Header Navigation
+---------------------------------------------------------------------- */
+  /* ## Primary Navigation
+---------------------------------------------------------------------- */
+  /* ## Secondary Navigation
+---------------------------------------------------------------------- */
+  /* ## Responsive Menu
+---------------------------------------------------------------------- */
+  /* ## Language Menu
+---------------------------------------------------------------------- */
+  /* # Content Area
+---------------------------------------------------------------------------------------------------- */
+  /* ## Entries
+---------------------------------------------------------------------- */
+  /* ## Buttons
+---------------------------------------------------------------------- */
+  /* ## Entry Meta
+---------------------------------------------------------------------- */
+  /* ## Pagination
+---------------------------------------------------------------------- */
+  /* ## Comments
+---------------------------------------------------------------------- */
+  /* ## Featured image
+---------------------------------------------------------------------- */
+  /* ## Case grid
+---------------------------------------------------------------------- */
+  /* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+  /* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+  /* ## Social Icons
+---------------------------------------------------------------------- */
+  /* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+  /* # Frontpage Style
+---------------------------------------------------------------------------------------------------- */
+  /* # Hero element
+--------------------------------------------------- */
+  .gridcontainer.hero .wrap .hero-text {
+    font-size: 8.5vw;
+    margin-bottom: 0vh; }
+  /* # Animations
+---------------------------------------------------------------------------------------------------- */
+  /* ## Keyframes
+---------------------------------------------------------------------- */
+  /* ### Move X and Roll 360 degrees
+--------------------------------------------- */
+  /* ### Move up
+--------------------------------------------- */
+  /* ### Move down
+--------------------------------------------- */
+  /* ### Fade in
+--------------------------------------------- */
+  /* ### Scale down
+--------------------------------------------- */
+  /* ### Fade out
+--------------------------------------------- */
+  /* ### Slide with opacity
+--------------------------------------------- */
+  /* ### Scale up
+--------------------------------------------- */ }
+
+/* # X-Small screens end
+---------------------------------------------------------------------------------------------------- */
 /* # Small screens
 ----------------------------------------------------------------------------------------------------
 ---------------------------------------------
@@ -5156,8 +4936,14 @@ p.entry-meta {
 ---------------------------------------------------------------------- */
   /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
+  .site-header > .wrap {
+    max-width: 90%; }
   /* ## Title Area
 ---------------------------------------------------------------------- */
+  .header-full-width .title-area,
+  .title-area {
+    margin-left: 0;
+    margin-top: 4px; }
   /* ## Widget Area
 ---------------------------------------------------------------------- */
   /* ## Before header
@@ -5170,6 +4956,47 @@ p.entry-meta {
 ---------------------------------------------------------------------- */
   /* ## Primary Navigation
 ---------------------------------------------------------------------- */
+  .body-fixed {
+    position: relative; }
+  .nav-primary {
+    position: relative;
+    width: auto; }
+  .menu-primary {
+    flex-direction: row;
+    padding-top: 0;
+    height: auto;
+    opacity: 1;
+    overflow: unset;
+    transform: translateY(0);
+    background-color: transparent; }
+  .menu-item {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px; }
+    .menu-item a:hover {
+      color: #00395D; }
+    .menu-item.current_page_item a {
+      color: #00395D; }
+    .menu-item:last-child::after {
+      position: absolute;
+      content: '';
+      transform: scale3d(1, 1, 1);
+      top: -10px;
+      bottom: unset;
+      left: unset;
+      right: -10px;
+      width: 6px;
+      height: 18px;
+      background-color: #fdfeff; }
+    .menu-item:last-child::before {
+      position: absolute;
+      content: '';
+      transform: scale3d(1, 1, 1);
+      width: 18px;
+      height: 6px;
+      top: -10px;
+      right: -10px;
+      background-color: #fdfeff; }
   /* ## Secondary Navigation
 ---------------------------------------------------------------------- */
   /* ## Responsive Menu
@@ -5230,7 +5057,8 @@ p.entry-meta {
 --------------------------------------------------- */
   .gridcontainer.hero .wrap .hero-text {
     font-size: 6.3vw;
-    padding: 15px 20px; }
+    padding: 15px 20px;
+    padding-bottom: 20vh; }
   .gridcontainer.hero .wrap::before {
     width: 6px;
     height: 18px; }
