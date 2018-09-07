@@ -17,6 +17,9 @@ function work_archive_add_body_class( $classes ) {
 	$classes[] = 'work-archive';
 	return $classes;
 }
+//* Remove the entry title
+remove_action( 'genesis_after_header', 'mono_title_reposition' );
+
 
 // List post alphabetical ascending
 add_action( 'genesis_before_loop', 'work_list_order' );
@@ -29,13 +32,10 @@ function work_list_order() {
 remove_action( 'genesis_before_loop', 'genesis_do_cpt_archive_title_description' );
 add_action( 'genesis_before_content', 'rv_cpt_archive_title_description' );
 function rv_cpt_archive_title_description() {
-	/**
-	 *	Genesis stores the archive settings in an option (array) named genesis-cpt-archive-settings-{post_type}
-	 *	This example uses a custom post type called 'service'
-	 */
+
 	$archive_settings = get_option( 'genesis-cpt-archive-settings-work' );
 
-	echo '<article class="gridcontainer archive-works-description coll1 narrow">';
+	echo '<article class="gridcontainer title-element">';
 		echo '<div class="wrap">';
 			echo '<section>';
 				echo '<h1 class="entry-title">'.$archive_settings['headline'].'</h1>';
@@ -45,7 +45,7 @@ function rv_cpt_archive_title_description() {
 	echo '</article>';
 	
 }
-
+/*
 // Custom loop
 remove_action ('genesis_loop', 'genesis_do_loop'); // Remove the standard loop
 add_action( 'genesis_loop', 'custom_do_grid_loop' ); // Add custom loop
@@ -83,6 +83,6 @@ function custom_do_grid_loop() {
 		echo '</article>';
 	endif;
 }
-
+*/
 //* Run the Genesis loop
 genesis();

@@ -26,6 +26,7 @@ remove_theme_support( 'custom-background');
 //* Remove the entry title
 remove_action( 'genesis_after_header', 'mono_title_reposition' );
 
+
 //* Remove breadcrumbs
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 

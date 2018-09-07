@@ -685,6 +685,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/monovoce\/js\/min\/headroom_action-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/min\/headroom_action-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/monovoce\/js\/min\/mono-multi-level-menu-min.js": {
 		"ft": 64,
 		"ma": 0,
