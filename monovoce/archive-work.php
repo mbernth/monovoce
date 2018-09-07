@@ -30,7 +30,7 @@ function work_list_order() {
 
 // Reposition archive description
 remove_action( 'genesis_before_loop', 'genesis_do_cpt_archive_title_description' );
-add_action( 'genesis_before_content', 'rv_cpt_archive_title_description' );
+add_action( 'genesis_after_header', 'rv_cpt_archive_title_description' );
 function rv_cpt_archive_title_description() {
 
 	$archive_settings = get_option( 'genesis-cpt-archive-settings-work' );
@@ -45,7 +45,7 @@ function rv_cpt_archive_title_description() {
 	echo '</article>';
 	
 }
-/*
+
 // Custom loop
 remove_action ('genesis_loop', 'genesis_do_loop'); // Remove the standard loop
 add_action( 'genesis_loop', 'custom_do_grid_loop' ); // Add custom loop
@@ -59,7 +59,7 @@ function custom_do_grid_loop() {
 
 	$loop = new WP_Query( $args );
 	if( $loop->have_posts() ):
-		echo '<section class="gridcontainer coll2 narrow archive-works">';
+		echo '<section class="gridcontainer coll2 archive-works">';
 		echo '<div class="wrap">';
 		while( $loop->have_posts() ): $loop->the_post(); global $post;
 			echo '<article>';
@@ -83,6 +83,6 @@ function custom_do_grid_loop() {
 		echo '</article>';
 	endif;
 }
-*/
+
 //* Run the Genesis loop
 genesis();

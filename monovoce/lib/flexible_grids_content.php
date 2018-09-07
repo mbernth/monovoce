@@ -115,9 +115,35 @@ function mono_flexible_grids() {
 							}
 
 							// Widget fields
-							if (get_sub_field('widget_area')){
+							if ( get_row_layout() == 'featured_work' ){
 								echo '<section class="featured_widget">';
-									the_sub_field('widget_area');
+									$post_objects = get_sub_field( 'work' );
+									$work_image = get_sub_field( 'work_image' );
+
+									if ( $work_image ) {
+										echo '<img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " />';
+									}
+
+									if ( $post_objects ) :
+										$post = $post_objects;
+										setup_postdata( $post );
+											echo '<h2><a href="'.$post->guid.'">'.$post->post_title.'</a></h2>';
+										wp_reset_postdata();
+									endif;
+
+        							$terms = get_the_terms( $post->ID , 'work_category' );
+
+									if ($terms) :
+										echo '<ul>';
+										foreach ( $terms as $term ) {
+											$term_link = get_term_link( $term, 'work_category' );
+											if( is_wp_error( $term_link ) )
+                								continue;
+												echo '<li>'.$term->name.'</li>';
+										}
+										echo '</li>';
+									endif;
+
 								echo '</section>';
 							}
 							

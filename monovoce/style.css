@@ -88,7 +88,7 @@ svg:not(:root) {
   overflow: hidden; }
 
 figure {
-  margin: 1em 40px; }
+  margin: 0; }
 
 hr {
   -moz-box-sizing: content-box;
@@ -3032,11 +3032,35 @@ th {
 .breadcrumb .wrap {
   width: 90%; }
 
-.archive-description,
+.archive-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 5% 40px 5%;
+  color: #fdfeff;
+  background-color: #EF405C; }
+  .archive-description .archive-title {
+    color: #fdfeff;
+    margin-bottom: 0;
+    margin-left: 20px;
+    -webkit-animation: slide .4s linear both;
+    -moz-animation: slide .4s linear both;
+    -o-animation: slide .4s linear both;
+    -ms-animation: slide .4s linear both;
+    animation: slide .4s linear both; }
+  .archive-description p {
+    margin-left: 20px;
+    -webkit-animation: fadeIn .4s 1s linear both;
+    -moz-animation: fadeIn .4s 1s linear both;
+    -o-animation: fadeIn .4s 1s linear both;
+    -ms-animation: fadeIn .4s 1s linear both;
+    animation: fadeIn .4s 1s linear both; }
+
 .author-box {
   margin: 0 auto 30px auto;
   width: 90%;
-  background-color: transparent;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 24px;
@@ -3044,7 +3068,6 @@ th {
   font-weight: 300;
   color: #00395D; }
   @media screen and (min-width: 93.75em) {
-    .archive-description,
     .author-box {
       font-size: 18px;
       font-size: 1.8rem;
@@ -3704,23 +3727,6 @@ svg#logo {
 .entry {
   margin-bottom: 40px; }
 
-/*
-.content .post{
-	margin-bottom: 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid $color-black;
-	img{
-		margin-bottom: 20px;
-	}
-}
-.content .post:last-child{
-	border-bottom: none;
-	padding-bottom: 0;
-}
-.content .post .entry-footer {
-    clear: both;
-}
-*/
 .gridcontainer p:last-child,
 .entry-content p:last-child {
   margin-bottom: 0; }
@@ -3786,7 +3792,8 @@ svg#logo {
   flex-direction: column;
   justify-content: flex-end;
   height: 50vh;
-  background-color: #EF405C; }
+  background-color: #EF405C;
+  padding: 40px 0; }
   .gridcontainer.title-element .wrap {
     max-width: 90%; }
     .gridcontainer.title-element .wrap .entry-title {
@@ -4026,14 +4033,35 @@ p.entry-meta {
 
 .featured-section .image-section {
   position: relative;
-  height: 60vh; }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50vh;
+  width: 100%; }
+  .featured-section .image-section .wrap {
+    width: 90%;
+    padding: 40px 0; }
   .featured-section .image-section .entry-title {
-    position: absolute;
-    left: 5%;
-    bottom: 60px; }
+    position: relative;
+    color: #fdfeff;
+    padding: 15px 0 0 20px;
+    margin-bottom: 0; }
+    .featured-section .image-section .entry-title::before, .featured-section .image-section .entry-title::after {
+      position: absolute;
+      content: '';
+      transform: scale3d(1, 1, 1);
+      top: 0;
+      left: 0;
+      background-color: #fdfeff; }
+    .featured-section .image-section .entry-title::before {
+      width: 6px;
+      height: 18px; }
+    .featured-section .image-section .entry-title::after {
+      width: 18px;
+      height: 6px; }
 
 .image-section {
-  background: linear-gradient(145deg, rgba(82, 185, 233, 0.75) 0%, rgba(0, 11, 18, 0) 75%); }
+  background: linear-gradient(145deg, rgba(239, 64, 92, 0.75) 0%, rgba(0, 11, 18, 0) 100%); }
 
 /*
 	## Case Grid
@@ -4080,7 +4108,7 @@ p.entry-meta {
   line-height: 24px;
   line-height: 2.4rem;
   font-weight: 300;
-  background-color: #1a232a;
+  background-color: #e6ebef;
   padding: 60px 0 100px; }
 
 .footer-widgets .wrap {
@@ -4147,7 +4175,7 @@ p.entry-meta {
   float: left;
   width: 100%;
   position: relative;
-  background-color: #000B12;
+  background-color: #b3c4ce;
   font-size: 10px;
   font-size: 1rem;
   line-height: 12px;
@@ -4347,7 +4375,7 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 .archive.full-width-content .content {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr; }
   .archive.full-width-content .content .entry {
     position: relative; }
     .archive.full-width-content .content .entry .entry-header {
@@ -4628,7 +4656,7 @@ p.entry-meta {
 --------------------------------------------- */
 @-webkit-keyframes slide {
   0% {
-    -webkit-transform: translateX(100%);
+    -webkit-transform: translateX(50%);
     opacity: 0; }
   100% {
     -webkit-transform: translateX(0px);
@@ -4636,7 +4664,7 @@ p.entry-meta {
 
 @-moz-keyframes slide {
   0% {
-    -moz-transform: translateX(100%);
+    -moz-transform: translateX(50%);
     opacity: 0; }
   100% {
     -moz-transform: translateX(0px);
@@ -4644,7 +4672,7 @@ p.entry-meta {
 
 @-o-keyframes slide {
   0% {
-    -o-transform: translateX(100%);
+    -o-transform: translateX(50%);
     opacity: 0; }
   100% {
     -o-transform: translateX(0px);
@@ -4652,7 +4680,7 @@ p.entry-meta {
 
 @-ms-keyframes slide {
   0% {
-    -ms-transform: translateX(100%);
+    -ms-transform: translateX(50%);
     opacity: 0; }
   100% {
     -ms-transform: translateX(0px);
@@ -4660,7 +4688,7 @@ p.entry-meta {
 
 @keyframes slide {
   0% {
-    transform: translateX(100%);
+    transform: translateX(50%);
     opacity: 0; }
   100% {
     transform: translateX(0px);
@@ -4917,9 +4945,6 @@ p.entry-meta {
 ---------------------------------------------------------------------- */
   /* ## Genesis
 ---------------------------------------------------------------------- */
-  .archive-description,
-  .author-box {
-    max-width: 800px; }
   /* ## Titles
 ---------------------------------------------------------------------- */
   /* ## WordPress
@@ -5839,9 +5864,6 @@ p.entry-meta {
 ---------------------------------------------------------------------- */
   /* ## Genesis
 ---------------------------------------------------------------------- */
-  .archive-description,
-  .author-box {
-    max-width: 920px; }
   /* ## Titles
 ---------------------------------------------------------------------- */
   /* ## WordPress
@@ -6647,9 +6669,6 @@ p.entry-meta {
 ---------------------------------------------------------------------- */
   /* ## Genesis
 ---------------------------------------------------------------------- */
-  .archive-description,
-  .author-box {
-    max-width: 1200px; }
   /* ## Titles
 ---------------------------------------------------------------------- */
   /* ## WordPress
@@ -7455,9 +7474,6 @@ p.entry-meta {
 ---------------------------------------------------------------------- */
   /* ## Genesis
 ---------------------------------------------------------------------- */
-  .archive-description,
-  .author-box {
-    max-width: 1400px; }
   /* ## Titles
 ---------------------------------------------------------------------- */
   /* ## WordPress

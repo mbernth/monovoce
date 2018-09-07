@@ -15,19 +15,24 @@ function work_single_add_body_class( $classes ) {
 	return $classes;
 }
 
-remove_action ( 'genesis_after_header', 'single_post_featured_image', 15 );
+// remove_action ( 'genesis_after_header', 'single_post_featured_image', 15 );
 
-remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+// remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 // add_action( 'genesis_entry_content', 'genesis_do_post_title', 5 );
 
-add_action ( 'genesis_entry_content', 'single_work_post_featured_image', 1 );
+add_action ( 'genesis_after_entry', 'single_work_post_featured_image', 1 );
 function single_work_post_featured_image() {
-	if ( (is_single() || is_page()) && has_post_thumbnail() ) :
+    if ( (is_single() || is_page()) ) :
+        
         $img = genesis_get_image( array( 'format' => 'src' ) );
         $terms = get_the_terms( $post->ID , 'work_category' );
 
-        echo '<div class="work-section"><figure><img src="'.$img.'"></figure>';
-        the_title( '<div class="work-meta"><h1 class="work-title" itemprop="headline">', '</h1>' );
+        the_field( 'client_name' );
+        the_field( 'project_link' );
+        the_field( 'brief' );
+
+        // echo '<div class="work-section"><figure><img src="'.$img.'"></figure>';
+        // the_title( '<div class="work-meta"><h1 class="work-title" itemprop="headline">', '</h1>' );
 			foreach ( $terms as $term ) {
 				$term_link = get_term_link( $term, 'work_category' );
 				if( is_wp_error( $term_link ) )
@@ -39,12 +44,14 @@ function single_work_post_featured_image() {
 }
 
 //* Add back link
-add_action( 'genesis_entry_content', 'back_link', 20 );
+/*
+add_action( 'genesis_after_entry', 'back_link', 20 );
 function back_link() {
 	if ( is_single() ) {
 		echo '<p><a class="button button-info" href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">' . __( 'Tilbage', 'mono' ) . '</a></p>';
 	}
 }
+*/
 
 // Post next previous links
 /*

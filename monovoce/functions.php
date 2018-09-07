@@ -161,7 +161,7 @@ return $args;
 unregister_sidebar( 'header-right' );
 
 //* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 4 );
+add_theme_support( 'genesis-footer-widgets', 1 );
 
 //* Register widget areas
 genesis_register_sidebar( array(
@@ -211,7 +211,7 @@ function single_post_featured_image() {
 
 		$img = genesis_get_image( array( 'format' => 'src' ) );
 		printf( '<div class="featured-section" style="background-image:url(%s);"><div class="image-section">', $img );
-		the_title( '<h1 class="entry-title" itemprop="headline">', '</h1>' );
+		the_title( '<div class="wrap"><h1 class="entry-title" itemprop="headline">', '</h1></div>' );
 		printf('</div></div>');
 		// elseif( (! is_front_page()) ):
 		// printf( '<div class="image-section" style="background-color:#231f20;"></div>', $img );

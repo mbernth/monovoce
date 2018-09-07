@@ -40,11 +40,38 @@
 	width: 90%;
 }
 
-.archive-description,
+.archive-description{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 100%;
+	padding: 0 5% 40px 5%;
+	color: $color-white;
+	background-color: $color-secondary;
+	
+	.archive-title{
+		color: $color-white;
+		margin-bottom: 0;
+		margin-left: 20px;
+		-webkit-animation: slide .4s linear both;
+		-moz-animation: slide .4s linear both;
+		-o-animation: slide .4s linear both;
+		-ms-animation: slide .4s linear both;
+		animation: slide .4s linear both;
+	}
+	p{
+		margin-left: 20px;
+		-webkit-animation: fadeIn .4s 1s linear both;
+		-moz-animation: fadeIn .4s 1s linear both;
+		-o-animation: fadeIn .4s 1s linear both;
+		-ms-animation: fadeIn .4s 1s linear both;
+		animation: fadeIn .4s 1s linear both;
+	}
+}
 .author-box {
 	margin: 0 auto 30px auto;
 	width: 90%;
-	background-color:transparent;
 	@include font-values($g_font-bread);
 }
 

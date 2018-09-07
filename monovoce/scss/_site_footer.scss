@@ -6,7 +6,7 @@
 	float: left;
 	width: 100%;
 	position:relative;
-	background-color: $color-black;
+	background-color: tint($color-primary, 70);
 	@include font-values($g_font-site-footer);
 	line-height: 1;
 	padding: 15px 0;
