@@ -42,7 +42,7 @@ include_once( get_stylesheet_directory() . '/lib/palettes.php' );
 include_once( get_stylesheet_directory() . '/lib/typography.php' );
 
 // Setup Flexible page content
-include_once( get_stylesheet_directory() . '/lib/flexible_page_content.php' );
+// include_once( get_stylesheet_directory() . '/lib/flexible_page_content.php' );
 
 //* Run the Genesis loop
 genesis();

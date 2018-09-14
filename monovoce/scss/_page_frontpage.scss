@@ -129,6 +129,47 @@
 	100% {transform: translateX(0vw); opacity: 0;}
 }
 
+/* # Worls widget
+--------------------------------------------------- */
+.home{
+	.gridcontainer{
+		.featured_widget{
+			position: relative;
+			img{
+				// max-height: 50%;
+				object-fit: cover;
+				object-position: 50% 50%;
+				margin-bottom: 30px;
+			}
+			h2{
+				position: relative;
+				margin: 0 0 20px 0px;
+				a{
+					color: $color-primary;
+				}
+			}
+			ul{
+				position: relative;
+				margin: 0 0 0 20px;
+				&::after{
+					position: absolute;
+					content: '';
+					transform: scale3d(1, 1, 1);
+					top: 8px;
+					left: -20px;
+					background-color: $color-primary;
+					width: 6px;
+					height: 32px;
+				}
+			}
+			li{
+				list-style: none;
+				margin: 0;
+			}
+		}
+	}
+}
+
 /* # Grids
 --------------------------------------------------- */
 

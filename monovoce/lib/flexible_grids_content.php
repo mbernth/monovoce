@@ -9,7 +9,7 @@ add_action( 'genesis_after_entry', 'mono_flexible_grids', 15 );
 function mono_flexible_grids() {
 	
 	if ( is_single() || is_page() ) {
-	
+		
 	$loopCount = 0;
 	
 	
@@ -154,6 +154,7 @@ function mono_flexible_grids() {
 				
 				// Row button field
 				if ($rowtext['button_text']){
+					echo '<div class="row-button-area">';
 					if ($rowtext['page_link']){
 						echo '<a class="button" href="' . $rowtext['page_link']. '"><span>';
 						}else{
@@ -161,6 +162,7 @@ function mono_flexible_grids() {
 					}
 						echo '' . $rowtext['button_text']. '';
 						echo '</span></a>';
+					echo '</div>';
 				}
 				echo '</article>';
 			

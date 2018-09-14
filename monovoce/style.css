@@ -2744,7 +2744,7 @@ th {
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
 .gridcontainer {
-  padding: 30px 0; }
+  padding: 80px 0; }
   .gridcontainer .row_headline {
     width: 90%;
     margin: 0 auto;
@@ -2754,6 +2754,12 @@ th {
     margin: 0 auto; }
     .gridcontainer .wrap section {
       padding: 30px 0 0; }
+  .gridcontainer .row-button-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0; }
 
 .gridcontainer.non {
   padding: 0; }
@@ -3038,25 +3044,25 @@ th {
   justify-content: flex-end;
   width: 100%;
   max-width: 100%;
-  padding: 0 5% 40px 5%;
+  padding: 0 5% 20px 5%;
   color: #fdfeff;
   background-color: #EF405C; }
   .archive-description .archive-title {
     color: #fdfeff;
     margin-bottom: 0;
     margin-left: 20px;
-    -webkit-animation: slide .4s linear both;
-    -moz-animation: slide .4s linear both;
-    -o-animation: slide .4s linear both;
-    -ms-animation: slide .4s linear both;
-    animation: slide .4s linear both; }
+    -webkit-animation: slide .6s linear both;
+    -moz-animation: slide .6s linear both;
+    -o-animation: slide .6s linear both;
+    -ms-animation: slide .6s linear both;
+    animation: slide .6s linear both; }
   .archive-description p {
     margin-left: 20px;
-    -webkit-animation: fadeIn .4s 1s linear both;
-    -moz-animation: fadeIn .4s 1s linear both;
-    -o-animation: fadeIn .4s 1s linear both;
-    -ms-animation: fadeIn .4s 1s linear both;
-    animation: fadeIn .4s 1s linear both; }
+    -webkit-animation: fadeIn 1s 1.4s linear both;
+    -moz-animation: fadeIn 1s 1.4s linear both;
+    -o-animation: fadeIn 1s 1.4s linear both;
+    -ms-animation: fadeIn 1s 1.4s linear both;
+    animation: fadeIn 1s 1.4s linear both; }
 
 .author-box {
   margin: 0 auto 30px auto;
@@ -3483,6 +3489,9 @@ img.alignright,
   opacity: 0;
   margin-top: -60px; }
 
+.site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned {
+  background-color: #EF405C; }
+
 /* ## Title Area
 ---------------------------------------------------------------------- */
 .title-area {
@@ -3793,7 +3802,7 @@ svg#logo {
   justify-content: flex-end;
   height: 50vh;
   background-color: #EF405C;
-  padding: 40px 0; }
+  padding: 30px 0; }
   .gridcontainer.title-element .wrap {
     max-width: 90%; }
     .gridcontainer.title-element .wrap .entry-title {
@@ -4350,6 +4359,35 @@ p.entry-meta {
   100% {
     transform: translateX(0vw);
     opacity: 0; } }
+
+/* # Worls widget
+--------------------------------------------------- */
+.home .gridcontainer .featured_widget {
+  position: relative; }
+  .home .gridcontainer .featured_widget img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin-bottom: 30px; }
+  .home .gridcontainer .featured_widget h2 {
+    position: relative;
+    margin: 0 0 20px 0px; }
+    .home .gridcontainer .featured_widget h2 a {
+      color: #00395D; }
+  .home .gridcontainer .featured_widget ul {
+    position: relative;
+    margin: 0 0 0 20px; }
+    .home .gridcontainer .featured_widget ul::after {
+      position: absolute;
+      content: '';
+      transform: scale3d(1, 1, 1);
+      top: 8px;
+      left: -20px;
+      background-color: #00395D;
+      width: 6px;
+      height: 32px; }
+  .home .gridcontainer .featured_widget li {
+    list-style: none;
+    margin: 0; }
 
 /* # Grids
 --------------------------------------------------- */

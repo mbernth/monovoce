@@ -98,7 +98,7 @@
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
 .gridcontainer{
-	padding: 30px 0;
+	padding: 80px 0;
 	.row_headline{
 		width: 90%;
     	margin: 0 auto;
@@ -110,6 +110,13 @@
 		section{
 			padding: 30px 0 0;
 		}
+	}
+	.row-button-area{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 40px 0;
 	}
 }
 .gridcontainer.non{

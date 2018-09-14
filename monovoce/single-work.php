@@ -15,31 +15,43 @@ function work_single_add_body_class( $classes ) {
 	return $classes;
 }
 
-// remove_action ( 'genesis_after_header', 'single_post_featured_image', 15 );
-
-// remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
-// add_action( 'genesis_entry_content', 'genesis_do_post_title', 5 );
-
-add_action ( 'genesis_after_entry', 'single_work_post_featured_image', 1 );
+add_action ( 'genesis_after_entry', 'single_work_post_featured_image', 10 );
 function single_work_post_featured_image() {
     if ( (is_single() || is_page()) ) :
         
         $img = genesis_get_image( array( 'format' => 'src' ) );
         $terms = get_the_terms( $post->ID , 'work_category' );
+        $client_name = get_field('client_name');
+        $project_link = get_field('project_link');
+        $brief = get_field('brief');
 
-        the_field( 'client_name' );
-        the_field( 'project_link' );
-        the_field( 'brief' );
+        echo '<article class="gridcontainer">';
+            echo '<div class="wrap">';
 
-        // echo '<div class="work-section"><figure><img src="'.$img.'"></figure>';
-        // the_title( '<div class="work-meta"><h1 class="work-title" itemprop="headline">', '</h1>' );
-			foreach ( $terms as $term ) {
-				$term_link = get_term_link( $term, 'work_category' );
-				if( is_wp_error( $term_link ) )
-                continue;
-				echo '<a href="' . $term_link . '">'.$term->name.'</a> ';
-			}
-        echo '</div></div>';
+                echo '<section class="work-info">';
+                    echo '<h3>Client</h3><h4>'.$client_name.'</h4>';
+                    if($brief){
+                        echo '<h3>Brief</h3>'.$brief.'';
+                    }
+                echo '</section>';
+                echo '<aside class="work-data">';
+                    if ($project_link){
+                        echo '<h3>Visit the website</h3>';
+                        echo '<a href="'.$project_link.'" target="_blank">'.$project_link.'</a>';
+                    }
+                    echo '<h3>What we did</h3>';
+                    echo '<ul class="work-list">';
+			        foreach ( $terms as $term ) {
+				        $term_link = get_term_link( $term, 'work_category' );
+				        if( is_wp_error( $term_link ) )
+                        continue;
+				        echo '<li><a href="' . $term_link . '">'.$term->name.'</a></li>';
+                    }
+                    echo '</ul>';
+                echo '</aside>';
+            
+            echo '</div>';
+        echo '</article>';
     endif;
 }
 
