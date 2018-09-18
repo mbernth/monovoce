@@ -1,6 +1,16 @@
 
 /* # Animations
 ---------------------------------------------------------------------------------------------------- */
+.animated{
+	opacity: 0;
+}
+.animation-row{
+	-webkit-animation: animationRow .3s ease-out both;
+	-moz-animation: animationRow .3s ease-out both;
+	-o-animation: animationRow .3s ease-out both;
+	-ms-animation: animationRow .3s ease-out both;
+	animation: animationRow .3s ease-out both;
+}
 .animation-roll{
 	-webkit-animation: roll 1s ease-out both;
 	-moz-animation: roll 1s ease-out both;
@@ -30,11 +40,11 @@
 	animation: moveDown 1s ease-in-out both;
 }
 .animation-fadeIn{
-	-webkit-animation: fadeIn 1s linear both;
-	-moz-animation: fadeIn 1s linear both;
-	-o-animation: fadeIn 1s linear both;
-	-ms-animation: fadeIn 1s linear both;
-	animation: fadeIn 1s linear both;
+	-webkit-animation: fadeIn 1.5s ease-in-out both;
+	-moz-animation: fadeIn 1.5s ease-in-out both;
+	-o-animation: fadeIn 1.5s ease-in-out both;
+	-ms-animation: fadeIn 1.5s ease-in-out both;
+	animation: fadeIn 1.5s ease-in-out both;
 }
 .animation-fadeOut{
 	-webkit-animation: fadeOut 1s ease-in-out both;
@@ -64,6 +74,31 @@
 /* ### Move X and Roll 360 degrees
 --------------------------------------------- */
 
+/* ### Animate row
+--------------------------------------------- */
+@-webkit-keyframes animationRow{
+	0% {-webkit-transform: translateY(60px) scale(0); opacity: 0;}
+	100% {-webkit-transform: translateY(0px) scale(0); opacity: 1;}
+}
+@-moz-keyframes animationRow{
+	0% {-moz-transform: translateY(60px); opacity: 0;}
+	100% {-moz-transform: translateY(0px); opacity: 1;}
+}
+@-o-keyframes animationRow{
+	0% {-o-transform: translateY(60px); opacity: 0;}
+	100% {-o-transform: translateY(0px); opacity: 1;}
+}
+@-ms-keyframes animationRow{
+	0% {-ms-transform: translateY(60px); opacity: 0;}
+	100% {-ms-transform: translateY(0px); opacity: 1;}
+}
+@keyframes animationRow{
+	0% {transform: translateY(60px) scale(.85); opacity: 0;}
+	100% {transform: translateY(0px) scale(1); opacity: 1;}
+}
+
+/* ### Roll
+--------------------------------------------- */
 @-webkit-keyframes roll{
 	0% {-webkit-transform: translateX(500px) rotate(360deg);}
 	100% {-webkit-transform: translateX(0px) rotate(0deg);}

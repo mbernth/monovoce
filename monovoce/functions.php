@@ -25,6 +25,9 @@ function mono_enqueue_scripts() {
 	// Responsive menu
 	// wp_enqueue_script( 'mono-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'mono-multi-level-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/mono-multi-level-menu.js', array( 'jquery' ), '1.0.0' );
+	// Global Jquery
+	wp_enqueue_script( 'mono-mouse', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.mousewheel.min.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'mono-global', get_bloginfo( 'stylesheet_directory' ) . '/js/fade.js', array( 'jquery' ), '1.0.0', true );
 	// Jquery 1.9.1
 	wp_enqueue_script( 'mono-jquery', get_stylesheet_directory_uri() . '/js/jquery-1.9.1.min.js', array( 'jquery' ), '1.0.0' );
 	// Responsive text for selected headlines

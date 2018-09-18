@@ -25,6 +25,7 @@ function mono_flexible_grids() {
 			$rowbuttonmanual = get_sub_field('row_button_manual_url');
 			$rowtext = 	get_sub_field('row_button_clone');
 			$coll = get_sub_field('columns_no');
+			$animate_row = get_sub_field('animate_row');
 
         	if( get_row_layout() == 'row_setup' ):
 			
@@ -36,6 +37,9 @@ function mono_flexible_grids() {
 				echo '<article class="gridcontainer  ';
 						the_sub_field('background_colour');
 						echo ' coll' . $coll . '';
+					if ($animate_row){
+						echo ' animate-row ';
+					}
 					if (get_sub_field('row_id')){
 						echo '" id="';
 					 	the_sub_field('row_id');
@@ -155,13 +159,15 @@ function mono_flexible_grids() {
 				// Row button field
 				if ($rowtext['button_text']){
 					echo '<div class="row-button-area">';
-					if ($rowtext['page_link']){
-						echo '<a class="button" href="' . $rowtext['page_link']. '"><span>';
-						}else{
-						echo '<a class="button" href="' . $rowtext['url_link']. '" target="_blank""><span>';
-					}
-						echo '' . $rowtext['button_text']. '';
-						echo '</span></a>';
+						echo '<div class="wrap">';
+						if ($rowtext['page_link']){
+							echo '<a class="button button-primary" href="' . $rowtext['page_link']. '">';
+							}else{
+							echo '<a class="button button-primary" href="' . $rowtext['url_link']. '" target="_blank"">';
+						}
+							echo '' . $rowtext['button_text']. '';
+							echo '</a>';
+						echo '</div>';
 					echo '</div>';
 				}
 				echo '</article>';

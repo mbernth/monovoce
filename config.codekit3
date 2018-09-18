@@ -68,6 +68,37 @@
 		"oAP": "\/monovoce\/fonts\/Branding-Black.woff",
 		"oF": 0
 		},
+	"\/monovoce\/fonts\/Branding-Light.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/monovoce\/fonts\/Branding-Light.eot",
+		"oF": 0
+		},
+	"\/monovoce\/fonts\/Branding-Light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/monovoce\/fonts\/Branding-Light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/monovoce\/fonts\/Branding-Light.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/monovoce\/fonts\/Branding-Light.ttf",
+		"oF": 0
+		},
+	"\/monovoce\/fonts\/Branding-Light.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/monovoce\/fonts\/Branding-Light.woff",
+		"oF": 0
+		},
 	"\/monovoce\/fonts\/Branding-Semibold.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -475,6 +506,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/monovoce\/js\/fade.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/fade-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/monovoce\/js\/fitvids.js": {
 		"ft": 64,
 		"ma": 0,
@@ -511,6 +552,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/monovoce\/js\/min\/frontpage_image.height-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/monovoce\/js\/global.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/global-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -625,6 +676,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/monovoce\/js\/jquery.mousewheel.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/jquery.mousewheel.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/monovoce\/js\/jquery.slitslider.js": {
 		"ft": 64,
 		"ma": 0,
@@ -681,6 +742,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/monovoce\/js\/min\/min\/basic-menu-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/monovoce\/js\/min\/global-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/min\/global-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

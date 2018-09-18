@@ -100,9 +100,27 @@
 .gridcontainer{
 	padding: 80px 0;
 	.row_headline{
+		position: relative;
 		width: 90%;
-    	margin: 0 auto;
-		margin: 0 auto 20px;
+		margin: 0 auto;
+    	padding: 10px 0 40px 15px;
+		&::before,
+		&::after{
+			position: absolute;
+			content: '';
+			transform: scale3d(1, 1, 1);
+			top: 0;
+			left: 0;
+			background-color: $color-primary;
+		}
+		&::before{
+			width: 6px;
+			height: 18px;
+		}
+		&::after{
+			width: 18px;
+			height: 6px;
+		}
 	}
 	.wrap{
 		width: 90%;
@@ -177,8 +195,15 @@
 .gridcontainer.dark{
 	background-color: shade($g_gridcontainer-dark, 40%);
 	color: $g_gridcontainer-dark-font-color;
+	h1,h2,h3,h4,h5,h6{
+		color:$g_gridcontainer-dark-font-color;
+	}
 	.row_headline{
 		color: $g_gridcontainer-dark-font-color;
+		&::before,
+		&::after{
+			background-color: $g_gridcontainer-dark-font-color;
+		}
 	}
 	.wrap{
 		section.wysiwyg{
@@ -202,8 +227,15 @@
 .gridcontainer.medium{
 	background-color: $g_gridcontainer-medium;
 	color:$g_gridcontainer-medium-font-color;
+	h1,h2,h3,h4,h5,h6{
+		color:$g_gridcontainer-medium-font-color;
+	}
 	.row_headline{
 		color: $g_gridcontainer-medium-font-color;
+		&::before,
+		&::after{
+			background-color: $g_gridcontainer-medium-font-color;
+		}
 	}
 	.wrap{
 		section.wysiwyg{

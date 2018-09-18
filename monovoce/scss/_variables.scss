@@ -56,6 +56,17 @@ $g_body-background-color:$color-white;
 }
 
 @font-face {
+    font-family: 'Branding-Light';
+    src: url('fonts/Branding-Light.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Branding-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Branding-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Branding-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('fonts/Branding-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-weight: 200;
+         font-style: normal;
+}
+
+@font-face {
     font-family: 'Branding-Semilight';
     src: url('fonts/Branding-Semilight.eot'); /* IE9 Compat Modes */
     src: url('fonts/Branding-Semilight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -109,7 +120,7 @@ $g_body-background-color:$color-white;
 /* Global Font Faminly */
 $font-bread: 'Branding-Semilight', Helvetica, Arial, sans-serif;
 $font-bold: 'Branding-Semibold', Helvetica, Arial, sans-serif;
-$font-headlines: 'Branding-Thin', Helvetica, Arial, sans-serif;
+$font-headlines: 'Branding-Light', Helvetica, Arial, sans-serif;
 $font-hero: 'Branding-Thin', Helvetica, Arial, sans-serif;
 $font-navigation: 'Branding-Semibold', Helvetica, Arial, sans-serif;
 

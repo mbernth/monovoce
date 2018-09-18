@@ -256,6 +256,15 @@ input[type="search"] {
   font-style: normal; }
 
 @font-face {
+  font-family: 'Branding-Light';
+  src: url("fonts/Branding-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/Branding-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Branding-Light.woff") format("woff"), url("fonts/Branding-Light.ttf") format("truetype"), url("fonts/Branding-Light.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Branding-Semilight';
   src: url("fonts/Branding-Semilight.eot");
   /* IE9 Compat Modes */
@@ -655,7 +664,7 @@ input[type="search"] {
   color: #999da0; }
 
 .headlines span {
-  font-family: "Branding-Thin", Helvetica, Arial, sans-serif; }
+  font-family: "Branding-Light", Helvetica, Arial, sans-serif; }
 
 .two_col {
   display: grid;
@@ -1975,7 +1984,7 @@ ol li {
   counter-increment: li; }
 
 ol li::before {
-  font-family: "Branding-Thin", Helvetica, Arial, sans-serif;
+  font-family: "Branding-Light", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   content: "." counter(li);
@@ -2027,7 +2036,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Branding-Thin", Helvetica, Arial, sans-serif;
+  font-family: "Branding-Light", Helvetica, Arial, sans-serif;
   margin: 0 0 20px 0;
   text-transform: uppercase; }
 
@@ -2746,9 +2755,23 @@ th {
 .gridcontainer {
   padding: 80px 0; }
   .gridcontainer .row_headline {
+    position: relative;
     width: 90%;
     margin: 0 auto;
-    margin: 0 auto 20px; }
+    padding: 10px 0 40px 15px; }
+    .gridcontainer .row_headline::before, .gridcontainer .row_headline::after {
+      position: absolute;
+      content: '';
+      transform: scale3d(1, 1, 1);
+      top: 0;
+      left: 0;
+      background-color: #00395D; }
+    .gridcontainer .row_headline::before {
+      width: 6px;
+      height: 18px; }
+    .gridcontainer .row_headline::after {
+      width: 18px;
+      height: 6px; }
   .gridcontainer .wrap {
     width: 90%;
     margin: 0 auto; }
@@ -2800,8 +2823,12 @@ th {
 .gridcontainer.dark {
   background-color: #101519;
   color: #ccced0; }
+  .gridcontainer.dark h1, .gridcontainer.dark h2, .gridcontainer.dark h3, .gridcontainer.dark h4, .gridcontainer.dark h5, .gridcontainer.dark h6 {
+    color: #ccced0; }
   .gridcontainer.dark .row_headline {
     color: #ccced0; }
+    .gridcontainer.dark .row_headline::before, .gridcontainer.dark .row_headline::after {
+      background-color: #ccced0; }
   .gridcontainer.dark .wrap section.wysiwyg {
     padding: 30px;
     background-color: #1a232a; }
@@ -2814,8 +2841,12 @@ th {
 .gridcontainer.medium {
   background-color: #EF405C;
   color: #fdfeff; }
+  .gridcontainer.medium h1, .gridcontainer.medium h2, .gridcontainer.medium h3, .gridcontainer.medium h4, .gridcontainer.medium h5, .gridcontainer.medium h6 {
+    color: #fdfeff; }
   .gridcontainer.medium .row_headline {
     color: #fdfeff; }
+    .gridcontainer.medium .row_headline::before, .gridcontainer.medium .row_headline::after {
+      background-color: #fdfeff; }
   .gridcontainer.medium .wrap section.wysiwyg {
     padding: 30px;
     background-color: #bf334a; }
@@ -4112,13 +4143,19 @@ p.entry-meta {
   clear: both;
   float: left;
   width: 100%;
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 24px;
   line-height: 2.4rem;
   font-weight: 300;
   background-color: #e6ebef;
   padding: 60px 0 100px; }
+  @media screen and (min-width: 80em) {
+    .footer-widgets {
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 26px;
+      line-height: 2.6rem; } }
 
 .footer-widgets .wrap {
   margin: 0 auto;
@@ -4432,6 +4469,16 @@ p.entry-meta {
 */
 /* # Animations
 ---------------------------------------------------------------------------------------------------- */
+.animated {
+  opacity: 0; }
+
+.animation-row {
+  -webkit-animation: animationRow .3s ease-out both;
+  -moz-animation: animationRow .3s ease-out both;
+  -o-animation: animationRow .3s ease-out both;
+  -ms-animation: animationRow .3s ease-out both;
+  animation: animationRow .3s ease-out both; }
+
 .animation-roll {
   -webkit-animation: roll 1s ease-out both;
   -moz-animation: roll 1s ease-out both;
@@ -4461,11 +4508,11 @@ p.entry-meta {
   animation: moveDown 1s ease-in-out both; }
 
 .animation-fadeIn {
-  -webkit-animation: fadeIn 1s linear both;
-  -moz-animation: fadeIn 1s linear both;
-  -o-animation: fadeIn 1s linear both;
-  -ms-animation: fadeIn 1s linear both;
-  animation: fadeIn 1s linear both; }
+  -webkit-animation: fadeIn 1.5s ease-in-out both;
+  -moz-animation: fadeIn 1.5s ease-in-out both;
+  -o-animation: fadeIn 1.5s ease-in-out both;
+  -ms-animation: fadeIn 1.5s ease-in-out both;
+  animation: fadeIn 1.5s ease-in-out both; }
 
 .animation-fadeOut {
   -webkit-animation: fadeOut 1s ease-in-out both;
@@ -4491,6 +4538,50 @@ p.entry-meta {
 /* ## Keyframes
 ---------------------------------------------------------------------- */
 /* ### Move X and Roll 360 degrees
+--------------------------------------------- */
+/* ### Animate row
+--------------------------------------------- */
+@-webkit-keyframes animationRow {
+  0% {
+    -webkit-transform: translateY(60px) scale(0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0px) scale(0);
+    opacity: 1; } }
+
+@-moz-keyframes animationRow {
+  0% {
+    -moz-transform: translateY(60px);
+    opacity: 0; }
+  100% {
+    -moz-transform: translateY(0px);
+    opacity: 1; } }
+
+@-o-keyframes animationRow {
+  0% {
+    -o-transform: translateY(60px);
+    opacity: 0; }
+  100% {
+    -o-transform: translateY(0px);
+    opacity: 1; } }
+
+@-ms-keyframes animationRow {
+  0% {
+    -ms-transform: translateY(60px);
+    opacity: 0; }
+  100% {
+    -ms-transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes animationRow {
+  0% {
+    transform: translateY(60px) scale(0.85);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 1; } }
+
+/* ### Roll
 --------------------------------------------- */
 @-webkit-keyframes roll {
   0% {
@@ -4864,6 +4955,8 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
   /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
+  .footer-widgets .wrap {
+    max-width: 446px; }
   /* ## Social Icons
 ---------------------------------------------------------------------- */
   /* # Site Footer
@@ -5103,12 +5196,10 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
   /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-  .footer-widgets .wrap {
-    max-width: 800px; }
   @supports (display: grid) {
     .footer-widgets .wrap {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-gap: 30px; } }
   /* ## Social Icons
 ---------------------------------------------------------------------- */
@@ -5982,11 +6073,9 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
   /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-  .footer-widgets .wrap {
-    max-width: 920px; }
   @supports (display: grid) {
     .footer-widgets .wrap {
-      grid-template-columns: repeat(4, 1fr); } }
+      grid-template-columns: repeat(1, 1fr); } }
   /* ## Social Icons
 ---------------------------------------------------------------------- */
   /* # Site Footer
@@ -6774,8 +6863,6 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
   /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-  .footer-widgets .wrap {
-    max-width: 1200px; }
   /* ## Social Icons
 ---------------------------------------------------------------------- */
   /* # Site Footer
@@ -7579,8 +7666,6 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
   /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-  .footer-widgets .wrap {
-    max-width: 1400px; }
   /* ## Social Icons
 ---------------------------------------------------------------------- */
   /* # Site Footer

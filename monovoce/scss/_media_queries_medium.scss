@@ -299,12 +299,9 @@
 
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-.footer-widgets .wrap {
-	max-width: $target-medium+px;
-}
 @supports (display: grid) {
 .footer-widgets .wrap {
-	grid-template-columns:repeat(4, 1fr);
+	grid-template-columns:repeat(1, 1fr);
 }
 }
 /* ## Social Icons
