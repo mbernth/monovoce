@@ -178,8 +178,8 @@ $g_gridcontainer-light:shade($color-white, 10%);
 $g_gridcontainer-light-font-color: $color-black;
 $g_gridcontainer-medium:$color-secondary;
 $g_gridcontainer-medium-font-color: $color-white;
-$g_gridcontainer-dark: tint($color-black, 10%);
-$g_gridcontainer-dark-font-color: tint($color-black, 80%);
+$g_gridcontainer-dark: shade($color-primary, 0%);
+$g_gridcontainer-dark-font-color: $color-white;
 
 /* ## Media Queries
 ---------------------------------------------------------------------- */
@@ -207,7 +207,7 @@ $margin-zero: 0;
 $margin-default: 30;
 $margin-small: 30;
 $margin-medium: 30;
-$margin-large: 30;
+$margin-large: 40;
 $margin-xlarge: 40;
 
 /* Content Sidebar, Sidebar Content

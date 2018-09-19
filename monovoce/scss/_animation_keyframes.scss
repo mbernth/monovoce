@@ -5,11 +5,11 @@
 	opacity: 0;
 }
 .animation-row{
-	-webkit-animation: animationRow .3s ease-out both;
-	-moz-animation: animationRow .3s ease-out both;
-	-o-animation: animationRow .3s ease-out both;
-	-ms-animation: animationRow .3s ease-out both;
-	animation: animationRow .3s ease-out both;
+	-webkit-animation: animationRow .3s .3s ease-out both;
+	-moz-animation: animationRow .3s .3s ease-out both;
+	-o-animation: animationRow .3s .3s ease-out both;
+	-ms-animation: animationRow .3s .3s ease-out both;
+	animation: animationRow .3s .3s ease-out both;
 }
 .animation-roll{
 	-webkit-animation: roll 1s ease-out both;

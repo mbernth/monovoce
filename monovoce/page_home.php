@@ -55,6 +55,9 @@ function mono_hero_element() {
 					endif;
 				echo '</h1>';
 			echo '</div>';
+
+			echo '<div class="bounce"><svg class="icon-arrow-down7"><use xlink:href="#icon-arrow-down7"></use></svg></div>';
+
 		echo '</div>';
 	else:
 	endif;

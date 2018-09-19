@@ -746,6 +746,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/monovoce\/js\/min\/fade-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/monovoce\/js\/min\/min\/fade-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/monovoce\/js\/min\/global-min.js": {
 		"ft": 64,
 		"ma": 0,

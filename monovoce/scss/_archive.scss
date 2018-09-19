@@ -2,6 +2,10 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .archive.full-width-content{
+    .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
+    .gridcontainer.title-element{
+        background-color: shade($color-primary, 40%);
+    }
     .content{
         display: grid;
         grid-template-columns: 1fr;
@@ -14,5 +18,12 @@
                 position: absolute;
             }
         }
+    }
+}
+
+.work-single{
+    .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
+    .gridcontainer.title-element{
+        background-color: shade($color-primary, 40%);
     }
 }

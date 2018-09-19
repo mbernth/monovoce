@@ -18,7 +18,8 @@
 }
 
 .footer-widgets a {
-	color: $color-white;
+	color: $color-primary;
+	text-decoration: none;
 	&:hover{
 		text-decoration: none;
 	}
@@ -29,12 +30,12 @@
 }
 
 .footer-widgets a.button {
-	color: $color-white;
+	color: $color-primary;
 	text-decoration:none;
 }
 .footer-widgets a:hover,
 .footer-widgets a:focus {
-	color: $color-white;
+	color: $color-primary;
 	text-decoration:none;
 }
 

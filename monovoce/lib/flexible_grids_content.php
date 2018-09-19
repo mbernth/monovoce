@@ -124,28 +124,39 @@ function mono_flexible_grids() {
 									$post_objects = get_sub_field( 'work' );
 									$work_image = get_sub_field( 'work_image' );
 
-									if ( $work_image ) {
-										echo '<img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " />';
-									}
-
 									if ( $post_objects ) :
-										$post = $post_objects;
-										setup_postdata( $post );
-											echo '<h2><a href="'.$post->guid.'">'.$post->post_title.'</a></h2>';
-										wp_reset_postdata();
-									endif;
-
-        							$terms = get_the_terms( $post->ID , 'work_category' );
-
-									if ($terms) :
-										echo '<ul>';
-										foreach ( $terms as $term ) {
-											$term_link = get_term_link( $term, 'work_category' );
-											if( is_wp_error( $term_link ) )
-                								continue;
-												echo '<li>'.$term->name.'</li>';
+									$post = $post_objects;
+									setup_postdata( $post );
+									
+									echo '<a href="'.$post->guid.'"><span>';
+									echo '<div class="featured_widget_thumb">';
+										if ( $work_image ) {
+											//echo '<a href="'.$post->guid.'"><img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " /></a>';
+											echo '<img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " />';
 										}
-										echo '</li>';
+
+										echo '<div class="featured_widget_preview">';
+
+											//echo '<h2><a href="'.$post->guid.'">'.$post->post_title.'</a></h2>';
+											echo '<h2>'.$post->post_title.'</h2>';
+
+        									$terms = get_the_terms( $post->ID , 'work_category' );
+											if ($terms) :
+											echo '<ul>';
+											foreach ( $terms as $term ) {
+												$term_link = get_term_link( $term, 'work_category' );
+												if( is_wp_error( $term_link ) )
+                									continue;
+													echo '<li>'.$term->name.'</li>';
+											}
+											echo '</li>';
+											endif;
+
+										echo '</div>'; // Preview section end
+
+									echo '</div>'; // Thumb section end
+									echo '</span></a>';
+									wp_reset_postdata();
 									endif;
 
 								echo '</section>';
