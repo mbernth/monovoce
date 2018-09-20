@@ -77,45 +77,6 @@
 
 /* ## Buttons
 ---------------------------------------------------------------------- */
-/*
-.site-inner .gridcontainer .button{
-	margin-top:70px;
-}
-
-.gridcontainer a.button,
-.entry-content a.button {
-	display:block;
-	position:relative;
-	clear:both;
-	float:none;
-	margin:0 auto;
-	@include font-values($g_font-button);
-	text-align:center;
-	text-decoration: none;
-	background-color: $g_font-button-background-color;
-	@include corners($radius);
-	border: 0;
-	padding: 15px 24px;
-	max-width:270px;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition:    all .2s ease-in-out;
-	-ms-transition:     all .2s ease-in-out;
-	-o-transition:      all .2s ease-in-out;
-	transition:         all .2s ease-in-out;
-}
-.gridcontainer a.button:hover,
-.entry-content a.button:hover {
-	background-color: $g_font-button-background-color-hover;
-	box-shadow: $g_font-button-box-shadow-hover;
-}
-.gridcontainer section a.button{
-	max-width: 200px;
-}
-*/
-// .gridcontainer.black .button{}
-// .gridcontainer.black .button:hover{}
-// .gridcontainer.grey .button{}
-// .gridcontainer.grey .button:hover{}
 
 
 /* ## Entry Meta

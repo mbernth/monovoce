@@ -5,7 +5,7 @@
 ---------------------------------------------------------------------- */
 $breakpoints: (
     xsmall: 37.5em,     // 600 pixel
-    small : 55.625em,   // 890 pixel 
+    small : 48em,   // 890 pixel 
     medium: 64em,       // 1024 pixel
     large : 80em,       // 1280 pixel
     xlarge: 93.75em     // 1500 pixel
@@ -175,9 +175,9 @@ $g_font-archive-title: (
 /* Entry title */
 $g_font-entry-title: (
     null   : (3.2, 3.2, 300, $color-primary),
-    xsmall : (3.2, 3.2),
-    small  : (3.2, 3.2),
-    medium : (3.4, 3.4),
+    xsmall : (3.6, 3.6),
+    small  : (3.8, 3.8),
+    medium : (4.4, 4.4),
     large  : (5.6, 5.6),
     xlarge : (5.8, 5.8)
 );
