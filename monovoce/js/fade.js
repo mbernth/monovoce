@@ -28,16 +28,33 @@
     
 })(jQuery);
 
-$( '.content .gridcontainer.animate-row .wrap section' ).addClass( 'animated' );
+$( '.content .gridcontainer.animate-head .row_headline' ).addClass( 'animated-head' );
+$( '.content .gridcontainer.animate-row .wrap' ).addClass( 'animated-row' );
+$( '.content .gridcontainer.animate-coll .wrap section' ).addClass( 'animated-coll' );
+
 
 $(window).scroll(function(event) {
   
-  $(".content .gridcontainer.animate-row .wrap section").each(function(i, el) {
+  $(".content .gridcontainer.animate-coll .wrap section").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("animation-coll"); 
+    // } else {
+    //  el.removeClass("animation-fadeIn");
+    }
+  });
+
+  $(".content .gridcontainer.animate-row .wrap").each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
       el.addClass("animation-row"); 
-    // } else {
-    //  el.removeClass("animation-fadeIn");
+    }
+  });
+
+  $(".content .gridcontainer.animate-head .row_headline").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("animation-head"); 
     }
   });
   

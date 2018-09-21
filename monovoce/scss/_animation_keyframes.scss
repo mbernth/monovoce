@@ -1,16 +1,7 @@
 
 /* # Animations
 ---------------------------------------------------------------------------------------------------- */
-.animated{
-	opacity: 0;
-}
-.animation-row{
-	-webkit-animation: animationRow .3s .3s ease-out both;
-	-moz-animation: animationRow .3s .3s ease-out both;
-	-o-animation: animationRow .3s .3s ease-out both;
-	-ms-animation: animationRow .3s .3s ease-out both;
-	animation: animationRow .3s .3s ease-out both;
-}
+
 .animation-roll{
 	-webkit-animation: roll 1s ease-out both;
 	-moz-animation: roll 1s ease-out both;
@@ -68,31 +59,116 @@
 	animation: scaleUp 1s ease-in-out both;
 }
 
+/* ## Flexible grid animations
+---------------------------------------------------------------------- */
+
+.animated-head{
+	span{
+		-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+		clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+	}
+}
+.animation-head{
+	span{
+		-webkit-animation: animationHead .2s .3s ease-out both;
+		-moz-animation: animationHead .2s .3s ease-out both;
+		-o-animation: animationHead .2s .3s ease-out both;
+		-ms-animation: animationHead .2s .3s ease-out both;
+		animation: animationHead .2s .3s ease-out both;
+	}
+}
+
+.animated-row{
+	-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+	clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.animation-row{
+	-webkit-animation: animationRow .3s .3s ease-out both;
+	-moz-animation: animationRow .3s .3s ease-out both;
+	-o-animation: animationRow .3s .3s ease-out both;
+	-ms-animation: animationRow .3s .3s ease-out both;
+	animation: animationRow .3s .3s ease-out both;
+}
+
+.animated-coll{
+	opacity: 0;
+}
+.animation-coll{
+	-webkit-animation: animationColl .3s .3s ease-out both;
+	-moz-animation: animationColl .3s .3s ease-out both;
+	-o-animation: animationColl .3s .3s ease-out both;
+	-ms-animation: animationColl .3s .3s ease-out both;
+	animation: animationColl .3s .3s ease-out both;
+}
+
 /* ## Keyframes
 ---------------------------------------------------------------------- */
 
-/* ### Move X and Roll 360 degrees
+/* ### Animate head
 --------------------------------------------- */
+@-webkit-keyframes animationHead{
+	0% {-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
+}
+@-moz-keyframes animationHead{
+	0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
+}
+@-o-keyframes animationHead{
+	0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
+}
+@-ms-keyframes animationHead{
+	0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
+}
+@keyframes animationHead{
+	0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
+}
 
 /* ### Animate row
 --------------------------------------------- */
 @-webkit-keyframes animationRow{
+	0% {-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
+}
+@-moz-keyframes animationRow{
+	0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
+}
+@-o-keyframes animationRow{
+	0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
+}
+@-ms-keyframes animationRow{
+	0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
+}
+@keyframes animationRow{
+	0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
+}
+
+/* ### Animate coll
+--------------------------------------------- */
+@-webkit-keyframes animationColl{
 	0% {-webkit-transform: translateY(60px) scale(0); opacity: 0;}
 	100% {-webkit-transform: translateY(0px) scale(0); opacity: 1;}
 }
-@-moz-keyframes animationRow{
+@-moz-keyframes animationColl{
 	0% {-moz-transform: translateY(60px); opacity: 0;}
 	100% {-moz-transform: translateY(0px); opacity: 1;}
 }
-@-o-keyframes animationRow{
+@-o-keyframes animationColl{
 	0% {-o-transform: translateY(60px); opacity: 0;}
 	100% {-o-transform: translateY(0px); opacity: 1;}
 }
-@-ms-keyframes animationRow{
+@-ms-keyframes animationColl{
 	0% {-ms-transform: translateY(60px); opacity: 0;}
 	100% {-ms-transform: translateY(0px); opacity: 1;}
 }
-@keyframes animationRow{
+@keyframes animationColl{
 	0% {transform: translateY(60px) scale(.85); opacity: 0;}
 	100% {transform: translateY(0px) scale(1); opacity: 1;}
 }

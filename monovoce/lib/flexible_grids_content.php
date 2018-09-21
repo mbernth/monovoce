@@ -38,7 +38,9 @@ function mono_flexible_grids() {
 						the_sub_field('background_colour');
 						echo ' coll' . $coll . '';
 					if ($animate_row){
-						echo ' animate-row ';
+						foreach ( $animate_row as $animate_row_item ):
+							echo ' '. $animate_row_item.' ';
+					   endforeach;
 					}
 					if (get_sub_field('row_id')){
 						echo '" id="';
@@ -47,7 +49,7 @@ function mono_flexible_grids() {
 				echo '" >';
 				// Add row headline
 				if ($headline){
-					echo '<h1 class="row_headline">' . $headline . '</h1>';
+					echo '<h1 class="row_headline"><span>' . $headline . '</span></h1>';
 				}
 				
 				
@@ -66,7 +68,7 @@ function mono_flexible_grids() {
 									
 									if( ($selected == 'non dark' || $selected == 'non medium' || $selected == 'non light' || $selected == 'non')){
 										if($headline){
-										echo '<h1 class="entry-title">' . $headline . '</h1>';
+										echo '<h1 class="entry-title"><span>' . $headline . '</span></h1>';
 										}
 									}
 									
