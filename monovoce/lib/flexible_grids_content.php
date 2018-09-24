@@ -49,7 +49,7 @@ function mono_flexible_grids() {
 				echo '" >';
 				// Add row headline
 				if ($headline){
-					echo '<h1 class="row_headline"><span>' . $headline . '</span></h1>';
+					echo '<h2 class="row_headline"><span>' . $headline . '</span></h2>';
 				}
 				
 				
@@ -68,7 +68,7 @@ function mono_flexible_grids() {
 									
 									if( ($selected == 'non dark' || $selected == 'non medium' || $selected == 'non light' || $selected == 'non')){
 										if($headline){
-										echo '<h1 class="entry-title"><span>' . $headline . '</span></h1>';
+										echo '<h2 class="entry-title"><span>' . $headline . '</span></h2>';
 										}
 									}
 									
@@ -140,7 +140,7 @@ function mono_flexible_grids() {
 										echo '<div class="featured_widget_preview">';
 
 											//echo '<h2><a href="'.$post->guid.'">'.$post->post_title.'</a></h2>';
-											echo '<h2>'.$post->post_title.'</h2>';
+											echo '<h3>'.$post->post_title.'</h3>';
 
         									$terms = get_the_terms( $post->ID , 'work_category' );
 											if ($terms) :

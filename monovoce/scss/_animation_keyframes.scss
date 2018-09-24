@@ -123,6 +123,8 @@
 	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
 }
 @keyframes animationHead{
+	0% {-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
 	0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
 	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
 }
@@ -146,6 +148,8 @@
 	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
 }
 @keyframes animationRow{
+	0% {-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
+	100% {-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
 	0% {clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);}
 	100% {clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);}
 }

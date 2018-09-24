@@ -35,7 +35,7 @@
 }
 
 .gridcontainer .row_headline {
-	@include font-values($g_font-entry-title);
+	@include font-values($g_font-row-headline-title);
 }
 
 .gridcontainer{

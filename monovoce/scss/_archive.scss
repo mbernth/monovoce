@@ -1,6 +1,8 @@
 /* ## Archive
 ---------------------------------------------------------------------------------------------------- */
 
+/* ## Work Archive Elements
+---------------------------------------------------------------------- */
 .archive.full-width-content{
     .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
     .gridcontainer.title-element{
@@ -21,9 +23,172 @@
     }
 }
 
+/* ## Work Single Elements
+---------------------------------------------------------------------- */
+
 .work-single{
     .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
     .gridcontainer.title-element{
         background-color: shade($color-primary, 40%);
     }
+}
+.work-info{
+    position: relative;
+    margin-left: 20px;
+    &::after{
+        position: absolute;
+        content: '';
+        transform: scale3d(1, 1, 1);
+        top: 0px;
+        left: -20px;
+        background-color: $color-primary;
+        width: 6px;
+        height: 100%;
+    }
+    p:last-child{
+        margin-bottom: 0;
+    }
+}
+.work-info,
+.work-data{
+    h4{
+        @include font-values($g_font-h5);
+        font-family: $font-bold;
+        margin-bottom: 0;
+    }
+    ul{
+        position: relative;
+        margin: 0;
+        li{
+            list-style: none;
+            margin: 0;
+            a{
+                color: $color-primary;
+                text-decoration: none;
+                -webkit-transition: all 0.2s ease-in-out;
+	            -moz-transition:    all 0.2s ease-in-out;
+	            -ms-transition:     all 0.2s ease-in-out;
+	            -o-transition:      all 0.2s ease-in-out;
+	            transition:         all 0.2s ease-in-out;
+                &:hover{
+                    letter-spacing: .05em;
+                }
+            }
+        }
+    }
+}
+.work-data-website,
+.work-data-list{
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: $margin-default+px;
+    a{
+        color: $color-primary;
+        text-decoration: none;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition:    all 0.2s ease-in-out;
+        -ms-transition:     all 0.2s ease-in-out;
+        -o-transition:      all 0.2s ease-in-out;
+        transition:         all 0.2s ease-in-out;
+        &:hover{
+            letter-spacing: .05em;
+        }
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        transform: scale3d(1, 1, 1);
+        top: 0px;
+        left: -20px;
+        background-color: $color-primary;
+        width: 6px;
+        height: 100%;
+    }
+}
+
+.animated-work{
+    .work-info{
+        section{
+            position: relative;
+            h4,h5,p,a,ul{
+                position: relative;
+                z-index: 100;
+                -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+		        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            }
+            &::after{
+                position: absolute;
+                display: block;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: tint($color-primary, 95%);
+                z-index: 50;
+            }
+        }
+    }
+    .work-data{
+        section{
+            position: relative;
+            h4,a,ul{
+                position: relative;
+                display: block;
+                z-index: 100;
+                &::after{
+                    position: absolute;
+                    display: block;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: tint($color-primary, 95%);
+                    z-index: 50;
+                }
+            }
+        }
+    }
+}
+
+.work-info{
+    .animation-work{
+        overflow: hidden;
+        h4,h5,p,a,ul{
+            /*
+            -webkit-animation: animationHead .3s .3s ease-out both;
+            -moz-animation: animationHead .3s .3s ease-out both;
+            -o-animation: animationHead .3s .3s ease-out both;
+            -ms-animation: animationHead .3s .3s ease-out both;
+            */
+            animation: animationHead .6s .4s ease-out both;
+        }
+        &::after{
+            /*
+            -webkit-animation: animationBack .3s ease-out both;
+            -moz-animation: animationBack .3s .3s ease-out both;
+            -o-animation: animationBack .3s .3s ease-out both;
+            -ms-animation: animationBack .3s .3s ease-out both;
+            */
+            animation: animationBack .6s ease-out both;
+        }
+    }
+}
+
+.work-data{
+    .animation-work{
+        h4,a,ul{
+            overflow: hidden;
+            animation: animationHead .6s .4s ease-out both;
+            &::after{
+                animation: animationBack .6s ease-out both;
+            }
+        }
+    }
+}
+
+@keyframes animationBack{
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(100%);}
 }

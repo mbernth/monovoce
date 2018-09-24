@@ -25,33 +25,41 @@ function single_work_post_featured_image() {
         $project_link = get_field('project_link');
         $brief = get_field('brief');
 
-        echo '<article class="gridcontainer">';
+        echo '<section class="gridcontainer work-grid">';
             echo '<div class="wrap">';
 
-                echo '<section class="work-info">';
-                    echo '<h3>Client</h3><h4>'.$client_name.'</h4>';
+                echo '<article class="work-info">';
+                    echo '<section class="work-client">';
+                        echo '<h4>Client</h4><h5>'.$client_name.'</h5>';
+                    echo '</section>';
                     if($brief){
-                        echo '<h3>Brief</h3>'.$brief.'';
+                    echo '<section class="work-brief">';
+                        echo '<h4>Brief</h4>'.$brief.'';
+                    echo '</section>';
                     }
-                echo '</section>';
+                echo '</article>';
                 echo '<aside class="work-data">';
                     if ($project_link){
-                        echo '<h3>Visit the website</h3>';
-                        echo '<a href="'.$project_link.'" target="_blank">'.$project_link.'</a>';
+                        echo '<section class="work-data-website">';
+                            echo '<h4>Visit the website</h4>';
+                            echo '<a href="'.$project_link.'" target="_blank">'.$project_link.'</a>';
+                        echo '</section>';
                     }
-                    echo '<h3>What we did</h3>';
-                    echo '<ul class="work-list">';
-			        foreach ( $terms as $term ) {
-				        $term_link = get_term_link( $term, 'work_category' );
-				        if( is_wp_error( $term_link ) )
-                        continue;
-				        echo '<li><a href="' . $term_link . '">'.$term->name.'</a></li>';
-                    }
-                    echo '</ul>';
+                    echo '<section class="work-data-list">';
+                        echo '<h4>What we did</h4>';
+                        echo '<ul class="work-list">';
+		    	        foreach ( $terms as $term ) {
+			    	        $term_link = get_term_link( $term, 'work_category' );
+				            if( is_wp_error( $term_link ) )
+                            continue;
+				            echo '<li><a href="' . $term_link . '">'.$term->name.'</a></li>';
+                        }
+                        echo '</ul>';
+                    echo '</section>';
                 echo '</aside>';
             
             echo '</div>';
-        echo '</article>';
+        echo '</section>';
     endif;
 }
 

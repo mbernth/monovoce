@@ -19,7 +19,7 @@ $breakpoints: (
 
 /* Default body text */
 $g_font-bread: (
-    null   : (1.6, 2.4, 300, $color-primary),
+    null   : (1.6, 2.6, 300, $color-primary),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
@@ -29,52 +29,52 @@ $g_font-bread: (
 
 /* Headlines */
 $g_font-h1: (
-    null   : (3.2, 3.2, 300, $color-primary),
-    // xsmall : (3.2, 3.2),
-    // small  : (3.2, 2.2),
-    // medium : (3.2, 3.2),
-    // large  : (3.2, 3.2),
-    xlarge : (7.6, 7.6)
-);
-$g_font-h2: (
-    null   : (2.8, 2.8, 300, $color-primary),
-    // xsmall : (2.8, 2.8),
-    // small  : (2.8, 2.8),
-    // medium : (2.8, 2.8),
-    // large  : (2.8, 2.8),
+    null   : (4.8, 4.8, 300, $color-primary),
+    // xsmall : (4.8, 4.8),
+    // small  : (4.8, 4.8),
+    // medium : (4.8, 4.8),
+    large  : (5.4, 5.4),
     xlarge : (6.1, 6.1)
 );
-$g_font-h3: (
-    null   : (2.6, 2.6, 300, $color-primary),
-    // xsmall : (2.6, 2.6),
-    // small  : (2.6, 2.6),
-    // medium : (2.6, 2.6),
-    // large  : (2.6, 2.6),
+$g_font-h2: (
+    null   : (3.9, 3.9, 300, $color-primary),
+    // xsmall : (3.9, 3.9),
+    // small  : (3.9, 3.9),
+    // medium : (3.9, 3.9),
+    large  : (4.3, 4.3),
     xlarge : (4.8, 4.8)
 );
-$g_font-h4: (
-    null   : (2.4, 2.4, 300, $color-primary),
-    // xsmall : (2.4, 2.4),
-    // small  : (2.4, 2.4),
-    // medium : (2.4, 2.4),
-    // large  : (2.4, 2.4),
+$g_font-h3: (
+    null   : (3.1, 3.1, 300, $color-primary),
+    // xsmall : (3.1, 3.1),
+    // small  : (3.1, 3.1),
+    // medium : (3.1, 3.1),
+    large  : (3.5, 3.5),
     xlarge : (3.9, 3.9)
 );
-$g_font-h5: (
-    null   : (2.2, 2.2, 300, $color-primary),
-    // xsmall : (2.2, 2.2),
-    // small  : (2.2, 2.2),
-    // medium : (2.2, 2.2),
-    // large  : (2.2, 2.2),
+$g_font-h4: (
+    null   : (2.5, 2.5, 300, $color-primary),
+    // xsmall : (2.5, 2.5),
+    // small  : (2.5, 2.5),
+    // medium : (2.5, 2.5),
+    large  : (2.8, 2.8),
     xlarge : (3.1, 3.1)
 );
-$g_font-h6: (
+$g_font-h5: (
     null   : (2, 2, 300, $color-primary),
     // xsmall : (2, 2),
     // small  : (2, 2),
     // medium : (2, 2),
-    // large  : (2, 2),
+    large  : (2.2, 2.2),
     xlarge : (2.5, 2.5)
+);
+$g_font-h6: (
+    null   : (1.6, 1.6, 300, $color-primary),
+    // xsmall : (1.6, 2.6),
+    // small  : (1.6, 2.6),
+    // medium : (1.6, 2.6),
+    large  : (1.8, 2.9),
+    xlarge : (2, 3.2)
 );
 
 /* Blockqoute */
@@ -92,40 +92,40 @@ $g_font-blockquote: (
 
 /* Input */
 $g_font-input: (
-    null   : (1.6, 2.4, 300, $color-primary),
+    null   : (1.6, 2.6, 300, $color-primary),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
-    // large  : (1.6, 2.6),
-    // xlarge : (1.8, 2.9)
+    large  : (1.8, 2.9),
+    xlarge : (2, 3.2)
 );
 
 /* Placeholder */
 $g_font-placeholder: (
-    null   : (1.6, 2.4, 300, tint($color-primary, 60%)),
+    null   : (1.6, 2.6, 300, tint($color-primary, 60%)),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
-    // large  : (1.6, 2.6),
-    // xlarge : (1.8, 2.9)
+    large  : (1.8, 2.9),
+    xlarge : (2, 3.2)
 );
 
 /* Label */
 $g_font-label: (
-    null   : (1.4, 2.2, 500, $color-primary),
+    null   : (1.4, 2.3, 500, $color-primary),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
-    // large  : (1.4, 2.3),
-    // xlarge : (1.4, 2.3)
+    large  : (1.6, 2.6),
+    xlarge : (1.8, 2.9)
 );
 $g_font-label-sub: (
     null   : (1.2, 2.0, 400, tint($color-primary, 60%)),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
-    // large  : (1.4, 2.3),
-    // xlarge : (1.4, 2.3)
+    large  : (1.4, 2.3),
+    xlarge : (1.6, 2.6)
 );
 
 /* Button */
@@ -143,22 +143,22 @@ $g_font-button: (
 
 /* Breadcrumbs */
 $g_font-breadcrumb: (
-    null   : (1.4, 2.2, 300, $color-primary),
+    null   : (1.4, 2.3, 300, $color-primary),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
-    // large  : (1.4, 2.3),
-    // xlarge : (1.4, 2.3)
+    large  : (1.6, 2.6),
+    xlarge : (1.8, 2.9)
 );
 
 /* Author */
 $g_font-author: (
-    null   : (1.6, 2.4, 300, $color-primary),
+    null   : (1.6, 2.6, 300, $color-primary),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
-    // large  : (1.6, 2.6),
-    // xlarge : (1.8, 2.9)
+    large  : (1.6, 2.6),
+    xlarge : (1.8, 2.9)
 );
 
 /* Titles
@@ -167,43 +167,55 @@ $g_font-author: (
 /* Archive title */
 // Based on H2
 $g_font-archive-title: (
-    null   : (3.2, 3.2, 300, $color-primary),
-    xsmall : (3.2, 3.2),
-    small  : (3.2, 3.2),
-    medium : (3.4, 3.4),
-    large  : (3.8, 3.8),
-    xlarge : (5.2, 5.2)
+    null   : (3.9, 3.9, 300, $color-primary),
+    // xsmall : (3.9, 3.9),
+    // small  : (3.9, 3.9),
+    // medium : (3.9, 3.9),
+    large  : (4.3, 4.3),
+    xlarge : (4.8, 4.8)
 );
 
 /* Entry title */
-// Based on H2
+// Based on H1
 $g_font-entry-title: (
-    null   : (3.2, 3.2, 300, $color-primary),
-    xsmall : (3.6, 3.6),
-    small  : (3.8, 3.8),
-    medium : (4.4, 4.4),
-    large  : (5.6, 5.6),
+    null   : (4.8, 4.8, 300, $color-primary),
+    // xsmall : (4.8, 4.8),
+    // small  : (4.8, 4.8),
+    // medium : (4.8, 4.8),
+    large  : (5.4, 5.4),
     xlarge : (6.1, 6.1)
 );
 
+/* Row headline */
+// Based on H2
+$g_font-row-headline-title: (
+    null   : (3.9, 3.9, 300, $color-primary),
+    // xsmall : (3.9, 3.9),
+    // small  : (3.9, 3.9),
+    // medium : (3.9, 3.9),
+    large  : (4.3, 4.3),
+    xlarge : (4.8, 4.8)
+);
+
 /* Widget title */
+// Based on H2
 $g_font-widget-title: (
-    null   : (3.2, 3.2, 300, $color-secondary),
-    xsmall : (3.2, 3.2),
-    small  : (3.2, 3.2),
-    medium : (3.4, 3.4),
-    large  : (5.6, 5.6),
-    xlarge : (5.8, 5.8)
+    null   : (3.9, 3.9, 300, $color-secondary),
+    // xsmall : (3.9, 3.9),
+    // small  : (3.9, 3.9),
+    // medium : (3.9, 3.9),
+    large  : (4.3, 4.3),
+    xlarge : (4.8, 4.8)
 );
 
 /* Captions */
 $g_font-caption: (
-    null   : (1.4, 2.2, 300),
+    null   : (1.4, 2.3, 300),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
-    // large  : (1.4, 2.3),
-    // xlarge : (1.4, 2.3)
+    large  : (1.6, 2.6),
+    xlarge : (1.8, 2.9)
 );
 
 /* Global Title Area values */
@@ -232,13 +244,13 @@ $g_font-nav: (
     // xsmall : (1.2, 1.2),
     // small  : (1.2, 1.2),
     // medium : (1.2, 1.2),
-    large  : (1.4, 1.4),
+    // large  : (1.4, 1.4),
     // xlarge : (1.2, 1.2)
 );
 
 /* Global Entry Meta values */
 $g_font-meta: (
-    null   : (1.4, 2.2, 300),
+    null   : (1.4, 2.3, 300),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
@@ -248,7 +260,7 @@ $g_font-meta: (
 
 /* Global Pagination values */
 $g_font-pagination: (
-    null   : (1.6, 2.4, 300),
+    null   : (1.6, 2.6, 300),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
@@ -258,30 +270,30 @@ $g_font-pagination: (
 
 /* Global Comments values */
 $g_font-logged-in: (
-    null   : (1.4, 2.2, 300),
+    null   : (1.4, 2.3, 300),
     // xsmall : (1.4, 2.3),
     // small  : (1.4, 2.3),
     // medium : (1.4, 2.3),
-    // large  : (1.4, 2.3),
-    // xlarge : (1.4, 2.3)
+    large  : (1.6, 2.6),
+    xlarge : (1.8, 2.9)
 );
 $g_font-comment-header: (
-    null   : (1.6, 2.4, 300),
+    null   : (1.6, 2.6, 300),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
-    // large  : (1.6, 2.6),
-    // xlarge : (1.8, 2.9)
+    large  : (1.8, 2.9),
+    xlarge : (2, 3.2)
 );
 
 /* Global Footer Widgets values */
 $g_font-footer-widgets: (
-    null   : (1.6, 2.4, 300),
-    // xsmall : (1.4, 2.3),
-    // small  : (1.4, 2.3),
-    // medium : (1.4, 2.3),
-    large  : (1.8, 2.6),
-    // xlarge : (1.4, 2.3)
+    null   : (1.6, 2.6, 300),
+    // xsmall : (1.6, 2.6),
+    // small  : (1.6, 2.6),
+    // medium : (1.6, 2.6),
+    large  : (1.8, 2.9),
+    xlarge : (2, 3.2)
 );
 
 /* Global Site Footer values */

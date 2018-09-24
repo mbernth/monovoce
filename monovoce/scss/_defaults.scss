@@ -467,6 +467,50 @@ input[type="submit"]
 	}
 }
 
+.footer-widgets input[type="text"],
+.footer-widgets input[type="email"],
+.footer-widgets input[type="number"] {
+	border: none;
+	background-color: tint($color-primary, 80%);
+	&:focus{
+		background-color: tint($color-primary, 95%);
+	}
+}
+
+.gform_footer{
+	display: flex;
+	justify-content: center;
+	input[type="submit"]{
+		color:$g_font-button-primary-color;
+		background-color: $g_font-button-primary-background-color;
+		&:hover,
+		&:focus{
+			color:$g_font-button-primary-color-hover;
+			background-color: $g_font-button-primary-background-color-hover;
+			box-shadow: $g_font-button-primary-box-shadow-hover;
+		}
+	}
+}
+
+.gfield_required{
+	color: $color-accent-three;
+}
+.gfield_error{
+	input[type="text"],
+	input[type="email"],
+	input[type="number"]{
+		border: 2px solid tint($color-accent-three, 60%);
+		background-color: tint($color-accent-three, 90%);
+	}
+}
+.validation_message{
+	background-color: $color-accent-three;
+	color: $color-white;
+	margin-top: 5px;
+	padding: 10px 15px;
+	animation: fadeIn 0.3s ease-in-out both;
+}
+
 /* ### Forms Colored Rows
 --------------------------------------------- */
 .light {

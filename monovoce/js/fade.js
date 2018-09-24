@@ -32,6 +32,10 @@ $( '.content .gridcontainer.animate-head .row_headline' ).addClass( 'animated-he
 $( '.content .gridcontainer.animate-row .wrap' ).addClass( 'animated-row' );
 $( '.content .gridcontainer.animate-coll .wrap section' ).addClass( 'animated-coll' );
 
+$( '.content .gridcontainer.work-grid' ).addClass( 'animated-work' );
+$( '.content .gridcontainer.work-grid  .work-info section' ).addClass( 'animation-work' );
+$( '.content .gridcontainer.work-grid  .work-data section' ).addClass( 'animation-work' );
+
 
 $(window).scroll(function(event) {
   
@@ -57,5 +61,19 @@ $(window).scroll(function(event) {
       el.addClass("animation-head"); 
     }
   });
+  /*
+  $(".content .gridcontainer.animated-work .work-info section").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("animation-work"); 
+    }
+  });
   
+  $(".content .gridcontainer.animated-work .work-data section").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("animation-work"); 
+    }
+  });
+  */
 });
