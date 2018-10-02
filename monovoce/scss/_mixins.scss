@@ -60,6 +60,49 @@
   }
 }
 
+/* ## Responsive Gridcontainer inside wrap max width
+---------------------------------------------------------------------- */
+@mixin max-width-values($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-g_max_width in $fs-map {
+    @if $fs-breakpoint == null {
+      max-width: $fs-g_max_width;
+    }
+    @else {
+      // If $fs-g_width is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        max-width: $fs-g_max_width;
+      }
+    }
+  }
+}
+
+/* ## Responsive Gridcontainer top and buttom padding
+---------------------------------------------------------------------- */
+@mixin grid-padding-values($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-g_grid_padding in $fs-map {
+    @if $fs-breakpoint == null {
+      padding-top: $fs-g_grid_padding + px;
+      padding-bottom: $fs-g_grid_padding + px;
+    }
+    @else {
+      // If $fs-g_grid_padding is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        padding-top: $fs-g_grid_padding + px;
+        padding-bottom: $fs-g_grid_padding + px;
+      }
+    }
+  }
+}
+
+
 /* ## Border Radius
 ---------------------------------------------------------------------- */
 

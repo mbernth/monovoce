@@ -98,7 +98,7 @@
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
 .gridcontainer{
-	padding: 60px 0;
+	@include grid-padding-values($g_grid_padding-structure);
 	.row_headline{
 		position: relative;
 		width: 90%;
@@ -135,6 +135,32 @@
 		justify-content: center;
 		align-items: center;
 		margin: 40px 0;
+	}
+}
+.gridcontainer{
+	&.coll1{
+		.row_headline,
+		.wrap{
+			@include max-width-values($g_max_width-coll1);
+		}
+	}
+	&.coll2{
+		.row_headline,
+		.wrap{
+			@include max-width-values($g_max_width-coll2);
+		}
+	}
+	&.coll3{
+		.row_headline,
+		.wrap{
+			@include max-width-values($g_max_width-coll3);
+		}
+	}
+	&.coll4{
+		.row_headline,
+		.wrap{
+			@include max-width-values($g_max_width-coll4);
+		}
 	}
 }
 .gridcontainer.non{
@@ -176,12 +202,6 @@
 	.row_headline{
 		color: $g_gridcontainer-light-font-color;
 	}
-	.wrap{
-		section.wysiwyg{
-			padding: $margin-default+px;
-			background-color: shade($g_gridcontainer-light, 20%);
-		}
-	}
 	&.non{
 		.wrap{
 			section.wysiwyg{
@@ -203,12 +223,6 @@
 		&::before,
 		&::after{
 			background-color: $g_gridcontainer-dark-font-color;
-		}
-	}
-	.wrap{
-		section.wysiwyg{
-			padding: $margin-default+px;
-			background-color: $g_gridcontainer-dark;
 		}
 	}
 	&.non{
@@ -235,12 +249,6 @@
 		&::before,
 		&::after{
 			background-color: $g_gridcontainer-medium-font-color;
-		}
-	}
-	.wrap{
-		section.wysiwyg{
-			padding: $margin-default+px;
-			background-color: shade($g_gridcontainer-medium, 20%);
 		}
 	}
 	&.non{

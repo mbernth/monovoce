@@ -135,6 +135,7 @@ function mono_flexible_grids() {
 										if ( $work_image ) {
 											//echo '<a href="'.$post->guid.'"><img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " /></a>';
 											echo '<img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " />';
+											echo '<p>'.$post->post_title.'</p>';
 										}
 
 										echo '<div class="featured_widget_preview">';

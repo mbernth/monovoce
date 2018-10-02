@@ -4,11 +4,11 @@
 /* ## Breakpoints
 ---------------------------------------------------------------------- */
 $breakpoints: (
-    xsmall: 37.5em,     // 600 pixel
-    small : 48em,   // 890 pixel 
-    medium: 64em,       // 1024 pixel
-    large : 80em,       // 1280 pixel
-    xlarge: 93.75em     // 1500 pixel
+    xsmall: $mq-xsmall,     // 600 pixel
+    small : $mq-small,   // 890 pixel 
+    medium: $mq-medium,       // 1024 pixel
+    large : $mq-large,       // 1280 pixel
+    xlarge: $mq-xlarge
 );
 
 /* ## Responsive typography
@@ -304,4 +304,63 @@ $g_font-site-footer: (
     // medium : (1, 1.2),
     // large  : (1, 1.2),
     // xlarge : (1, 1.2)
+);
+
+/* ## Responsive Gridcontainer inside wrap max width
+---------------------------------------------------------------------- */
+
+$g_max_width-coll1: (
+    null   : (90%),
+    xsmall : (480px),
+    small  : (600px),
+    medium : (920px),
+    large  : (860px),
+    xlarge : (860px)
+);
+
+$g_max_width-narrow: (
+    null   : (90%),
+    xsmall : (480px),
+    small  : (600px),
+    medium : (920px),
+    large  : (1200px),
+    xlarge : (860px)
+);
+
+$g_max_width-coll2: (
+    null   : (90%),
+    xsmall : (480px),
+    small  : (600px),
+    medium : (920px),
+    large  : (1200px),
+    xlarge : (1400px)
+);
+
+$g_max_width-coll3: (
+    null   : (90%),
+    xsmall : (480px),
+    small  : (600px),
+    medium : (920px),
+    large  : (1200px),
+    xlarge : (1400px)
+);
+
+$g_max_width-coll4: (
+    null   : (90%),
+    xsmall : (480px),
+    small  : (600px),
+    medium : (920px),
+    large  : (1200px),
+    xlarge : (1400px)
+);
+
+/* ## Responsive Gridcontainer top and buttom padding
+---------------------------------------------------------------------- */
+$g_grid_padding-structure: (
+    null   : (60),
+    xsmall : (60),
+    small  : (60),
+    medium : (60),
+    large  : (120),
+    xlarge : (120)
 );

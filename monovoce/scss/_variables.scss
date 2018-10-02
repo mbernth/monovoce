@@ -120,6 +120,7 @@ $g_body-background-color:$color-white;
 /* Global Font Faminly */
 $font-bread: 'Branding-Semilight', Helvetica, Arial, sans-serif;
 $font-bold: 'Branding-Semibold', Helvetica, Arial, sans-serif;
+$font-black: 'Branding-Black', Helvetica, Arial, sans-serif;
 $font-headlines: 'Branding-Light', Helvetica, Arial, sans-serif;
 $font-hero: 'Branding-Thin', Helvetica, Arial, sans-serif;
 $font-navigation: 'Branding-Semibold', Helvetica, Arial, sans-serif;
@@ -197,10 +198,15 @@ $mq-xlarge: 93.75em; /* 1500 pixel */
 /* Full width content target
 --------------------------------------------- */
 $target-default: 320;
+$target-coll1-default:320;
 $target-small: 800;
+$taget-coll1-small: 800;
 $target-medium: 920;
+$target-coll1-medium: 920;
 $target-large: 1200;
+$target-coll1-large: 980px;
 $target-xlarge: 1400;
+$target-coll1-xlarge: 1080;
 
 /* Margins */
 $margin-zero: 0;
