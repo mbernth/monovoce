@@ -215,12 +215,19 @@
 				}
 				p{
 					position: absolute;
-					font-family: $font-bold;
+					font-family: $font-bread;
+					text-transform: uppercase;
 					letter-spacing: 0.05em;
-					color: $color-white;
+					color: $color-primary;
+					opacity: 0;
 					margin-bottom: 0;
 					top: 20px;
 					left: 30px;
+					-webkit-transition: all 0.2s ease-in-out;
+					-moz-transition:    all 0.2s ease-in-out;
+					-ms-transition:     all 0.2s ease-in-out;
+					-o-transition:      all 0.2s ease-in-out;
+					transition:         all 0.2s ease-in-out;
 					&::before,
 					&::after{
 						position: absolute;
@@ -228,15 +235,15 @@
 						transform: scale3d(1, 1, 1);
 						top: -5px;
 						left: -15px;
-						background-color: $color-white;
+						background-color: $color-primary;
 					}
 					&::before{
-						width: 6px;
+						width: 5px;
 						height: 15px;
 					}
 					&::after{
 						width: 15px;
-						height: 6px;
+						height: 5px;
 					}
 				}
 			}
@@ -262,7 +269,7 @@
 					left: -20px;
 					background-color: $color-primary;
 					width: 6px;
-					height: 32px;
+					height: 64px;
 				}
 			}
 			li{
@@ -276,7 +283,7 @@
 	.home{
 		.gridcontainer{
 			.featured_widget{
-				color: $color-white;
+				color: $color-primary;
 				img{
 					margin-bottom: 0;
 				}
@@ -293,6 +300,9 @@
     						-webkit-transition-duration: .7s;
 							transition-duration: .7s;
 						}
+						p{
+							opacity: 0;
+						}
 					}
 					&::after{
 						position: absolute;
@@ -303,7 +313,7 @@
 						height: 100%;
 						width: 100%;
 						opacity: .95;
-						background-color: shade($color-primary, 20%);
+						background-color: $color-white;
 						-webkit-transition: .7s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
 						transition: .7s transform cubic-bezier(0.23, 1, 0.32, 1);						
 						-webkit-transform:translateX(100%);
@@ -313,6 +323,7 @@
 						top: unset;
 						bottom: 10px;
 						left: 30px;
+						opacity: 1;
 					}
 				}
 				.featured_widget_preview{
@@ -330,10 +341,10 @@
 				}
 				ul{
 					&::after{
-						background-color: $color-white;
+						background-color: $color-primary;
 					}
 					li{
-						color: $color-white;
+						color: $color-primary;
 					}
 				}
 			}
