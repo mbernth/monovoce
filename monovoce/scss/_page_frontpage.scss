@@ -197,7 +197,7 @@
 			img{
 				object-fit: cover;
 				object-position: 50% 50%;
-				margin-bottom: 30px;
+				// margin-bottom: 30px;
 			}
 			a{
 				text-decoration: none;
@@ -279,7 +279,7 @@
 		}
 	}
 }
-@media only screen and (min-width: $mq-large) {
+@media only screen and (min-width: $mq-large) and (hover:hover){
 	.home{
 		.gridcontainer{
 			.featured_widget{

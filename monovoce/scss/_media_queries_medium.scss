@@ -126,6 +126,11 @@
 	.wrap{
 		grid-template-columns:repeat(2, 1fr);
 	}
+	&.featured{
+		.wrap{
+			grid-template-columns: 1fr;
+		}
+	}
 }
 .gridcontainer.coll3{
 	.wrap{
@@ -309,6 +314,24 @@
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
+
+/* # Frontpage Style
+---------------------------------------------------------------------------------------------------- */
+.gridcontainer{
+	.featured_widget{
+		.featured_widget_thumb{
+			// align-items: start;
+		}
+		&:nth-child(2n){
+			.featured_widget_image{
+				// order: 1;
+			}
+			.featured_widget_preview{
+				// order: 2;
+			}
+		}
+	}
+}
 
 /* ## Archive
 ---------------------------------------------------------------------------------------------------- */

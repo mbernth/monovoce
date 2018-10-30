@@ -26,6 +26,7 @@ function mono_flexible_grids() {
 			$rowtext = 	get_sub_field('row_button_clone');
 			$coll = get_sub_field('columns_no');
 			$animate_row = get_sub_field('animate_row');
+			$featured = get_sub_field( 'featured' );
 
         	if( get_row_layout() == 'row_setup' ):
 			
@@ -41,6 +42,9 @@ function mono_flexible_grids() {
 						foreach ( $animate_row as $animate_row_item ):
 							echo ' '. $animate_row_item.' ';
 					   endforeach;
+					}
+					if ($featured){
+						echo ' featured ';
 					}
 					if (get_sub_field('row_id')){
 						echo '" id="';
@@ -133,9 +137,10 @@ function mono_flexible_grids() {
 									echo '<a href="'.$post->guid.'"><span>';
 									echo '<div class="featured_widget_thumb">';
 										if ( $work_image ) {
-											//echo '<a href="'.$post->guid.'"><img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " /></a>';
-											echo '<img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " />';
-											echo '<p>'.$post->post_title.'</p>';
+											echo '<div class="featured_widget_image">';
+												echo '<img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " />';
+												echo '<p>'.$post->post_title.'</p>';
+											echo '</div>';
 										}
 
 										echo '<div class="featured_widget_preview">';
@@ -173,7 +178,6 @@ function mono_flexible_grids() {
 				// Row button field
 				if ($rowtext['button_text']){
 					echo '<div class="row-button-area">';
-						echo '<div class="wrap">';
 						if ($rowtext['page_link']){
 							echo '<a class="button button-primary" href="' . $rowtext['page_link']. '">';
 							}else{
@@ -181,7 +185,6 @@ function mono_flexible_grids() {
 						}
 							echo '' . $rowtext['button_text']. '';
 							echo '</a>';
-						echo '</div>';
 					echo '</div>';
 				}
 				echo '</article>';

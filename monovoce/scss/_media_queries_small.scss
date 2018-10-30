@@ -257,6 +257,36 @@
 			}
 		}
 	}
+	.featured_widget{
+		.featured_widget_thumb{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.featured_widget_image,
+			.featured_widget_preview{
+				width: calc(50% - 15px);
+			}
+		}
+		ul{
+			column-count: 1;
+		}
+		&:nth-child(2n){
+			.featured_widget_image{
+				order: 2;
+			}
+			.featured_widget_preview{
+				order: 1;
+				text-align: right;
+			}
+			ul{
+				padding-right: 20px;
+				&:after{
+					right: 0;
+					left: unset;
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: $mq-small) and (orientation: portrait){
