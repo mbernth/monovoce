@@ -36,8 +36,15 @@
 		flex-direction: column;
 		justify-content: center;
 		background-color: $color-secondary;
+		//background: linear-gradient(-45deg, $color-primary, $color-secondary, $color-secondary, $color-primary);
+		//background-size: 400% 400%;
 		height: 100vh;
 		overflow: hidden;
+		-webkit-animation: hero 24s infinite ease-out both;
+		-moz-animation: hero 24s infinite ease-out both;
+		-o-animation: hero 24s infinite ease-out both;
+		-ms-animation: hero 24s infinite ease-out both;
+		animation: hero 24s infinite ease-out both;
 		.wrap{
 			position: relative;
 			width: 90%;
@@ -155,6 +162,25 @@
 			}
 		}
 	}
+}
+
+/* ### Hero animation
+--------------------------------------------- */
+@keyframes hero2{
+	0% {background-color: $color-secondary;}
+	25% {background-color: $color-primary;}
+	75% {background-color: $color-active;}
+	100% {background-color: $color-secondary}
+}
+@keyframes hero3{
+	0%{background: linear-gradient(145deg, rgba(0, 57, 93, 1) 0%, rgba(239, 64, 92, 1) 0%);}
+	50%{background: linear-gradient(145deg, rgba(0, 57, 93, 1) 0%, rgba(239, 64, 92, 1) 100%);}
+	100%{background: linear-gradient(145deg, rgba(0, 57, 93, 1) 0%, rgba(239, 64, 92, 1) 0%);}
+}
+@keyframes hero4{
+	0%{background-position: 0% 50%;}
+	50%{background-position: 100% 50%;}
+	100%{background-position: 0% 50%}
 }
 
 /* ### Slide with opacity

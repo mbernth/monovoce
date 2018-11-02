@@ -4429,7 +4429,12 @@ p.entry-meta {
   justify-content: center;
   background-color: #EF405C;
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-animation: hero 24s infinite ease-out both;
+  -moz-animation: hero 24s infinite ease-out both;
+  -o-animation: hero 24s infinite ease-out both;
+  -ms-animation: hero 24s infinite ease-out both;
+  animation: hero 24s infinite ease-out both; }
   .gridcontainer.hero .wrap {
     position: relative;
     width: 90%;
@@ -4526,6 +4531,34 @@ p.entry-meta {
     .gridcontainer.hero .wrap .hero-text {
       margin-bottom: 0;
       padding-bottom: 0; } }
+
+/* ### Hero animation
+--------------------------------------------- */
+@keyframes hero2 {
+  0% {
+    background-color: #EF405C; }
+  25% {
+    background-color: #00395D; }
+  75% {
+    background-color: #52b9e9; }
+  100% {
+    background-color: #EF405C; } }
+
+@keyframes hero3 {
+  0% {
+    background: linear-gradient(145deg, #00395d 0%, #ef405c 0%); }
+  50% {
+    background: linear-gradient(145deg, #00395d 0%, #ef405c 100%); }
+  100% {
+    background: linear-gradient(145deg, #00395d 0%, #ef405c 0%); } }
+
+@keyframes hero4 {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 /* ### Slide with opacity
 --------------------------------------------- */
@@ -5733,7 +5766,7 @@ p.entry-meta {
   /* # Hero element
 --------------------------------------------------- */
   .gridcontainer.hero .wrap .hero-text {
-    font-size: 6.5vw;
+    font-size: 9vw;
     padding: 15px 20px;
     padding-bottom: 20vh; }
   .gridcontainer.hero .wrap::before {
@@ -6414,6 +6447,12 @@ p.entry-meta {
 ---------------------------------------------------------------------- */
   /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
+  /* # Frontpage Style
+---------------------------------------------------------------------------------------------------- */
+  /* # Hero element
+--------------------------------------------------- */
+  .gridcontainer.hero .wrap .hero-text {
+    font-size: 7vw; }
   /* # Animations
 ---------------------------------------------------------------------------------------------------- */
   /* ## Keyframes
