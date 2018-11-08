@@ -50,6 +50,43 @@ function rv_cpt_archive_title_description() {
 remove_action ('genesis_loop', 'genesis_do_loop'); // Remove the standard loop
 add_action( 'genesis_loop', 'custom_do_grid_loop' ); // Add custom loop
 function custom_do_grid_loop() {
+	
+	if(have_posts()){
+		echo '<section class="gridcontainer coll1 narrow archive-works">';
+		echo '<div class="wrap">';
+		while(have_posts()) : 
+			the_post();
+			echo '<article>';
+				$img = genesis_get_image( array( 'format' => 'src' ) );
+				if ($img){
+					printf( '<figure><a href="' . get_permalink() . '"><img src="%s" alt="' . get_the_title() . '"></a></figure>', $img );
+				}
+					echo '<div class="work-info">';
+					echo '<header><h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3></header>';
+					echo '<footer class="post-meta-content">';
+						echo '<ul>';
+						$terms = get_the_terms( $works->ID , 'work_category' );
+						foreach ( $terms as $term ) {
+							$term_link = get_term_link( $term );
+							if( is_wp_error( $term_link ) )
+							continue;
+							echo '<li><a href="' . $term_link . '">'.$term->name.'</a></li>';
+						}
+						echo '</ul>';
+					echo '</footer>';
+				echo '</div>';
+			echo '</article>';
+		endwhile;
+		echo '</div>';
+		echo '</section>';
+	}else{
+	}
+
+}
+/*
+remove_action ('genesis_loop', 'genesis_do_loop'); // Remove the standard loop
+add_action( 'genesis_loop', 'custom_do_grid_loop' ); // Add custom loop
+function custom_do_grid_loop() {
 	$args = array(
 		'post_type' => 'work', // enter your custom post type
 		'orderby' => 'title',
@@ -83,6 +120,6 @@ function custom_do_grid_loop() {
 		echo '</article>';
 	endif;
 }
-
+*/
 //* Run the Genesis loop
 genesis();

@@ -20,7 +20,7 @@ function create_works_post_type() {
 
     $args = array(
         'labels' => $labels,
-        'description' => 'Convision Works',
+        'description' => 'mono voce works',
         'public' => true,
         'has_archive' => true,
         'menu_position' => 5,
@@ -50,8 +50,8 @@ function custom_taxonomies_works() {
     );
 
     $args = array(
-        'hierarchical'      => true,
         'labels'            => $labels,
+        'hierarchical'      => true,
         'show_admin_column' => true,
     );
 

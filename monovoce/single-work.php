@@ -74,7 +74,7 @@ function back_link() {
 */
 
 // Post next previous links
-/*
+
 add_action( 'genesis_after_entry', 'ja_prev_next_post_nav', 20 );
 function ja_prev_next_post_nav() {
 	if( is_single() || is_category( array( 'blog') ) ){
@@ -86,10 +86,10 @@ function ja_prev_next_post_nav() {
         echo '</section>';
 	}
 }
-*/
+
 
 // List all works
-/*
+
 add_action( 'genesis_after_entry', 'work_single_do_loop', 25 ); // Add custom loop
 function work_single_do_loop() {
     $args = array(
@@ -107,7 +107,7 @@ function work_single_do_loop() {
         echo '</ul>';
     endif;
 }
-*/
+
 
 
 //* Run the Genesis loop
