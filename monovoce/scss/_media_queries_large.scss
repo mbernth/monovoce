@@ -92,7 +92,7 @@
 		.gridcontainer.coll2{
 			&.featured{
 				.wrap{
-					grid-template-columns:repeat(2, 1fr);
+					grid-template-columns:repeat(1, 1fr);
 				}
 			}
 		}
@@ -194,6 +194,7 @@
 
 /* # Frontpage Style
 ---------------------------------------------------------------------------------------------------- */
+/*
 .gridcontainer{
 	.featured_widget{
 		.featured_widget_thumb{
@@ -231,6 +232,7 @@
 		}
 	}
 }
+*/
 
 
 /* # Animations
