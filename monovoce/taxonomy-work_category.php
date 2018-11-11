@@ -57,17 +57,33 @@ add_action( 'genesis_loop', 'custom_do_grid_loop' ); // Add custom loop
 function custom_do_grid_loop() {
 	
 	if(have_posts()){
-		echo '<section class="gridcontainer coll1 narrow archive-works">';
+		echo '<section class="gridcontainer coll1 archive-works">';
 		echo '<div class="wrap">';
 		while(have_posts()) : 
 			the_post();
-			echo '<article>';
-				$img = genesis_get_image( array( 'format' => 'src' ) );
-				if ($img){
-					printf( '<figure><a href="' . get_permalink() . '"><img src="%s" alt="' . get_the_title() . '"></a></figure>', $img );
-				}
-					echo '<div class="work-info">';
-					echo '<header><h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3></header>';
+
+			echo '<section class="featured_widget">';
+				echo '<div class="featured_widget_thumb">';
+
+					$img = genesis_get_image( array( 'format' => 'src' ) );
+					$work_thumbnail = get_field( 'work_thumbnail' ); 
+					echo '<div class="featured_widget_image">';
+					if ( $work_thumbnail ){
+						echo '<figure><a href="' . get_permalink() . '"><img src="'.$work_thumbnail['url'].'" alt="'.$work_thumbnail['alt'].'" /></a></figure>';
+					}else{
+						echo '<figure><a href="' . get_permalink() . '"><img src="wp-content/themes/monovoce/images/thumb.png" alt="'.$work_thumbnail['alt'].'" /></a></figure>';
+					}
+						/*
+						if ($img){
+							printf( '<figure><a href="' . get_permalink() . '"><img src="%s" alt="' . get_the_title() . '"></a></figure>', $img );
+						}else{
+							printf( '<figure><a href="' . get_permalink() . '"><img src="wp-content/themes/monovoce/images/thumb.png" alt="' . get_the_title() . '"></a></figure>' );
+						}
+						*/
+					echo '</div>';
+
+					echo '<div class="featured_widget_preview">';
+					echo '<header><h2><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2></header>';
 					echo '<footer class="post-meta-content">';
 						echo '<ul>';
 						$terms = get_the_terms( $works->ID , 'work_category' );
@@ -80,7 +96,10 @@ function custom_do_grid_loop() {
 						echo '</ul>';
 					echo '</footer>';
 				echo '</div>';
-			echo '</article>';
+			
+				echo '</div>';
+			echo '</section>';
+
 		endwhile;
 		echo '</div>';
 		echo '</section>';

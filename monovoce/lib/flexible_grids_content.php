@@ -134,19 +134,18 @@ function mono_flexible_grids() {
 									$post = $post_objects;
 									setup_postdata( $post );
 									
-									echo '<a href="'.$post->guid.'"><span>';
+									// echo '<a href="'.$post->guid.'"><span>';
 									echo '<div class="featured_widget_thumb">';
 										if ( $work_image ) {
 											echo '<div class="featured_widget_image">';
-												echo '<img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " />';
-												echo '<p>'.$post->post_title.'</p>';
+												echo '<figure><a href="'.$post->guid.'"><img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " /></a></figure>';
 											echo '</div>';
 										}
 
 										echo '<div class="featured_widget_preview">';
 
-											//echo '<h2><a href="'.$post->guid.'">'.$post->post_title.'</a></h2>';
-											echo '<h3>'.$post->post_title.'</h3>';
+											echo '<h2><a href="'.$post->guid.'">'.$post->post_title.'</a></h2>';
+											// echo '<h3>'.$post->post_title.'</h3>';
 
         									$terms = get_the_terms( $post->ID , 'work_category' );
 											if ($terms) :
@@ -155,7 +154,7 @@ function mono_flexible_grids() {
 												$term_link = get_term_link( $term, 'work_category' );
 												if( is_wp_error( $term_link ) )
                 									continue;
-													echo '<li>'.$term->name.'</li>';
+													echo '<li><a href="' . $term_link . '">'.$term->name.'</a></li>';
 											}
 											echo '</li>';
 											endif;
@@ -163,7 +162,7 @@ function mono_flexible_grids() {
 										echo '</div>'; // Preview section end
 
 									echo '</div>'; // Thumb section end
-									echo '</span></a>';
+									// echo '</span></a>';
 									wp_reset_postdata();
 									endif;
 
