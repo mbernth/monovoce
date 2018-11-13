@@ -3083,7 +3083,7 @@ th {
         margin-bottom: 60px; }
 
 .gridcontainer .backimage {
-  min-height: 50vh;
+  min-height: 60vh;
   background-size: cover;
   background-position: 50% 50%; }
 
@@ -6310,7 +6310,7 @@ p.entry-meta {
   .gridcontainer .wrap {
     max-width: 1200px; }
   .gridcontainer .backimage {
-    min-height: 50vh; }
+    min-height: 70vh; }
   @supports (display: grid) {
     .content-sidebar .site-inner .gridcontainer.coll3 .wrap,
     .sidebar-content .site-inner .gridcontainer.coll3 .wrap,
@@ -6537,7 +6537,7 @@ p.entry-meta {
   .gridcontainer .wrap {
     max-width: 1400px; }
   .gridcontainer .backimage {
-    min-height: 50vh; }
+    min-height: 70vh; }
   @supports (display: grid) {
     .content-sidebar .site-inner .gridcontainer.coll3 .wrap,
     .sidebar-content .site-inner .gridcontainer.coll3 .wrap,

@@ -97,7 +97,7 @@ function mono_flexible_grids() {
 								$image =  get_sub_field('image_link');
 								$btn = get_sub_field ( 'image_button' );
 								
-								if( get_sub_field('content') && $selected == 'non' || $selected == 'non black' || $selected == 'non grey' || $selected == 'non') {
+								if( get_sub_field('content') && $selected == 'non' || $selected == 'non light' || $selected == 'non medium' || $selected == 'non dark' || $selected == 'non') {
 									// Full field images
 									echo '<section class="backimage" style="background-image: url('.$image['url'].');"></section>';
 									
