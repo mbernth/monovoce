@@ -127,6 +127,9 @@ blockquote::before {
 	top: 30px;
 }
 
+.large_font_size{
+	@include font-values($g_font-large);
+}
 
 /* ## Headings
 ---------------------------------------------------------------------- */
@@ -356,10 +359,11 @@ label {
 }
 
 .button{
+	display: block;
 	padding: 10px 24px;
 	text-align: left;
 	width: 100%;
-	max-width: 200px;
+	max-width: 280px;
 	text-decoration: none;
 	color: $g_font-button-background-color;
 	border-left: 5px solid $g_font-button-background-color;
@@ -371,7 +375,7 @@ label {
 	transition:         all 0.6s ease-in-out;
 	&:hover{
 		color: tint($g_font-button-background-color, 100%);
-		box-shadow: inset 200px 0 0 $g_font-button-background-color;
+		box-shadow: inset 280px 0 0 $g_font-button-background-color;
 	}
 	&.button-primary{
 		color: $g_font-button-primary-background-color;
@@ -379,7 +383,7 @@ label {
 		box-shadow: inset 0 0 0 $g_font-button-primary-background-color;
 		&:hover{
 			color: tint($g_font-button-primary-background-color, 100%);
-			box-shadow: inset 200px 0 0 $g_font-button-primary-background-color;
+			box-shadow: inset 280px 0 0 $g_font-button-primary-background-color;
 		}
 	}
 	&.button-info{
@@ -388,7 +392,7 @@ label {
 		box-shadow: inset 0 0 0 $g_font-button-info-background-color;
 		&:hover{
 			color: tint($g_font-button-info-background-color, 100%);
-			box-shadow: inset 200px 0 0 $g_font-button-info-background-color;
+			box-shadow: inset 280px 0 0 $g_font-button-info-background-color;
 		}
 	}
 	&.button-alert{
@@ -397,11 +401,32 @@ label {
 		box-shadow: inset 0 0 0 $g_font-button-alert-background-color;
 		&:hover{
 			color: tint($g_font-button-alert-background-color, 100%);
-			box-shadow: inset 200px 0 0 $g_font-button-alert-background-color;
+			box-shadow: inset 280px 0 0 $g_font-button-alert-background-color;
 		}
 	}
 }
-
+.row-button-area .button{
+	border: 0;
+	cursor: pointer;
+	@include font-values($g_font-button);
+	color: $g_font-button-color;
+	text-align: center;
+	text-decoration: none;
+	background-color: $g_font-button-background-color;
+	@include corners($g_font-button_radius);
+	padding: 20px 24px;
+	width: 100%;
+	max-width:280px;
+	border-left: 0px solid $g_font-button-background-color;
+	box-shadow: inset 0 0 0 $g_font-button-background-color;
+	&:hover,
+	&:focus{
+		color: $g_font-button-color-hover;
+		background-color: $g_font-button-background-color-hover;
+		box-shadow: inset 0 0 0 $g_font-button-background-color;
+		box-shadow: $g_font-button-box-shadow-hover;
+	}
+}
 button,
 input[type="button"],
 input[type="reset"],
@@ -417,7 +442,7 @@ input[type="submit"]
 	@include corners($g_font-button_radius);
 	padding: 20px 24px;
 	width: 100%;
-	max-width:200px;
+	max-width:280px;
 	&:hover,
 	&:focus{
 		color: $g_font-button-color-hover;

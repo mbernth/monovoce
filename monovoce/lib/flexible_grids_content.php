@@ -67,8 +67,13 @@ function mono_flexible_grids() {
 							// Column fields
 							if (get_sub_field('content')){
 								$colbtn = get_sub_field('column_content_button');
-								
-								echo '<section class="wysiwyg">';
+								$large_font_size = get_sub_field( 'large_font_size' );
+
+								if ($large_font_size){
+									echo '<section class="wysiwyg large_font_size">';
+								}else{
+									echo '<section class="wysiwyg">';
+								}
 									
 									if( ($selected == 'non dark' || $selected == 'non medium' || $selected == 'non light' || $selected == 'non')){
 										if($headline){
@@ -79,6 +84,7 @@ function mono_flexible_grids() {
 									the_sub_field('content');
 									// Column botton
 									if ($colbtn['button_text']){
+									echo '<div class="column-button">';
 										if ($colbtn['page_link']){
 										echo '<a class="button" href="' . $colbtn['page_link']. '"><span>';
 										}else{
@@ -86,6 +92,7 @@ function mono_flexible_grids() {
 										}
 										echo '' . $colbtn['button_text']. '';
 										echo '</span></a>';
+									echo '</div>';
 									}
 								echo '</section>';
 							}

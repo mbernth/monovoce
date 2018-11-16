@@ -2049,6 +2049,24 @@ blockquote::before {
   position: relative;
   top: 30px; }
 
+.large_font_size {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 29px;
+  line-height: 2.9rem; }
+  @media screen and (min-width: 80em) {
+    .large_font_size {
+      font-size: 20px;
+      font-size: 2rem;
+      line-height: 32px;
+      line-height: 3.2rem; } }
+  @media screen and (min-width: 93.75em) {
+    .large_font_size {
+      font-size: 22px;
+      font-size: 2.2rem;
+      line-height: 35px;
+      line-height: 3.5rem; } }
+
 /* ## Headings
 ---------------------------------------------------------------------- */
 h1,
@@ -2423,10 +2441,11 @@ label {
       line-height: 3.2rem; } }
 
 .button {
+  display: block;
   padding: 10px 24px;
   text-align: left;
   width: 100%;
-  max-width: 200px;
+  max-width: 280px;
   text-decoration: none;
   color: #52b9e9;
   border-left: 5px solid #52b9e9;
@@ -2438,28 +2457,67 @@ label {
   transition: all 0.6s ease-in-out; }
   .button:hover {
     color: white;
-    box-shadow: inset 200px 0 0 #52b9e9; }
+    box-shadow: inset 280px 0 0 #52b9e9; }
   .button.button-primary {
     color: #00395D;
     border-left: 5px solid #00395D;
     box-shadow: inset 0 0 0 #00395D; }
     .button.button-primary:hover {
       color: white;
-      box-shadow: inset 200px 0 0 #00395D; }
+      box-shadow: inset 280px 0 0 #00395D; }
   .button.button-info {
     color: #000B12;
     border-left: 5px solid #000B12;
     box-shadow: inset 0 0 0 #000B12; }
     .button.button-info:hover {
       color: white;
-      box-shadow: inset 200px 0 0 #000B12; }
+      box-shadow: inset 280px 0 0 #000B12; }
   .button.button-alert {
     color: #bf334a;
     border-left: 5px solid #bf334a;
     box-shadow: inset 0 0 0 #bf334a; }
     .button.button-alert:hover {
       color: white;
-      box-shadow: inset 200px 0 0 #bf334a; }
+      box-shadow: inset 280px 0 0 #bf334a; }
+
+.row-button-area .button {
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 16px;
+  line-height: 1.6rem;
+  font-weight: 300;
+  color: #fdfeff;
+  color: #fdfeff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #52b9e9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px 24px;
+  width: 100%;
+  max-width: 280px;
+  border-left: 0px solid #52b9e9;
+  box-shadow: inset 0 0 0 #52b9e9; }
+  @media screen and (min-width: 80em) {
+    .row-button-area .button {
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 18px;
+      line-height: 1.8rem; } }
+  @media screen and (min-width: 93.75em) {
+    .row-button-area .button {
+      font-size: 20px;
+      font-size: 2rem;
+      line-height: 20px;
+      line-height: 2rem; } }
+  .row-button-area .button:hover, .row-button-area .button:focus {
+    color: #fdfeff;
+    background-color: #75c7ed;
+    box-shadow: inset 0 0 0 #52b9e9;
+    box-shadow: 0px 5px 3px 0px rgba(14, 28, 45, 0.25); }
 
 button,
 input[type="button"],
@@ -2482,7 +2540,7 @@ input[type="submit"] {
   border-radius: 5px;
   padding: 20px 24px;
   width: 100%;
-  max-width: 200px; }
+  max-width: 280px; }
   @media screen and (min-width: 80em) {
     button,
     input[type="button"],
@@ -2966,6 +3024,8 @@ th {
     margin: 0 auto; }
     .gridcontainer .wrap section {
       padding: 0; }
+  .gridcontainer .column-button {
+    margin-top: 30px; }
   .gridcontainer .row-button-area {
     display: flex;
     flex-direction: column;
@@ -3124,14 +3184,22 @@ th {
     .gridcontainer.dark .button:hover {
       color: black;
       border-left: 5px solid #fdfeff;
-      box-shadow: inset 200px 0 0 #fdfeff; }
+      box-shadow: inset 280px 0 0 #fdfeff; }
     .gridcontainer.dark .button.button-primary {
       color: #fdfeff;
       border-left: 5px solid #fdfeff;
       box-shadow: inset 0 0 0 #fdfeff; }
       .gridcontainer.dark .button.button-primary:hover {
         color: black;
-        box-shadow: inset 200px 0 0 #fdfeff; }
+        box-shadow: inset 280px 0 0 #fdfeff; }
+  .gridcontainer.dark .row-button-area .button {
+    color: #fdfeff;
+    border-left: 0px solid #52b9e9;
+    box-shadow: inset 0 0 0 #52b9e9; }
+    .gridcontainer.dark .row-button-area .button:hover {
+      color: #fdfeff;
+      border-left: 0px solid #fdfeff;
+      box-shadow: inset 0 0 0 #fdfeff; }
 
 .gridcontainer.medium {
   background-color: #EF405C;
@@ -6299,6 +6367,8 @@ p.entry-meta {
     margin-bottom: 60px; }
   /* ## Site Containers
 ---------------------------------------------------------------------- */
+  .gridcontainer .column-button {
+    margin-top: 40px; }
   /* ### Site Containers Full-width 
 --------------------------------------------- */
   .full-width-content .site-inner .content .entry {
