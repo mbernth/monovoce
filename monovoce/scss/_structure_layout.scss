@@ -171,8 +171,14 @@
 	.row_headline{
 		display: none;
 	}
-	.wrap{
+	&.coll1 .wrap,
+	&.coll2 .wrap,
+	&.coll3 .wrap,
+	&.coll4 .wrap,
+	&.coll5 .wrap,
+	&.coll6 .wrap{
 		width: 100%;
+		max-width: 100%;
 		.wysiwyg{
 			margin: 0 auto;
 			padding: 30px 0;
@@ -185,9 +191,12 @@
 }
 .gridcontainer{
 	.backimage{
-		min-height: 60vh;
 		background-size: cover;
-    	background-position: 50% 50%;
+		background-position: 50% 50%;
+		img{
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 .gridcontainer{

@@ -116,11 +116,7 @@
 		max-width: $target-medium+px;
 	}
 }
-.gridcontainer{
-	.backimage{
-		min-height: 400px;
-	}
-}
+
 @supports (display: grid) {
 .gridcontainer.coll2{
 	.wrap{
