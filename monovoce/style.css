@@ -5218,6 +5218,33 @@ p.entry-meta {
   100% {
     transform: translateX(100%); } }
 
+.post-navigation .wrap {
+  display: flex; }
+  .post-navigation .wrap div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 30vh;
+    background-color: #001725; }
+    .post-navigation .wrap div span {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      min-height: 250px; }
+      .post-navigation .wrap div span a {
+        text-decoration: none;
+        color: #fdfeff; }
+        .post-navigation .wrap div span a:hover {
+          color: #cacbcc; }
+    .post-navigation .wrap div.previous [class^="icon-"] {
+      margin-right: 20px;
+      fill: #fdfeff; }
+    .post-navigation .wrap div.next [class^="icon-"] {
+      margin-left: 20px;
+      color: #fdfeff; }
+
 /*
 # Post Types
 	## Cases

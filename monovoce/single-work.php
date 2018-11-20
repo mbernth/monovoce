@@ -80,8 +80,8 @@ function ja_prev_next_post_nav() {
 	if( is_single() || is_category( array( 'blog') ) ){
         echo '<selction class="post-navigation narrow">';
             echo '<div class="wrap">';
-    			next_post_link( '<div class="previous"><svg class="icon-arrow-left7"><use xlink:href="#icon-arrow-left7"></use></svg> %link</div>', '%title' );
-	    		previous_post_link( '<div class="next">%link <svg class="icon-untitled2"><use xlink:href="#icon-untitled2"></use></svg></div>', '%title' );	
+    			next_post_link( '<div class="previous"><span><svg class="icon-arrow-left7"><use xlink:href="#icon-arrow-left7"></use></svg> %link</span></div>', '%title' );
+	    		previous_post_link( '<div class="next"><span>%link <svg class="icon-untitled2"><use xlink:href="#icon-untitled2"></use></svg></span></div>', '%title' );	
             echo '</div>';
         echo '</section>';
 	}
@@ -89,7 +89,7 @@ function ja_prev_next_post_nav() {
 
 
 // List all works
-
+/*
 add_action( 'genesis_after_entry', 'work_single_do_loop', 25 ); // Add custom loop
 function work_single_do_loop() {
     $args = array(
@@ -107,7 +107,7 @@ function work_single_do_loop() {
         echo '</ul>';
     endif;
 }
-
+*/
 
 
 //* Run the Genesis loop

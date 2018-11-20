@@ -212,3 +212,43 @@
     0% {transform: translateX(-100%);}
     100% {transform: translateX(100%);}
 }
+
+.post-navigation{
+    .wrap{
+        display: flex;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 30vh;
+            background-color: shade($color-primary, 60%);
+            span{
+                display: flex;
+                align-items: center;
+                height: 50px;
+                min-height: 250px;
+                a{
+                    text-decoration: none;
+                    color: $color-white;
+                    &:hover{
+                        color: shade($color-white, 20%);
+                    }
+                }
+            }
+            &.previous{
+                [class^="icon-"]{
+                    margin-right: 20px;
+                    fill: $color-white;
+                }
+            }
+            &.next{
+                [class^="icon-"]{
+                    margin-left: 20px;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
