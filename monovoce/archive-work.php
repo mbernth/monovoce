@@ -22,11 +22,13 @@ remove_action( 'genesis_after_header', 'mono_title_reposition' );
 
 
 // List post alphabetical ascending
+/*
 add_action( 'genesis_before_loop', 'work_list_order' );
 function work_list_order() {
         global $query_string;
         query_posts( wp_parse_args( $query_string, array( 'orderby' => 'title', 'order' => 'ASC' ) ) );
 }
+*/
 
 // Reposition archive description
 remove_action( 'genesis_before_loop', 'genesis_do_cpt_archive_title_description' );
@@ -52,12 +54,12 @@ add_action( 'genesis_loop', 'custom_do_grid_loop' ); // Add custom loop
 function custom_do_grid_loop() {
 	
 	if(have_posts()){
-		echo '<section class="gridcontainer coll1 animate-coll archive-works">';
+		echo '<section class="gridcontainer coll1 archive-works">';
 		echo '<div class="wrap">';
 		while(have_posts()) : 
 			the_post();
-
-			echo '<section class="featured_widget animated-coll">';
+			// Repeat while content
+			echo '<section class="featured_widget">';
 				echo '<div class="featured_widget_thumb">';
 
 					$img = genesis_get_image( array( 'format' => 'src' ) );

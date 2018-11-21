@@ -21,6 +21,7 @@
 			}
 		}
 		a {
+			display: block;
 			font-family: $font-navigation;
 			@include font-values($g_font-nav);
 			letter-spacing:0.2em;

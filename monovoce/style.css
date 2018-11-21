@@ -650,6 +650,30 @@ input[type="search"] {
   height: 74px; }
 
 /* Style Guide =================================================== */
+.style-guide .site-inner {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  @media screen and (min-width: 37.5em) {
+    .style-guide .site-inner {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+  @media screen and (min-width: 48em) {
+    .style-guide .site-inner {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+  @media screen and (min-width: 64em) {
+    .style-guide .site-inner {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+  @media screen and (min-width: 80em) {
+    .style-guide .site-inner {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+  @media screen and (min-width: 93.75em) {
+    .style-guide .site-inner {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+
 .category {
   display: block;
   width: 100%;
@@ -2995,12 +3019,12 @@ th {
       padding-bottom: 60px; } }
   @media screen and (min-width: 80em) {
     .gridcontainer {
-      padding-top: 80px;
-      padding-bottom: 80px; } }
+      padding-top: 60px;
+      padding-bottom: 60px; } }
   @media screen and (min-width: 93.75em) {
     .gridcontainer {
-      padding-top: 120px;
-      padding-bottom: 120px; } }
+      padding-top: 80px;
+      padding-bottom: 80px; } }
   .gridcontainer .row_headline {
     position: relative;
     width: 90%;
@@ -3965,6 +3989,7 @@ svg#logo {
   padding-right: calc(5% + 30px);
   margin-bottom: 0; }
   .menu-item a {
+    display: block;
     font-family: "Branding-Semibold", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-size: 1.4rem;
@@ -4433,7 +4458,7 @@ p.entry-meta {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 80vh;
+  height: 70vh;
   width: 100%; }
   .featured-section .image-section .wrap {
     width: 90%;
@@ -5218,32 +5243,39 @@ p.entry-meta {
   100% {
     transform: translateX(100%); } }
 
-.post-navigation .wrap {
-  display: flex; }
-  .post-navigation .wrap div {
+.post-navigation {
+  display: block;
+  width: 100%; }
+  .post-navigation .wrap {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 30vh;
     background-color: #001725; }
-    .post-navigation .wrap div span {
+    .post-navigation .wrap div {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      height: 50px;
-      min-height: 250px; }
-      .post-navigation .wrap div span a {
-        text-decoration: none;
-        color: #fdfeff; }
-        .post-navigation .wrap div span a:hover {
-          color: #cacbcc; }
-    .post-navigation .wrap div.previous [class^="icon-"] {
-      margin-right: 20px;
-      fill: #fdfeff; }
-    .post-navigation .wrap div.next [class^="icon-"] {
-      margin-left: 20px;
-      color: #fdfeff; }
+      width: 50%;
+      height: 30vh;
+      background-color: #001725; }
+      .post-navigation .wrap div span {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        min-height: 250px; }
+        .post-navigation .wrap div span a {
+          text-decoration: none;
+          color: #fdfeff; }
+          .post-navigation .wrap div span a:hover {
+            color: #cacbcc; }
+      .post-navigation .wrap div.previous [class^="icon-"] {
+        margin-right: 20px;
+        fill: #fdfeff; }
+      .post-navigation .wrap div.next {
+        align-self: flex-end; }
+        .post-navigation .wrap div.next [class^="icon-"] {
+          margin-left: 20px;
+          color: #fdfeff; }
 
 /*
 # Post Types
@@ -5989,7 +6021,7 @@ p.entry-meta {
       position: absolute;
       content: '';
       transform: scale3d(1, 1, 1);
-      top: -5px;
+      top: -10px;
       bottom: unset;
       left: unset;
       right: -5px;
@@ -6002,7 +6034,7 @@ p.entry-meta {
       transform: scale3d(1, 1, 1);
       width: 14px;
       height: 5px;
-      top: -5px;
+      top: -10px;
       right: -5px;
       background-color: #fdfeff; }
   /* ## Secondary Navigation

@@ -54,6 +54,7 @@
     padding-right: calc(5% + 30px);
     margin-bottom: 0;
     a{
+        display: block;
         font-family: $font-navigation;
         @include font-values($g_font-nav);
         text-transform: uppercase;

@@ -1,4 +1,9 @@
 /* Style Guide =================================================== */
+.style-guide{
+	.site-inner{
+		@include grid-padding-values($g_grid_padding-structure);
+	}
+}
 .category{
 	display: block;
 	width: 100%;

@@ -23,11 +23,13 @@ remove_action( 'genesis_after_header', 'mono_title_reposition' );
 
 
 // List post alphabetical ascending
+/*
 add_action( 'genesis_before_loop', 'work_list_order' );
 function work_list_order() {
         global $query_string;
         query_posts( wp_parse_args( $query_string, array( 'orderby' => 'title', 'order' => 'ASC' ) ) );
 }
+*/
 
 // Reposition archive description
 remove_action( 'genesis_before_loop', 'genesis_do_cpt_archive_title_description' );

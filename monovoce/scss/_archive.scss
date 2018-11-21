@@ -214,8 +214,12 @@
 }
 
 .post-navigation{
+    display: block;
+    width: 100%;
     .wrap{
         display: flex;
+        justify-content: center;
+        background-color: shade($color-primary, 60%);
         div{
             display: flex;
             flex-direction: column;
@@ -244,6 +248,7 @@
                 }
             }
             &.next{
+                align-self: flex-end;
                 [class^="icon-"]{
                     margin-left: 20px;
                     color: $color-white;
