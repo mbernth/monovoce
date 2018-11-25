@@ -134,6 +134,42 @@
 	}
 }
 
+/* ## Archive
+---------------------------------------------------------------------------------------------------- */
+/* ## Work Single Elements
+---------------------------------------------------------------------- */
+.animated-work{
+    .work-info{
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-between;
+        section{
+			&.work-client{
+				width: 100%;
+			}
+			&.work-brief{
+				width: calc(50% - 15px);
+			}
+			&.work-solution{
+				margin-top: 0;
+				width: calc(50% - 15px);
+            }
+		}
+	}
+	.work-data{
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-between;
+		section{
+			&.work-data-website,
+			&.work-data-list{
+				width: calc(50% - 25px);
+			}
+		}
+	}
+}
+
+
 /* # Animations
 ---------------------------------------------------------------------------------------------------- */
 /* ## Keyframes

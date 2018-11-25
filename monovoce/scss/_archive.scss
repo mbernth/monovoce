@@ -125,6 +125,11 @@
         height: 70%;
     }
 }
+.work-data-website{
+    &::after{
+        max-height: 60px;
+    }
+}
 
 .animated-work{
     .work-info{
@@ -146,6 +151,9 @@
                 height: 100%;
                 background-color: tint($color-primary, 95%);
                 z-index: 50;
+            }
+            &.work-solution{
+                @include site-margin-top-values($g_site_margin_top);
             }
         }
     }
@@ -216,6 +224,7 @@
 .post-navigation{
     display: block;
     width: 100%;
+    overflow: hidden;
     .wrap{
         display: flex;
         justify-content: center;
@@ -243,14 +252,15 @@
             }
             &.previous{
                 [class^="icon-"]{
-                    margin-right: 20px;
+                    @include site-margin-right-values($g_site_margin_right);
                     fill: $color-white;
                 }
             }
             &.next{
                 align-self: flex-end;
                 [class^="icon-"]{
-                    margin-left: 20px;
+                    // margin-left: 20px;
+                    @include site-margin-left-values($g_site_margin_left);
                     color: $color-white;
                 }
             }

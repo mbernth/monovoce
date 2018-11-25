@@ -27,6 +27,8 @@ function mono_flexible_grids() {
 			$coll = get_sub_field('columns_no');
 			$animate_row = get_sub_field('animate_row');
 			$featured = get_sub_field( 'featured' );
+			$wide_row = get_sub_field( 'wide_row' );
+			$selected = get_sub_field('background_colour');
 
         	if( get_row_layout() == 'row_setup' ):
 			
@@ -46,6 +48,12 @@ function mono_flexible_grids() {
 					if ($featured){
 						echo ' featured ';
 					}
+					if ($wide_row){
+						if( ($selected == 'non dark' || $selected == 'non medium' || $selected == 'non light' || $selected == 'non')){
+						}else{
+							echo ' wide ';
+						}
+					}
 					if (get_sub_field('row_id')){
 						echo '" id="';
 					 	the_sub_field('row_id');
@@ -58,7 +66,6 @@ function mono_flexible_grids() {
 				
 				
 				echo '<div class="wrap">';
-					$selected = get_sub_field('background_colour');
 					$content = get_sub_field('content');
 					
 					

@@ -28,12 +28,12 @@ $g_font-bread: (
 );
 
 $g_font-large: (
-    null   : (1.8, 2.9),
+    null   : (2, 3.2),
     // xsmall : (1.6, 2.6),
     // small  : (1.6, 2.6),
     // medium : (1.6, 2.6),
-    large  : (2, 3.2),
-    xlarge : (2.2, 3.5)
+    large  : (2.2, 3.2),
+    xlarge : (2.6, 3.4)
 );
 
 /* Headlines */
@@ -336,6 +336,15 @@ $g_max_width-narrow: (
     xlarge : (860px)
 );
 
+$g_max_width-wide: (
+    null   : (90%),
+    xsmall : (480px),
+    small  : (600px),
+    medium : (920px),
+    large  : (1200px),
+    xlarge : (1400px)
+);
+
 $g_max_width-coll2: (
     null   : (90%),
     xsmall : (480px),
@@ -372,4 +381,59 @@ $g_grid_padding-structure: (
     medium : (60),
     large  : (60),
     xlarge : (80)
+);
+$g_grid_padding-wide: (
+    null   : (80),
+    xsmall : (80),
+    small  : (80),
+    medium : (80),
+    large  : (100),
+    xlarge : (120)
+);
+
+/* ## Responsive site margins
+---------------------------------------------------------------------- */
+$g_site_margin: (
+    null   : ($margin-default),
+    xsmall : ($margin-xsmall),
+    small  : ($margin-small),
+    medium : ($margin-medium),
+    large  : ($margin-large),
+    xlarge : ($margin-xlarge)
+);
+
+$g_site_margin_left: (
+    null   : ($margin-default),
+    xsmall : ($margin-xsmall),
+    small  : ($margin-small),
+    medium : ($margin-medium),
+    large  : ($margin-large),
+    xlarge : ($margin-xlarge)
+);
+
+$g_site_margin_right: (
+    null   : ($margin-default),
+    xsmall : ($margin-xsmall),
+    small  : ($margin-small),
+    medium : ($margin-medium),
+    large  : ($margin-large),
+    xlarge : ($margin-xlarge)
+);
+
+$g_site_margin_top: (
+    null   : ($margin-default),
+    xsmall : ($margin-xsmall),
+    small  : ($margin-small),
+    medium : ($margin-medium),
+    large  : ($margin-large),
+    xlarge : ($margin-xlarge)
+);
+
+$g_site_margin_bottom: (
+    null   : ($margin-default),
+    xsmall : ($margin-xsmall),
+    small  : ($margin-small),
+    medium : ($margin-medium),
+    large  : ($margin-large),
+    xlarge : ($margin-xlarge)
 );

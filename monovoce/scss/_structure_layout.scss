@@ -146,6 +146,12 @@
 		.wrap{
 			@include max-width-values($g_max_width-coll1);
 		}
+		&.wide{
+			@include grid-padding-values($g_grid_padding-wide);
+			.wrap{
+				@include max-width-values($g_max_width-wide);
+			}
+		}
 	}
 	&.coll2{
 		.row_headline,

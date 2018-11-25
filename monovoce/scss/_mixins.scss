@@ -102,14 +102,106 @@
   }
 }
 
+/* ## Responsive site margins
+---------------------------------------------------------------------- */
+@mixin site-margin-values($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-g_site_margin in $fs-map {
+    @if $fs-breakpoint == null {
+      margin: $fs-g_site_margin + px;
+    }
+    @else {
+      // If $fs-g_site_margin is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        margin: $fs-g_site_margin + px;
+      }
+    }
+  }
+}
+
+@mixin site-margin-left-values($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-g_site_margin_left in $fs-map {
+    @if $fs-breakpoint == null {
+      margin-left: $fs-g_site_margin_left + px;
+    }
+    @else {
+      // If $fs-g_site_margin is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        margin-left: $fs-g_site_margin_left + px;
+      }
+    }
+  }
+}
+
+@mixin site-margin-right-values($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-g_site_margin_right in $fs-map {
+    @if $fs-breakpoint == null {
+      margin-right: $fs-g_site_margin_right + px;
+    }
+    @else {
+      // If $fs-g_site_margin is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        margin-right: $fs-g_site_margin_right + px;
+      }
+    }
+  }
+}
+
+@mixin site-margin-top-values($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-g_site_margin_top in $fs-map {
+    @if $fs-breakpoint == null {
+      margin-top: $fs-g_site_margin_top + px;
+    }
+    @else {
+      // If $fs-g_site_margin is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        margin-top: $fs-g_site_margin_top + px;
+      }
+    }
+  }
+}
+
+@mixin site-margin-bottom-values($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-g_site_margin_bottom in $fs-map {
+    @if $fs-breakpoint == null {
+      margin-bottom: $fs-g_site_margin_bottom + px;
+    }
+    @else {
+      // If $fs-g_site_margin is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        margin-bottom: $fs-g_site_margin_bottom + px;
+      }
+    }
+  }
+}
+
 
 /* ## Border Radius
 ---------------------------------------------------------------------- */
 
 @mixin corners($radius){
-	-webkit-border-radius: $radius + px;
-	   -moz-border-radius: $radius + px;
-			border-radius: $radius + px;
+    -webkit-border-radius: $radius + px;
+    -moz-border-radius: $radius + px;
+    border-radius: $radius + px;
 }
 
 /* ## Gradients

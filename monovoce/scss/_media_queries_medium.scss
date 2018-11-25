@@ -333,6 +333,39 @@
 ---------------------------------------------------------------------------------------------------- */
 /* ## Work Single Elements
 ---------------------------------------------------------------------- */
+.animated-work{
+    .work-info{
+		flex-direction: column;
+		justify-content: unset;
+        section{
+			&.work-client{
+				width: 100%;
+			}
+			&.work-brief{
+				width: 100%;
+			}
+			&.work-solution{
+				@include site-margin-top-values($g_site_margin_top);
+				width: 100%;
+            }
+		}
+	}
+	.work-data{
+		flex-direction: column;
+		justify-content: unset;
+		section{
+			&.work-data-website,
+			&.work-data-list{
+				width: 100%;
+			}
+		}
+	}
+}
+
+/* ## Archive
+---------------------------------------------------------------------------------------------------- */
+/* ## Work Single Elements
+---------------------------------------------------------------------- */
 @supports (display: grid) {
 	.work-single{
 		.gridcontainer.work-grid{

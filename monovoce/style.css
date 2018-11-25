@@ -201,6 +201,8 @@ input[type="search"] {
 ---------------------------------------------------------------------- */
 /* ## Responsive Gridcontainer top and buttom padding
 ---------------------------------------------------------------------- */
+/* ## Responsive site margins
+---------------------------------------------------------------------- */
 /* ## Border Radius
 ---------------------------------------------------------------------- */
 /* ## Gradients
@@ -390,6 +392,8 @@ input[type="search"] {
 /* ## Responsive Gridcontainer inside wrap max width
 ---------------------------------------------------------------------- */
 /* ## Responsive Gridcontainer top and buttom padding
+---------------------------------------------------------------------- */
+/* ## Responsive site margins
 ---------------------------------------------------------------------- */
 /*
 # Swatches
@@ -2074,22 +2078,22 @@ blockquote::before {
   top: 30px; }
 
 .large_font_size {
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 29px;
-  line-height: 2.9rem; }
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 32px;
+  line-height: 3.2rem; }
   @media screen and (min-width: 80em) {
     .large_font_size {
-      font-size: 20px;
-      font-size: 2rem;
+      font-size: 22px;
+      font-size: 2.2rem;
       line-height: 32px;
       line-height: 3.2rem; } }
   @media screen and (min-width: 93.75em) {
     .large_font_size {
-      font-size: 22px;
-      font-size: 2.2rem;
-      line-height: 35px;
-      line-height: 3.5rem; } }
+      font-size: 26px;
+      font-size: 2.6rem;
+      line-height: 34px;
+      line-height: 3.4rem; } }
 
 /* ## Headings
 ---------------------------------------------------------------------- */
@@ -3049,7 +3053,7 @@ th {
     .gridcontainer .wrap section {
       padding: 0; }
   .gridcontainer .column-button {
-    margin-top: 30px; }
+    margin-top: 20px; }
   .gridcontainer .row-button-area {
     display: flex;
     flex-direction: column;
@@ -3080,6 +3084,47 @@ th {
     .gridcontainer.coll1 .row_headline,
     .gridcontainer.coll1 .wrap {
       max-width: 860px; } }
+
+.gridcontainer.coll1.wide {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  @media screen and (min-width: 37.5em) {
+    .gridcontainer.coll1.wide {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+  @media screen and (min-width: 48em) {
+    .gridcontainer.coll1.wide {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+  @media screen and (min-width: 64em) {
+    .gridcontainer.coll1.wide {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+  @media screen and (min-width: 80em) {
+    .gridcontainer.coll1.wide {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+  @media screen and (min-width: 93.75em) {
+    .gridcontainer.coll1.wide {
+      padding-top: 120px;
+      padding-bottom: 120px; } }
+  .gridcontainer.coll1.wide .wrap {
+    max-width: 90%; }
+    @media screen and (min-width: 37.5em) {
+      .gridcontainer.coll1.wide .wrap {
+        max-width: 480px; } }
+    @media screen and (min-width: 48em) {
+      .gridcontainer.coll1.wide .wrap {
+        max-width: 600px; } }
+    @media screen and (min-width: 64em) {
+      .gridcontainer.coll1.wide .wrap {
+        max-width: 920px; } }
+    @media screen and (min-width: 80em) {
+      .gridcontainer.coll1.wide .wrap {
+        max-width: 1200px; } }
+    @media screen and (min-width: 93.75em) {
+      .gridcontainer.coll1.wide .wrap {
+        max-width: 1400px; } }
 
 .gridcontainer.coll2 .row_headline,
 .gridcontainer.coll2 .wrap {
@@ -3769,7 +3814,7 @@ img.alignright,
     .ginput_complex .ginput_right {
       flex-basis: calc(50% - 15px); }
     .ginput_complex .ginput_right {
-      margin-left: 30px; } }
+      margin-left: 20px; } }
 
 /*
 	
@@ -5148,7 +5193,7 @@ p.entry-meta {
 .work-data-list {
   position: relative;
   margin-left: 20px;
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
   .work-data-website a,
   .work-data-list a {
     color: #00395D;
@@ -5177,6 +5222,9 @@ p.entry-meta {
   .work-data-list::after {
     height: 70%; }
 
+.work-data-website::after {
+  max-height: 60px; }
+
 .animated-work .work-info section {
   position: relative; }
   .animated-work .work-info section h4, .animated-work .work-info section h5, .animated-work .work-info section p, .animated-work .work-info section a, .animated-work .work-info section ul {
@@ -5194,6 +5242,23 @@ p.entry-meta {
     height: 100%;
     background-color: #f2f5f7;
     z-index: 50; }
+  .animated-work .work-info section.work-solution {
+    margin-top: 20px; }
+    @media screen and (min-width: 37.5em) {
+      .animated-work .work-info section.work-solution {
+        margin-top: 20px; } }
+    @media screen and (min-width: 48em) {
+      .animated-work .work-info section.work-solution {
+        margin-top: 30px; } }
+    @media screen and (min-width: 64em) {
+      .animated-work .work-info section.work-solution {
+        margin-top: 30px; } }
+    @media screen and (min-width: 80em) {
+      .animated-work .work-info section.work-solution {
+        margin-top: 40px; } }
+    @media screen and (min-width: 93.75em) {
+      .animated-work .work-info section.work-solution {
+        margin-top: 40px; } }
 
 .animated-work .work-data section {
   position: relative; }
@@ -5245,7 +5310,8 @@ p.entry-meta {
 
 .post-navigation {
   display: block;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   .post-navigation .wrap {
     display: flex;
     justify-content: center;
@@ -5271,11 +5337,41 @@ p.entry-meta {
       .post-navigation .wrap div.previous [class^="icon-"] {
         margin-right: 20px;
         fill: #fdfeff; }
+        @media screen and (min-width: 37.5em) {
+          .post-navigation .wrap div.previous [class^="icon-"] {
+            margin-right: 20px; } }
+        @media screen and (min-width: 48em) {
+          .post-navigation .wrap div.previous [class^="icon-"] {
+            margin-right: 30px; } }
+        @media screen and (min-width: 64em) {
+          .post-navigation .wrap div.previous [class^="icon-"] {
+            margin-right: 30px; } }
+        @media screen and (min-width: 80em) {
+          .post-navigation .wrap div.previous [class^="icon-"] {
+            margin-right: 40px; } }
+        @media screen and (min-width: 93.75em) {
+          .post-navigation .wrap div.previous [class^="icon-"] {
+            margin-right: 40px; } }
       .post-navigation .wrap div.next {
         align-self: flex-end; }
         .post-navigation .wrap div.next [class^="icon-"] {
           margin-left: 20px;
           color: #fdfeff; }
+          @media screen and (min-width: 37.5em) {
+            .post-navigation .wrap div.next [class^="icon-"] {
+              margin-left: 20px; } }
+          @media screen and (min-width: 48em) {
+            .post-navigation .wrap div.next [class^="icon-"] {
+              margin-left: 30px; } }
+          @media screen and (min-width: 64em) {
+            .post-navigation .wrap div.next [class^="icon-"] {
+              margin-left: 30px; } }
+          @media screen and (min-width: 80em) {
+            .post-navigation .wrap div.next [class^="icon-"] {
+              margin-left: 40px; } }
+          @media screen and (min-width: 93.75em) {
+            .post-navigation .wrap div.next [class^="icon-"] {
+              margin-left: 40px; } }
 
 /*
 # Post Types
@@ -5883,6 +5979,27 @@ p.entry-meta {
     margin-bottom: 0vh; }
   .gridcontainer .featured_widget ul {
     column-count: 2; }
+  /* ## Archive
+---------------------------------------------------------------------------------------------------- */
+  /* ## Work Single Elements
+---------------------------------------------------------------------- */
+  .animated-work .work-info {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between; }
+    .animated-work .work-info section.work-client {
+      width: 100%; }
+    .animated-work .work-info section.work-brief {
+      width: calc(50% - 15px); }
+    .animated-work .work-info section.work-solution {
+      margin-top: 0;
+      width: calc(50% - 15px); }
+  .animated-work .work-data {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between; }
+    .animated-work .work-data section.work-data-website, .animated-work .work-data section.work-data-list {
+      width: calc(50% - 25px); }
   /* # Animations
 ---------------------------------------------------------------------------------------------------- */
   /* ## Keyframes
@@ -6380,6 +6497,42 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
   /* # Frontpage Style
 ---------------------------------------------------------------------------------------------------- */
+  /* ## Archive
+---------------------------------------------------------------------------------------------------- */
+  /* ## Work Single Elements
+---------------------------------------------------------------------- */
+  .animated-work .work-info {
+    flex-direction: column;
+    justify-content: unset; }
+    .animated-work .work-info section.work-client {
+      width: 100%; }
+    .animated-work .work-info section.work-brief {
+      width: 100%; }
+    .animated-work .work-info section.work-solution {
+      margin-top: 20px;
+      width: 100%; } }
+    @media only screen and (min-width: 64em) and (min-width: 37.5em) {
+      .animated-work .work-info section.work-solution {
+        margin-top: 20px; } }
+    @media only screen and (min-width: 64em) and (min-width: 48em) {
+      .animated-work .work-info section.work-solution {
+        margin-top: 30px; } }
+    @media only screen and (min-width: 64em) and (min-width: 64em) {
+      .animated-work .work-info section.work-solution {
+        margin-top: 30px; } }
+    @media only screen and (min-width: 64em) and (min-width: 80em) {
+      .animated-work .work-info section.work-solution {
+        margin-top: 40px; } }
+    @media only screen and (min-width: 64em) and (min-width: 93.75em) {
+      .animated-work .work-info section.work-solution {
+        margin-top: 40px; } }
+
+@media only screen and (min-width: 64em) {
+  .animated-work .work-data {
+    flex-direction: column;
+    justify-content: unset; }
+    .animated-work .work-data section.work-data-website, .animated-work .work-data section.work-data-list {
+      width: 100%; }
   /* ## Archive
 ---------------------------------------------------------------------------------------------------- */
   /* ## Work Single Elements

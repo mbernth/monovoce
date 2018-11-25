@@ -24,6 +24,7 @@ function single_work_post_featured_image() {
         $client_name = get_field('client_name');
         $project_link = get_field('project_link');
         $brief = get_field('brief');
+        $solution = get_field('solution');
 
         echo '<section class="gridcontainer work-grid">';
             echo '<div class="wrap">';
@@ -37,6 +38,11 @@ function single_work_post_featured_image() {
                         echo '<h4>Brief</h4>'.$brief.'';
                     echo '</section>';
                     }
+                    if($solution){
+                        echo '<section class="work-solution">';
+                            echo '<h4>Solutions</h4>'.$solution.'';
+                        echo '</section>';
+                        }
                 echo '</article>';
                 echo '<aside class="work-data">';
                     if ($project_link){
