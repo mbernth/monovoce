@@ -675,8 +675,8 @@ input[type="search"] {
       padding-bottom: 60px; } }
   @media screen and (min-width: 93.75em) {
     .style-guide .site-inner {
-      padding-top: 80px;
-      padding-bottom: 80px; } }
+      padding-top: 120px;
+      padding-bottom: 120px; } }
 
 .category {
   display: block;
@@ -3027,8 +3027,8 @@ th {
       padding-bottom: 60px; } }
   @media screen and (min-width: 93.75em) {
     .gridcontainer {
-      padding-top: 80px;
-      padding-bottom: 80px; } }
+      padding-top: 120px;
+      padding-bottom: 120px; } }
   .gridcontainer .row_headline {
     position: relative;
     width: 90%;
@@ -3108,21 +3108,27 @@ th {
     .gridcontainer.coll1.wide {
       padding-top: 120px;
       padding-bottom: 120px; } }
+  .gridcontainer.coll1.wide .row_headline,
   .gridcontainer.coll1.wide .wrap {
     max-width: 90%; }
     @media screen and (min-width: 37.5em) {
+      .gridcontainer.coll1.wide .row_headline,
       .gridcontainer.coll1.wide .wrap {
         max-width: 480px; } }
     @media screen and (min-width: 48em) {
+      .gridcontainer.coll1.wide .row_headline,
       .gridcontainer.coll1.wide .wrap {
         max-width: 600px; } }
     @media screen and (min-width: 64em) {
+      .gridcontainer.coll1.wide .row_headline,
       .gridcontainer.coll1.wide .wrap {
         max-width: 920px; } }
     @media screen and (min-width: 80em) {
+      .gridcontainer.coll1.wide .row_headline,
       .gridcontainer.coll1.wide .wrap {
         max-width: 1200px; } }
     @media screen and (min-width: 93.75em) {
+      .gridcontainer.coll1.wide .row_headline,
       .gridcontainer.coll1.wide .wrap {
         max-width: 1400px; } }
 

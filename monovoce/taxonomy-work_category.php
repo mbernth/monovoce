@@ -59,7 +59,7 @@ add_action( 'genesis_loop', 'custom_do_grid_loop' ); // Add custom loop
 function custom_do_grid_loop() {
 	
 	if(have_posts()){
-		echo '<section class="gridcontainer coll1 archive-works">';
+		echo '<section class="gridcontainer coll1 archive-works wide">';
 		echo '<div class="wrap">';
 		while(have_posts()) : 
 			the_post();

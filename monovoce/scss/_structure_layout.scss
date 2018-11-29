@@ -148,6 +148,7 @@
 		}
 		&.wide{
 			@include grid-padding-values($g_grid_padding-wide);
+			.row_headline,
 			.wrap{
 				@include max-width-values($g_max_width-wide);
 			}
