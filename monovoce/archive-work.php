@@ -40,7 +40,7 @@ function rv_cpt_archive_title_description() {
 	echo '<article class="gridcontainer title-element">';
 		echo '<div class="wrap">';
 			echo '<section>';
-				echo '<h1 class="entry-title">'.$archive_settings['headline'].'</h1>';
+				echo '<h1 lang="en" class="entry-title">'.$archive_settings['headline'].'</h1>';
 				echo '<p>'.$archive_settings['intro_text'].'</p>';
 			echo '</section>';
 		echo '</div>';
@@ -80,7 +80,7 @@ function custom_do_grid_loop() {
 					echo '</div>';
 
 					echo '<div class="featured_widget_preview">';
-					echo '<header><h2><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2></header>';
+					echo '<header><h2 lang="en"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2></header>';
 					echo '<footer class="post-meta-content">';
 						echo '<ul>';
 						$terms = get_the_terms( $works->ID , 'work_category' );

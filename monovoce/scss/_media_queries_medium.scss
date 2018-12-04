@@ -118,85 +118,84 @@
 }
 
 @supports (display: grid) {
-.gridcontainer.coll2{
-	.wrap{
-		grid-template-columns:repeat(2, 1fr);
-	}
-	&.featured{
+	.gridcontainer.coll2{
 		.wrap{
-			grid-template-columns: 1fr;
+			grid-template-columns:repeat(2, 1fr);
+		}
+		&.featured{
+			.wrap{
+				grid-template-columns: 1fr;
+			}
 		}
 	}
-}
-.gridcontainer.coll3{
-	.wrap{
-		grid-template-columns:repeat(3, 1fr);
-	}
-}
-.gridcontainer.coll4{
-	.wrap{
-		grid-template-columns:repeat(4, 1fr);
-	}
-}
-.gridcontainer.coll5{
-	.wrap{
-		grid-template-columns:repeat(5, 1fr);
-	}
-}
-.gridcontainer.coll6{
-	.wrap{
-		grid-template-columns:repeat(6, 1fr);
-	}
-}
-	
-.content-sidebar .site-inner,
-.sidebar-content .site-inner{
 	.gridcontainer.coll3{
 		.wrap{
-			grid-template-columns:repeat(1, 1fr);
+			grid-template-columns:repeat(3, 1fr);
 		}
 	}
 	.gridcontainer.coll4{
 		.wrap{
-			grid-template-columns:repeat(2, 1fr);
+			grid-template-columns:repeat(4, 1fr);
 		}
 	}
 	.gridcontainer.coll5{
 		.wrap{
-			grid-template-columns:repeat(2, 1fr);
+			grid-template-columns:repeat(5, 1fr);
 		}
 	}
 	.gridcontainer.coll6{
 		.wrap{
-			grid-template-columns:repeat(2, 1fr);
+			grid-template-columns:repeat(6, 1fr);
 		}
 	}
-}
-.content-sidebar-sidebar .site-inner,
-.sidebar-sidebar-content .site-inner,
-.sidebar-content-sidebar .site-inner{
-	.gridcontainer.coll3{
-		.wrap{
-			grid-template-columns:repeat(1, 1fr);
+		
+	.content-sidebar .site-inner,
+	.sidebar-content .site-inner{
+		.gridcontainer.coll3{
+			.wrap{
+				grid-template-columns:repeat(1, 1fr);
+			}
+		}
+		.gridcontainer.coll4{
+			.wrap{
+				grid-template-columns:repeat(2, 1fr);
+			}
+		}
+		.gridcontainer.coll5{
+			.wrap{
+				grid-template-columns:repeat(2, 1fr);
+			}
+		}
+		.gridcontainer.coll6{
+			.wrap{
+				grid-template-columns:repeat(2, 1fr);
+			}
 		}
 	}
-	.gridcontainer.coll4{
-		.wrap{
-			grid-template-columns:repeat(1, 1fr);
+	.content-sidebar-sidebar .site-inner,
+	.sidebar-sidebar-content .site-inner,
+	.sidebar-content-sidebar .site-inner{
+		.gridcontainer.coll3{
+			.wrap{
+				grid-template-columns:repeat(1, 1fr);
+			}
+		}
+		.gridcontainer.coll4{
+			.wrap{
+				grid-template-columns:repeat(1, 1fr);
+			}
+		}
+		.gridcontainer.coll5{
+			.wrap{
+				grid-template-columns:repeat(1, 1fr);
+			}
+		}
+		.gridcontainer.coll6{
+			.wrap{
+				grid-template-columns:repeat(1, 1fr);
+			}
 		}
 	}
-	.gridcontainer.coll5{
-		.wrap{
-			grid-template-columns:repeat(1, 1fr);
-		}
-	}
-	.gridcontainer.coll6{
-		.wrap{
-			grid-template-columns:repeat(1, 1fr);
-		}
-	}
-}
-	
 }
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */

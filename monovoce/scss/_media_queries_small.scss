@@ -41,6 +41,7 @@
 	width: 90%;
 	max-width: $target-small+px;
 }
+
 /* ### Site Containers Full-width
 ---------------------------------------------------------------------- */
 .full-width-content .site-inner .content .entry{
@@ -59,6 +60,13 @@
 .gridcontainer.non{
 	.wrap{
 		max-width: 100%;
+	}
+}
+@supports (display: grid) {
+	.gridcontainer.coll3{
+		.wrap{
+			grid-template-columns:repeat(3, 1fr);
+		}
 	}
 }
 /* ### Grid Containers coloured backgrounds

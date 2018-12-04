@@ -221,9 +221,16 @@
 	}
 }
 
-/* ## Buttons
+/* ## Headlines
 ---------------------------------------------------------------------- */
-
+.row_headline,
+.entry-title,
+.featured_widget_preview h2{
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
 
 /* ## Entry Meta
 ---------------------------------------------------------------------- */

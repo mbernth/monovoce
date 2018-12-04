@@ -3166,7 +3166,7 @@ th {
   @media screen and (min-width: 48em) {
     .gridcontainer.coll3 .row_headline,
     .gridcontainer.coll3 .wrap {
-      max-width: 600px; } }
+      max-width: 800px; } }
   @media screen and (min-width: 64em) {
     .gridcontainer.coll3 .row_headline,
     .gridcontainer.coll3 .wrap {
@@ -3496,13 +3496,31 @@ th {
 /* ## Titles
 ---------------------------------------------------------------------- */
 .archive-title {
-  font-size: 39px;
-  font-size: 3.9rem;
-  line-height: 39px;
-  line-height: 3.9rem;
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 28px;
+  line-height: 2.8rem;
   font-weight: 300;
   color: #00395D;
   margin-bottom: 20px; }
+  @media screen and (min-width: 37.5em) {
+    .archive-title {
+      font-size: 30px;
+      font-size: 3rem;
+      line-height: 30px;
+      line-height: 3rem; } }
+  @media screen and (min-width: 48em) {
+    .archive-title {
+      font-size: 38px;
+      font-size: 3.8rem;
+      line-height: 38px;
+      line-height: 3.8rem; } }
+  @media screen and (min-width: 64em) {
+    .archive-title {
+      font-size: 40px;
+      font-size: 4rem;
+      line-height: 40px;
+      line-height: 4rem; } }
   @media screen and (min-width: 80em) {
     .archive-title {
       font-size: 43px;
@@ -3517,13 +3535,31 @@ th {
       line-height: 4.8rem; } }
 
 .entry-title {
-  font-size: 48px;
-  font-size: 4.8rem;
-  line-height: 48px;
-  line-height: 4.8rem;
+  font-size: 38px;
+  font-size: 3.8rem;
+  line-height: 38px;
+  line-height: 3.8rem;
   font-weight: 300;
   color: #00395D;
   margin-bottom: 20px; }
+  @media screen and (min-width: 37.5em) {
+    .entry-title {
+      font-size: 40px;
+      font-size: 4rem;
+      line-height: 40px;
+      line-height: 4rem; } }
+  @media screen and (min-width: 48em) {
+    .entry-title {
+      font-size: 48px;
+      font-size: 4.8rem;
+      line-height: 48px;
+      line-height: 4.8rem; } }
+  @media screen and (min-width: 64em) {
+    .entry-title {
+      font-size: 50px;
+      font-size: 5rem;
+      line-height: 50px;
+      line-height: 5rem; } }
   @media screen and (min-width: 80em) {
     .entry-title {
       font-size: 54px;
@@ -4299,8 +4335,16 @@ svg#logo {
     list-style: none;
     margin: 0; }
 
-/* ## Buttons
+/* ## Headlines
 ---------------------------------------------------------------------- */
+.row_headline,
+.entry-title,
+.featured_widget_preview h2 {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
+
 /* ## Entry Meta
 ---------------------------------------------------------------------- */
 p.entry-meta {
@@ -6074,6 +6118,9 @@ p.entry-meta {
     max-width: 800px; }
   .gridcontainer.non .wrap {
     max-width: 100%; }
+  @supports (display: grid) {
+    .gridcontainer.coll3 .wrap {
+      grid-template-columns: repeat(3, 1fr); } }
   /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
   /* @import "flexible_grids_small"; */

@@ -176,10 +176,10 @@ $g_font-author: (
 /* Archive title */
 // Based on H2
 $g_font-archive-title: (
-    null   : (3.9, 3.9, 300, $color-primary),
-    // xsmall : (3.9, 3.9),
-    // small  : (3.9, 3.9),
-    // medium : (3.9, 3.9),
+    null   : (2.8, 2.8, 300, $color-primary),
+    xsmall : (3, 3),
+    small  : (3.8, 3.8),
+    medium : (4, 4),
     large  : (4.3, 4.3),
     xlarge : (4.8, 4.8)
 );
@@ -187,10 +187,10 @@ $g_font-archive-title: (
 /* Entry title */
 // Based on H1
 $g_font-entry-title: (
-    null   : (4.8, 4.8, 300, $color-primary),
-    // xsmall : (4.8, 4.8),
-    // small  : (4.8, 4.8),
-    // medium : (4.8, 4.8),
+    null   : (3.8, 3.8, 300, $color-primary),
+    xsmall : (4, 4),
+    small  : (4.8, 4.8),
+    medium : (5, 5),
     large  : (5.4, 5.4),
     xlarge : (6.1, 6.1)
 );
@@ -357,7 +357,7 @@ $g_max_width-coll2: (
 $g_max_width-coll3: (
     null   : (90%),
     xsmall : (480px),
-    small  : (600px),
+    small  : (800px),
     medium : (920px),
     large  : (1200px),
     xlarge : (1400px)
