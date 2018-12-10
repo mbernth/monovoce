@@ -109,16 +109,25 @@ function mono_flexible_grids() {
 							if (get_sub_field('image_link')){
 								// Image Array
 								$image =  get_sub_field('image_link');
+								$caption = $image['caption'];
 								$btn = get_sub_field ( 'image_button' );
 								
 								if( get_sub_field('content') && $selected == 'non' || $selected == 'non light' || $selected == 'non medium' || $selected == 'non dark' || $selected == 'non') {
 									// Full field images
 									//echo '<section class="backimage" style="background-image: url('.$image['url'].');"></section>';
-									echo '<section class="backimage"><img src="'.$image['url'].'" alt="'.$image['alt'].'" /></section>';
+									echo '<section class="backimage">';
+										echo '<figure>';
+											echo '<img src="'.$image['url'].'" alt="'.$image['alt'].'" />';
+											if ($caption){
+												echo '<figcaption>'.$caption.'</figcaption>';
+											}
+										echo '</figure>';
+									echo '</section>';
 									
 									}else{
 										
 									echo '<section>';
+										echo '<figure>';
 										if ($btn['page_link']){
 											echo '<a href="' . $btn['page_link']. '"><img src="'.$image['url'].'" alt="'.$image['alt'].'"  class="gridimage" /></a>';
 										}elseif($btn['url_link']){
@@ -126,6 +135,10 @@ function mono_flexible_grids() {
 										}else{
 											echo '<img src="'.$image['url'].'" alt="'.$image['alt'].'"  class="gridimage_uncheck" />';
 										}
+										if($caption){
+											echo '<figcaption>'.$caption.'</figcaption>';
+										}
+										echo '</figure>';
 									echo '</section>';
 										
 								}

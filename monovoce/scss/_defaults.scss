@@ -131,6 +131,20 @@ blockquote::before {
 	@include font-values($g_font-large);
 }
 
+figure{
+	position: relative;
+}
+figcaption{
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 5px 10px;
+	@include font-values($g_font-caption);
+	color: $color-white;
+	background-color: rgba(0, 11, 18, 0.4);
+}
+
 /* ## Headings
 ---------------------------------------------------------------------- */
 
