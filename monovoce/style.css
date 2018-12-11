@@ -3449,9 +3449,9 @@ th {
   justify-content: flex-end;
   width: 100%;
   max-width: 100%;
-  padding: 0 5% 20px 5%;
+  padding: 20px 5% 0px 5%;
   color: #fdfeff;
-  background-color: #002238; }
+  z-index: 200; }
   .archive-description .archive-title {
     color: #fdfeff;
     margin-bottom: 0;
@@ -3952,8 +3952,8 @@ img.alignright,
 
 .header-full-width .title-area {
   float: left;
-  width: 170px;
-  height: 20px;
+  width: 190px;
+  height: 22px;
   margin-left: 5%; }
 
 .site-title {
@@ -4221,14 +4221,18 @@ svg#logo {
       line-height: 4.8rem; } }
 
 .gridcontainer.title-element {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 50vh;
   background-color: #EF405C;
-  padding: 30px 0; }
+  padding: 30px 0;
+  overflow: hidden; }
   .gridcontainer.title-element .wrap {
-    max-width: 90%; }
+    position: relative;
+    max-width: 90%;
+    z-index: 200; }
     .gridcontainer.title-element .wrap .entry-title {
       position: relative;
       color: #fdfeff;
@@ -4247,6 +4251,10 @@ svg#logo {
       .gridcontainer.title-element .wrap .entry-title::after {
         width: 18px;
         height: 6px; }
+  .gridcontainer.title-element #canvas {
+    position: absolute;
+    top: 0;
+    z-index: 100; }
 
 .gridcontainer .featured_widget .featured_widget_preview h2 a {
   -webkit-transition: all 0.2s ease-in-out;
@@ -4570,11 +4578,14 @@ p.entry-meta {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 70vh;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%; }
   .featured-section .image-section .wrap {
+    position: relative;
     width: 90%;
-    padding: 40px 0; }
+    padding: 40px 0;
+    z-index: 200; }
   .featured-section .image-section .entry-title {
     position: relative;
     color: #fdfeff;
@@ -4593,6 +4604,9 @@ p.entry-meta {
     .featured-section .image-section .entry-title::after {
       width: 18px;
       height: 6px; }
+  .featured-section .image-section #canvas {
+    position: absolute;
+    z-index: 100; }
 
 .image-section {
   background: linear-gradient(145deg, rgba(0, 57, 93, 0.75) 0%, rgba(0, 11, 18, 0) 100%); }
@@ -4699,8 +4713,8 @@ p.entry-meta {
   align-items: center;
   padding: 40px 0; }
   .footer-widgets .address .textwidget #logo-footer {
-    width: 170px;
-    height: 21px;
+    width: 190px;
+    height: 22px;
     fill: #EF405C;
     margin-bottom: 10px; }
 
@@ -4797,6 +4811,7 @@ p.entry-meta {
   justify-content: center;
   background-color: #EF405C;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
   -webkit-animation: hero 24s infinite ease-out both;
   -moz-animation: hero 24s infinite ease-out both;
@@ -4806,7 +4821,8 @@ p.entry-meta {
   .gridcontainer.hero .wrap {
     position: relative;
     width: 90%;
-    max-width: 90%; }
+    max-width: 90%;
+    z-index: 200; }
     .gridcontainer.hero .wrap .hero-text {
       position: relative;
       display: block;
@@ -4867,11 +4883,17 @@ p.entry-meta {
     -moz-animation-iteration-count: 3;
     -webkit-animation-iteration-count: 3;
     animation-iteration-count: 3;
-    animation-delay: 12s; }
+    animation-delay: 12s;
+    z-index: 200; }
     .gridcontainer.hero .bounce .icon-arrow-down7 {
       fill: #fdfeff;
       width: 30px;
       height: 30px; }
+  .gridcontainer.hero #canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100; }
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -5167,11 +5189,15 @@ p.entry-meta {
 ---------------------------------------------------------------------- */
 .archive.full-width-content.work-archive.category-archive .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
 .archive.full-width-content.work-archive.category-archive .gridcontainer.title-element {
-  background-color: #002238; }
+  position: relative;
+  background-color: #002238;
+  overflow: hidden; }
 
 .archive.full-width-content.work-archive .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
 .archive.full-width-content.work-archive .gridcontainer.title-element {
-  background-color: #EF405C; }
+  position: relative;
+  background-color: #002238;
+  overflow: hidden; }
 
 .archive.full-width-content .content {
   display: grid;
@@ -5187,7 +5213,9 @@ p.entry-meta {
 ---------------------------------------------------------------------- */
 .work-single .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
 .work-single .gridcontainer.title-element {
-  background-color: #002238; }
+  position: relative;
+  background-color: #002238;
+  overflow: hidden; }
 
 .work-single .entry {
   display: none; }
@@ -6170,7 +6198,7 @@ p.entry-meta {
   .header-full-width .title-area,
   .title-area {
     margin-left: 0;
-    margin-top: 4px; }
+    margin-top: 0px; }
   /* ## Widget Area
 ---------------------------------------------------------------------- */
   /* ## Before header

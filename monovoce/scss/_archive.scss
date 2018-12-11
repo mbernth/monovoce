@@ -7,13 +7,17 @@
     &.work-archive.category-archive{
         .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
         .gridcontainer.title-element{
+            position: relative;
             background-color: shade($color-primary, 40%);
+            overflow: hidden;
         }
     }
     &.work-archive{
         .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
         .gridcontainer.title-element{
-            background-color: $color-secondary;
+            position: relative;
+            background-color: shade($color-primary, 40%);
+            overflow: hidden;
         }
     }
     .content{
@@ -37,7 +41,9 @@
 .work-single{
     .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
     .gridcontainer.title-element{
+        position: relative;
         background-color: shade($color-primary, 40%);
+        overflow: hidden;
     }
     .entry{
         display: none;

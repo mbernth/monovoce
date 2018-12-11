@@ -46,9 +46,10 @@
 	justify-content: flex-end;
 	width: 100%;
 	max-width: 100%;
-	padding: 0 5% 20px 5%;
+	padding: 20px 5% 0px 5%;
 	color: $color-white;
-	background-color: shade($color-primary, 40%);
+	z-index: 200;
+	// background-color: shade($color-primary, 40%);
 	
 	.archive-title{
 		color: $color-white;

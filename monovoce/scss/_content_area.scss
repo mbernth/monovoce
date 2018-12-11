@@ -40,14 +40,18 @@
 
 .gridcontainer{
 	&.title-element{
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		height: 50vh;
 		background-color: $color-secondary;
 		padding: 30px 0;
+		overflow: hidden;
 		.wrap{
+			position: relative;
 			max-width: 90%;
+			z-index: 200;
 			.entry-title{
 				position: relative;
 				color: $color-white;
@@ -71,6 +75,11 @@
 					height: 6px;
 				}
 			}
+		}
+		#canvas{
+			position: absolute;
+			top: 0;
+			z-index: 100;
 		}
 	}
 	.featured_widget{
@@ -439,11 +448,14 @@ p.entry-meta {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	height: 70vh;
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
 	width: 100%;
 	.wrap{
+		position: relative;
 		width: 90%;
 		padding: 40px 0;
+		z-index: 200;
 	}
 	.entry-title{
 		position: relative;
@@ -467,6 +479,10 @@ p.entry-meta {
 			width: 18px;
 			height: 6px;
 		}
+	}
+	#canvas{
+		position: absolute;
+		z-index: 100;
 	}
 }
 .image-section {

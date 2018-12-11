@@ -11,6 +11,14 @@
 Template Name: Home
 */
 
+/*
+add_action( 'wp_enqueue_scripts', 'hero_enqueue_scripts' );
+function hero_enqueue_scripts() {
+	wp_enqueue_script( 'tween-max', get_bloginfo( 'stylesheet_directory' ) . '/js/TweenMax.min.js', array( 'jquery' ), '1.18.0', true );
+	wp_enqueue_script( 'canvas_red', get_bloginfo( 'stylesheet_directory' ) . '/js/canvas_red.js', array( 'jquery' ), '1.0.0', true );
+}
+*/
+
 //* Add custom body class to the head
 add_filter( 'body_class', 'home_add_body_class' );
 function home_add_body_class( $classes ) {
@@ -57,7 +65,7 @@ function mono_hero_element() {
 			echo '</div>';
 
 			echo '<div class="bounce"><svg class="icon-arrow-down7"><use xlink:href="#icon-arrow-down7"></use></svg></div>';
-
+		    echo '<canvas id="canvas"></canvas>';
 		echo '</div>';
 	else:
 	endif;

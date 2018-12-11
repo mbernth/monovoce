@@ -44,14 +44,27 @@ function rv_cpt_archive_title_description() {
 				echo '<p>'.$archive_settings['intro_text'].'</p>';
 			echo '</section>';
 		echo '</div>';
-	echo '</article>';
+		echo '<canvas id="canvas"></canvas>';
+	// echo '</article>';
 	
 }
 
-
 remove_action( 'genesis_before_loop', 'genesis_do_taxonomy_title_description', 15 );
-add_action( 'genesis_after_header', 'genesis_do_taxonomy_title_description', 15 );
+add_action( 'genesis_after_header', 'sk_taxonomy_title_description_opening_wrap' );
+add_action( 'genesis_after_header', 'genesis_do_taxonomy_title_description' );
+add_action( 'genesis_after_header', 'sk_taxonomy_title_description_closing_wrap' );
 
+function sk_taxonomy_title_description_opening_wrap() {
+	echo '<div class="custom-archive-description">';
+}
+function sk_taxonomy_title_description_closing_wrap() {
+	echo '</div>';
+}
+
+add_action( 'genesis_after_header', 'close_header' );
+function close_header() {
+echo '</article>';
+}
 
 // Custom loop
 remove_action ('genesis_loop', 'genesis_do_loop'); // Remove the standard loop

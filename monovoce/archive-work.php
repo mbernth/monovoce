@@ -11,6 +11,7 @@
 Template Name: Archive Profile
 */
 
+
 //* Add landing body class to the head
 add_filter( 'body_class', 'work_archive_add_body_class' );
 function work_archive_add_body_class( $classes ) {
@@ -44,6 +45,7 @@ function rv_cpt_archive_title_description() {
 				echo '<p>'.$archive_settings['intro_text'].'</p>';
 			echo '</section>';
 		echo '</div>';
+		echo '<canvas id="canvas"></canvas>';
 	echo '</article>';
 	
 }

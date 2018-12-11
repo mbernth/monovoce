@@ -22,6 +22,7 @@ define( 'CHILD_THEME_VERSION', '1.0.0' );
 //* Enqueue Scripts
 add_action( 'wp_enqueue_scripts', 'mono_enqueue_scripts' );
 function mono_enqueue_scripts() {
+	wp_enqueue_script( 'mono-init', get_bloginfo( 'stylesheet_directory' ) . '/js/init.js', array( 'jquery' ), '1.0.0' );
 	// Responsive menu
 	// wp_enqueue_script( 'mono-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'mono-multi-level-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/mono-multi-level-menu.js', array( 'jquery' ), '1.0.0' );
@@ -39,6 +40,10 @@ function mono_enqueue_scripts() {
 	wp_enqueue_script( 'jquery-headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/jQuery.headroom.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'headroom-action', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom_action.js', array( 'jquery' ), '1.0.0', true );
+	// Tween background animation
+	wp_enqueue_script( 'tween-max', get_bloginfo( 'stylesheet_directory' ) . '/js/TweenMax.min.js', array( 'jquery' ), '1.18.0', true );
+	wp_enqueue_script( 'canvas_red', get_bloginfo( 'stylesheet_directory' ) . '/js/canvas_red.js', array( 'jquery' ), '1.0.0', true );
+	
 }
 
 /* Enqueue Fonts
@@ -197,7 +202,7 @@ remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 add_action ( 'genesis_after_header', 'mono_title_reposition' );
 function mono_title_reposition(){
 	if ( (! has_post_thumbnail()) ) :
-		the_title( '<div class="gridcontainer title-element"><div class="wrap"><h1 lang="en" class="entry-title" itemprop="headline">', '</h1></div></div>' );
+		the_title( '<div class="gridcontainer title-element"><div class="wrap"><h1 lang="en" class="entry-title" itemprop="headline">', '</h1></div><canvas id="canvas"></canvas></div></div>' );
 	endif;
 }
 
@@ -215,7 +220,7 @@ function single_post_featured_image() {
 		$img = genesis_get_image( array( 'format' => 'src' ) );
 		printf( '<div class="featured-section" style="background-image:url(%s);"><div class="image-section">', $img );
 		the_title( '<div class="wrap"><h1 lang="en" class="entry-title" itemprop="headline">', '</h1></div>' );
-		printf('</div></div>');
+		printf('<canvas id="canvas"></canvas></div></div>');
 		// elseif( (! is_front_page()) ):
 		// printf( '<div class="image-section" style="background-color:#231f20;"></div>', $img );
 		

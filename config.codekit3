@@ -469,9 +469,29 @@
 	"/monovoce/js/basic-menu.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/basic-menu-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/monovoce/js/canvas.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/canvas-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/monovoce/js/canvas_red.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/canvas_red-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -479,7 +499,7 @@
 	"/monovoce/js/casefilter.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/casefilter-min.js",
 		"oF": 0,
@@ -489,7 +509,7 @@
 	"/monovoce/js/classie.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/classie-min.js",
 		"oF": 0,
@@ -499,7 +519,7 @@
 	"/monovoce/js/countdown.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/countdown-min.js",
 		"oF": 0,
@@ -509,7 +529,7 @@
 	"/monovoce/js/fade.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/fade-min.js",
 		"oF": 0,
@@ -519,7 +539,7 @@
 	"/monovoce/js/fitvids.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/fitvids-min.js",
 		"oF": 0,
@@ -529,7 +549,7 @@
 	"/monovoce/js/flickity.pkgd.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/flickity.pkgd.min-min.js",
 		"oF": 0,
@@ -539,7 +559,7 @@
 	"/monovoce/js/flip.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/flip-min.js",
 		"oF": 0,
@@ -549,7 +569,7 @@
 	"/monovoce/js/frontpage_image.height.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/frontpage_image.height-min.js",
 		"oF": 0,
@@ -559,7 +579,7 @@
 	"/monovoce/js/global.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/global-min.js",
 		"oF": 0,
@@ -569,7 +589,7 @@
 	"/monovoce/js/headroom.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/headroom-min.js",
 		"oF": 0,
@@ -579,7 +599,7 @@
 	"/monovoce/js/headroom_action.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/headroom_action-min.js",
 		"oF": 0,
@@ -589,7 +609,7 @@
 	"/monovoce/js/home.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/home-min.js",
 		"oF": 0,
@@ -599,9 +619,19 @@
 	"/monovoce/js/image.height.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/image.height-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/monovoce/js/init.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/init-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -609,7 +639,7 @@
 	"/monovoce/js/jquery-1.9.1.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/jquery-1.9.1.min-min.js",
 		"oF": 0,
@@ -619,7 +649,7 @@
 	"/monovoce/js/jquery-2.1.3.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/jquery-2.1.3.min-min.js",
 		"oF": 0,
@@ -629,7 +659,7 @@
 	"/monovoce/js/jquery.ba-cond.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/jquery.ba-cond.min-min.js",
 		"oF": 0,
@@ -639,7 +669,7 @@
 	"/monovoce/js/jquery.fittext.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/jquery.fittext-min.js",
 		"oF": 0,
@@ -649,7 +679,7 @@
 	"/monovoce/js/jquery.fitvids.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/jquery.fitvids-min.js",
 		"oF": 0,
@@ -659,7 +689,7 @@
 	"/monovoce/js/jQuery.headroom.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/jQuery.headroom-min.js",
 		"oF": 0,
@@ -669,7 +699,7 @@
 	"/monovoce/js/jquery.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/jquery.min-min.js",
 		"oF": 0,
@@ -679,7 +709,7 @@
 	"/monovoce/js/jquery.mousewheel.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/jquery.mousewheel.min-min.js",
 		"oF": 0,
@@ -689,7 +719,7 @@
 	"/monovoce/js/jquery.slitslider.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/jquery.slitslider-min.js",
 		"oF": 0,
@@ -699,7 +729,7 @@
 	"/monovoce/js/maps.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/maps-min.js",
 		"oF": 0,
@@ -709,7 +739,7 @@
 	"/monovoce/js/masonry.pkgd.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/masonry.pkgd.min-min.js",
 		"oF": 0,
@@ -719,7 +749,7 @@
 	"/monovoce/js/menu.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/menu-min.js",
 		"oF": 0,
@@ -729,7 +759,7 @@
 	"/monovoce/js/menu_push.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/menu_push-min.js",
 		"oF": 0,
@@ -739,9 +769,29 @@
 	"/monovoce/js/min/basic-menu-min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/min/basic-menu-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/monovoce/js/min/canvas-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/min/canvas-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/monovoce/js/min/canvas_red-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/min/canvas_red-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -749,7 +799,7 @@
 	"/monovoce/js/min/fade-min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/min/fade-min-min.js",
 		"oF": 0,
@@ -759,7 +809,7 @@
 	"/monovoce/js/min/global-min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/min/global-min-min.js",
 		"oF": 0,
@@ -769,7 +819,7 @@
 	"/monovoce/js/min/headroom_action-min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/min/headroom_action-min-min.js",
 		"oF": 0,
@@ -779,7 +829,7 @@
 	"/monovoce/js/min/mono-multi-level-menu-min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/min/mono-multi-level-menu-min-min.js",
 		"oF": 0,
@@ -789,7 +839,7 @@
 	"/monovoce/js/min/multi-level-menu-min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/min/multi-level-menu-min-min.js",
 		"oF": 0,
@@ -799,7 +849,7 @@
 	"/monovoce/js/min/responsive-menu-min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/min/responsive-menu-min-min.js",
 		"oF": 0,
@@ -809,7 +859,7 @@
 	"/monovoce/js/modernizr.custom.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/modernizr.custom-min.js",
 		"oF": 0,
@@ -819,7 +869,7 @@
 	"/monovoce/js/modernizr.custom.push.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/modernizr.custom.push-min.js",
 		"oF": 0,
@@ -829,7 +879,7 @@
 	"/monovoce/js/modernizr.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/modernizr.min-min.js",
 		"oF": 0,
@@ -839,7 +889,7 @@
 	"/monovoce/js/mono-multi-level-menu.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/mono-multi-level-menu-min.js",
 		"oF": 0,
@@ -849,7 +899,7 @@
 	"/monovoce/js/mono_flip.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/mono_flip-min.js",
 		"oF": 0,
@@ -859,7 +909,7 @@
 	"/monovoce/js/multi-level-menu.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/multi-level-menu-min.js",
 		"oF": 0,
@@ -869,7 +919,7 @@
 	"/monovoce/js/owl.carousel.min.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/owl.carousel.min-min.js",
 		"oF": 0,
@@ -879,7 +929,7 @@
 	"/monovoce/js/owl.frontslider.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/owl.frontslider-min.js",
 		"oF": 0,
@@ -889,7 +939,7 @@
 	"/monovoce/js/pageflip.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/pageflip-min.js",
 		"oF": 0,
@@ -899,7 +949,7 @@
 	"/monovoce/js/parallax.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/parallax-min.js",
 		"oF": 0,
@@ -909,7 +959,7 @@
 	"/monovoce/js/push.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/push-min.js",
 		"oF": 0,
@@ -919,7 +969,7 @@
 	"/monovoce/js/quote_action.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/quote_action-min.js",
 		"oF": 0,
@@ -929,7 +979,7 @@
 	"/monovoce/js/quotes.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/quotes-min.js",
 		"oF": 0,
@@ -939,7 +989,7 @@
 	"/monovoce/js/responsive-menu.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/responsive-menu-min.js",
 		"oF": 0,
@@ -949,7 +999,7 @@
 	"/monovoce/js/rgc-mason.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/rgc-mason-min.js",
 		"oF": 0,
@@ -959,7 +1009,7 @@
 	"/monovoce/js/slide.nav.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/slide.nav-min.js",
 		"oF": 0,
@@ -969,9 +1019,19 @@
 	"/monovoce/js/timeline.js": {
 		"ft": 64,
 		"ma": 0,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/timeline-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/monovoce/js/TweenMax.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/TweenMax.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -6109,7 +6169,7 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
-		"minifyOutput": 1,
+		"minifyOutput": 0,
 		"syntaxCheckerStyle": 1,
 		"transpilerStyle": 0
 		},
