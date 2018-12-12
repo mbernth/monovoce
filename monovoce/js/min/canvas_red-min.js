@@ -16,6 +16,7 @@ function Animate(canvas, options) {
   /**
    * Default options
    */
+if($('body').width() > 1280) {
   Animate.prototype.options = {
     density: 10, // Affects how many poitns are created
     speed: 5, // Time in seconds to shift points
@@ -27,9 +28,10 @@ function Animate(canvas, options) {
     lineWidth: 1,
     lines: 3,  // Number of closest lines to draw
     updateClosest : false, // Update closet points each loop
-    mouse: false, // Link to mouse or random
+    mouse: true, // Link to mouse or random
   
   };
+};
   
   /**
    * Setup everything

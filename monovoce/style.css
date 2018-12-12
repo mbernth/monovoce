@@ -4809,15 +4809,12 @@ p.entry-meta {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
   background-color: #EF405C;
+  animation: rgb 30s infinite alternate;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  overflow: hidden;
-  -webkit-animation: hero 24s infinite ease-out both;
-  -moz-animation: hero 24s infinite ease-out both;
-  -o-animation: hero 24s infinite ease-out both;
-  -ms-animation: hero 24s infinite ease-out both;
-  animation: hero 24s infinite ease-out both; }
+  overflow: hidden; }
   .gridcontainer.hero .wrap {
     position: relative;
     width: 90%;
@@ -4894,6 +4891,16 @@ p.entry-meta {
     width: 100%;
     height: 100%;
     z-index: 100; }
+
+@keyframes rgb {
+  25% {
+    background-color: #EF405C; }
+  50% {
+    background-color: #00395D; }
+  75% {
+    background-color: #52b9e9; }
+  100% {
+    background-color: #bf334a; } }
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

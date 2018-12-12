@@ -45,7 +45,7 @@ function rv_cpt_archive_title_description() {
 				echo '<p>'.$archive_settings['intro_text'].'</p>';
 			echo '</section>';
 		echo '</div>';
-		echo '<canvas id="canvas"></canvas>';
+		// echo '<canvas id="canvas"></canvas>';
 	echo '</article>';
 	
 }

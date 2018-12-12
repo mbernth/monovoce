@@ -35,17 +35,19 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
 		background-color: $color-secondary;
 		//background: linear-gradient(-45deg, $color-primary, $color-secondary, $color-secondary, $color-primary);
 		//background-size: 400% 400%;
+		animation: rgb 30s infinite alternate;
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
 		overflow: hidden;
-		-webkit-animation: hero 24s infinite ease-out both;
-		-moz-animation: hero 24s infinite ease-out both;
-		-o-animation: hero 24s infinite ease-out both;
-		-ms-animation: hero 24s infinite ease-out both;
-		animation: hero 24s infinite ease-out both;
+		// -webkit-animation: hero 24s infinite ease-out both;
+		// -moz-animation: hero 24s infinite ease-out both;
+		// -o-animation: hero 24s infinite ease-out both;
+		// -ms-animation: hero 24s infinite ease-out both;
+		// animation: hero 24s infinite ease-out both;
 		.wrap{
 			position: relative;
 			width: 90%;
@@ -135,6 +137,20 @@
 			height: 100%;
 			z-index: 100;
 		}
+	}
+}
+@keyframes rgb {
+	25% {
+	  background-color: $color-secondary;
+	}
+	50% {
+	  background-color: $color-primary;
+	}
+	75% {
+	  background-color: $color-active;
+	}
+	100% {
+	  background-color: $color-accent-three;
 	}
 }
 

@@ -202,7 +202,8 @@ remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 add_action ( 'genesis_after_header', 'mono_title_reposition' );
 function mono_title_reposition(){
 	if ( (! has_post_thumbnail()) ) :
-		the_title( '<div class="gridcontainer title-element"><div class="wrap"><h1 lang="en" class="entry-title" itemprop="headline">', '</h1></div><canvas id="canvas"></canvas></div></div>' );
+		the_title( '<div class="gridcontainer title-element"><div class="wrap"><h1 lang="en" class="entry-title" itemprop="headline">', '</h1></div></div></div>' );
+		// the_title( '<div class="gridcontainer title-element"><div class="wrap"><h1 lang="en" class="entry-title" itemprop="headline">', '</h1></div><canvas id="canvas"></canvas></div></div>' );
 	endif;
 }
 
@@ -220,7 +221,8 @@ function single_post_featured_image() {
 		$img = genesis_get_image( array( 'format' => 'src' ) );
 		printf( '<div class="featured-section" style="background-image:url(%s);"><div class="image-section">', $img );
 		the_title( '<div class="wrap"><h1 lang="en" class="entry-title" itemprop="headline">', '</h1></div>' );
-		printf('<canvas id="canvas"></canvas></div></div>');
+		printf('</div></div>');
+		// printf('<canvas id="canvas"></canvas></div></div>');
 		// elseif( (! is_front_page()) ):
 		// printf( '<div class="image-section" style="background-color:#231f20;"></div>', $img );
 		
