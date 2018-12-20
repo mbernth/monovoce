@@ -51,6 +51,7 @@ $g_body-background-color:$color-white;
          url('fonts/Branding-Thin.woff') format('woff'), /* Pretty Modern Browsers */
          url('fonts/Branding-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('fonts/Branding-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-display: swap;
          font-weight: 100;
          font-style: normal;
 }
@@ -62,6 +63,7 @@ $g_body-background-color:$color-white;
          url('fonts/Branding-Light.woff') format('woff'), /* Pretty Modern Browsers */
          url('fonts/Branding-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('fonts/Branding-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-display: swap;
          font-weight: 200;
          font-style: normal;
 }
@@ -73,6 +75,7 @@ $g_body-background-color:$color-white;
          url('fonts/Branding-Semilight.woff') format('woff'), /* Pretty Modern Browsers */
          url('fonts/Branding-Semilight.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('fonts/Branding-Semilight.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-display: swap;
          font-weight: 300;
          font-style: normal;
 }
@@ -83,6 +86,7 @@ $g_body-background-color:$color-white;
          url('fonts/Branding-SemilightItalic.woff') format('woff'), /* Pretty Modern Browsers */
          url('fonts/Branding-SemilightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('fonts/Branding-SemilightItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-display: swap;
          font-weight: 300;
          font-style: italic;
 }
@@ -93,6 +97,7 @@ $g_body-background-color:$color-white;
          url('fonts/Branding-Semibold.woff') format('woff'), /* Pretty Modern Browsers */
          url('fonts/Branding-Semibold.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('fonts/Branding-Semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-display: swap;
          font-weight: 500;
          font-style: normal;
 }
@@ -103,6 +108,7 @@ $g_body-background-color:$color-white;
          url('fonts/Branding-SemiboldItalic.woff') format('woff'), /* Pretty Modern Browsers */
          url('fonts/Branding-SemiboldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('fonts/Branding-SemiboldItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-display: swap;
          font-weight: 500;
          font-style: italic;
 }
@@ -113,6 +119,7 @@ $g_body-background-color:$color-white;
          url('fonts/Branding-Black.woff') format('woff'), /* Pretty Modern Browsers */
          url('fonts/Branding-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('fonts/Branding-Black.svg#svgFontName') format('svg'); /* Legacy iOS */
+         font-display: swap;
          font-weight: 900;
          font-style: normal;
 }

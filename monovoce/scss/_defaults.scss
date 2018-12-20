@@ -424,6 +424,7 @@ label {
 	cursor: pointer;
 	@include font-values($g_font-button);
 	color: $g_font-button-color;
+	text-shadow: 0px 0px 5px $color-primary;
 	text-align: center;
 	text-decoration: none;
 	background-color: $g_font-button-background-color;
@@ -450,6 +451,7 @@ input[type="submit"]
 	cursor: pointer;
 	@include font-values($g_font-button);
 	color: $g_font-button-color;
+	text-shadow: 0px 0px 5px $color-primary;
 	text-align: center;
 	text-decoration: none;
 	background-color: $g_font-button-background-color;

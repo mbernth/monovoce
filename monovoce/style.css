@@ -258,6 +258,7 @@ input[type="search"] {
   /* IE9 Compat Modes */
   src: url("fonts/Branding-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/Branding-Thin.woff") format("woff"), url("fonts/Branding-Thin.ttf") format("truetype"), url("fonts/Branding-Thin.svg#svgFontName") format("svg");
   /* Legacy iOS */
+  font-display: swap;
   font-weight: 100;
   font-style: normal; }
 
@@ -267,6 +268,7 @@ input[type="search"] {
   /* IE9 Compat Modes */
   src: url("fonts/Branding-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Branding-Light.woff") format("woff"), url("fonts/Branding-Light.ttf") format("truetype"), url("fonts/Branding-Light.svg#svgFontName") format("svg");
   /* Legacy iOS */
+  font-display: swap;
   font-weight: 200;
   font-style: normal; }
 
@@ -276,6 +278,7 @@ input[type="search"] {
   /* IE9 Compat Modes */
   src: url("fonts/Branding-Semilight.eot?#iefix") format("embedded-opentype"), url("fonts/Branding-Semilight.woff") format("woff"), url("fonts/Branding-Semilight.ttf") format("truetype"), url("fonts/Branding-Semilight.svg#svgFontName") format("svg");
   /* Legacy iOS */
+  font-display: swap;
   font-weight: 300;
   font-style: normal; }
 
@@ -285,6 +288,7 @@ input[type="search"] {
   /* IE9 Compat Modes */
   src: url("fonts/Branding-SemilightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Branding-SemilightItalic.woff") format("woff"), url("fonts/Branding-SemilightItalic.ttf") format("truetype"), url("fonts/Branding-SemilightItalic.svg#svgFontName") format("svg");
   /* Legacy iOS */
+  font-display: swap;
   font-weight: 300;
   font-style: italic; }
 
@@ -294,6 +298,7 @@ input[type="search"] {
   /* IE9 Compat Modes */
   src: url("fonts/Branding-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/Branding-Semibold.woff") format("woff"), url("fonts/Branding-Semibold.ttf") format("truetype"), url("fonts/Branding-Semibold.svg#svgFontName") format("svg");
   /* Legacy iOS */
+  font-display: swap;
   font-weight: 500;
   font-style: normal; }
 
@@ -303,6 +308,7 @@ input[type="search"] {
   /* IE9 Compat Modes */
   src: url("fonts/Branding-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/Branding-SemiboldItalic.woff") format("woff"), url("fonts/Branding-SemiboldItalic.ttf") format("truetype"), url("fonts/Branding-SemiboldItalic.svg#svgFontName") format("svg");
   /* Legacy iOS */
+  font-display: swap;
   font-weight: 500;
   font-style: italic; }
 
@@ -312,6 +318,7 @@ input[type="search"] {
   /* IE9 Compat Modes */
   src: url("fonts/Branding-Black.eot?#iefix") format("embedded-opentype"), url("fonts/Branding-Black.woff") format("woff"), url("fonts/Branding-Black.ttf") format("truetype"), url("fonts/Branding-Black.svg#svgFontName") format("svg");
   /* Legacy iOS */
+  font-display: swap;
   font-weight: 900;
   font-style: normal; }
 
@@ -2541,6 +2548,7 @@ label {
   font-weight: 300;
   color: #fdfeff;
   color: #fdfeff;
+  text-shadow: 0px 0px 5px #00395D;
   text-align: center;
   text-decoration: none;
   background-color: #52b9e9;
@@ -2583,6 +2591,7 @@ input[type="submit"] {
   font-weight: 300;
   color: #fdfeff;
   color: #fdfeff;
+  text-shadow: 0px 0px 5px #00395D;
   text-align: center;
   text-decoration: none;
   background-color: #52b9e9;
