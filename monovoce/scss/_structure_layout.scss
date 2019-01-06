@@ -109,16 +109,16 @@
 			position: absolute;
 			content: '';
 			transform: scale3d(1, 1, 1);
-			top: 0;
+			top: 5px;
 			left: 0;
 			background-color: $color-primary;
 		}
 		&::before{
 			width: 6px;
-			height: 18px;
+			height: 12px;
 		}
 		&::after{
-			width: 18px;
+			width: 12px;
 			height: 6px;
 		}
 	}

@@ -3070,14 +3070,14 @@ th {
       position: absolute;
       content: '';
       transform: scale3d(1, 1, 1);
-      top: 0;
+      top: 5px;
       left: 0;
       background-color: #00395D; }
     .gridcontainer .row_headline::before {
       width: 6px;
-      height: 18px; }
+      height: 12px; }
     .gridcontainer .row_headline::after {
-      width: 18px;
+      width: 12px;
       height: 6px; }
   .gridcontainer .wrap {
     width: 90%;
@@ -4113,6 +4113,12 @@ svg#logo {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-decoration: none; }
+    @media screen and (min-width: 48em) {
+      .menu-item a {
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 12px;
+        line-height: 1.2rem; } }
     .menu-item a:hover {
       color: #66889e; }
   .menu-item.menu-item-has-children a:after {
@@ -4251,14 +4257,14 @@ svg#logo {
         position: absolute;
         content: '';
         transform: scale3d(1, 1, 1);
-        top: 0;
+        top: 6px;
         left: 0;
         background-color: #fdfeff; }
       .gridcontainer.title-element .wrap .entry-title::before {
         width: 6px;
-        height: 18px; }
+        height: 12px; }
       .gridcontainer.title-element .wrap .entry-title::after {
-        width: 18px;
+        width: 12px;
         height: 6px; }
   .gridcontainer.title-element #canvas {
     position: absolute;
@@ -4818,7 +4824,6 @@ p.entry-meta {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
   background-color: #EF405C;
   animation: rgb 30s infinite alternate;
   height: 100vh;
@@ -4844,14 +4849,14 @@ p.entry-meta {
         position: absolute;
         content: '';
         transform: scale3d(1, 1, 1);
-        top: 0;
+        top: 20px;
         left: 0;
         background-color: #fdfeff; }
       .gridcontainer.hero .wrap .hero-text::before {
         width: 6px;
-        height: 18px; }
+        height: 12px; }
       .gridcontainer.hero .wrap .hero-text::after {
-        width: 18px;
+        width: 12px;
         height: 6px; }
       .gridcontainer.hero .wrap .hero-text span {
         position: absolute;
@@ -6252,20 +6257,20 @@ p.entry-meta {
       position: absolute;
       content: '';
       transform: scale3d(1, 1, 1);
-      top: -10px;
+      top: -5px;
       bottom: unset;
       left: unset;
       right: -5px;
-      width: 5px;
-      height: 14px;
+      width: 4px;
+      height: 8px;
       background-color: #fdfeff; }
     .menu-item:last-child::before {
       position: absolute;
       content: '';
       transform: scale3d(1, 1, 1);
-      width: 14px;
-      height: 5px;
-      top: -10px;
+      width: 8px;
+      height: 4px;
+      top: -5px;
       right: -5px;
       background-color: #fdfeff; }
   /* ## Secondary Navigation
