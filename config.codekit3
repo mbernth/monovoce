@@ -1141,6 +1141,13 @@
 		"oAP": "/monovoce/lib/works_post_type.php",
 		"oF": 0
 		},
+	"/monovoce/page_contact.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/monovoce/page_contact.php",
+		"oF": 0
+		},
 	"/monovoce/page_home.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -3445,6 +3452,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/monovoce/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/monovoce/scss/_page_contact.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/monovoce/_page_contact.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

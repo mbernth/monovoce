@@ -196,6 +196,22 @@ function mono_flexible_grids() {
 
 								echo '</section>';
 							}
+
+							if ( get_row_layout() == 'references' ) :
+								if ( have_rows( 'references', 'option' ) ) :
+									echo '<section class="references">';
+									echo '<ul>';
+									while ( have_rows( 'references', 'option' ) ) : the_row();
+										$reference = get_sub_field( 'company_name' );
+										echo '<li>'.$reference.'</li>';
+										// the_sub_field( 'company_name' );
+									endwhile;
+									echo '</ul>';
+									echo '</section>';
+								else :
+									// no rows found
+								endif;
+							endif;
 							
 							
 					endwhile;

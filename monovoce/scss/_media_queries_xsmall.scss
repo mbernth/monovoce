@@ -32,6 +32,21 @@
 ---------------------------------------------------------------------- */
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
+.gridcontainer{
+	.wrap{
+		section{
+			&.references{
+				ul{
+					justify-content: space-between;
+					li{
+						width: calc(50% - 10px);
+					}
+				}
+			}
+		}
+	}
+}
+
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
 /* @import "flexible_grids_small"; */

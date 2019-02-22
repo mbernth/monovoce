@@ -59,6 +59,19 @@
 }
 
 @supports (display: grid) {
+	.gridcontainer{
+		.wrap{
+			section{
+				&.references{
+					ul{
+						grid-template-columns: repeat(4, 1fr);
+						grid-column-gap: $margin-large+px;
+					}
+				}
+			}
+		}
+	}
+
 .content-sidebar .site-inner,
 .sidebar-content .site-inner,
 .content-sidebar-sidebar .site-inner,

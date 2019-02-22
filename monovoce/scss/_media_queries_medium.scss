@@ -118,6 +118,25 @@
 }
 
 @supports (display: grid) {
+	.gridcontainer{
+		.wrap{
+			section{
+				&.references{
+					ul{
+						display: grid;
+						grid-template-columns: repeat(3, 1fr);
+						grid-template-rows: auto;
+						grid-column-gap: $margin-medium+px;
+						grid-row-gap: 0;
+						justify-content: unset;
+						li{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
 	.gridcontainer.coll2{
 		.wrap{
 			grid-template-columns:repeat(2, 1fr);

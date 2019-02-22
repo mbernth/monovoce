@@ -89,6 +89,17 @@
         }
     }
 }
+.page-contact,
+.work-archive{
+    .menu-item{
+        a{
+            &:hover{
+                color:$color-secondary;
+            }
+        }
+    }
+}
+
 .responsive-menu-icon {
     position: absolute;
     top: 35px;

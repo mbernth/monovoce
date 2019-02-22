@@ -5,7 +5,9 @@
 ---------------------------------------------------------------------- */
 .archive.full-width-content{
     &.work-archive.category-archive{
-        .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
+        .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned{
+            background-color: shade($color-primary, 40%);
+        }
         .gridcontainer.title-element{
             position: relative;
             background-color: shade($color-primary, 40%);
@@ -13,7 +15,9 @@
         }
     }
     &.work-archive{
-        .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
+        .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned{
+            background-color: shade($color-primary, 40%);
+        }
         .gridcontainer.title-element{
             position: relative;
             background-color: shade($color-primary, 40%);
@@ -39,7 +43,9 @@
 ---------------------------------------------------------------------- */
 
 .work-single{
-    .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned,
+    .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned{
+        background-color: transparent;
+    }
     .gridcontainer.title-element{
         position: relative;
         background-color: shade($color-primary, 40%);
@@ -91,7 +97,7 @@
 	            -o-transition:      all 0.2s ease-in-out;
 	            transition:         all 0.2s ease-in-out;
                 &:hover{
-                    letter-spacing: .05em;
+                    letter-spacing: .015em;
                 }
             }
         }
@@ -111,7 +117,7 @@
         -o-transition:      all 0.2s ease-in-out;
         transition:         all 0.2s ease-in-out;
         &:hover{
-            letter-spacing: .05em;
+            letter-spacing: .015em;
         }
     }
     &::after{

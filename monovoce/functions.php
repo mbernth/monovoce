@@ -41,8 +41,8 @@ function mono_enqueue_scripts() {
 	wp_enqueue_script( 'headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'headroom-action', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom_action.js', array( 'jquery' ), '1.0.0', true );
 	// Tween background animation
-	wp_enqueue_script( 'tween-max', get_bloginfo( 'stylesheet_directory' ) . '/js/TweenMax.min.js', array( 'jquery' ), '1.18.0', true );
-	wp_enqueue_script( 'canvas_red', get_bloginfo( 'stylesheet_directory' ) . '/js/canvas_red.js', array( 'jquery' ), '1.0.0', true );
+	// wp_enqueue_script( 'tween-max', get_bloginfo( 'stylesheet_directory' ) . '/js/TweenMax.min.js', array( 'jquery' ), '1.18.0', true );
+	// wp_enqueue_script( 'canvas_red', get_bloginfo( 'stylesheet_directory' ) . '/js/canvas_red.js', array( 'jquery' ), '1.0.0', true );
 	
 }
 
@@ -274,3 +274,14 @@ function sp_previous_page_link ( $text ) {
 //* Custom post types
 // =====================================================================================================================
 include_once( get_stylesheet_directory() . '/lib/works_post_type.php' );
+
+//* Option pages
+// =====================================================================================================================
+
+// Add events option page
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title' 	=> 'References',
+		'menu_title'	=> 'References'
+	));
+}

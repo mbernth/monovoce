@@ -1,0 +1,11 @@
+/* # Contact Style
+---------------------------------------------------------------------------------------------------- */
+.page-contact{
+    .gridcontainer{
+        &.title-element{
+            height: 25vh;
+            min-height: 250px;
+		    background-color: shade($color-primary, 60%);
+        }
+    }
+}

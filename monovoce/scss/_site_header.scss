@@ -52,6 +52,13 @@
 .site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned{
 	background-color: $color-secondary;
 }
+
+.page-contact{
+	.site-header.headroom.headroom--not-top.headroom--not-bottom.headroom--pinned{
+		background-color: shade($color-primary, 60%);
+	}
+}
+
 /* ## Title Area
 ---------------------------------------------------------------------- */
 
