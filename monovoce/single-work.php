@@ -48,7 +48,7 @@ function single_work_post_featured_image() {
                     if ($project_link){
                         echo '<section class="work-data-website">';
                             echo '<h4>Visit the website</h4>';
-                            echo '<a href="'.$project_link.'" target="_blank">'.$project_link.'</a>';
+                            echo '<a href="'.$project_link.'" target="_blank" rel="noreferrer">'.$project_link.'</a>';
                         echo '</section>';
                     }
                     echo '<section class="work-data-list">';
