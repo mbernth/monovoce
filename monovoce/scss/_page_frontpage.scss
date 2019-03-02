@@ -2,8 +2,10 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .home-section .site-inner{
-	margin-top:0px;
+	margin-top:100vh;
+	margin-top: calc(var(--vh, 1vh) * 100);
 	padding-top:0;
+	box-shadow: 0px 0px 15px 15px rgba(0, 11, 18, 0.12);
 }
 
 .home-section.full-width-content .entry.content,
@@ -31,7 +33,7 @@
 --------------------------------------------------- */
 .gridcontainer{
 	&.hero{
-		position: relative;
+		position: fixed;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -42,7 +44,9 @@
 		animation: rgb 30s infinite alternate;
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
+		width: 100%;
 		overflow: hidden;
+		z-index: 100;
 		// -webkit-animation: hero 24s infinite ease-out both;
 		// -moz-animation: hero 24s infinite ease-out both;
 		// -o-animation: hero 24s infinite ease-out both;

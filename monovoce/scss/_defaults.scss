@@ -133,6 +133,9 @@ blockquote::before {
 
 figure{
 	position: relative;
+	img{
+		display: block;
+	}
 }
 figcaption{
 	display: block;

@@ -3,6 +3,15 @@
 .site-container{
 	overflow: auto;
 }
+.site-inner{
+	z-index: 200;
+}
+.footer-widgets{
+	z-index: 200;
+}
+.site-footer{
+	z-index: 200;
+}
 @supports (display: grid) {
 	.site-container{
 		display: grid;
@@ -34,9 +43,11 @@
 		}
 		.site-inner{
 			grid-area:site-inner;
+			z-index: 200;
 		}
 		.footer-widgets{
 			grid-area:footer-widgets;
+			z-index: 200;
 		}
 		.site-footer{
 			grid-area:site-footer;
@@ -57,6 +68,7 @@
 	margin: 30px auto;
 	width:100%;
 	overflow: auto;
+	background: $color-white;
 }
 .content-sidebar .site-inner,
 .sidebar-content .site-inner,
