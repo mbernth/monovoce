@@ -33,9 +33,8 @@ function enqueue_scripts_slider_images() {
 // check if the flexible content field has rows of data
 add_action( 'genesis_after_entry', 'mono_slider_images', 15 );
 function mono_slider_images() {
-    echo '<article class="gridcontainer coll1">';
+    echo '<article class="gridcontainer carousel-wrapper non">';
     echo '<div class="wrap">';
-    echo '<section>';
     if ( have_rows( 'slider' ) ) :
         echo '<div class="main-carousel">';
         
@@ -44,8 +43,8 @@ function mono_slider_images() {
             echo '<div class="carousel-cell">';
 		        if ( get_sub_field( 'image' ) ) {
                     // echo '<img src="'.$image['url'].'" />';
-                    echo '<div style="width:1000px; background-image:url('.$image['url'].');">';
-						echo '<div style="height:100vh;"></div>';
+                    echo '<div class="carousel-image" style="background-image:url('.$image['url'].');">';
+						echo '<div class="carousel-section"></div>';
 					echo '</div>';
                 }
             echo '</div>';
@@ -56,7 +55,6 @@ function mono_slider_images() {
 	    // no rows found
     endif;
     echo '</div>';
-    echo '</section>';
     echo '</article>';
 }
 

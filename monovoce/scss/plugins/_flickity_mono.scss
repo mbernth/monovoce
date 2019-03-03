@@ -1,0 +1,47 @@
+/* # Flickerty styles
+---------------------------------------------------------------------------------------------------- */
+.carousel-wrapper{
+    .wrap{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.home{
+    .carousel-wrapper{
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+}
+.main-carousel{
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-cell{
+    height: 100%;
+    width: 100%;
+}
+.carousel-image {
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    background-attachment: scroll;
+    background-color: #000000;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.carousel-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background: linear-gradient(145deg, rgba(0, 57, 93, 0.75) 0%, rgba(0, 11, 18, 0) 100%);
+}

@@ -4,8 +4,8 @@ $('.main-carousel').flickity({
   contain: true,
   prevNextButtons: false,
   pageDots: false,
-  // wrapAround: true,
   fade: true,
   autoPlay: 6000,
-  pauseAutoPlayOnHover: false
+  pauseAutoPlayOnHover: false,
+  setGallerySize: false
 });
