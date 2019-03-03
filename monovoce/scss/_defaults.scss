@@ -37,6 +37,15 @@ textarea:focus,
 }
 
 a {
+	
+}
+
+a:hover,
+a:focus {
+	
+}
+
+a:not([class]) {
 	color: $g_font-bread-a-color;
 	text-decoration: underline;
 	-webkit-transition: color 0.2s ease-in-out;
@@ -44,13 +53,13 @@ a {
 	-ms-transition:     color 0.2s ease-in-out;
 	-o-transition:      color 0.2s ease-in-out;
 	transition:         color 0.2s ease-in-out;
-}
-
-a:hover,
-a:focus {
-	color: $g_font-bread-a-hover-color;
-	text-decoration: none;
-}
+  
+	&:hover,
+	&:focus {
+		color: $g_font-bread-a-hover-color;
+		text-decoration: none;
+	}
+  }
 
 p {
 	margin: 0 0 20px 0;

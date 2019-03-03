@@ -22,17 +22,24 @@ define( 'CHILD_THEME_VERSION', '1.0.0' );
 //* Enqueue Scripts
 add_action( 'wp_enqueue_scripts', 'mono_enqueue_scripts' );
 function mono_enqueue_scripts() {
+	
 	wp_enqueue_script( 'mono-init', get_bloginfo( 'stylesheet_directory' ) . '/js/init.js', array( 'jquery' ), '1.0.0' );
 	// Responsive menu
 	// wp_enqueue_script( 'mono-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'mono-multi-level-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/mono-multi-level-menu.js', array( 'jquery' ), '1.0.0' );
+
 	// Global Jquery
-	wp_enqueue_script( 'mono-mouse', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.mousewheel.min.js', array( 'jquery' ), '1.0.0', true );
+	// wp_enqueue_script( 'mono-mouse', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.mousewheel.min.js', array( 'jquery' ), '1.0.0', true );
 	wp_enqueue_script( 'mono-global', get_bloginfo( 'stylesheet_directory' ) . '/js/fade.js', array( 'jquery' ), '1.0.0', true );
+
 	// Jquery 1.9.1
-	wp_enqueue_script( 'mono-jquery', get_stylesheet_directory_uri() . '/js/jquery-1.9.1.min.js', array( 'jquery' ), '1.0.0' );
+	// wp_enqueue_script( 'mono-jquery', get_stylesheet_directory_uri() . '/js/jquery-1.9.1.min.js', array( 'jquery' ), '1.0.0' );
+	// Jquery 2.1.3
+	wp_enqueue_script( 'mono-jquery', get_stylesheet_directory_uri() . '/js/jquery-2.1.3.min.js', array( 'jquery' ), '1.0.0' );
+
 	// Responsive text for selected headlines
 	wp_enqueue_script( 'mono-fittext', get_stylesheet_directory_uri() . '/js/jquery.fittext.js', array( 'jquery' ), '1.0.0', true );
+
 	// Responsive movie scripts
 	wp_enqueue_script( 'mono-fitvids-script', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '1.0.0', true );
 	wp_enqueue_script( 'mono-fitvids', get_stylesheet_directory_uri() . '/js/fitvids.js', array( 'jquery' ), '1.0.0', true );
@@ -40,6 +47,7 @@ function mono_enqueue_scripts() {
 	wp_enqueue_script( 'jquery-headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/jQuery.headroom.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_script( 'headroom-action', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom_action.js', array( 'jquery' ), '1.0.0', true );
+	
 	// Tween background animation
 	// wp_enqueue_script( 'tween-max', get_bloginfo( 'stylesheet_directory' ) . '/js/TweenMax.min.js', array( 'jquery' ), '1.18.0', true );
 	// wp_enqueue_script( 'canvas_red', get_bloginfo( 'stylesheet_directory' ) . '/js/canvas_red.js', array( 'jquery' ), '1.0.0', true );

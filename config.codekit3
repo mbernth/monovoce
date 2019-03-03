@@ -546,6 +546,26 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"/monovoce/js/flickity-fade.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/flickity-fade-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/monovoce/js/flickity.mono.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/flickity.mono-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/monovoce/js/flickity.pkgd.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -612,6 +632,16 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/home-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/monovoce/js/https _owlcarousel2.github.io_OwlCarousel2_assets_vendors_jquery.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/https _owlcarousel2.github.io_OwlCarousel2_assets_vendors_jquery.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -802,6 +832,16 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "/monovoce/js/min/min/fade-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/monovoce/js/min/flickity.mono-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/min/flickity.mono-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1153,6 +1193,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "/monovoce/page_home.php",
+		"oF": 0
+		},
+	"/monovoce/page_slider.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/monovoce/page_slider.php",
 		"oF": 0
 		},
 	"/monovoce/page_style_guide.php": {
@@ -4076,6 +4123,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/monovoce/_countdown.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/monovoce/scss/plugins/_flickity-fade.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/monovoce/_flickity-fade.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

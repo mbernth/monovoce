@@ -52,6 +52,10 @@
 		// -o-animation: hero 24s infinite ease-out both;
 		// -ms-animation: hero 24s infinite ease-out both;
 		// animation: hero 24s infinite ease-out both;
+		&.slider{
+			background-color: transparent;
+			animation: unset;
+		}
 		.wrap{
 			position: relative;
 			width: 90%;
