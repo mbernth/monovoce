@@ -1,15 +1,34 @@
 /* # Structure, Layout and Grid
 ---------------------------------------------------------------------------------------------------- */
 .site-container{
+	position: relative;
 	overflow: auto;
 }
+.before-header{
+	position: relative;
+}
+.site-header{
+	position: relative;
+}
+.featured-section{
+	position: relative;
+}
+.nav-secondary{
+	position: relative;
+}
+.breadcrumb{
+	position: relative;
+}
 .site-inner{
+	position: relative;
 	z-index: 200;
 }
 .footer-widgets{
+	position: relative;
 	z-index: 200;
 }
 .site-footer{
+	position: relative;
 	z-index: 200;
 }
 @supports (display: grid) {
@@ -43,11 +62,9 @@
 		}
 		.site-inner{
 			grid-area:site-inner;
-			z-index: 200;
 		}
 		.footer-widgets{
 			grid-area:footer-widgets;
-			z-index: 200;
 		}
 		.site-footer{
 			grid-area:site-footer;
@@ -65,7 +82,9 @@
 .site-inner{
 	display: block;
 	clear: both;
-	margin: 30px auto;
+	margin: 0;
+	margin-top: 50vh;
+	margin-top: calc(var(--vh, 1vh) * 50);
 	width:100%;
 	overflow: auto;
 	background: $color-white;
@@ -94,8 +113,10 @@
 --------------------------------------------- */
 
 .full-width-content .site-inner{
-	margin: 0;
+	margin-top: 50vh;
+	margin-top: calc(var(--vh, 1vh) * 50);
 	float: left;
+	box-shadow: 0px 0px 15px 15px rgba(0, 11, 18, 0.12);
 }
 
 .full-width-content .site-inner .content .breadcrumb,

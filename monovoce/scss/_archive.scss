@@ -9,7 +9,8 @@
             background-color: shade($color-primary, 40%);
         }
         .gridcontainer.title-element{
-            position: relative;
+            position: fixed;
+            width: 100%;
             background-color: shade($color-primary, 40%);
             overflow: hidden;
         }
@@ -19,7 +20,8 @@
             background-color: shade($color-primary, 40%);
         }
         .gridcontainer.title-element{
-            position: relative;
+            position: fixed;
+            width: 100%;
             background-color: shade($color-primary, 40%);
             overflow: hidden;
         }
