@@ -207,45 +207,17 @@
 
 /* # Frontpage Style
 ---------------------------------------------------------------------------------------------------- */
-/*
+/* # Hero element
+--------------------------------------------------- */
 .gridcontainer{
-	.featured_widget{
-		.featured_widget_thumb{
-			// align-items: start;
-		}
-		&:nth-child(2n){
-			.featured_widget_image{
-				order: 2;
-			}
-			.featured_widget_preview{
-				order: 1;
+	&.hero{
+		.wrap{
+			.hero-text{
+				font-family: $font-hero;
 			}
 		}
 	}
 }
-@media (hover: hover){
-	.gridcontainer{
-		.featured_widget{
-			.featured_widget_thumb{
-				display: block;
-				.featured_widget_image,
-				.featured_widget_preview{
-					width: 100%;
-					text-align: left;
-				}
-			}
-			&:nth-child(2n){
-				ul{
-					padding-right: 0;
-					&:after{
-						left: -20px;
-					}
-				}
-			}
-		}
-	}
-}
-*/
 
 
 /* # Animations

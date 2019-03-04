@@ -69,8 +69,8 @@
 				font-size: 10.5vw;
 				line-height: 1;
 				margin-bottom: 0;
-				font-family: $font-hero;
-				padding: 15px 20px;
+				font-family: $font-headlines;
+				padding: 25px 20px;
 				margin-bottom: 20vh;
 				&::before,
 				&::after{
@@ -189,8 +189,10 @@
 			// height: 70vh;
 			.wrap{
 				.hero-text{
-					// margin-bottom: 0;
-					// padding-bottom: 0;
+					top: -70px;
+					margin-bottom: 0;
+					padding-bottom: 0;
+					font-size: 14.5vw;
 				}
 			}
 		}

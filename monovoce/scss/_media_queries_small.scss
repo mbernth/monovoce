@@ -299,9 +299,9 @@
 @media only screen and (min-width: $mq-small) and (orientation: portrait){
 	.gridcontainer{
 		&.hero{
-			height: 80vh;
 			.wrap{
 				.hero-text{
+					top: -70px;
 					padding-bottom: 0;
 					font-size: 9.5vw;
 				}

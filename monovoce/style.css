@@ -5482,8 +5482,8 @@ p.entry-meta {
       font-size: 10.5vw;
       line-height: 1;
       margin-bottom: 0;
-      font-family: "Branding-Thin", Helvetica, Arial, sans-serif;
-      padding: 15px 20px;
+      font-family: "Branding-Light", Helvetica, Arial, sans-serif;
+      padding: 25px 20px;
       margin-bottom: 20vh; }
       .gridcontainer.hero .wrap .hero-text::before, .gridcontainer.hero .wrap .hero-text::after {
         position: absolute;
@@ -5575,6 +5575,13 @@ p.entry-meta {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
     opacity: .35; } }
+
+@media screen and (orientation: portrait) {
+  .gridcontainer.hero .wrap .hero-text {
+    top: -70px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 14.5vw; } }
 
 /* ### Hero animation
 --------------------------------------------- */
@@ -7014,11 +7021,10 @@ p.entry-meta {
       left: unset; } }
 
 @media only screen and (min-width: 48em) and (min-width: 48em) and (orientation: portrait) {
-  .gridcontainer.hero {
-    height: 80vh; }
-    .gridcontainer.hero .wrap .hero-text {
-      padding-bottom: 0;
-      font-size: 9.5vw; } }
+  .gridcontainer.hero .wrap .hero-text {
+    top: -70px;
+    padding-bottom: 0;
+    font-size: 9.5vw; } }
 
 @media only screen and (min-width: 48em) {
   /* # Animations
@@ -7504,45 +7510,10 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
   /* # Frontpage Style
 ---------------------------------------------------------------------------------------------------- */
-  /*
-.gridcontainer{
-	.featured_widget{
-		.featured_widget_thumb{
-			// align-items: start;
-		}
-		&:nth-child(2n){
-			.featured_widget_image{
-				order: 2;
-			}
-			.featured_widget_preview{
-				order: 1;
-			}
-		}
-	}
-}
-@media (hover: hover){
-	.gridcontainer{
-		.featured_widget{
-			.featured_widget_thumb{
-				display: block;
-				.featured_widget_image,
-				.featured_widget_preview{
-					width: 100%;
-					text-align: left;
-				}
-			}
-			&:nth-child(2n){
-				ul{
-					padding-right: 0;
-					&:after{
-						left: -20px;
-					}
-				}
-			}
-		}
-	}
-}
-*/
+  /* # Hero element
+--------------------------------------------------- */
+  .gridcontainer.hero .wrap .hero-text {
+    font-family: "Branding-Thin", Helvetica, Arial, sans-serif; }
   /* # Animations
 ---------------------------------------------------------------------------------------------------- */
   /* ## Keyframes
