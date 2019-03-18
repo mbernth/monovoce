@@ -86,7 +86,7 @@
 	}
 	.featured_widget{
 		.featured_widget_preview{
-			h2{
+			h2, h3, h4{
 				a{
 					-webkit-transition: all 0.2s ease-in-out;
 					-moz-transition:    all 0.2s ease-in-out;
@@ -236,7 +236,9 @@
 ---------------------------------------------------------------------- */
 .row_headline,
 .entry-title,
-.featured_widget_preview h2{
+.featured_widget_preview h2,
+.featured_widget_preview h3,
+.featured_widget_preview h4{
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;

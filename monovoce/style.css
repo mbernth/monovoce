@@ -4901,13 +4901,13 @@ svg#logo {
     top: 0;
     z-index: 100; }
 
-.gridcontainer .featured_widget .featured_widget_preview h2 a {
+.gridcontainer .featured_widget .featured_widget_preview h2 a, .gridcontainer .featured_widget .featured_widget_preview h3 a, .gridcontainer .featured_widget .featured_widget_preview h4 a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
-  .gridcontainer .featured_widget .featured_widget_preview h2 a:hover {
+  .gridcontainer .featured_widget .featured_widget_preview h2 a:hover, .gridcontainer .featured_widget .featured_widget_preview h3 a:hover, .gridcontainer .featured_widget .featured_widget_preview h4 a:hover {
     letter-spacing: .013em; }
 
 .gridcontainer .featured_widget ul li a {
@@ -5009,7 +5009,9 @@ svg#logo {
 ---------------------------------------------------------------------- */
 .row_headline,
 .entry-title,
-.featured_widget_preview h2 {
+.featured_widget_preview h2,
+.featured_widget_preview h3,
+.featured_widget_preview h4 {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;

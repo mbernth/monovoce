@@ -72,17 +72,10 @@ function custom_do_grid_loop() {
 						}else{
 							echo '<figure><a href="' . get_permalink() . '"><img src="wp-content/themes/monovoce/images/thumb.png" alt="'.$work_thumbnail['alt'].'" /></a></figure>';
 						}
-						/*
-						if ($img){
-							printf( '<figure><a href="' . get_permalink() . '"><img src="%s" alt="' . get_the_title() . '"></a></figure>', $img );
-						}else{
-							printf( '<figure><a href="' . get_permalink() . '"><img src="wp-content/themes/monovoce/images/thumb.png" alt="' . get_the_title() . '"></a></figure>' );
-						}
-						*/
 					echo '</div>';
 
 					echo '<div class="featured_widget_preview">';
-					echo '<header><h2 lang="en"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2></header>';
+					echo '<header><h4 lang="en"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h4></header>';
 					echo '<footer class="post-meta-content">';
 						echo '<ul>';
 						$terms = get_the_terms( $works->ID , 'work_category' );

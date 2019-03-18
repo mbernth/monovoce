@@ -172,8 +172,7 @@ function mono_flexible_grids() {
 
 										echo '<div class="featured_widget_preview">';
 
-											echo '<h2 lang="en"><a href="'.$post->guid.'">'.$post->post_title.'</a></h2>';
-											// echo '<h3>'.$post->post_title.'</h3>';
+											echo '<h4 lang="en"><a href="'.$post->guid.'">'.$post->post_title.'</a></h4>';
 
         									$terms = get_the_terms( $post->ID , 'work_category' );
 											if ($terms) :
