@@ -27,6 +27,15 @@ $g_font-bread: (
     xlarge : (2, 3.2)
 );
 
+$g_font-small: (
+    null   : (1.2, 2.2, 300, $color-primary),
+    // xsmall : (1.2, 2.2),
+    // small  : (1.2, 2.2),
+    // medium : (1.2, 2.2),
+    large  : (1.4, 2.4),
+    // xlarge : (1.4, 2.4)
+);
+
 $g_font-large: (
     null   : (2, 3.2),
     // xsmall : (1.6, 2.6),
@@ -332,7 +341,7 @@ $g_max_width-narrow: (
     xsmall : (480px),
     small  : (600px),
     medium : (920px),
-    large  : (1200px),
+    large  : (860px),
     xlarge : (860px)
 );
 

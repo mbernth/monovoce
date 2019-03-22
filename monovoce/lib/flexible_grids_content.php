@@ -235,9 +235,46 @@ function mono_flexible_grids() {
 			endif;
 			$loopCount ++;
 			
+			if ( get_row_layout() == 'service_row' ) :
+				// hide_service_row ( value )
+				$hide_service_row_array = get_sub_field( 'hide_service_row' );
+				if ( $hide_service_row_array ):
+					else :
+						if ( have_rows( 'service_group' ) ) :
+							echo '<article class="gridcontainer services">';
+							while ( have_rows( 'service_group' ) ) : the_row();
+								$service_group_name = get_sub_field( 'service_group_name' );
+								$service_background_color = get_sub_field( 'service_background_color' );
+								$service_group_text = get_sub_field( 'service_group_text' );
+								echo '<h3 lang="en" class="row_headline">' . $service_group_name . '</h3>';
+								if ($service_group_text){
+									echo '<section class="service_group_text">'.$service_group_text.'</section>';
+								}
+								echo '<div class="wrap '.$service_background_color.'">';
+								if ( have_rows( 'services' ) ):
+									while ( have_rows( 'services' ) ) : the_row();
+										$service_name = get_sub_field( 'service_name' );
+										if ( get_row_layout() == 'service' ) :
+											echo '<section>';
+												echo '<p><span class="service_group_name">'.$service_group_name.'</span>';
+												echo '<span class="service_name">'.$service_name.'</span></p>';
+											echo '</section>';
+										endif;
+									endwhile;
+								else:
+								// no layouts found
+								endif;
+								echo '</div>';
+							endwhile;
+							echo '</article>';
+						else :
+						// no rows found
+						endif;
+				endif;
+			endif;
 			
-			
-    	endwhile;
+		endwhile;
+		
 	
 	else :
 

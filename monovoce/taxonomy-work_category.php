@@ -72,7 +72,7 @@ add_action( 'genesis_loop', 'custom_do_grid_loop' ); // Add custom loop
 function custom_do_grid_loop() {
 	
 	if(have_posts()){
-		echo '<section class="gridcontainer coll1 archive-works wide">';
+		echo '<section class="gridcontainer coll1 archive-works">';
 		echo '<div class="wrap">';
 		while(have_posts()) : 
 			the_post();
@@ -98,7 +98,7 @@ function custom_do_grid_loop() {
 					echo '</div>';
 
 					echo '<div class="featured_widget_preview">';
-					echo '<header><h2 lang="en"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h2></header>';
+					echo '<header><h4 lang="en"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h4></header>';
 					echo '<footer class="post-meta-content">';
 						echo '<ul>';
 						$terms = get_the_terms( $works->ID , 'work_category' );

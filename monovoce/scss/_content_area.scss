@@ -141,6 +141,74 @@
 			}
 		}
 	}
+	&.services{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.row_headline,
+		.service_group_text{
+			@include max-width-values($g_max_width-narrow);
+		}
+		.service_group_text{
+			margin-bottom: $margin-default+px;
+			padding: 0 $margin-default+px $margin-default+px;
+		}
+		.wrap{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+			grid-template-rows: auto;
+			@include max-width-values($g_max_width-narrow);
+			&.primary{
+				section{
+					background-color: $color-primary;
+				}
+				.service_group_name{
+					color: $color-active;
+				}
+				.service_name{
+					color: $color-white;
+				}
+			}
+			&.secondary{
+				section{
+					background-color: $color-secondary;
+				}
+				.service_group_name{
+					color: $color-primary;
+				}
+				.service_name{
+					color: $color-white;
+				}
+			}
+			&.active{
+				section{
+					background-color: $color-active;
+				}
+				.service_group_name{
+					color: $color-primary;
+				}
+				.service_name{
+					color: $color-white;
+				}
+			}
+			section{
+				padding: $margin-default+px;
+				padding-bottom: 80px;
+				@include corners($g_font-button_radius);
+				.service_group_name{
+					display: block;
+					font-family: $font-bold;
+					@include font-values($g_font-small);
+					text-transform: capitalize;
+				}
+				.service_name{
+					display: block;
+					text-transform: capitalize;
+					line-height: 1;
+				}
+			}
+		}
+	}
 }
 
 .gridcontainer{
