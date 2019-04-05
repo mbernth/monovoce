@@ -79,7 +79,7 @@ function mono_hero_element() {
 					echo '</h1>';
 				echo '</div>';
 	
-				echo '<div class="bounce"><svg class="icon-arrow-down7"><use xlink:href="#icon-arrow-down7"></use></svg></div>';
+				echo '<div class="bounce"><a href="#genesis-content"><svg class="icon-arrow-down7"><use xlink:href="#icon-arrow-down7"></use></svg></a></div>';
 				// echo '<canvas id="canvas"></canvas>';
 			echo '</div>';
 		else:

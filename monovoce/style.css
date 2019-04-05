@@ -1940,7 +1940,8 @@ input[type="search"] {
 ---------------------------------------------------------------------- */
 html {
   font-size: 62.5%;
-  /* 10px browser default */ }
+  /* 10px browser default */
+  scroll-behavior: smooth; }
 
 /* Chrome fix */
 body > div {
@@ -7800,7 +7801,7 @@ p.entry-meta {
   /* # Hero element
 --------------------------------------------------- */
   .gridcontainer.hero .wrap .hero-text {
-    font-size: 7vw; }
+    font-size: 7.5vw; }
   /* # Animations
 ---------------------------------------------------------------------------------------------------- */
   /* ## Keyframes
