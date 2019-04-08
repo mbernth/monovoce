@@ -238,6 +238,7 @@ function mono_flexible_grids() {
 			if ( get_row_layout() == 'service_row' ) :
 				// hide_service_row ( value )
 				$hide_service_row_array = get_sub_field( 'hide_service_row' );
+				$service_button = get_sub_field('service_link_button');
 				if ( $hide_service_row_array ):
 					else :
 						if ( have_rows( 'service_group' ) ) :
@@ -265,7 +266,21 @@ function mono_flexible_grids() {
 								// no layouts found
 								endif;
 								echo '</div>';
+								
 							endwhile;
+							// Row button field
+							if ($service_button['button_text']){
+								echo '<div class="row-button-area">';
+									if ($service_button['page_link']){
+										echo '<a class="button button-primary" href="' . $service_button['page_link']. '">';
+										}else{
+										echo '<a class="button button-primary" href="' . $service_button['url_link']. '" >';
+									}
+									echo '' . $service_button['button_text']. '';
+									echo '</a>';
+									
+								echo '</div>';
+							}
 							echo '</article>';
 						else :
 						// no rows found
