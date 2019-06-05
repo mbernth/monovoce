@@ -181,7 +181,8 @@ function mono_flexible_grids() {
 												$term_link = get_term_link( $term, 'work_category' );
 												if( is_wp_error( $term_link ) )
                 									continue;
-													echo '<li><a href="' . $term_link . '">'.$term->name.'</a></li>';
+													// echo '<li><a href="' . $term_link . '">'.$term->name.'</a></li>';
+													echo '<li>'.$term->name.'</li>';
 											}
 											echo '</li>';
 											endif;
