@@ -463,27 +463,19 @@
 					position: absolute;
 					bottom: 0;
 					left: 0;
-					-webkit-transform: scale(3) translateX(0%) translateY(100%) translateZ(0px) rotate(25deg);
-					transform: scale(3) translateX(0%) translateY(100%) translateZ(0px) rotate(25deg);
+					-webkit-transform: scale(3) translateX(0%) translateY(50%) translateZ(0px) rotate(0deg);
+					transform: scale(3) translateX(0%) translateY(50%) translateZ(0px) rotate(0deg);
 					-webkit-transition: 3s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
 					transition: 3s transform cubic-bezier(0.23, 1, 0.32, 1);
 				}
 				&:hover{
 					&::after{
-						-webkit-transform: scale(3) rotate(0deg) translateZ(0px) rotate(0deg);
-						transform: scale(3) rotate(0deg) translateZ(0px) rotate(0deg);
+						-webkit-transform: scale(3) translateX(0%) translateY(0%) translateZ(0px) rotate(0deg);
+						transform: scale(3) translateX(0%) translateY(0%) translateZ(0px) rotate(0deg);
 						-webkit-transition-duration: 3s;
 						transition-duration: 3s;
 					}
-					div{
-						bottom: 55px;
-					}
-					img{
-						filter:grayscale(100%);
-					}
 				}
-				
-				
 				figure{
 					position: relative;
 					img{
@@ -499,7 +491,7 @@
 					width: calc(100% - 25px);
 					margin: 0;
 					left: 25px;
-					bottom: -40%;
+					bottom: 55px;
 					z-index: 500;
 					-webkit-transition: all .6s ease-in-out .2s;
 					-moz-transition: all .6s ease-in-out .2s;

@@ -3133,6 +3133,9 @@ th {
     align-items: center;
     margin: 80px 0 0 0; }
 
+.gridcontainer.featured_cases .wrap {
+  max-width: 1980px; }
+
 .gridcontainer.coll1 .row_headline,
 .gridcontainer.coll1 .wrap {
   max-width: 90%; }
@@ -5958,19 +5961,15 @@ p.entry-meta {
     position: absolute;
     bottom: 0;
     left: 0;
-    -webkit-transform: scale(3) translateX(0%) translateY(100%) translateZ(0px) rotate(25deg);
-    transform: scale(3) translateX(0%) translateY(100%) translateZ(0px) rotate(25deg);
+    -webkit-transform: scale(3) translateX(0%) translateY(50%) translateZ(0px) rotate(0deg);
+    transform: scale(3) translateX(0%) translateY(50%) translateZ(0px) rotate(0deg);
     -webkit-transition: 3s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
     transition: 3s transform cubic-bezier(0.23, 1, 0.32, 1); }
   .gridcontainer.featured_cases .wrap section:hover::after {
-    -webkit-transform: scale(3) rotate(0deg) translateZ(0px) rotate(0deg);
-    transform: scale(3) rotate(0deg) translateZ(0px) rotate(0deg);
+    -webkit-transform: scale(3) translateX(0%) translateY(0%) translateZ(0px) rotate(0deg);
+    transform: scale(3) translateX(0%) translateY(0%) translateZ(0px) rotate(0deg);
     -webkit-transition-duration: 3s;
     transition-duration: 3s; }
-  .gridcontainer.featured_cases .wrap section:hover div {
-    bottom: 55px; }
-  .gridcontainer.featured_cases .wrap section:hover img {
-    filter: grayscale(100%); }
   .gridcontainer.featured_cases .wrap section figure {
     position: relative; }
     .gridcontainer.featured_cases .wrap section figure img {
@@ -5984,7 +5983,7 @@ p.entry-meta {
     width: calc(100% - 25px);
     margin: 0;
     left: 25px;
-    bottom: -40%;
+    bottom: 55px;
     z-index: 500;
     -webkit-transition: all .6s ease-in-out .2s;
     -moz-transition: all .6s ease-in-out .2s;
@@ -6341,6 +6340,15 @@ p.entry-meta {
           @media screen and (min-width: 93.75em) {
             .post-navigation .wrap div.next [class^="icon-"] {
               margin-left: 40px; } }
+
+/* # Cookiebot
+---------------------------------------------------------------------------------------------------- */
+#CybotCookiebotDialog {
+  background: rgba(253, 254, 255, 0.8);
+  box-shadow: none; }
+
+#CybotCookiebotDialogPoweredbyLink {
+  display: none; }
 
 /*
 # Post Types
@@ -7729,6 +7737,20 @@ p.entry-meta {
     font-family: "Branding-Thin", Helvetica, Arial, sans-serif; }
   /* # Featured cases
 --------------------------------------------------- */
+  .gridcontainer.featured_cases .wrap section::after {
+    -webkit-transform: scale(3) translateX(0%) translateY(100%) translateZ(0px) rotate(25deg);
+    transform: scale(3) translateX(0%) translateY(100%) translateZ(0px) rotate(25deg);
+    -webkit-transition: 3s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 3s transform cubic-bezier(0.23, 1, 0.32, 1); }
+  .gridcontainer.featured_cases .wrap section:hover::after {
+    -webkit-transform: scale(3) translateX(0%) translateY(0%) translateZ(0px) rotate(0deg);
+    transform: scale(3) translateX(0%) translateY(0%) translateZ(0px) rotate(0deg);
+    -webkit-transition-duration: 3s;
+    transition-duration: 3s; }
+  .gridcontainer.featured_cases .wrap section:hover div {
+    bottom: 55px; }
+  .gridcontainer.featured_cases .wrap section:hover img {
+    filter: grayscale(100%); }
   .gridcontainer.featured_cases .wrap section:first-child {
     grid-column: span 2;
     grid-row: span 2; }
@@ -7821,6 +7843,18 @@ p.entry-meta {
       background-color: #fdfeff;
       width: 4px;
       height: 64px; }
+  .gridcontainer.featured_cases .wrap section div {
+    position: absolute;
+    width: calc(100% - 25px);
+    margin: 0;
+    left: 25px;
+    bottom: -40%;
+    z-index: 500;
+    -webkit-transition: all .6s ease-in-out .2s;
+    -moz-transition: all .6s ease-in-out .2s;
+    -ms-transition: all .6s ease-in-out .2s;
+    -o-transition: all .6s ease-in-out .2s;
+    transition: all .6s ease-in-out .2s; }
   /* # Animations
 ---------------------------------------------------------------------------------------------------- */
   /* ## Keyframes
