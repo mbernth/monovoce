@@ -71,6 +71,11 @@
 			}
 		}
 	}
+	.gridcontainer.featured_cases{
+		.wrap{
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
 
 .content-sidebar .site-inner,
 .sidebar-content .site-inner,
@@ -218,7 +223,88 @@
 		}
 	}
 }
-
+/* # Featured cases
+--------------------------------------------------- */
+.gridcontainer{
+	&.featured_cases{
+		.wrap{
+			section{
+				&:first-child{
+					grid-column: span 2;
+					grid-row: span 2;
+					h4{
+						@include font-values($g_font-h3);
+						&::before,
+						&::after{
+							position: absolute;
+							content: '';
+							transform: scale3d(1, 1, 1);
+							top: -2px;
+							left: -10px;
+							background-color: $color-white;
+						}
+						&::before{
+							width: 4px;
+							height: 10px;
+						}
+						&::after{
+							width: 10px;
+							height: 4px;
+						}
+					}
+					p{
+						::after {
+							position: absolute;
+							content: '';
+							transform: scale3d(1, 1, 1);
+							top:45px;
+							left: -10px;
+							background-color: $color-white;
+							width: 4px;
+							height: 64px;
+						}
+					}
+				}
+				&:nth-child(8n){
+					grid-column: span 2;
+					grid-row: span 2;
+					h4{
+						@include font-values($g_font-h3);
+						&::before,
+						&::after{
+							position: absolute;
+							content: '';
+							transform: scale3d(1, 1, 1);
+							top: -2px;
+							left: -10px;
+							background-color: $color-white;
+						}
+						&::before{
+							width: 4px;
+							height: 10px;
+						}
+						&::after{
+							width: 10px;
+							height: 4px;
+						}
+					}
+					p{
+						::after {
+							position: absolute;
+							content: '';
+							transform: scale3d(1, 1, 1);
+							top:45px;
+							left: -10px;
+							background-color: $color-white;
+							width: 4px;
+							height: 64px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 /* # Animations
 ---------------------------------------------------------------------------------------------------- */

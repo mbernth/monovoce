@@ -46,6 +46,13 @@
 		}
 	}
 }
+@supports (display: grid) {
+	.gridcontainer.featured_cases{
+		.wrap{
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
 
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */

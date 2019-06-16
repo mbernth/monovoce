@@ -22,7 +22,7 @@ define( 'CHILD_THEME_VERSION', '1.0.0' );
 //* Enqueue Scripts
 add_action( 'wp_enqueue_scripts', 'mono_enqueue_scripts' );
 function mono_enqueue_scripts() {
-	
+	wp_enqueue_style('mono-voce', get_stylesheet_uri() . '', array(), filemtime( get_stylesheet_directory() . '/style.css' )  );
 	wp_enqueue_script( 'mono-init', get_bloginfo( 'stylesheet_directory' ) . '/js/init.js', array( 'jquery' ), '1.0.0' );
 	// Responsive menu
 	// wp_enqueue_script( 'mono-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );

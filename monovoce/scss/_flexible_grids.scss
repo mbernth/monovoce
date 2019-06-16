@@ -30,6 +30,11 @@
 		grid-gap:0px;
 	}
 }
+.gridcontainer.featured_cases{
+	.wrap{
+		grid-template-columns: 1fr;
+	}
+}
 .gridcontainer.coll1{
 	.wrap{
 		grid-template-columns:1fr;
@@ -60,6 +65,7 @@
 		grid-template-columns:repeat(2, 1fr);
 	}
 }
+
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
 .gridcontainer.non section.wysiwyg{

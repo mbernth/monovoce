@@ -152,7 +152,7 @@ function mono_flexible_grids() {
 							echo '</section>';
 							}
 
-							// Widget fields
+							// Featured works
 							if ( get_row_layout() == 'featured_work' ){
 								echo '<section class="featured_widget">';
 									$post_objects = get_sub_field( 'work' );
@@ -166,13 +166,19 @@ function mono_flexible_grids() {
 									echo '<div class="featured_widget_thumb">';
 										if ( $work_image ) {
 											echo '<div class="featured_widget_image">';
-												echo '<figure><a href="'.$post->guid.'"><img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " /></a></figure>';
+												// echo '<figure><a href="'.$post->guid.'"><img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " /></a></figure>';
+												echo '<figure><a href="';
+													the_permalink($post);
+												echo '"><img src=" '.$work_image['url'].' " alt=" '.$work_image['alt'].' " /></a></figure>';
 											echo '</div>';
 										}
 
 										echo '<div class="featured_widget_preview">';
 
-											echo '<h4 lang="en"><a href="'.$post->guid.'">'.$post->post_title.'</a></h4>';
+											// echo '<h4 lang="en"><a href="'.$post->guid.'">'.$post->post_title.'</a></h4>';
+											echo '<h4 lang="en"><a href="';
+												the_permalink($post);
+											echo '">'.$post->post_title.'</a></h4>';
 
         									$terms = get_the_terms( $post->ID , 'work_category' );
 											if ($terms) :
@@ -197,6 +203,7 @@ function mono_flexible_grids() {
 								echo '</section>';
 							}
 
+							// References
 							if ( get_row_layout() == 'references' ) :
 								if ( have_rows( 'references', 'option' ) ) :
 									echo '<section class="references">';
@@ -212,7 +219,6 @@ function mono_flexible_grids() {
 									// no rows found
 								endif;
 							endif;
-							
 							
 					endwhile;
 				
@@ -287,6 +293,53 @@ function mono_flexible_grids() {
 						// no rows found
 						endif;
 				endif;
+			endif;
+
+			// Featured
+			if ( get_row_layout() == 'featured' ) :
+				$posts = get_sub_field( 'selected_features' );
+				$hide = get_sub_field( 'hide' );
+				$headline = get_sub_field( 'headline' );
+			if ($hide){
+
+			}else{
+			
+			echo '<article class="gridcontainer featured_cases">';
+				if ($headline){
+					echo '<h2 lang="en" class="row_headline">' . $headline . '</h2>';
+				}
+				echo '<div class="wrap">';
+				if ( $posts ):
+					
+					// Call global $posts variable
+					global $post;
+					foreach ( $posts as $post ): 
+						setup_postdata ( $post );
+						$work_thumbnail = get_field( 'featured_work_image' );
+						echo '<section>';
+
+						if ( $work_thumbnail ) {
+							echo '<figure><a href="';
+								the_permalink($post);
+							echo '"><img src="'.$work_thumbnail['url'].'" alt="'.$work_thumbnail['alt'].'" /></a></figure>';
+						}
+						
+						echo '<div><h4 lang="en"><a href="';
+							the_permalink($post);
+						echo '">'.$post->post_title.'</a></h4>';
+						echo '<p><a href="';
+							the_permalink($post);
+						echo '">See the case</a></p></div>';
+
+						echo '</section>';
+					endforeach;
+					
+					wp_reset_postdata();
+
+				endif;
+				echo '</div>';
+			echo '</article>';
+			}
 			endif;
 			
 		endwhile;

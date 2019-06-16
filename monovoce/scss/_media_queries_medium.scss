@@ -40,7 +40,11 @@
 
 
 @supports (display: grid) {
-	
+	.gridcontainer.featured_cases{
+		.wrap{
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
 	.content-sidebar .site-inner .content-sidebar-wrap,
 	.sidebar-content .site-inner .content-sidebar-wrap{
 		display: grid;
@@ -342,6 +346,24 @@
 			}
 			.featured_widget_preview{
 				// order: 2;
+			}
+		}
+	}
+}
+/* # Featured cases
+--------------------------------------------------- */
+.gridcontainer{
+	&.featured_cases{
+		.wrap{
+			section{
+				&:first-child{
+					grid-column: span 2;
+					grid-row: span 2;
+				}
+				&:nth-child(8n){
+					grid-column: span 2;
+					grid-row: span 2;
+				}
 			}
 		}
 	}
