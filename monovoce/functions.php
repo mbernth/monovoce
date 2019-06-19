@@ -99,6 +99,7 @@ function mono_viewport_meta_tag() {
 	echo '<meta name="MobileOptimized" content="320">';
 }
 // Change favicon location and add touch icons
+/*
 add_filter( 'genesis_pre_load_favicon', 'mono_favicon_filter' );
 function mono_favicon_filter( $favicon ) {
 	echo '<link rel="shortcut icon" href="'.get_bloginfo( 'stylesheet_directory' ).'/images/favicon.ico" type="image/x-icon" />';
@@ -121,6 +122,30 @@ function mono_favicon_filter( $favicon ) {
 	echo '<meta name="msapplication-square310x310logo" content="'.get_bloginfo( 'stylesheet_directory' ).'/images//largetile.png" />';
 
 }
+*/
+add_filter( 'genesis_pre_load_favicon', 'mono_favicon_filter' );
+function mono_favicon_filter( $favicon ) {
+	echo '<link rel="apple-touch-icon" sizes="57x57" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/apple-icon-57x57.png">';
+	echo '<link rel="apple-touch-icon" sizes="60x60" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/apple-icon-60x60.png">';
+	echo '<link rel="apple-touch-icon" sizes="72x72" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/apple-icon-72x72.png">';
+	echo '<link rel="apple-touch-icon" sizes="76x76" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/apple-icon-76x76.png">';
+	echo '<link rel="apple-touch-icon" sizes="114x114" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/apple-icon-114x114.png">';
+	echo '<link rel="apple-touch-icon" sizes="120x120" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/apple-icon-120x120.png">';
+	echo '<link rel="apple-touch-icon" sizes="144x144" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/apple-icon-144x144.png">';
+	echo '<link rel="apple-touch-icon" sizes="152x152" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/apple-icon-152x152.png">';
+	echo '<link rel="apple-touch-icon" sizes="180x180" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/apple-icon-180x180.png">';
+	echo '<link rel="icon" type="image/png" sizes="192x192"  href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/android-icon-192x192.png">';
+	echo '<link rel="icon" type="image/png" sizes="32x32" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/favicon-32x32.png">';
+	echo '<link rel="icon" type="image/png" sizes="96x96" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/favicon-96x96.png">';
+	echo '<link rel="icon" type="image/png" sizes="16x16" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/favicon-16x16.png">';
+	echo '<link rel="manifest" href="'.get_bloginfo( 'stylesheet_directory' ).'/icons/manifest.json">';
+	echo '<meta name="msapplication-TileColor" content="#ffffff">';
+	echo '<meta name="msapplication-TileImage" content="'.get_bloginfo( 'stylesheet_directory' ).'/ms-icon-144x144.png">';
+	echo '<meta name="theme-color" content="#ffffff">';
+}
+
+
+
 
 //* Add svg upload
 add_filter('upload_mimes', 'cc_mime_types');
