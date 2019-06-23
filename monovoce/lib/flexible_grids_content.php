@@ -330,7 +330,10 @@ function mono_flexible_grids() {
 						echo '<p><a href="';
 							the_permalink($post);
 						echo '">See the case</a></p></div>';
-
+						/*
+						echo '<div><h4 lang="en">'.$post->post_title.'</h4>';
+						echo '<p>See the case</p></div>';
+						*/
 						echo '</section>';
 					endforeach;
 					

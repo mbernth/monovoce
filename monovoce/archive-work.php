@@ -56,40 +56,28 @@ add_action( 'genesis_loop', 'custom_do_grid_loop' ); // Add custom loop
 function custom_do_grid_loop() {
 	
 	if(have_posts()){
-		echo '<section class="gridcontainer coll1 archive-works">';
+		echo '<section class="gridcontainer featured_cases">';
 		echo '<div class="wrap">';
 		while(have_posts()) : 
 			the_post();
 			// Repeat while content
-			echo '<section class="featured_widget">';
-				echo '<div class="featured_widget_thumb">';
+			echo '<section>';
 
 					$img = genesis_get_image( array( 'format' => 'src' ) );
-					$work_thumbnail = get_field( 'work_thumbnail' ); 
-					echo '<div class="featured_widget_image">';
-						if ( $work_thumbnail ){
-							echo '<figure><a href="' . get_permalink() . '"><img src="'.$work_thumbnail['url'].'" alt="'.$work_thumbnail['alt'].'" /></a></figure>';
-						}else{
-							echo '<figure><a href="' . get_permalink() . '"><img src="wp-content/themes/monovoce/images/thumb.png" alt="'.$work_thumbnail['alt'].'" /></a></figure>';
-						}
-					echo '</div>';
+					$work_thumbnail = get_field( 'featured_work_image' ); 
+					
+					if ( $work_thumbnail ){
+						echo '<figure><a href="' . get_permalink() . '"><img src="'.$work_thumbnail['url'].'" alt="'.$work_thumbnail['alt'].'" /></a></figure>';
+					}else{
+						echo '<figure><a href="' . get_permalink() . '"><img src="wp-content/themes/monovoce/images/thumb.png" alt="'.$work_thumbnail['alt'].'" /></a></figure>';
+					}
+					
 
-					echo '<div class="featured_widget_preview">';
+					echo '<div>';
 					echo '<header><h4 lang="en"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h4></header>';
-					echo '<footer class="post-meta-content">';
-						echo '<ul>';
-						$terms = get_the_terms( $works->ID , 'work_category' );
-						foreach ( $terms as $term ) {
-							$term_link = get_term_link( $term );
-							if( is_wp_error( $term_link ) )
-							continue;
-							echo '<li><a href="' . $term_link . '">'.$term->name.'</a></li>';
-						}
-						echo '</ul>';
-					echo '</footer>';
-				echo '</div>';
+					echo '<p><a href="' . get_permalink() . '">See the case</a></p>';
+					echo '</div>';
 			
-				echo '</div>';
 			echo '</section>';
 
 		endwhile;
@@ -99,43 +87,6 @@ function custom_do_grid_loop() {
 	}
 
 }
-/*
-remove_action ('genesis_loop', 'genesis_do_loop'); // Remove the standard loop
-add_action( 'genesis_loop', 'custom_do_grid_loop' ); // Add custom loop
-function custom_do_grid_loop() {
-	$args = array(
-		'post_type' => 'work', // enter your custom post type
-		'orderby' => 'title',
-		'order' => 'ASC',
-		'posts_per_page'=> '2000', // overrides posts per page in theme settings
-	);
 
-	$loop = new WP_Query( $args );
-	if( $loop->have_posts() ):
-		echo '<section class="gridcontainer coll2 archive-works">';
-		echo '<div class="wrap">';
-		while( $loop->have_posts() ): $loop->the_post(); global $post;
-			echo '<article>';
-				$img = genesis_get_image( array( 'format' => 'src' ) );
-				printf( '<figure><a href="' . get_permalink() . '"><img src="%s" alt="' . get_the_title() . '"></a></figure>', $img );
-				echo '<div class="work-info">';
-					echo '<header><h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3></header>';
-					echo '<footer class="post-meta-content">';
-					$terms = get_the_terms( $post->ID , 'work_category' );
-						foreach ( $terms as $term ) {
-							$term_link = get_term_link( $term, 'work_category' );
-							if( is_wp_error( $term_link ) )
-                        	continue;
-							echo '<a href="' . $term_link . '">'.$term->name.'</a> ';
-					}
-					echo '</footer>';
-				echo '</div>';
-			echo '</article>';
-		endwhile;
-		echo '</div>';
-		echo '</article>';
-	endif;
-}
-*/
 //* Run the Genesis loop
 genesis();

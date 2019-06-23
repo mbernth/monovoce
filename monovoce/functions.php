@@ -30,7 +30,7 @@ function mono_enqueue_scripts() {
 
 	// Global Jquery
 	// wp_enqueue_script( 'mono-mouse', get_bloginfo( 'stylesheet_directory' ) . '/js/jquery.mousewheel.min.js', array( 'jquery' ), '1.0.0', true );
-	wp_enqueue_script( 'mono-global', get_bloginfo( 'stylesheet_directory' ) . '/js/fade.js', array( 'jquery' ), '1.0.0', true );
+	wp_enqueue_script( 'mono-global', get_bloginfo( 'stylesheet_directory' ) . '/js/animations.js', array( 'jquery' ), '1.0.0', true );
 
 	// Jquery 1.9.1
 	// wp_enqueue_script( 'mono-jquery', get_stylesheet_directory_uri() . '/js/jquery-1.9.1.min.js', array( 'jquery' ), '1.0.0' );
@@ -44,9 +44,9 @@ function mono_enqueue_scripts() {
 	wp_enqueue_script( 'mono-fitvids-script', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '1.0.0', true );
 	wp_enqueue_script( 'mono-fitvids', get_stylesheet_directory_uri() . '/js/fitvids.js', array( 'jquery' ), '1.0.0', true );
 	// Hide and show header
-	wp_enqueue_script( 'jquery-headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/jQuery.headroom.js', array( 'jquery' ), '1.0.0' );
-	wp_enqueue_script( 'headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom.js', array( 'jquery' ), '1.0.0' );
-	wp_enqueue_script( 'headroom-action', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom_action.js', array( 'jquery' ), '1.0.0', true );
+	// wp_enqueue_script( 'jquery-headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/jQuery.headroom.js', array( 'jquery' ), '1.0.0' );
+	// wp_enqueue_script( 'headroom', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom.js', array( 'jquery' ), '1.0.0' );
+	// wp_enqueue_script( 'headroom-action', get_bloginfo( 'stylesheet_directory' ) . '/js/headroom_action.js', array( 'jquery' ), '1.0.0', true );
 	
 	// Tween background animation
 	// wp_enqueue_script( 'tween-max', get_bloginfo( 'stylesheet_directory' ) . '/js/TweenMax.min.js', array( 'jquery' ), '1.18.0', true );

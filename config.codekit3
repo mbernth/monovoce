@@ -33,12 +33,28 @@
 		"oAP": "/monovoce/404.php",
 		"oF": 0
 		},
+	"/monovoce/address_widget_content.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/monovoce/address_widget_content.html",
+		"oF": 0
+		},
 	"/monovoce/archive-work.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/monovoce/archive-work.php",
+		"oF": 0
+		},
+	"/monovoce/archive-work_old.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/monovoce/archive-work_old.php",
 		"oF": 0
 		},
 	"/monovoce/archive.php": {
@@ -788,6 +804,17 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/monovoce/js/animations.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/monovoce/js/min/animations-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"/monovoce/js/basic-menu.js": {
 		"bF": 0,

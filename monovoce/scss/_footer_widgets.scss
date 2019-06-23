@@ -109,3 +109,19 @@
     background-color: $g_font-button-primary-background-color-hover;
 	box-shadow: $g_font-button-primary-box-shadow-hover;
 }
+
+/* ## Footer Navigation Menu
+---------------------------------------------------------------------- */
+
+.footer-widgets{
+	.widget_nav_menu{
+		.menu{
+			display: flex;
+			justify-content: center;
+			.menu-item:last-child::before,
+			.menu-item:last-child::after{
+				display: none;
+			}
+		}
+	}
+}
