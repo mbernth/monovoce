@@ -229,19 +229,17 @@
 	&.featured_cases{
 		.wrap{
 			section{
-				figure{
-					a{
-						&::after{
-							-webkit-transform: scale(3) translateX(0%) translateY(100%) translateZ(0px) rotate(25deg);
-							transform: scale(3) translateX(0%) translateY(100%) translateZ(0px) rotate(25deg);
-							-webkit-transition: 3s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
-							transition: 3s transform cubic-bezier(0.23, 1, 0.32, 1);
-						}
+				.section-wrap{
+					&::after{
+						-webkit-transform: scale(3) translateX(0%) translateY(100%) translateZ(0px) rotate(25deg);
+						transform: scale(3) translateX(0%) translateY(100%) translateZ(0px) rotate(25deg);
+						-webkit-transition: 3s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+						transition: 3s transform cubic-bezier(0.23, 1, 0.32, 1);
 					}
 				}
 				&:hover{
 					
-					div{
+					.works-name{
 						bottom: 55px;
 					}
 					img{
@@ -253,6 +251,7 @@
 					grid-row: span 2;
 					h4{
 						@include font-values($g_font-h3);
+						color: $color-white;
 						&::before,
 						&::after{
 							position: absolute;
@@ -289,6 +288,7 @@
 					grid-row: span 2;
 					h4{
 						@include font-values($g_font-h3);
+						color: $color-white;
 						&::before,
 						&::after{
 							position: absolute;
@@ -320,7 +320,7 @@
 						}
 					}
 				}
-				div{
+				.works-name{
 					position: absolute;
 					width: calc(100% - 25px);
 					margin: 0;

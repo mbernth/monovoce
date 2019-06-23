@@ -453,7 +453,34 @@
 			section{
 				position: relative;
 				overflow: hidden;
-				
+				a{
+					text-decoration: none;
+				}
+				.section-wrap{
+					&::after{
+						display: block;
+						content: '';
+						background-color: rgba(191, 51, 74, 1);
+						mix-blend-mode: multiply;
+						height: 100%;
+						width: 100%;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						-webkit-transform: scale(3) translateX(0%) translateY(50%) translateZ(0px) rotate(0deg);
+						transform: scale(3) translateX(0%) translateY(50%) translateZ(0px) rotate(0deg);
+						-webkit-transition: 3s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+						transition: 3s transform cubic-bezier(0.23, 1, 0.32, 1);
+					}
+					&:hover{
+						&::after{
+							-webkit-transform: scale(3) translateX(0%) translateY(0%) translateZ(0px) rotate(0deg);
+							transform: scale(3) translateX(0%) translateY(0%) translateZ(0px) rotate(0deg);
+							-webkit-transition-duration: 3s;
+							transition-duration: 3s;
+						}
+					}
+				}
 				figure{
 					position: relative;
 					img{
@@ -463,33 +490,8 @@
 						-o-transition: all .6s ease-in-out .2s;
 						transition: all .6s ease-in-out .2s;
 					}
-					a{
-						&::after{
-							display: block;
-							content: '';
-							background-color: rgba(191, 51, 74, 1);
-							mix-blend-mode: multiply;
-							height: 100%;
-							width: 100%;
-							position: absolute;
-							bottom: 0;
-							left: 0;
-							-webkit-transform: scale(3) translateX(0%) translateY(50%) translateZ(0px) rotate(0deg);
-							transform: scale(3) translateX(0%) translateY(50%) translateZ(0px) rotate(0deg);
-							-webkit-transition: 3s -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
-							transition: 3s transform cubic-bezier(0.23, 1, 0.32, 1);
-						}
-						&:hover{
-							&::after{
-								-webkit-transform: scale(3) translateX(0%) translateY(0%) translateZ(0px) rotate(0deg);
-								transform: scale(3) translateX(0%) translateY(0%) translateZ(0px) rotate(0deg);
-								-webkit-transition-duration: 3s;
-								transition-duration: 3s;
-							}
-						}
-					}
 				}
-				div{
+				.works-name{
 					position: absolute;
 					width: calc(100% - 25px);
 					margin: 0;
@@ -505,6 +507,7 @@
 				h4{
 					@include font-values($g_font-h5);
 					margin-bottom: 10px;
+					color: $color-white;
 					&::before,
 					&::after{
 						position: absolute;
@@ -522,18 +525,11 @@
 						width: 10px;
 						height: 4px;
 					}
-					a{
-						display: block;
-						color: $color-white;
-						text-decoration: none;
-					}
 				}
 				p{
-					a{
-						display: block;
-						color: $color-white;
-						text-decoration: none;
-					}
+					position: relative;
+					display: block;
+					color: $color-white;
 					::after {
 						position: absolute;
 						content: '';

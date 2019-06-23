@@ -62,7 +62,25 @@ function custom_do_grid_loop() {
 			the_post();
 			// Repeat while content
 			echo '<section>';
+			echo '<a href="' . get_permalink() . '"><div class="section-wrap">';
+					$img = genesis_get_image( array( 'format' => 'src' ) );
+					$work_thumbnail = get_field( 'featured_work_image' ); 
+					
+					if ( $work_thumbnail ){
+						echo '<figure><img src="'.$work_thumbnail['url'].'" alt="'.$work_thumbnail['alt'].'" /></figure>';
+					}else{
+						echo '<figure><img src="wp-content/themes/monovoce/images/thumb.png" alt="'.$work_thumbnail['alt'].'" /></figure>';
+					}
+					
 
+					echo '<div class="works-name">';
+					echo '<header><h4 lang="en">' . get_the_title() . '</h4></header>';
+					echo '<p>See the case</p>';
+					echo '</div>';
+			echo '</div></a>';
+			echo '</section>';
+			/*
+			echo '<section>';
 					$img = genesis_get_image( array( 'format' => 'src' ) );
 					$work_thumbnail = get_field( 'featured_work_image' ); 
 					
@@ -77,9 +95,8 @@ function custom_do_grid_loop() {
 					echo '<header><h4 lang="en"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h4></header>';
 					echo '<p><a href="' . get_permalink() . '">See the case</a></p>';
 					echo '</div>';
-			
 			echo '</section>';
-
+		    */
 		endwhile;
 		echo '</div>';
 		echo '</section>';

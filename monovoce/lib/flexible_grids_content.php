@@ -318,6 +318,19 @@ function mono_flexible_grids() {
 						$work_thumbnail = get_field( 'featured_work_image' );
 						echo '<section>';
 
+						echo '<a href="';
+							the_permalink($post);
+						echo '"><div class="section-wrap">';
+
+							if ( $work_thumbnail ) {
+								echo '<figure><img src="'.$work_thumbnail['url'].'" alt="'.$work_thumbnail['alt'].'" /></figure>';
+							}
+						
+							echo '<div class="works-name"><h4 lang="en">'.$post->post_title.'</h4>';
+							echo '<p>See the case </p></div>';
+
+						echo '</div></a>';
+						/*
 						if ( $work_thumbnail ) {
 							echo '<figure><a href="';
 								the_permalink($post);
@@ -330,9 +343,6 @@ function mono_flexible_grids() {
 						echo '<p><a href="';
 							the_permalink($post);
 						echo '">See the case</a></p></div>';
-						/*
-						echo '<div><h4 lang="en">'.$post->post_title.'</h4>';
-						echo '<p>See the case</p></div>';
 						*/
 						echo '</section>';
 					endforeach;
