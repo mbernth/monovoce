@@ -25,7 +25,7 @@ function create_works_post_type() {
         'has_archive' => true,
         'menu_position' => 5,
         'rewrite' => array('slug' => 'works'),
-        'supports'  => array( 'title', 'editor', 'thumbnail', 'excerpt', 'genesis-cpt-archives-settings', 'page-attributes' )
+        'supports'  => array( 'title', 'editor', 'thumbnail', 'excerpt', 'genesis-cpt-archives-settings' )
     );
 
   register_post_type( 'work', $args);
